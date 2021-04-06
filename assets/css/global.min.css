@@ -1217,7 +1217,7 @@ nav ul#primary-menu li ul li ul li a {
   flex-direction: column;
   padding-bottom: 10px;
   margin-right: 5px;
-  position: relative
+  position: relative;
 }
 
 @media(max-width:700px) {
@@ -1437,7 +1437,7 @@ nav ul#primary-menu li ul li ul li a {
 
 .medical_review_container {
   min-width: 250px;
-  border-left: #cdcdcd;
+  border-left: 2px solid #cdcdcd;
 }
 
 .editor_and_review_section p {
@@ -1541,6 +1541,9 @@ nav ul#primary-menu li ul li ul li a {
   }
   .google_web_story_container iframe {
     max-width: 300px
+  }
+  .medical_review_container {
+    border-left: 2px solid #cdcdcd;
   }
 }
 
