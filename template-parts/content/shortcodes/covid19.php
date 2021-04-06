@@ -4,11 +4,7 @@
         <div class="covid_sidebar_content_wrapper">
             <p>Do not allow COVID-19 to stop you from seeking the care you need.</p>
             <p>We are here to answer your questions and alleviate any concerns. Call us today.</p>
-            <a class="invocaNumber covid_sidebar_cta" href="tel:949-276-2886">ff949-276-2886</a>
+            <a class="invocaNumber covid_sidebar_cta" href="tel:949-276-2886">949-276-2886</a>
         </div>
-
-    </div>
-    <div class='covid_dropdown_icon'>
-        <img src='<?php echo get_template_directory_uri() . '/assets/images/icons/plus_icon_covid.png' ?>'>
     </div>
 </section>

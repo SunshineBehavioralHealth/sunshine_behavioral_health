@@ -1581,6 +1581,13 @@ nav ul#primary-menu li ul li ul li a {
   margin: 25px auto;
 }
 
+.covid_sidebar_cta .covid_sidebar_cta {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary_color);
+  color: var(--primary_color);
+}
+
 main .covid_section a {
   color: red;
   font-size: 18px;
@@ -1660,10 +1667,6 @@ main .covid_section a {
 
 .editor_container_no_medical_user .editor_wrapper {
   justify-content: center
-}
-
-.covid_sidebar_content_wrapper {
-  display: none
 }
 
 @media (max-width:1024px) {
@@ -6785,7 +6788,7 @@ nav a {
 .search_query_shortcode_element {
   display: flex;
   flex-direction: column;
-  padding: 10px 0
+  padding: 10px 0 12px 0;
 }
 
 .search_query_shortcode_content_container ul {
