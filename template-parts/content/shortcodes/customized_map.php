@@ -35,6 +35,7 @@ $centerSelection = get_field('customized_map_center_options');
                         <p>Breathtaking seaside views</p>
                     </li>
                 </ul>
+                <a class="invocaNumber customziedMapPhoneCta" href="tel:949-276-2886">949-276-2886</a>
             <?php elseif ($centerSelection == "Lincoln Recovery") :
                 $checkmarkIcon = '/assets/images/icons/checkmark_icon_lincoln.png'; ?>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/lincoln_map.jpg' ?>" alt="">
