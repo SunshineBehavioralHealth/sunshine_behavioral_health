@@ -23,9 +23,8 @@ $medicalReviewMetaBio =  $medicalReviewerMetaData['description'][0];
 
     <div class="editor_container <?php if (!get_field("medical_review_user")) echo "editor_container_no_medical_user"; ?>">
         <div class="editor_wrapper">
-            <div id="editor_avatar_reference" class="<?php if (get_field("medical_review_user")) echo "hide_on_mobile"; ?>">
+            <div id="editor_avatar_reference" class="">
                 <img src="<?php echo $authorAvatar['url'] ?>" alt="" loading="lazy">
-
             </div>
             <div class="editor_meta_wrapper">
                 <p class="editor_last_date"><span class="editor_last_date_span">Last Edited: </span><span class="editor_last_edit_date"><?php echo get_field('last_edited_date'); ?></span></p>
