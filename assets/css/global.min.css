@@ -1221,7 +1221,7 @@ nav ul#primary-menu li ul li ul li a {
   position: relative
 }
 
-@media(max-width:700) {
+@media(max-width:700px) {
   #editor_avatar_reference img {
     display: none;
   }
