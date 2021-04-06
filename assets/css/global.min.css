@@ -7824,7 +7824,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 }
 
 .sources_section {
-  padding: 0;
+  padding: 0 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -7849,6 +7849,12 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 
 .sources_wrapper {
   width: 100%;
+}
+
+@media(min-width:1024px) {
+  .sources_section {
+    padding: 0;
+  }
 }
 
 .hidden_label label {
