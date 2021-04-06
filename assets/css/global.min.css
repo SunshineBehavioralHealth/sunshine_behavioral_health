@@ -1221,6 +1221,12 @@ nav ul#primary-menu li ul li ul li a {
   position: relative
 }
 
+@media(max-width:700) {
+  #editor_avatar_reference img {
+    display: none;
+  }
+}
+
 .medical_review_container .medical_review_wrapper {
   display: flex;
   flex-direction: row;
