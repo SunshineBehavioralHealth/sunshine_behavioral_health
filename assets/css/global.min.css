@@ -1420,7 +1420,7 @@ nav ul#primary-menu li ul li ul li a {
   background-color: #cdcdcd;
   height: 1px;
   width: 100%;
-  margin: 0 auto 10px auto
+  margin: 10px auto 10px auto
 }
 
 .page_grid aside {
@@ -1437,7 +1437,6 @@ nav ul#primary-menu li ul li ul li a {
 
 .medical_review_container {
   min-width: 250px;
-  border-left: 2px solid #cdcdcd;
 }
 
 .editor_and_review_section p {
