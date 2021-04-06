@@ -1585,7 +1585,15 @@ nav ul#primary-menu li ul li ul li a {
   display: flex;
   justify-content: center;
   background-color: var(--primary_color);
-  color: var(--primary_color);
+  color: #fff;
+  padding: 10px 15px;
+  margin: 15px auto 0 auto;
+  max-width: 200px;
+}
+
+.covid_sidebar_content_wrapper .covid_sidebar_cta:hover {
+  background-color: var(--tertiary_color);
+  color: var(--secondary_color);
 }
 
 main .covid_section a {
