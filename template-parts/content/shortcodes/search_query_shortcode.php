@@ -17,7 +17,7 @@
         );
         $related = new WP_Query($related_args);
 
-        $postTitle = the_title();
+
 
         if ($related->have_posts()) :
         ?>
@@ -28,7 +28,7 @@
 
                         <li class="search_query_shortcode_element">
                             <a href="<?php the_permalink(); ?>">
-                                <h6><?php shorten_string($postTitle, 50); ?><?php if (strlen($postTitle) > 50) echo "..." ?></h6>
+                                <h6><?php shorten_string(the_title(), 50); ?><?php if (strlen(the_title()) > 50) echo "..." ?></h6>
                                 <img src='<?php the_post_thumbnail_url(); ?>' alt="">
                             </a>
                         </li>
