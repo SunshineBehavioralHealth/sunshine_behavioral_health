@@ -6486,6 +6486,7 @@ input.invalid {
 
 .related_pages_section.related_pages_series_section .related_pages_wrapper {
   border: 2px solid var(--secondary_color);
+  padding: 15px 15px 0 15px;
 }
 
 .related_pages_section .related_pages_element {
@@ -6501,7 +6502,8 @@ input.invalid {
 
 .related_pages_section.related_pages_series_section .related_pages_element {
   justify-content: start;
-  padding: 15px 10px 0px 15px;
+  padding: 0;
+  margin-bottom: 15px;
 }
 
 .related_pages_section.related_pages_section_nonsidebar .related_pages_element:hover {
