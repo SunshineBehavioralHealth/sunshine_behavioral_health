@@ -44,7 +44,7 @@ get_template_part('template-parts/javascript/navigationJs');
 
 		<!-- Covid Notice -->
 		<section class="covid_section hide_on_desktop">
-			<a href="/our-response-to-the-corona-virus-health-concern/">Learn about Our Covid response</a>
+			<a href="/our-response-to-the-corona-virus-health-concern/">Our Response to COVID-19</a>
 		</section>
 
 

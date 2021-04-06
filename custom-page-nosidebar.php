@@ -40,7 +40,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 
 		<!-- Covid Notice -->
 		<section class="covid_section hide_on_desktop">
-			<a href="/our-response-to-the-corona-virus-health-concern/">Learn about Our Covid response</a>
+			<a href="/our-response-to-the-corona-virus-health-concern/">Our Response to COVID-19</a>
 		</section>
 
 		<!-- Medical Review -->
