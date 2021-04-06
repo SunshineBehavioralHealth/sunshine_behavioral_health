@@ -43,13 +43,13 @@ $centerSelection = get_field('customized_map_center_options');
                         <p>Cell phone and laptop friendly</p>
                     </li>
                     <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Full service detox to Full-service detox and treatment</p>
+                        <p>Full-service detox and treatment</p>
                     </li>
                     <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
                         <p>Relaxing environment</p>
                     </li>
                     <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Group conseling to Counselors and doctors on staff</p>
+                        <p>Counselors and doctors on staff</p>
                     </li>
                     <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
                         <p>Private Rooms Available</p>

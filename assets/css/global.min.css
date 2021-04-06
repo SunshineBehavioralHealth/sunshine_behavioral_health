@@ -7264,7 +7264,8 @@ main .list_and_cta_section {
     white-space: nowrap;
   }
   .list_and_cta_bottom_container {
-    flex-direction: row
+    flex-direction: row;
+    margin-top: 15px;
   }
   .list_and_cta_section.sidebar_shortcode .list_and_cta_bottom_container {
     flex-direction: column
@@ -7647,6 +7648,8 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   list-style: none;
   line-height: 1.2;
   margin-bottom: 5px;
+  padding: 2.5px 0;
+  margin-bottom: 0;
 }
 
 .customized_map_left_wrapper li p {
