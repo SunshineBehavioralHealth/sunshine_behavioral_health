@@ -43,12 +43,6 @@ $medicalReviewMetaBio =  $medicalReviewerMetaData['description'][0];
 
         </div>
     </div>
-
-    <?php if (get_field("medical_review_user")) : ?>
-        <div class="medical_review_middle_spacer hide_on_desktop"></div>
-
-    <?php endif; ?>
-
 <?php endif; ?>
 
 <?php if (get_field("medical_review_user")) : ?>

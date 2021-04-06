@@ -890,10 +890,6 @@ nav ul li ul li ul {
   margin: auto auto
 }
 
-.top_level_nav_1 {
-  border-left: none
-}
-
 .top_level_nav_5 {
   border-right: none
 }
@@ -979,7 +975,8 @@ nav ul#primary-menu li ul li ul li a {
     justify-content: center;
     padding: 10px;
     height: 60px;
-    margin: 10px 0 0 0
+    margin: 10px 0 0 0;
+    border-right: 2px solid var(--secondary_color);
   }
   .search_bar_container:hover {
     background-color: #e4eff7
@@ -999,7 +996,9 @@ nav ul#primary-menu li ul li ul li a {
   }
   .nav_bottom_container .navigation_wrapper {
     background-color: #fff;
-    position: relative
+    position: relative;
+    max-width: 1250px;
+    margin: 0 auto;
   }
   .top_level_nav_item {
     padding: 0 30px 0 30px
@@ -1194,9 +1193,9 @@ nav ul#primary-menu li ul li ul li a {
 .nav_top_wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
-  max-width: 1400px
+  max-width: 1250px
 }
 
 .showNav {
@@ -1437,7 +1436,8 @@ nav ul#primary-menu li ul li ul li a {
 }
 
 .medical_review_container {
-  min-width: 250px
+  min-width: 250px;
+  border-left: #cdcdcd;
 }
 
 .editor_and_review_section p {
@@ -7855,14 +7855,17 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 
 .sources_section img.sources_plus_icon {
   height: 20px;
-  margin: auto 5px;
-  position: absolute;
-  top: 0;
-  left: 100px;
+  margin-left: 5px;
+  display: flex;
 }
 
 .sources_section ul {
   padding-left: 0;
+}
+
+.sources_section ul li {
+  list-style-type: disc;
+  margin-left: 15px;
 }
 
 .sources_wrapper {
