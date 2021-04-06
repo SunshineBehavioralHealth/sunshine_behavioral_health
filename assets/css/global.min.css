@@ -7264,11 +7264,9 @@ main .list_and_cta_section {
     white-space: nowrap;
   }
   .list_and_cta_bottom_container {
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 15px;
-  }
-  .list_and_cta_section.sidebar_shortcode .list_and_cta_bottom_container {
-    flex-direction: column
+    align-items: center;
   }
   .list_and_cta_list_element_wrapper {
     width: 100%;
@@ -7279,7 +7277,7 @@ main .list_and_cta_section {
     margin: 0 auto
   }
   .insurance_list_and_cta .list_and_cta_bottom_container p {
-    margin: 10px 25px 10px 0
+    margin: 0 auto;
   }
   .list_and_cta_bottom .list_and_cta_list_wrapper .list_and_cta_list_element img {
     margin-right: 10px
@@ -7614,6 +7612,16 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 .customized_map_right_wrapper {
   width: 100%;
   position: relative;
+}
+
+.customized_map_left_wrapper .customzied_map_cta {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary_color);
+  max-width: 200px;
+  margin: 7.5px auto 15px auto;
+  padding: 10px 15px;
+  color: #fff;
 }
 
 .customized_map_right_wrapper p {
