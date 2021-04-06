@@ -1452,7 +1452,7 @@ nav ul#primary-menu li ul li ul li a {
   margin-top: 10px;
 }
 
-@media (min-width:768px) {
+@media (min-width:700px) {
   .editor_and_review_section p, .editor_meta_wrapper .editor_last_date, .medical_review_meta_wrapper .medical_review_last_date, .page_wrapper .editor_meta_name, .page_wrapper .medical_review_meta_title {
     font-size: 14px;
     white-space: nowrap;
