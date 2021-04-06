@@ -95,7 +95,7 @@ $centerSelection = get_field('customized_map_center_options');
                         <p>Relaxing environment</p>
                     </li>
                     <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Group counseling to mountainside views</p>
+                        <p>Mountainside views</p>
                     </li>
                     <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
                         <p>Joint Commission accreditation</p>
