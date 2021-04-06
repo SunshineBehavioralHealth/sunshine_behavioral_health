@@ -26,7 +26,7 @@
 
                         <li class="search_query_shortcode_element">
                             <a href="<?php the_permalink(); ?>">
-                                <h6><?php shorten_string(the_title(), 10);  ?></h6>
+                                <h6><?php echo mb_strimwidth(get_the_title(), 0, 50, '...');  ?></h6>
                                 <img src='<?php the_post_thumbnail_url(); ?>' alt="">
                             </a>
 
