@@ -1,6 +1,6 @@
 <section class="state_table_section">
+    <h4>Find an Addiction Treatment Resource in Your Home State</h4>
     <div class="state_table_container">
-        <h4>Find an Addiction Treatment Resource in Your Home State</h4>
         <div class="state_table_states_wrapper">
             <div class="state_table_element">
                 <a href="/alabama">Alabama</a>
