@@ -5082,8 +5082,12 @@ blockquote p {
   text-shadow: 1px 1px 1px grey;
 }
 
-.related_pages_headline.related_pages_series_section h4 {
+.related_pages_series_section h4 {
   font-size: 20px;
+}
+
+.related_pages_series_section .related_pages_headline {
+  padding: 7.5px 0;
 }
 
 .related_pages_headline p {
