@@ -101,11 +101,12 @@ p {
 
 ol, ul {
   font-size: 16px;
-  padding-inline-start: 20px
+  padding-inline-start: 20px;
 }
 
 li {
-  font-size: 16px
+  font-size: 16px;
+  padding: 5px 0;
 }
 
 @media (min-width:768px) {
@@ -6816,7 +6817,7 @@ nav a {
 
 .search_query_shortcode_section .search_query_shortcode_button {
   padding: 10px 20px;
-  background-color: var(--secondary_color);
+  background-color: var(--primary_color);
   color: #fff;
   margin: 15px auto -15px auto;
   max-width: 150px;
