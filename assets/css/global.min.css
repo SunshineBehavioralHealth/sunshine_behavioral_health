@@ -3422,7 +3422,7 @@ select {
 
 @media (max-width:768px) {
   .image_cta_wrapper img {
-    min-height: 320px;
+    min-height: 350px;
     height: auto
   }
 }
@@ -7844,11 +7844,12 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 }
 
 .sources_section {
-  padding: 0 20px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   position: relative;
+  background-color: #e4eff7;
 }
 
 .sources_section h4 {
