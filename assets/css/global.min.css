@@ -945,16 +945,15 @@ nav ul#primary-menu li ul li ul li a {
   }
   .nav_top_container .nav_notice_and_cta_wrapper .navbar_cta_container {
     color: #fff;
-    padding: 5px 10px;
+    padding: 10px;
     -webkit-box-shadow: 0 0 8px #aeaeae;
     box-shadow: 0 0 8px #aeaeae;
     border-radius: 2px;
     text-align: center;
     font-size: 20px;
     font-weight: 900;
-    background-color: var(--secondary_color);
+    background-color: var(--primary_color);
     min-width: 185px;
-    margin-right: 15px
   }
   .nav_top_container .nav_notice_and_cta_wrapper .navbar_cta_container:hover {
     background-color: var(--tertiary_color);
@@ -989,7 +988,7 @@ nav ul#primary-menu li ul li ul li a {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    margin: 0 auto
+    margin: 10px auto 5px auto;
   }
   .nav_bottom_container .navigation_wrapper .nav_width_constrict_wrapper {
     max-width: 1400px;
@@ -1394,7 +1393,7 @@ nav ul#primary-menu li ul li ul li a {
   color: #fff;
   font-weight: 500;
   font-size: 16px;
-  padding-top: 25px;
+  padding-top: 15px;
   text-shadow: 1px 1px 1px grey;
   width: 95%;
   margin: 0 auto;
@@ -5083,7 +5082,6 @@ blockquote p {
   text-shadow: 1px 1px 1px grey;
 }
 
-
 .related_pages_series_section .related_pages_headline {
   padding: 7.5px 0;
 }
@@ -6474,7 +6472,7 @@ input.invalid {
 }
 
 .related_pages_section.related_pages_series_section .related_pages_wrapper {
-  border: 2px solid var(--primary_color);
+  border: 2px solid var(--secondary_color);
 }
 
 .related_pages_section .related_pages_element {
@@ -6508,7 +6506,7 @@ input.invalid {
 
 .related_pages_section.related_pages_series_section .related_pages_element p {
   margin: 0 0 0 10px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .related_pages_section.related_pages_series_section .related_pages_element p:hover {
@@ -7737,7 +7735,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 
 .faq_sidebar_container h5 {
   color: var(--primary_color);
-  text-align: left;
+  text-align: center;
   font-size: 20px;
   margin: 0 0 15px;
 }
@@ -7846,7 +7844,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   margin: auto 5px;
   position: absolute;
   top: 0;
-  left: 75px;
+  left: 100px;
 }
 
 .sources_section ul {
@@ -7873,10 +7871,11 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   margin: 0 auto;
   color: #fff;
   text-shadow: 1px 1px 1px grey;
+  width: 97%;
 }
 
 .hero_banner_container p {
-  text-align: center;
+  text-align: left;
   color: #fff;
 }
 
