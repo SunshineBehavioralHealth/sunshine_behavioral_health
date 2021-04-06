@@ -95,7 +95,7 @@ $centerSelection = get_field('customized_map_center_options');
                         <p>Relaxing environment</p>
                     </li>
                     <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Group counseling to Moutian side views</p>
+                        <p>Group counseling to mountainside views</p>
                     </li>
                     <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
                         <p>Joint Commission accreditation</p>
@@ -139,7 +139,7 @@ $centerSelection = get_field('customized_map_center_options');
                 <?php elseif ($centerSelection == "Monarch Shores") : ?>
                     <p>Our closest facility is in California</p>
                 <?php elseif ($centerSelection == "Mountain Springs Recovery") : ?>
-                    <p>Our closest facility is in Colroado</p>
+                    <p>Our closest facility is in Colorado</p>
                 <?php elseif ($centerSelection == "Wilow Springs Recovery") : ?>
                     <p>Our closest facility is in Texas</p>
                 <?php endif; ?>

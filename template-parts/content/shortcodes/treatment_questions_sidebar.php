@@ -1,4 +1,4 @@
-<section class="treatment_questions_sidebar_section">
+<section class="treatment_questions_sidebar_section hide_on_mobile">
     <div class="treatment_questions_sidebar_container">
         <h4>Have Questions about treatment?</h4>
         <p>Phone Lines Open 24/7</p>

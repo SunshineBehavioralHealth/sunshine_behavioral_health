@@ -66,7 +66,7 @@ h1 {
 
 h2 {
   font-size: 26px;
-  color: var(--primary_color);
+  color: var(--secondary_color);
   margin-top: 20px
 }
 
@@ -3907,7 +3907,7 @@ select {
 
 .headline_and_button_sidebar_shortcode_section a {
   color: #fff;
-  background-color: var(--secondary_color);
+  background-color: var(--primary_color);
   padding: 10px 15px
 }
 
@@ -5077,9 +5077,13 @@ blockquote p {
 .related_pages_headline h4 {
   color: #fff;
   margin: 0;
-  text-align: left;
+  text-align: center;
   font-size: 22px;
   text-shadow: 1px 1px 1px grey;
+}
+
+.related_pages_headline.related_pages_series_section h4 {
+  font-size: 20px;
 }
 
 .related_pages_headline p {
@@ -7731,7 +7735,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 
 .faq_sidebar_container h5 {
   color: var(--primary_color);
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   margin: 0 0 15px;
 }

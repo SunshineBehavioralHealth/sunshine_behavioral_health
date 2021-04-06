@@ -195,11 +195,11 @@
             </div>
 
             <div class="state_table_element">
-                <a href="/alaska">Wisconsin</a>
+                <a href="/wisconsin">Wisconsin</a>
             </div>
 
             <div class="state_table_element">
-                <a href="/alaska">Wyoming</a>
+                <a href="/wyoming">Wyoming</a>
             </div>
         </div>
     </div>
