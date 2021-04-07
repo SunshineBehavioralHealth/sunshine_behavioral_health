@@ -1610,7 +1610,7 @@ main .covid_section a {
   background-color: #f8f8f8;
   margin-right: 25px;
   max-width: 100%;
-  margin-top: 15px;
+  margin-top: 0;
   position: relative;
   color: var(--secondary_color);
   border: outset 2px var(--secondary_color);
