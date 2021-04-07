@@ -7870,7 +7870,8 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 }
 
 .sources_section {
-  padding: 10px;
+  padding: 20px;
+  margin-top: 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -7884,7 +7885,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 
 .sources_section img.sources_plus_icon {
   height: 20px;
-  margin-left: 5px;
+  margin: auto 0 auto 5px;
   display: flex;
 }
 
@@ -7899,12 +7900,6 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 
 .sources_wrapper {
   width: 100%;
-}
-
-@media(min-width:1024px) {
-  .sources_section {
-    padding: 0;
-  }
 }
 
 .hidden_label label {
@@ -7932,6 +7927,12 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 .hero_banner_container img {
   height: 300px;
   width: 100%;
+}
+
+@media(min-width:1024px) {
+  .sources_section {
+    padding: 10px;
+  }
 }
 
 @media(min-width: 500px) {
