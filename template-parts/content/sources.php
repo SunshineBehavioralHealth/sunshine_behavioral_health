@@ -5,6 +5,6 @@
         <img class="sources_plus_icon" src="<?php echo get_template_directory_uri() . '/assets/images/icons/plus_icon_blue.png' ?>" alt="">
         <div class="sources_wrapper hide">
             <?php echo get_field('references') ?>
-        </div>1
+        </div>
     </section>
 <?php endif; ?>
