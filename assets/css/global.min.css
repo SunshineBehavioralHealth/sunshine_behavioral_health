@@ -1617,6 +1617,10 @@ main .covid_section a {
   padding: 10px 25px
 }
 
+ol.toc {
+  margin-left: 0;
+}
+
 .toc h5 {
   margin-right: -5px
 }
@@ -1630,7 +1634,8 @@ main .covid_section a {
 
 .toc li {
   line-height: 1.5;
-  margin-left: .8em
+  margin-left: .8em;
+  padding: 0;
 }
 
 .toc li a {
@@ -7922,6 +7927,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 .hero_banner_container p {
   text-align: left;
   color: #fff;
+  width: 100%;
 }
 
 .hero_banner_container {
