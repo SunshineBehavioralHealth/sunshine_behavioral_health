@@ -6856,7 +6856,7 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto 25px auto
+  margin: 10px auto 10px auto;
 }
 
 .data_cards_indv_card h5 {
@@ -7687,7 +7687,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 .state_table_wrapper {
   background: #e4eff7;
   padding: 10px;
-  margin: 25px 0;
+  margin: 0;
 }
 
 .state_table_container {
@@ -7715,9 +7715,8 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 }
 
 .state_table_section h4 {
-  margin: 10px 0;
+  margin: 0;
   color: var(--secondary_color);
-  flex: 1;
 }
 
 .state_table_container img {
