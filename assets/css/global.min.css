@@ -7891,6 +7891,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 
 .sources_section h4 {
   margin: 0;
+  color: var(--secondary_color);
 }
 
 .sources_section img.sources_plus_icon {
