@@ -1359,6 +1359,10 @@ nav ul#primary-menu li ul li ul li a {
   margin: 0
 }
 
+.page_wrapper ul, .page_wrapper ol {
+  margin-left: 10px;
+}
+
 .page_wrapper .medical_review_meta_name {
   font-size: 12px;
   font-weight: 600;
@@ -7876,7 +7880,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   flex-direction: row;
   flex-wrap: wrap;
   position: relative;
-  background-color: #e4eff7;
+  background-color: #f8f8f8;
 }
 
 .sources_section h4 {
@@ -8017,7 +8021,8 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 @media(min-width: 768px) {
   .hero_banner_container h1 {
     text-align: left;
-    white-space: nowrap;
+    white-space: wrap;
+    width: 100%;
   }
   .hero_banner_container p {
     text-align: left;
