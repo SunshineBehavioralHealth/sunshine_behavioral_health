@@ -2,7 +2,6 @@
     <div class="list_and_cta_container">
         <div class="list_and_cta_top">
             <h5>Learn More About Your Insurance Coverage</h5>
-            <p>Check Your Insurance</p>
         </div>
         <div class="list_and_cta_bottom">
             <div class="list_and_cta_list_wrapper">
