@@ -18,9 +18,6 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
 
 ?>
 
-<?php get_template_part('template-parts/content/googleTranslate'); ?>
-
-<?php endif; ?>
 
 <main id="primary" class="maxWidth insurance_verification_page">
     <div class="page_image">
