@@ -18,20 +18,8 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
 
 ?>
 
-<?php if (get_field('has_google_translate')) : ?>
-    <div id="google_translate_element"></div>
-    <script>
-        function googleTranslateElementInit() {
+<?php get_template_part('template-parts/content/googleTranslate'); ?>
 
-            new google.translate.TranslateElement({
-
-                pageLanguage: 'en'
-
-            }, 'google_translate_element');
-
-        }
-    </script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <?php endif; ?>
 
 <main id="primary" class="maxWidth insurance_verification_page">

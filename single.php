@@ -22,7 +22,6 @@ get_template_part('template-parts/javascript/tableOfContents');
 
 
 
-<?php get_template_part('template-parts/content/googleTranslate'); ?>
 
 <main id="primary" class="site-main single_post_main">
 
@@ -44,6 +43,8 @@ get_template_part('template-parts/javascript/tableOfContents');
 				</section>
 
 				<section class="page_content">
+					<?php get_template_part('template-parts/content/googleTranslate'); ?>
+
 					<?php the_content(); ?>
 				</section>
 

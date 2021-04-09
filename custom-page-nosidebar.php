@@ -18,7 +18,6 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 
 ?>
 
-<?php get_template_part('template-parts/content/googleTranslate'); ?>
 
 <main id="primary" class="maxWidth">
 	<div class="custom_page_noSideBar_wrapper">
@@ -47,6 +46,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 		</section>
 
 		<section class="page_content list_styling ipad_width_restriction">
+			<?php get_template_part('template-parts/content/googleTranslate'); ?>
 			<?php echo get_field('content') ?>
 		</section>
 

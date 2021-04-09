@@ -21,7 +21,6 @@ get_template_part('template-parts/javascript/navigationJs');
 
 ?>
 
-<?php get_template_part('template-parts/content/googleTranslate'); ?>
 
 <main id="primary" class="has_sidebar_border">
 
@@ -45,6 +44,7 @@ get_template_part('template-parts/javascript/navigationJs');
 
 			<!-- Page Content -->
 			<section class="page_content list_styling ipad_width_restriction">
+				<?php get_template_part('template-parts/content/googleTranslate'); ?>
 				<?php echo get_field('content') ?>
 			</section>
 

@@ -45,7 +45,6 @@ get_template_part('template-parts/javascript/navigationJs');
 
 			<!-- Page Content -->
 			<section class="page_content list_styling ipad_width_restriction">
-				<?php get_template_part('template-parts/content/mobileCovidNotice'); ?>
 				<?php get_template_part('template-parts/content/googleTranslate'); ?>
 				<?php echo get_field('content') ?>
 			</section>
