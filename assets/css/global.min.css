@@ -5996,10 +5996,14 @@ aside {
 @media (min-width:768px) {
   .fixed_sidebar {
     background-color: #fff;
-    position: fixed;
+    position: absolute;
     height: auto;
     max-width: 25%!important;
-    margin-top: 20px
+    margin-top: 0;
+  }
+  aside .fixedSidebarPositionFixed {
+    position: fixed;
+    top: 20%;
   }
 }
 
@@ -6735,7 +6739,7 @@ nav a {
   max-width: 1250px;
   margin: 0 auto;
   display: flex;
-  justify-content: flex-end
+  justify-content: flex-start;
 }
 
 .learn_centers_sidebar_bottom_cta {

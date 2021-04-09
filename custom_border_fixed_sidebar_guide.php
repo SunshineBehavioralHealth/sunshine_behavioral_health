@@ -17,6 +17,8 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 
 get_template_part('template-parts/javascript/tableOfContents');
 get_template_part('template-parts/javascript/navigationJs');
+get_template_part('template-parts/javascript/fixedSidebarJs');
+
 
 
 ?>
