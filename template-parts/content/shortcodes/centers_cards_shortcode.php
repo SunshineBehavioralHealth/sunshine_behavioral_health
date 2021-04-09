@@ -1,14 +1,14 @@
 <section class="treatment_centers_section">
     <div class="treatment_centers_container row ">
         <?php if (get_field('treatment_centers_headline')) : ?>
-            <h2 class="col-12"><?php echo get_field('treatment_centers_headline') ?></h2>
+            <h3 class="col-12"><?php echo get_field('treatment_centers_headline') ?></h2>
         <?php else : ?>
-            <h2>OUR TREATMENT CENTERS</h2>
+            <h3>OUR TREATMENT CENTERS</h2>
         <?php endif; ?>
         <?php if (get_field('treatment_centers_subheadline')) : ?>
-            <h3><?php echo get_field('treatment_centers_subheadline') ?></h3>
+            <h4><?php echo get_field('treatment_centers_subheadline') ?></h3>
         <?php else : ?>
-            <h3>All of our facilities offer their own unique experiences while supplying the highest quality of care and comfort.</h3>
+            <h4>All of our facilities offer their own unique experiences while supplying the highest quality of care and comfort.</h3>
         <?php endif; ?>
         <div class="treatment_center_container">
 

@@ -43,9 +43,7 @@ get_template_part('template-parts/javascript/navigationJs');
 		<?php endif; ?>
 
 		<!-- Covid Notice -->
-		<section class="covid_section hide_on_desktop">
-			<a href="/our-response-to-the-corona-virus-health-concern/">Our Response to COVID-19</a>
-		</section>
+		<?php get_template_part('template-parts/content/mobileCovidNotice'); ?>
 
 
 		<section class="page_content list_styling ipad_width_restriction">

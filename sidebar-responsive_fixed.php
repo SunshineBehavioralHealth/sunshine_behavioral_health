@@ -18,8 +18,6 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-sidebar',
 
 ?>
 <aside id="secondary" class="primary-sidebar widget-area sidebar_z_index sidebar_margin_top">
-
-
 	<div class="responsive_sidebar_container fixed_sidebar responsive_fixed_sidebar">
 		<?php echo get_field('custom_sidebar') ?>
 		<?php if (is_page_template('custom_border_fixed_sidebar_guide.php')) : ?>
@@ -29,7 +27,4 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-sidebar',
 
 		<?php endif; ?>
 	</div>
-
-
-
 </aside><!-- #secondary -->

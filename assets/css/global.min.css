@@ -7529,7 +7529,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   margin-right: 5px;
 }
 
-.customize_expereince_container {
+.customize_experience_container {
   background-color: var(--secondary_color);
   display: flex;
   flex-direction: column;
@@ -7537,7 +7537,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   position: relative;
 }
 
-.customize_expereince_container h4 {
+.customize_experience_container h4 {
   text-align: center;
   margin-top: 0;
   color: #fff;
@@ -7565,7 +7565,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   width: 100%;
 }
 
-.customize_expereince_container a#customize_experience_submit {
+.customize_experience_container a#customize_experience_submit {
   color: #fff;
   background-color: var(--primary_color);
   padding: 10px 15px;
@@ -7578,7 +7578,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   font-size: 20px;
 }
 
-.customize_expereince_reset_btn {
+.customize_experience_reset_btn {
   position: absolute;
   right: 0;
   top: 0;
@@ -7587,11 +7587,11 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   border: none;
 }
 
-.customize_expereince_reset_btn span {
+.customize_experience_reset_btn span {
   color: #fff;
 }
 
-.customize_expereince_reset_btn img {
+.customize_experience_reset_btn img {
   margin: 0 auto;
 }
 
@@ -7628,10 +7628,11 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   display: flex;
   justify-content: center;
   background-color: var(--primary_color);
-  max-width: 200px;
+  max-width: 300px;
   margin: 7.5px auto 15px auto;
   padding: 10px 15px;
   color: #fff;
+  text-align: center;
 }
 
 .customized_map_left_wrapper .customzied_map_cta:hover {
@@ -7838,7 +7839,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
     text-align: center;
     color: #fff;
   }
-  .customize_expereince_reset_btn {
+  .customize_experience_reset_btn {
     position: absolute;
     right: 0;
     top: 0;

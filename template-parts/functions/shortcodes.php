@@ -547,6 +547,15 @@ function insurance_list_and_cta_static_sidebar()
 
 add_shortcode('insurance_list_and_cta_static_sidebar', 'insurance_list_and_cta_static_sidebar');
 
+function insurance_list_and_cta_universal()
+{
+	ob_start();
+	get_template_part('template-parts/content/shortcodes/insurance_list_and_cta_universal');
+	return ob_get_clean();
+}
+
+add_shortcode('insurance_list_and_cta_universal', 'insurance_list_and_cta_universal');
+
 function image_left_cta_right_shortcode_COVID()
 {
 	ob_start();

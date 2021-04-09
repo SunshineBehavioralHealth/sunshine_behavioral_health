@@ -20,7 +20,7 @@ get_template_part('template-parts/javascript/navigationJs');
 
 ?>
 
-<?php get_template_part('template-parts/content/googleTranslate'); ?>
+
 
 
 <main id="primary" class="">
@@ -35,9 +35,8 @@ get_template_part('template-parts/javascript/navigationJs');
 	<div class="page_grid">
 		<div class="page_wrapper">
 			<!-- Covid Notice -->
-			<section class="covid_section hide_on_desktop">
-				<a href="/our-response-to-the-corona-virus-health-concern/">Our Response to COVID-19</a>
-			</section>
+			<?php get_template_part('template-parts/content/mobileCovidNotice'); ?>
+
 
 			<!-- Medical Review -->
 			<section class="editor_and_review_section hide_on_desktop">
@@ -46,6 +45,8 @@ get_template_part('template-parts/javascript/navigationJs');
 
 			<!-- Page Content -->
 			<section class="page_content list_styling ipad_width_restriction">
+				<?php get_template_part('template-parts/content/mobileCovidNotice'); ?>
+				<?php get_template_part('template-parts/content/googleTranslate'); ?>
 				<?php echo get_field('content') ?>
 			</section>
 

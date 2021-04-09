@@ -42,9 +42,7 @@ get_template_part('template-parts/javascript/navigationJs');
 		</div>
 
 		<!-- Covid Notice -->
-		<section class="covid_section hide_on_desktop">
-			<a href="/our-response-to-the-corona-virus-health-concern/">Our Response to COVID-19</a>
-		</section>
+		<?php get_template_part('template-parts/content/mobileCovidNotice'); ?>
 
 		<!-- Medical Review -->
 		<section class="editor_and_review_section hide_on_desktop">
