@@ -6001,6 +6001,10 @@ aside {
     max-width: 25%!important;
     margin-top: 0;
   }
+  
+}
+
+@media(min-width: 1024px){
   aside .fixedSidebarPositionFixed {
     position: fixed;
     top: 20%;
