@@ -18,25 +18,24 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 //TOC
 get_template_part('template-parts/javascript/tableOfContents');
 get_template_part('template-parts/javascript/navigationJs');
-
-
 ?>
 
-
-
-<main id="primary" class="has_sidebar_border">
-
-
-	<div class="hero_banner_container">
-		<img class="page_mobile_image hero_image hide_on_desktop hide_on_tablet" src="<?php echo get_field('mobile_image')['url']; ?>">
-		<div class="hero_banner_headlines_container">
+<main id="primary" class="site-main has_sidebar_border">
+	<div class="page_wrapper">
+		<div class="page_image">
+			<img class="page_desktop_image hero_image hide_on_mobile show_on_tablet" src="<?php echo get_field('desktop_image')['url']; ?>">
+			<img class="page_mobile_image hero_image hide_on_desktop hide_on_tablet" src="<?php echo get_field('mobile_image')['url']; ?>">
+			<div class="page_mobile_image_text_and_cta_container">
+				<h1><?php echo get_field('page_headline') ?></h1>
+				<p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
+			</div>
+		</div>
+		<div class="hide_on_mobile">
 			<h1><?php echo get_field('page_headline') ?></h1>
 			<p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
 		</div>
 
-	</div>
-	<div class="page_grid">
-		<div class="page_wrapper">
+		<div class="page_content_below_image">
 			<!-- Covid Notice -->
 			<?php get_template_part('template-parts/content/mobileCovidNotice'); ?>
 
@@ -64,8 +63,8 @@ get_template_part('template-parts/javascript/navigationJs');
 				<p>Call 24/7: <a class="invocaNumber bottomPagePhone" href="tel:949-276-2886"> 949-276-2886</a></p>
 			</section>
 		</div>
-		<?php get_sidebar('responsive'); ?>
 	</div>
+	<?php get_sidebar('responsive'); ?>
 </main><!-- #primary -->
 <?php
 get_footer();
