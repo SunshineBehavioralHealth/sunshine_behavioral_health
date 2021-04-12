@@ -1577,6 +1577,8 @@ nav ul#primary-menu li ul li ul li a {
 
 .mobile_covid_notice_section {
   width: 100%;
+  display: flex;
+  margin-top: 10px;
 }
 
 .mobile_covid_notice_section .mobile_covid_notice_container {
