@@ -23,22 +23,8 @@ get_template_part('template-parts/javascript/fixedSidebarJs');
 
 ?>
 
-
-<main id="primary" class="has_sidebar_border">
+<main id="primary" class="site-main">
 	<div class="page_wrapper">
-		<div class="page_image">
-			<img class="page_desktop_image hero_image hide_on_mobile show_on_tablet" src="<?php echo get_field('desktop_image')['url']; ?>">
-			<img class="page_mobile_image hero_image hide_on_desktop hide_on_tablet" src="<?php echo get_field('mobile_image')['url']; ?>">
-			<div class="page_mobile_image_text_and_cta_container">
-				<h1><?php echo get_field('page_headline') ?></h1>
-				<p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
-			</div>
-		</div>
-		<div class="hide_on_mobile show_on_tablet page_headlines_desktop">
-			<h1><?php echo get_field('page_headline') ?></h1>
-			<p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
-		</div>
-
 		<!-- Covid Notice -->
 		<?php get_template_part('template-parts/content/mobileCovidNotice'); ?>
 
@@ -65,9 +51,8 @@ get_template_part('template-parts/javascript/fixedSidebarJs');
 			<h4>Talk with one of our Treatment Specialists!</h4>
 			<p>Call 24/7: <a class="invocaNumber bottomPagePhone" href="tel:949-276-2886"> 949-276-2886</a></p>
 		</section>
-
 	</div>
-	<?php responsive_fixed(); ?>
-</main><!-- #primary -->
+	<?php get_sidebar('responsive_fixed'); ?>
+</main>
 <?php
 get_footer();

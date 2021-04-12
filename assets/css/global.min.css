@@ -6094,7 +6094,7 @@ input {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around
+  justify-content: space-between;
 }
 
 .treatment_center_card_container {
@@ -6118,7 +6118,7 @@ input {
 
 @media (min-width:1024px) {
   .treatment_center_card_container {
-    width: 30%
+    width: 23%
   }
   .treatment_center_card_content_wrapper {
     display: flex;
