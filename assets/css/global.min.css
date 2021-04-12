@@ -1575,14 +1575,18 @@ nav ul#primary-menu li ul li ul li a {
   }
 }
 
-.covid_section {
-  border: 1px solid red;
+.mobile_covid_notice_section {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin: 25px auto;
+}
+
+.mobile_covid_notice_section .mobile_covid_notice_container {
+  padding: 0 20px;
+  border: 1px solid red;
 }
 
 .covid_sidebar_content_wrapper .covid_sidebar_cta {
