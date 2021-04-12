@@ -18,7 +18,5 @@ $AuthorUser = get_field("editor_user");
         'event': 'trackerReady',
         'client_id': googleCID,
         'pagePostAuthor': "<?php echo $AuthorUser['display_name']; ?>"
-
-
     });
 </script>
