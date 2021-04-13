@@ -6012,6 +6012,7 @@ aside {
     height: auto;
     margin-top: 0;
     position: absolute;
+    max-width: 375px;
   }
   aside .fixedSidebarPositionFixed {
     position: fixed;
