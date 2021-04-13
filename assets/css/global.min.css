@@ -891,7 +891,7 @@ nav ul li ul li ul {
 }
 
 .top_level_nav_5 {
-  border-right: none
+  border-right: 2px solid var(--secondary_color)
 }
 
 .top_level_nav_5 a {
@@ -1130,9 +1130,6 @@ nav ul#primary-menu li ul li ul li a {
   }
   .top_level_nav_item:hover a {
     text-decoration: none
-  }
-  .top_level_nav_5 {
-    border-right: 2px solid var(--secondary_color)
   }
   .sub_menu_wrapper {
     position: absolute;
