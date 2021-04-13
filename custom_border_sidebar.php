@@ -65,6 +65,6 @@ get_template_part('template-parts/javascript/navigationJs');
 		</div>
 	</div>
 	<?php get_sidebar('responsive'); ?>
-</main><!-- #primary -->
+</main>
 <?php
 get_footer();

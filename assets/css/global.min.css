@@ -1407,7 +1407,6 @@ nav ul#primary-menu li ul li ul li a {
   color: #fff;
   font-weight: 500;
   font-size: 16px;
-  padding-top: 15px;
   text-shadow: 1px 1px 1px grey;
   width: 95%;
   margin: 0 auto;
@@ -7951,6 +7950,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   text-align: left;
   color: #fff;
   width: 100%;
+  padding: 15px 10px 0 10px;
 }
 
 .hero_banner_container {
