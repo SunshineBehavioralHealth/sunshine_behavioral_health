@@ -1992,7 +1992,8 @@ section a, section input {
 }
 
 .treatment_center_image_container img {
-  max-height: 200px
+  max-height: 190px;
+  height: 100%;
 }
 
 .treatment_program_container {
