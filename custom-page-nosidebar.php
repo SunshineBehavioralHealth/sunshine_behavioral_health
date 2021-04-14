@@ -57,12 +57,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 			<?php get_template_part('template-parts/content/pageDisclaimer'); ?>
 		</section>
 
-		<?php if (!is_page('Our Response to The Corona Virus Health Concern')) : ?>
-			<section class="page_treatment_cta ">
-				<h4>Talk with one of our Treatment Specialists!</h4>
-				<p>Call 24/7: <a class="invocaNumber bottomPagePhone" href="tel:949-276-2886"> 949-276-2886</a></p>
-			</section>
-		<?php endif; ?>
+		<?php get_template_part('template-parts/content/phoneTreatmentCta'); ?>
 
 	</div>
 </main><!-- #primary -->

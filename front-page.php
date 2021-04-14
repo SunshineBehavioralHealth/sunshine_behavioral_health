@@ -52,25 +52,18 @@ if (is_home()) {
 			<!-- Headline -->
 
 			<div class="hero_cta_container">
-				<?php
-				$heroCTA1 = get_field('hero_cta_top');
-				$heroCTA2 = get_field('hero_cta_bottom');
-				?>
+				<?php $heroCTA1 = get_field('hero_cta_top');
+				$heroCTA2 = get_field('hero_cta_bottom'); ?>
 
-				<div class="cta_btn btn_mountain1 btn_mountain1_hero hero_cta"><a href="tel:949-276-2886" class="invocaNumber 
-				<?php if (wp_is_mobile()) {
-					echo "mobileHeroPhone";
-				} else {
-					echo "hpHeroPhone";
-				} ?>
-			"><?php echo $heroCTA1['title'] ?></a></div>
+				<div class="cta_btn btn_mountain1 sbh_center_btn sbh_center_btn_hero hero_cta">
+					<a href="tel:949-276-2886" class="hpHeroPhone hide_on_mobile invocaNumber"><?php echo $heroCTA1['title'] ?></a>
+					<a href="tel:949-276-2886" class="mobileHeroPhone hide_on_desktop invocaNumber"><?php echo $heroCTA1['title'] ?></a>
+				</div>
 
-				<div class="cta_btn btn_mountain2 hero_cta"><a href="<?php echo $heroCTA2['url'] ?>" class="
-				<?php if (wp_is_mobile()) {
-					echo "mobileHeroInsurance";
-				} else {
-					echo "hpHeroInsurance";
-				} ?>"><?php echo $heroCTA2['title'] ?></a></div>
+				<div class="cta_btn btn_mountain2 hero_cta">
+					<a href="<?php echo $heroCTA2['url'] ?>" class="hpHeroInsurance hide_on_mobile"><?php echo $heroCTA2['title'] ?></a>
+					<a href="<?php echo $heroCTA2['url'] ?>" class="mobileHeroInsurance hide_on_desktop"><?php echo $heroCTA2['title'] ?></a>
+				</div>
 			</div>
 		</div>
 	</div>
