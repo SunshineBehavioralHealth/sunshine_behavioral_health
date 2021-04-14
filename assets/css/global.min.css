@@ -5208,7 +5208,8 @@ blockquote p {
 
 .center_page_cta_interjection1_container {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  padding: 10px;
 }
 
 .center_interjection_1_btn_container {
@@ -5220,7 +5221,8 @@ blockquote p {
 }
 
 .center_interjection_1_headline_container h3 {
-  text-align: center
+  text-align: center;
+  margin: 0;
 }
 
 @media (min-width:768px) {

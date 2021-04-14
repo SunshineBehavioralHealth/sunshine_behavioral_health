@@ -113,7 +113,9 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
                     <h3><?php echo get_field('interjection_cta_1_headline') ?></h3>
                 </div>
 
-                <div class="center_interjection_1_btn_container cta_btn"><a class="invocaNumber" href="tel:949-276-2886" class="invocaNumber">949-276-2886</a></div>
+                <div class="center_interjection_1_btn_container cta_btn">
+                    <a class="invocaNumber" href="tel:949-276-2886" class="invocaNumber">949-276-2886</a>
+                </div>
             </div>
         </section>
 
