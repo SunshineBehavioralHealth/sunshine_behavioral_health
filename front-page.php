@@ -55,7 +55,7 @@ if (is_home()) {
 				<?php $heroCTA1 = get_field('hero_cta_top');
 				$heroCTA2 = get_field('hero_cta_bottom'); ?>
 
-				<div class="cta_btn btn_mountain1 sbh_center_btn sbh_center_btn_hero hero_cta">
+				<div class="cta_btn btn_mountain1 btn_mountain1_hero sbh_center_btn sbh_center_btn_hero hero_cta">
 					<a href="tel:949-276-2886" class="hpHeroPhone hide_on_mobile invocaNumber"><?php echo $heroCTA1['title'] ?></a>
 					<a href="tel:949-276-2886" class="mobileHeroPhone hide_on_desktop invocaNumber"><?php echo $heroCTA1['title'] ?></a>
 				</div>
