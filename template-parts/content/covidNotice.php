@@ -10,7 +10,7 @@
                 <p>We are here to answer your questions and alleviate any concerns. Call us at <a class="invocaNumber" href="tel:949-276-2886">949-276-2886</a>. Do not allow COVID-19 to stop you from seeking the care you need.</p>
             </div>
             <div class="covid19_btn_container">
-                <a class="invocaNumber covid19_btn_link" href="tel:949-276-2886">Talk to Our Staff</a>
+                <a class="invocaNumber covid19_btn_link homeCovidPhone" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'homeCovidPhone'});" href="tel:949-276-2886">Talk to Our Staff</a>
             </div>
         </div>
     </div>
