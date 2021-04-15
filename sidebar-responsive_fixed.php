@@ -22,7 +22,17 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-sidebar',
 		<?php echo get_field('custom_sidebar') ?>
 		<?php if (is_page_template('custom_border_fixed_sidebar_guide.php')) : ?>
 			<?php if (get_field('include_download_page_content_button')) : ?>
-				<a href="<?php echo get_field('download_page_button_link') ?>" class="download_page_content_btn" download>Download Page Content</a>
+				<?php
+				if (have_rows('download_page_buttons')) :
+					while (have_rows('download_page_buttons')) : the_row();
+				?>
+						<a href="<?php echo get_sub_field('link') ?>" class="download_page_content_btn" download><?php echo get_sub_field('text') ?></a>
+
+				<?php
+					endwhile;
+				endif;
+				?>
+
 			<?php endif; ?>
 
 		<?php endif; ?>

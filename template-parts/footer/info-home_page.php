@@ -43,7 +43,7 @@ namespace WP_Rig\WP_Rig;
 			<div class="footer_home_form">
 
 				<div class="footer_home_form_container">
-				<h5>Have an Intake Expert Reach out to you</h5>
+					<h5>Have an Intake Expert Reach out to you</h5>
 					<?php echo do_shortcode('[gravityform id="4" title="false" description="false"]')
 					?>
 				</div>
@@ -67,7 +67,7 @@ namespace WP_Rig\WP_Rig;
 				</div>
 
 			</div>
-			
+
 
 		</div>
 	</section>
