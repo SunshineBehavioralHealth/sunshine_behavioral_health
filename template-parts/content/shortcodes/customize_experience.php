@@ -71,7 +71,7 @@
                 </div> -->
 
 
-                <a href="/" id="customize_experience_submit" class="hide">Build YOUR Experience</a>
+                <a href="/" id="customize_experience_submit" class="hide customizeYourExperienceBtn">Build YOUR Experience</a>
 
             </div>
         </form>
