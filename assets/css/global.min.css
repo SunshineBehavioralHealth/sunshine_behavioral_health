@@ -7687,7 +7687,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   color: #fff;
 }
 
-.customized_map_right_wrapper p {
+.customized_map_legal_notice {
   font-size: 16px;
   position: absolute;
   bottom: 0;
@@ -7742,10 +7742,18 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   padding: 10px;
 }
 
+.customized_map_iframe_wrapper {
+  position: relative;
+}
+
 .customized_map_iframe_wrapper iframe {
   width: 100% !important;
   max-width: 100%;
   max-height: 20vh !important;
+}
+
+.customized_map_address_container {
+  margin-top: -6px;
 }
 
 .customized_map_address_container p {
@@ -7753,7 +7761,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   text-align: center;
   padding: 5px;
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .customized_map_address_container p span {
@@ -7773,14 +7781,15 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: var(--primary_color);
 }
 
-
-@media(min-width: 430px){
+@media(min-width: 475px) {
   .customized_map_address_container p {
     font-size: 16px;
   }
 }
+
 .state_table_wrapper {
   background: #e4eff7;
   padding: 10px;
