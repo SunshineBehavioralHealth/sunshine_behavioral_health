@@ -1,9 +1,7 @@
 <section class="image_cta_section shortcode_section">
     <div class="image_cta_container">
         <div class="image_cta_wrapper">
-            <img loading="lazy" class="" src="<?php echo get_field('image_cta_desktop_image')['url'] ?>" alt="">
-            <!-- <img loading="lazy" class="hide_on_desktop" src="<?php echo get_field('image_cta_headline_sub_headline_two_buttons_-_mobile_image')['url'] ?>" alt=""> -->
-
+            <img loading="lazy" src="<?php echo get_field('image_cta_desktop_image')['url'] ?>" alt="">
             <div class="image_cta_wrapper_body">
                 <div class="image_cta_headlines">
                     <h4><?php echo get_field('image_cta_headline') ?></h4>
