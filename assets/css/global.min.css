@@ -7745,7 +7745,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 .customized_map_iframe_wrapper iframe {
   width: 100% !important;
   max-width: 100%;
-  max-height: 30vh !important;
+  max-height: 20vh !important;
 }
 
 .customized_map_address_container p {
@@ -7753,6 +7753,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   text-align: center;
   padding: 5px;
   margin: 0;
+  font-size: 14px;
 }
 
 .customized_map_address_container p span {
@@ -7774,6 +7775,12 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   transform: translate(-50%, -50%);
 }
 
+
+@media(min-width: 430px){
+  .customized_map_address_container p {
+    font-size: 16px;
+  }
+}
 .state_table_wrapper {
   background: #e4eff7;
   padding: 10px;
