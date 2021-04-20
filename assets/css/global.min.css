@@ -7852,7 +7852,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
   color: var(--secondary_color);
   font-size: 14px;
   margin: 0 auto 0 auto;
-  padding: 10px 20px;
+  padding: 0;
 }
 
 .download_page_content_btn:hover {
