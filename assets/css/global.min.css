@@ -8158,6 +8158,7 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 
 .guide_cards_container h5 a, .other_guides_container h5 a {
   color: var(--secondary_color);
+  text-align: center;
 }
 
 .guide_cards_container h5 a:hover, .other_guides_container h5 a:hover {
