@@ -25,6 +25,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 		<h1><?php echo get_field('page_headline') ?></h1>
 		<p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
 		<section class="guide_cards_section">
+			<h2>Guide Pages</h2>
 			<div class="guide_cards_container">
 				<?php
 				$guidePagesArgs = array(
@@ -46,6 +47,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 		</section>
 
 		<section class="other_guides_section">
+			<h2>Other Guides</h2>
 			<div class="other_guides_container">
 				<?php
 				if (have_rows('other_guides_repeater')) :
@@ -59,7 +61,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 			</div>
 		</section>
 		<section class="page_content list_styling">
-			<?php echo get_field('content') ?>
+			<?php echo get_field('link_builder_guide_page_content') ?>
 		</section>
 
 		<?php get_template_part('template-parts/content/sources'); ?>
