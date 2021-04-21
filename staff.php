@@ -73,7 +73,7 @@ get_template_part('template-parts/javascript/navigationJs');
 			<?php get_template_part('template-parts/content/pageDisclaimer'); ?>
 		</section>
 	</div>
-</main><!-- #primary -->
+</main>
 
 <?php echo get_sub_field(''); ?>
 

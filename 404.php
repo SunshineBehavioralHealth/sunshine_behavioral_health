@@ -19,6 +19,6 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 <main id="primary" class="site-main page_404">
 	<?php get_template_part('template-parts/content/error', '404'); ?>
 	<?php get_sidebar(); ?>
-</main><!-- #primary -->
+</main>
 <?php
 get_footer();

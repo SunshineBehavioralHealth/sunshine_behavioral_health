@@ -143,7 +143,7 @@ get_template_part('template-parts/javascript/navigationJs');
 
 
 	</div>
-</main><!-- #primary -->
+</main>
 
 <?php
 get_footer();

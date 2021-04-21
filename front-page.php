@@ -468,6 +468,6 @@ if (is_home()) {
 	<!-- End Substance Information -->
 
 
-</main><!-- #primary -->
+</main>
 <?php
 get_footer('home');

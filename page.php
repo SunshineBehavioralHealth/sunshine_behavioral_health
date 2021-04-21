@@ -61,7 +61,7 @@ get_template_part('template-parts/javascript/navigationJs');
 		</div>
 		<?php get_sidebar(); ?>
 	</div>
-</main><!-- #primary -->
+</main>
 
 <?php
 get_footer();

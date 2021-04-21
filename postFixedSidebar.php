@@ -59,7 +59,7 @@ get_template_part('template-parts/javascript/tableOfContents');
 		<?php get_template_part('template-parts/content/phoneTreatmentCta'); ?>
 	</div>
 	<?php get_sidebar('fixed'); ?>
-</main><!-- #primary -->
+</main>
 <?php
 
 get_footer();
