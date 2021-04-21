@@ -4,9 +4,9 @@
   --tertiary_color: #79ccd9;
   --fourth_color: #ffe38a;
   --text_shadow: 1px 1px 2px #010101;
-  --chapters_primary: #e8af52;
+  --chapters_primary: #0075c9;
   --lincoln_primary: #44898C;
-  --monarch_primary: #7ecfda;
+  --monarch_primary: #0075c9;
   --mountain_primary: #377d63;
   --willow_primary: #387e63;
 }
@@ -7688,13 +7688,14 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
 }
 
 .customized_map_legal_notice {
-  font-size: 16px;
+  font-size: 12px;
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 5px;
   color: #fff;
   background-color: #8B0000;
+  opacity: 0.8;
 }
 
 .customized_map_wrapper img {

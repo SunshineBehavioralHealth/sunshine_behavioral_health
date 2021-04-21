@@ -12,11 +12,11 @@ $centerSelection = get_field('customized_map_center_options');
                 <div class="customized_map_iframe_wrapper hide_on_desktop hide_on_tablet">
                     <?php echo get_field('customized_map_iframe') ?>
                     <?php if (get_field('customized_map_legal_notice')) : ?>
-                        <p class="customized_map_legal_notice">legal notice</p>
+                        <p class="customized_map_legal_notice">Our closest facility is in California</p>
                     <?php endif; ?>
                 </div>
                 <div class="customized_map_address_container" style="background-color:<?php echo "var(--chapters_primary)"; ?>">
-                    <p>Facility Location: <span>1525 Buena Vista, San Clemente, CA 92672</span></p>
+                    <p>Address: <span>1525 Buena Vista, San Clemente, CA 92672</span></p>
                 </div>
                 <div class="customized_map_body_wrapper">
                     <img class="customized_map_main_image" src="<?php echo get_template_directory_uri() . '/assets/images/customized_map_body_chapters.jpg' ?>" alt="">
@@ -31,11 +31,11 @@ $centerSelection = get_field('customized_map_center_options');
                 <div class="customized_map_iframe_wrapper hide_on_desktop hide_on_tablet">
                     <?php echo get_field('customized_map_iframe') ?>
                     <?php if (get_field('customized_map_legal_notice')) : ?>
-                        <p class="customized_map_legal_notice">legal notice</p>
+                        <p class="customized_map_legal_notice">Our closest facility is in Illinois</p>
                     <?php endif; ?>
                 </div>
                 <div class="customized_map_address_container" style="background-color:<?php echo "var(--lincoln_primary)"; ?>">
-                    <p>Facility Location: <span>Raymond, IL</span></p>
+                    <p>Address: <span>Raymond, IL</span></p>
                 </div>
                 <div class="customized_map_body_wrapper">
                     <img class="customized_map_main_image" src="<?php echo get_template_directory_uri() . '/assets/images/customized_map_body_lincoln.jpg' ?>" alt="">
@@ -48,11 +48,11 @@ $centerSelection = get_field('customized_map_center_options');
                 <div class="customized_map_iframe_wrapper hide_on_desktop hide_on_tablet">
                     <?php echo get_field('customized_map_iframe') ?>
                     <?php if (get_field('customized_map_legal_notice')) : ?>
-                        <p class="customized_map_legal_notice">legal notice</p>
+                        <p class="customized_map_legal_notice">Our closest facility is in California</p>
                     <?php endif; ?>
                 </div>
                 <div class="customized_map_address_container" style="background-color:<?php echo "var(--monarch_primary)"; ?>">
-                    <p>Facility Location: <span>27123 Calle Arroyo #2121, San Juan Capistrano, CA 92675</span></p>
+                    <p>Address: <span>27123 Calle Arroyo #2121, San Juan Capistrano, CA 92675</span></p>
                 </div>
                 <div class="customized_map_body_wrapper">
                     <img class="customized_map_main_image" src="<?php echo get_template_directory_uri() . '/assets/images/customized_map_body_monarch.jpg' ?>" alt="">
@@ -65,11 +65,11 @@ $centerSelection = get_field('customized_map_center_options');
                 <div class="customized_map_iframe_wrapper hide_on_desktop hide_on_tablet">
                     <?php echo get_field('customized_map_iframe') ?>
                     <?php if (get_field('customized_map_legal_notice')) : ?>
-                        <p class="customized_map_legal_notice">legal notice</p>
+                        <p class="customized_map_legal_notice">Our closest facility is in Colorado</p>
                     <?php endif; ?>
                 </div>
                 <div class="customized_map_address_container" style="background-color:<?php echo "var(--mountain_primary)"; ?>">
-                    <p>Facility Location: <span>1865 Woodmor Monument, CO 80132</span></p>
+                    <p>Address: <span>1865 Woodmor Monument, CO 80132</span></p>
                 </div>
                 <div class="customized_map_body_wrapper">
                     <img class="customized_map_main_image" src="<?php echo get_template_directory_uri() . '/assets/images/customized_map_body_mountain.jpg' ?>" alt="">
@@ -82,11 +82,11 @@ $centerSelection = get_field('customized_map_center_options');
                 <div class="customized_map_iframe_wrapper hide_on_desktop hide_on_tablet">
                     <?php echo get_field('customized_map_iframe') ?>
                     <?php if (get_field('customized_map_legal_notice')) : ?>
-                        <p class="customized_map_legal_notice">legal notice</p>
+                        <p class="customized_map_legal_notice">Our closest facility is in Texas</p>
                     <?php endif; ?>
                 </div>
                 <div class="customized_map_address_container" style="background-color:<?php echo "var(--willow_primary)"; ?>">
-                    <p>Facility Location: <span>11128 TX-21, Bastrop, TX 78602</span></p>
+                    <p>Address: <span>11128 TX-21, Bastrop, TX 78602</span></p>
                 </div>
                 <div class="customized_map_body_wrapper">
                     <img class="customized_map_main_image" src="<?php echo get_template_directory_uri() . '/assets/images/customized_map_body_willow.jpg' ?>" alt="">
@@ -97,8 +97,19 @@ $centerSelection = get_field('customized_map_center_options');
         </div>
         <div class="customized_map_right_wrapper hide_on_mobile show_on_tablet">
             <?php echo get_field('customized_map_iframe') ?>
+
             <?php if (get_field('customized_map_legal_notice')) : ?>
-                <p class="customized_map_legal_notice">legal notice</p>
+                <?php if ($centerSelection == "Chapters Capistrano") : ?>
+                    <p class="customized_map_legal_notice">Our closest facility is in California</p>
+                <?php elseif ($centerSelection == "Lincoln Recovery") : ?>
+                    <p class="customized_map_legal_notice">Our closest facility is in Illinois</p>
+                <?php elseif ($centerSelection == "Monarch Shores") : ?>
+                    <p class="customized_map_legal_notice">Our closest facility is in California</p>
+                <?php elseif ($centerSelection == "Mountain Springs Recovery") : ?>
+                    <p class="customized_map_legal_notice">Our closest facility is in Colorado</p>
+                <?php elseif ($centerSelection == "Wilow Springs Recovery") : ?>
+                    <p class="customized_map_legal_notice">Our closest facility is in Texas</p>
+                <?php endif; ?>
             <?php endif; ?>
         </div>
     </div>
