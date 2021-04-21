@@ -32,7 +32,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 					'post_type'      => 'any',
 					'posts_per_page' => -1,
 					'order'          => 'ASC',
-					'orderby'        => 'menu_order',
+					'orderby'        => 'title',
 					'meta_key' => '_wp_page_template ',
 					'meta_value' => 'custom_border_fixed_sidebar_guide.php'
 				);
@@ -53,7 +53,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 				if (have_rows('other_guides_repeater')) :
 					while (have_rows('other_guides_repeater')) : the_row();
 				?>
-						<h5><a href="<?php echo get_sub_field('link') ?>" <?php echo get_sub_field('text') ?>></a></h5>
+						<h5><a href="<?php echo get_sub_field('link') ?>"><?php echo get_sub_field('text') ?></a></h5>
 				<?php
 					endwhile;
 				endif;
