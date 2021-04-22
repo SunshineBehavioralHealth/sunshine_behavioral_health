@@ -1,6 +1,6 @@
 <?php
 
-get_template_part('template-parts/javascript/mobile_author_and_medical_reviewJs');
+get_template_part('template-parts/javascript/authorMedicalReviewJs');
 
 
 $medicalReviewUser = get_field("medical_review_user");

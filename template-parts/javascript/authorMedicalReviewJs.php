@@ -19,7 +19,6 @@
         if (screenWidth > 1024) {
             $('.editor_meta_name').hover(function() {
                 $('.editor_meta_bio_container').removeClass('hide');
-                console.log("removed hide from editor meta bio container")
             });
 
             $('.editor_container').mouseleave(function() {
