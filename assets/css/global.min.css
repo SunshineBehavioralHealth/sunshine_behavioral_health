@@ -1286,11 +1286,11 @@ nav ul#primary-menu li ul li ul li a {
 
 .editor_meta_bio_container, .medical_review_meta_bio_container {
   position: absolute;
-  min-width: 160px;
+  min-width: 200px;
   box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
   z-index: 10;
   background: #fff;
-  width: 410px;
+  width: auto;
   margin-top: 100px;
   border: 2px solid var(--secondary_color);
   border-radius: 2px;
