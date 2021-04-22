@@ -38,7 +38,7 @@ get_template_part('template-parts/javascript/tableOfContents');
 
 			<!-- Medical Review -->
 			<section class="editor_and_review_section hide_on_desktop">
-				<?php get_template_part('template-parts/content/medicalReview'); ?>
+				<?php get_template_part('template-parts/content/mobile_author_and_medical_review'); ?>
 			</section>
 
 			<section class="page_content list_styling ipad_width_restriction">

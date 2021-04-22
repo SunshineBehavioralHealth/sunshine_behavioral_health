@@ -1,6 +1,6 @@
 <?php
 
-get_template_part('template-parts/javascript/medicalReviewJs');
+get_template_part('template-parts/javascript/mobile_author_and_medical_reviewJs');
 
 
 $medicalReviewUser = get_field("medical_review_user");
@@ -32,13 +32,7 @@ $medicalReviewMetaBio =  $medicalReviewerMetaData['description'][0];
                     <span class="author_name_before_span">Author: </span>
                     <span class="author_name_span hide_on_mobile"><?php echo $AuthorUser['display_name'] ?></span>
                     <a href="/contributors#<?php echo $AuthorMetaData['first_name'][0] . '_' . $AuthorMetaData['last_name'][0] ?>" class="hide_on_desktop"><span class="author_name_span author_name_span_link"><?php echo $AuthorUser['display_name'] ?></span></a>
-
                 </p>
-                <div class="editor_meta_bio_container hide hide_on_mobile">
-                    <h6 class="">Meet <?php echo $AuthorUser['display_name'] ?></h6>
-
-                    <div> <?php echo shorten_string($AuthorMetaData['description'][0], 30); ?>... <a href="/contributors#<?php echo $AuthorMetaData['first_name'][0] . '_' . $AuthorMetaData['last_name'][0] ?>"> Read More</a></div>
-                </div>
             </div>
 
         </div>
@@ -60,13 +54,6 @@ $medicalReviewMetaBio =  $medicalReviewerMetaData['description'][0];
                 <a href="/contributors#<?php echo $medicalReviewerMetaData['first_name'][0] . '_' . $medicalReviewerMetaData['last_name'][0] ?>" class="hide_on_desktop">
                     <p class="medical_review_meta_name"><?php echo $medicalReviewUser['display_name'] ?></p>
                 </a>
-                <div class="medical_review_meta_bio_container hide hide_on_mobile">
-                    <h6 class="">Meet <?php echo $medicalReviewUser['display_name'] ?></h6>
-
-                    <div> <?php echo shorten_string($medicalReviewerMetaData['description'][0], 30); ?>...<a href="/contributors#<?php echo $medicalReviewerMetaData['first_name'][0] . '_' . $medicalReviewerMetaData['last_name'][0] ?>"> Read More</a></div>
-
-
-                </div>
             </div>
         </div>
     </div>
