@@ -8265,3 +8265,12 @@ form.customize_experience_form_wrapper .custom_experience_form_group label {
     align-items: center;
   }
 }
+
+.center_page_treatment_list_container ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.center_page_treatment_list_container ul li {
+  flex: 1 0 25%;
+}
