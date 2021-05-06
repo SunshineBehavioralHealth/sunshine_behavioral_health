@@ -30,14 +30,10 @@ $centerValue = get_field('center')
         for (var i = 0; i < sliders.length; i++) {
             var glide = new Glide(sliders[i], {
                 gap: 15,
-                perView: 1,
+                perView: 3,
                 autoplay: 2500,
                 hoverpause: true,
                 keyboard: true,
-                peek: {
-                    before: 100,
-                    after: 100
-                },
             });
 
             glide.mount();
@@ -73,7 +69,11 @@ $centerValue = get_field('center')
         </div>
     </div>
 
-    <div class="center_page_content_container">
+    <div class="center_page_content_container 
+    <?php if ($centerValue == "Chapters Capistrano") echo "chapters_styles";
+    elseif ($centerValue == "Monarch Shores") echo "monarch_styles";
+    elseif ($centerValue == "Mountain Springs") echo "mountain_styles";
+    elseif ($centerValue == "Willow Springs") echo "willow_styles"; ?>">
         <section class="center_page_location_section">
             <div class="center_page_location_container">
                 <h2 style="color: var(--<?php if ($centerValue == "Chapters Capistrano") echo "chapters";
@@ -159,7 +159,8 @@ $centerValue = get_field('center')
             </div>
         </section>
 
-        <section class="center_page_badge_section">
+
+        <section class="center_page_testimonial_section">
             <div class="center_page_badge_container">
                 <h3>Treatment at <?php if ($centerValue == "Chapters Capistrano") echo "Chapters Capistrano";
                                     elseif ($centerValue == "Monarch Shores") echo "Monarch Shores";
@@ -189,15 +190,11 @@ $centerValue = get_field('center')
                     <?php endif; ?>
                 </div>
             </div>
-        </section>
-
-        <section class="center_page_testimonial_section">
             <div class="center_page_testimonial_container">
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/quotation_mark.png' ?>" alt="">
-                <?php echo get_field('center_page_testimonial') ?>
-                <div class="center_page_testimonial_star_wrapper">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/five_stars.png' ?>" alt="" loading="lazy">
-                </div>
+                <p><?php echo get_field('center_page_testimonial') ?></p>
+                <p><?php echo get_field('center_page_testimonial_name') ?></p>
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/five_stars.png' ?>" alt="" loading="lazy">
             </div>
         </section>
 
@@ -225,12 +222,12 @@ $centerValue = get_field('center')
                     endif;
                     ?>
                 </div>
-                <img src="" alt="" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/chapters-min.jpg' ?>" alt="" loading="lazy">
             </div>
         </section>
 
         <section class="center_page_insurance_form_section">
-            <div class="center_page_insurance_form_container">
+            <div class="center_page_insurance_form_container" style="background-image: url(<?php echo get_field('center_page_insurance_section_background_image')['url'] ?>)">
                 <div class="center_page_insurance_form_content_wrapper">
                     <?php echo get_field('center_page_insurance_content') ?>
                 </div>
