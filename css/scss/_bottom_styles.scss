@@ -1,0 +1,79 @@
+.show {
+  display: block !important;
+}
+
+.show_flex {
+  display: flex !important;
+}
+
+.toc .showTOC {
+  display: list-item;
+}
+
+.dropdown_active {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.showAllQueryResults {
+  display: flex !important;
+}
+
+@media (max-width: 1024px) {
+  .hide_on_mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hide_on_desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hide_on_tablet {
+    display: none;
+  }
+  .show_on_tablet {
+    display: block !important;
+  }
+}
+
+.sub-menu {
+  display: none;
+}
+
+.showNav {
+  display: flex !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.show_flex {
+  display: flex !important;
+}
+
+.toc .showTOC {
+  display: list-item;
+}
+
+.dropdown_active {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.showAllQueryResults {
+  display: flex !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.gfield_visibility_hidden,
+.gform_validation_container {
+  display: none !important;
+}

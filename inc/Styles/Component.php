@@ -288,14 +288,6 @@ class Component implements Component_Interface, Templating_Component_Interface
 			return $this->css_files;
 		}
 
-		$css_files = [
-			'sunshine_behavioral_health-global'     => [
-				'file'   => 'global.min.css',
-				'global' => true,
-			],
-		];
-
-
 		/**
 		 * Filters default CSS files.
 		 *

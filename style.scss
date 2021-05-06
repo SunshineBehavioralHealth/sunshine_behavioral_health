@@ -1,0 +1,85 @@
+/*!
+Theme Name: SBH Center 3.2
+Theme URI: https://sunshinebehavioralhealth.com/
+Developer:  Nathan Wilson
+Designer:   Michelle Lopez-McKay
+Author URI: https://sunshinebehavioralhealth.com/
+Description: An evolving theme for Sunshine Behavioral Health Centers.
+Version: 3.0.0
+License: GNU General Public License v3.0 (or later)
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: <?php echo get_field('site_name', 'option') ?> Theme
+Tags: translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+//Main
+@import "css/scss/header";
+@import "css/scss/typography";
+@import "css/scss/front_page";
+@import "css/scss/hero";
+@import "css/scss/layout";
+@import "css/scss/sidebar";
+@import "css/scss/footer";
+
+@import "css/scss/glide";
+@import "css/scss/blog";
+@import "css/scss/forms";
+@import "css/scss/bootstrap_whats_left";
+@import "css/scss/accessibility";
+@import "css/scss/spacers";
+@import "css/scss/other";
+
+// Template Specific
+@import "css/scss/template_specific/activity";
+@import "css/scss/template_specific/careers";
+@import "css/scss/template_specific/contact";
+@import "css/scss/template_specific/insurance";
+@import "css/scss/template_specific/schedule";
+@import "css/scss/template_specific/staff";
+
+//components
+@import "css/scss/components/table_of_contents";
+@import "css/scss/components/sources";
+@import "css/scss/components/author_and_medical_reviewer";
+@import "css/scss/components/covid";
+@import "css/scss/components/phone_treatment_cta";
+@import "css/scss/components/pagination";
+@import "css/scss/components/google_translate";
+@import "css/scss/components/page_disclosure";
+
+//Shortcodes
+@import "css/scss/shortcodes/blue_featured_content";
+@import "css/scss/shortcodes/career_opportunities";
+@import "css/scss/shortcodes/contact_form_cta";
+@import "css/scss/shortcodes/content_left_box_right";
+@import "css/scss/shortcodes/customize_experience";
+@import "css/scss/shortcodes/customized_map";
+@import "css/scss/shortcodes/data_cards";
+@import "css/scss/shortcodes/expandable_rows";
+@import "css/scss/shortcodes/gallery_shortcodes";
+@import "css/scss/shortcodes/gallery_sidebar";
+@import "css/scss/shortcodes/graph_tabs";
+@import "css/scss/shortcodes/headline_and_button_shortcode";
+@import "css/scss/shortcodes/image_cta_headline_sub_headline_two_buttons";
+@import "css/scss/shortcodes/image_left_cta_right_shortcode";
+@import "css/scss/shortcodes/insurance_list_and_cta-all";
+@import "css/scss/shortcodes/insurance_slider_sidebar_shortcode";
+@import "css/scss/shortcodes/learn_about_sidebar";
+@import "css/scss/shortcodes/phone_cta";
+@import "css/scss/shortcodes/related_pages";
+@import "css/scss/shortcodes/search_query";
+@import "css/scss/shortcodes/spacers";
+@import "css/scss/shortcodes/state_table";
+@import "css/scss/shortcodes/treatment_options";
+@import "css/scss/shortcodes/treatment_questions_sidebar";
+@import "css/scss/shortcodes/two_column_bullet_list";
+@import "css/scss/shortcodes/two_cta_btn_sidebar_shortcode";
+@import "css/scss/shortcodes/two_long_buttons_cta";
+@import "css/scss/shortcodes/two_sentence_cta_no_btn_no_background";
+@import "css/scss/shortcodes/video_cta";
+@import "css/scss/shortcodes/faq_sidebar";
+
+// Very bottom css for specificity reasons
+@import "css/scss/bottom_styles";

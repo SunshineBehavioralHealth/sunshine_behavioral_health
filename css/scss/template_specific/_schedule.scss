@@ -1,0 +1,174 @@
+.scheudle_table_container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.scheudle_table_container table td,
+.scheudle_table_container table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.scheudle_table_container table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.scheudle_table_container table tr:hover {
+  background-color: #ddd;
+}
+
+.scheudle_table_container table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #0075c9;
+  color: #fff;
+  text-align: center;
+}
+
+.scheudle_table_container {
+  overflow-x: auto;
+}
+
+.scheudle_table_container tr {
+  height: 75px;
+  border: 2px solid #999999;
+}
+
+.scheudle_table_container td,
+.scheudle_table_container th {
+  min-width: 150px;
+  width: 150px;
+  border: 2px solid;
+  text-align: center;
+  border-color: #999999;
+}
+
+.scheudle_table_container th {
+  background-color: #666;
+  color: #fff;
+  border-color: #999999;
+}
+
+.schedule_headline {
+  text-align: center;
+}
+
+.hide_desktop_image {
+  display: none;
+}
+
+.schedule_arrow_container {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  pointer-events: none;
+}
+
+.schedule_arrow_container #arrowAnim {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.schedule_arrow_container .arrow {
+  width: 4vw;
+  height: 4vw;
+  border: 1vw solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
+  transform: rotate(-225deg);
+}
+
+@media (min-width: 756px) {
+  .schedule_arrow_container {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    pointer-events: none;
+  }
+  .schedule_arrow_container .arrow {
+    width: 4vw;
+    height: 4vw;
+    border: 0.5vw solid;
+    border-color: rgba(0, 0, 0, 0.5) transparent transparent rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+    transform: rotate(-225deg);
+  }
+}
+
+.schedule_arrow_container .arrow {
+  width: 4vw;
+  height: 4vw;
+  border: 0.5vw solid;
+  border-color: rgba(0, 0, 0, 0.5) transparent transparent rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+  transform: rotate(-225deg);
+}
+
+.schedule_arrow_container .arrowSliding {
+  position: absolute;
+  -webkit-animation: slide 4s linear infinite;
+  animation: slide 4s linear infinite;
+}
+
+.schedule_arrow_container .delay1 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.schedule_arrow_container .delay2 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.schedule_arrow_container .delay3 {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-15vw);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(-9vw);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(9vw);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(15vw);
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-15vw);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(-9vw);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(9vw);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(15vw);
+  }
+}
+
+@media (min-width: 1281px) {
+  .schedule_arrow_container {
+    display: none;
+  }
+}
