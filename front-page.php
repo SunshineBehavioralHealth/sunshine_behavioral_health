@@ -438,7 +438,6 @@ if (is_home()) {
 					endif;
 					?>
 				</ul>
-
 			</div>
 		</div>
 	</section>
