@@ -1,18 +1,14 @@
+.dropdown_active {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .show {
   display: block !important;
 }
 
 .show_flex {
   display: flex !important;
-}
-
-.toc .showTOC {
-  display: list-item;
-}
-
-.dropdown_active {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
 
 .showAllQueryResults {
@@ -40,40 +36,6 @@
   }
 }
 
-.sub-menu {
-  display: none;
-}
-
-.showNav {
-  display: flex !important;
-}
-
-.show {
-  display: block !important;
-}
-
-.show_flex {
-  display: flex !important;
-}
-
-.toc .showTOC {
-  display: list-item;
-}
-
-.dropdown_active {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.showAllQueryResults {
-  display: flex !important;
-}
-
 .hide {
-  display: none !important;
-}
-
-.gfield_visibility_hidden,
-.gform_validation_container {
   display: none !important;
 }

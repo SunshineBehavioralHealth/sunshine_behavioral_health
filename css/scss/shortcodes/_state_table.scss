@@ -1,5 +1,5 @@
 .state_table_wrapper {
-  background: var(--nav_background_color);
+  background: #e4eff7;
   padding: 10px;
   margin: 0;
 }
@@ -75,15 +75,6 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .state_table_container .state_table_element {
-    width: 18%;
-  }
-  .state_table_container .state_table_states_wrapper .state_table_element {
-    width: 25%;
-  }
-}
-
 @media (min-width: 1150px) {
   .state_table_container .state_table_states_wrapper .state_table_element {
     width: 20%;
@@ -93,5 +84,14 @@
 @media (min-width: 1250px) {
   .state_table_container .state_table_states_wrapper .state_table_element {
     width: 18%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .state_table_container .state_table_element {
+    width: 18%;
+  }
+  .state_table_container .state_table_states_wrapper .state_table_element {
+    width: 25%;
   }
 }

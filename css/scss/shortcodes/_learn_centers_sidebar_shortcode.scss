@@ -1,0 +1,137 @@
+.learn_centers_sidebar_container {
+  background-color: var(--secondary_color);
+  padding-bottom: 12.5px;
+}
+
+.learn_centers_center_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.learn_centers_sidebar_section a {
+  width: 100%;
+}
+
+.learn_centers_sidebar_section img {
+  width: 100%;
+}
+
+.learn_center_bottom_border {
+  border-bottom: 5px solid var(--secondary_color);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.learn_centers_center_logo_headline {
+  display: flex;
+  flex-direction: row;
+}
+
+.learn_centers_center_headlines {
+  width: 75%;
+}
+
+.learn_centers_center_headlines h3 {
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.learn_centers_center_headlines h5 {
+  font-size: 17px;
+  text-align: center;
+}
+
+.learn_centers_sidebar_container h4 {
+  color: #fff;
+  padding-top: 25px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.learn_centers_center_logo_wrapper {
+  width: 25%;
+}
+
+.learn_centers_center_logo_headline img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.learn_centers_center_logo_headline .chapters_headlines {
+  color: #e8af52;
+}
+
+.learn_centers_center_logo_headline .chapters_headlines a {
+  color: #e8af52;
+}
+
+.learn_centers_center_logo_headline .monarch_headlines {
+  color: #7ecfda;
+}
+
+.learn_centers_center_logo_headline .monarch_headlines a {
+  color: #7ecfda;
+}
+
+.learn_centers_center_logo_headline .mountain_headlines {
+  color: #377d63;
+}
+
+.learn_centers_center_logo_headline .mountain_headlines a {
+  color: #377d63;
+}
+
+.learn_centers_center_logo_headline .willow_headlines {
+  color: #387e63;
+}
+
+.learn_centers_center_logo_headline .willow_headlines a {
+  color: #387e63;
+}
+
+.learn_centers_center_wrapper a img {
+  margin: 0 auto;
+}
+
+.learn_centers_sidebar_bottom_cta {
+  background-color: #0076be;
+  max-width: 300px;
+  color: #fff;
+}
+
+.learn_centers_sidebar_bottom_cta h5 {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+  text-shadow: 1px 1px grey;
+  padding: 0 10px 20px 10px;
+}
+
+.learn_centers_sidebar_bottom_cta p {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto 25px auto;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .learn_centers_center_wrapper {
+    width: 100%;
+  }
+  .learn_centers_center_image {
+    width: 100%;
+  }
+  .learn_centers_center_image img {
+    width: 100%;
+  }
+}

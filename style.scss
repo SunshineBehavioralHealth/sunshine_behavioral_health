@@ -38,6 +38,8 @@ This theme, like WordPress, is licensed under the GPL.
 @import "css/scss/template_specific/insurance";
 @import "css/scss/template_specific/schedule";
 @import "css/scss/template_specific/staff";
+@import "css/scss/template_specific/center";
+@import "css/scss/template_specific/guide";
 
 //components
 @import "css/scss/components/table_of_contents";
@@ -80,6 +82,8 @@ This theme, like WordPress, is licensed under the GPL.
 @import "css/scss/shortcodes/two_sentence_cta_no_btn_no_background";
 @import "css/scss/shortcodes/video_cta";
 @import "css/scss/shortcodes/faq_sidebar";
+@import "css/scss/shortcodes/learn_centers_sidebar_shortcode";
+@import "css/scss/shortcodes/google_web_story";
 
 // Very bottom css for specificity reasons
 @import "css/scss/bottom_styles";
