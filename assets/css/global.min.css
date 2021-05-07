@@ -5473,6 +5473,7 @@ blockquote p {
   flex-direction: column;
   color: #fff;
   width: 100%;
+  overflow-y: auto;
 }
 
 .state_resources_lists_container::-webkit-scrollbar {
@@ -5484,7 +5485,7 @@ blockquote p {
 }
 
 .state_resources_lists_container::-webkit-scrollbar-thumb {
-  background: #888;
+  background: var(--primary_color);
 }
 
 .state_resources_lists_container ul {
