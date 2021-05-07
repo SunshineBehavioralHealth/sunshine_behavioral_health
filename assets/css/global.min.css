@@ -5515,7 +5515,8 @@ blockquote p {
     display: flex;
     flex-direction: row;
     color: #fff;
-    width: 100%
+    width: 100%;
+    max-height: 600px;
   }
 }
 
