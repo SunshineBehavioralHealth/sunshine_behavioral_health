@@ -5494,6 +5494,7 @@ blockquote p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .state_resources_lists_container ul li {
@@ -5522,7 +5523,7 @@ blockquote p {
   .state_resources_lists_container ul li {
     list-style: none;
     margin: 10px;
-    width: 30%;
+    width: 28%;
     display: flex;
     justify-content: center;
   }
