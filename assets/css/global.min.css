@@ -5475,6 +5475,18 @@ blockquote p {
   width: 100%;
 }
 
+.state_resources_lists_container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.state_resources_lists_container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.state_resources_lists_container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
 .state_resources_lists_container ul {
   padding-left: 0;
   padding-left: 0;
@@ -5502,12 +5514,6 @@ blockquote p {
     flex-direction: row;
     color: #fff;
     width: 100%
-  }
-  .state_resources_lists_container ul {
-    padding-left: 0;
-    margin: 0;
-    width: 50%;
-    text-align: center
   }
 }
 
