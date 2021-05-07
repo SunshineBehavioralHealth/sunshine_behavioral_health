@@ -429,30 +429,8 @@ if (is_home()) {
 			<div class="state_resources_lists_container">
 				<ul>
 					<?php
-					if (have_rows('states_column_one')) :
-						while (have_rows('states_column_one')) : the_row();
-					?>
-							<li><a href="<?php echo get_sub_field('state_link') ?>"><?php echo get_sub_field('state') ?></a></li>
-					<?php
-						endwhile;
-					endif;
-					?>
-				</ul>
-				<ul>
-					<?php
-					if (have_rows('states_column_two')) :
-						while (have_rows('states_column_two')) : the_row();
-					?>
-							<li><a href="<?php echo get_sub_field('state_link') ?>"><?php echo get_sub_field('state') ?></a></li>
-					<?php
-						endwhile;
-					endif;
-					?>
-				</ul>
-				<ul>
-					<?php
-					if (have_rows('states_column_three')) :
-						while (have_rows('states_column_three')) : the_row();
+					if (have_rows('states_columns')) :
+						while (have_rows('states_columns')) : the_row();
 					?>
 							<li><a href="<?php echo get_sub_field('state_link') ?>"><?php echo get_sub_field('state') ?></a></li>
 					<?php

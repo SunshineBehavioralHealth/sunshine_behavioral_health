@@ -5262,17 +5262,38 @@ blockquote p {
 .state_resources_lists_container {
   display: flex;
   flex-direction: column;
-  color: #fff
+  color: #fff;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.state_resources_lists_container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.state_resources_lists_container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.state_resources_lists_container::-webkit-scrollbar-thumb {
+  background: var(--primary_color);
 }
 
 .state_resources_lists_container ul {
   padding-left: 0;
-  margin: 0 75px
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .state_resources_lists_container ul li {
   list-style: none;
-  margin: 10px 0
+  margin: 10px;
+  width: 45%;
+  display: flex;
+  justify-content: center;
 }
 
 .state_resources_lists_container ul li a {
@@ -5285,21 +5306,26 @@ blockquote p {
     display: flex;
     flex-direction: row;
     color: #fff;
-    width: 100%
-  }
-  .state_resources_lists_container ul {
-    padding-left: 0;
-    margin: 0;
-    width: 50%;
-    text-align: center
+    width: 100%;
+    max-height: 600px;
   }
 }
 
-@media (min-width:1024px) {
+@media(min-width:768px) {
+  .state_resources_lists_container ul li {
+    list-style: none;
+    margin: 10px;
+    width: 28%;
+    display: flex;
+    justify-content: center;
+  }
   .state_resources_lists_container {
     display: flex;
     flex-direction: row
   }
+}
+
+@media (min-width:1024px) {
   .footer_home_center_link_wrapper {
     margin-top: 25px
   }
