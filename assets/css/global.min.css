@@ -5526,13 +5526,13 @@ blockquote p {
     display: flex;
     justify-content: center;
   }
-}
-
-@media (min-width:1024px) {
   .state_resources_lists_container {
     display: flex;
     flex-direction: row
   }
+}
+
+@media (min-width:1024px) {
   .footer_home_center_link_wrapper {
     margin-top: 25px
   }
