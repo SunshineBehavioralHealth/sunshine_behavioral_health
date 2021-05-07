@@ -30,6 +30,7 @@ This theme, like WordPress, is licensed under the GPL.
 @import "css/scss/accessibility";
 @import "css/scss/spacers";
 @import "css/scss/other";
+@import "css/scss/admin-bar";
 
 // Template Specific
 @import "css/scss/template_specific/activity";
@@ -40,6 +41,7 @@ This theme, like WordPress, is licensed under the GPL.
 @import "css/scss/template_specific/staff";
 @import "css/scss/template_specific/center";
 @import "css/scss/template_specific/guide";
+@import "css/scss/template_specific/custom_page_no_sidebar";
 
 //components
 @import "css/scss/components/table_of_contents";
@@ -86,4 +88,50 @@ This theme, like WordPress, is licensed under the GPL.
 @import "css/scss/shortcodes/google_web_story";
 
 // Very bottom css for specificity reasons
-@import "css/scss/bottom_styles";
+.dropdown_active {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media (min-width: 1025px) {
+  .mobile_bottom_cta_section {
+    display: none;
+  }
+}
+
+.show {
+  display: block !important;
+}
+
+.show_flex {
+  display: flex !important;
+}
+
+.showAllQueryResults {
+  display: flex !important;
+}
+
+@media (max-width: 1024px) {
+  .hide_on_mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hide_on_desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hide_on_tablet {
+    display: none;
+  }
+  .show_on_tablet {
+    display: block !important;
+  }
+}
+
+.hide {
+  display: none !important;
+}

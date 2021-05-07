@@ -73,6 +73,53 @@
   border-radius: 10px;
 }
 
+.formTab {
+  display: none;
+}
+
+.sliding_insurance_form_shortcode_container
+  .insurance_form_textarea_button_container
+  textarea {
+  margin-bottom: 25px;
+}
+
+.sliding_card_tab {
+  display: none;
+}
+
+.sliding_form_step.active {
+  opacity: 1;
+}
+
+.sliding_form_step.finish {
+  background-color: #4caf50;
+}
+
+
+
+input.invalid {
+  background-color: #fdd;
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step.finish {
+  background-color: #4caf50;
+}
+
 @media (min-width: 1024px) {
   .insurance_slider_container {
     display: flex;

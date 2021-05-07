@@ -1,7 +1,156 @@
+.treatment_center_image_container,
+.treatment_centers_container h2,
+.treatment_centers_container h3,
+.treatment_centers_container h4,
+.treatment_centers_container h5,
+.treatment_centers_container p {
+  text-align: center;
+  color: var(--secondary_color);
+}
+
+.treatment_centers_container h5 {
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.treatment_centers_container h2 {
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.treatment_centers_container h4 {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.treatment_center_container h4 {
+  font-weight: 600;
+}
+
+.treatment_centers_container p {
+  color: #000;
+  line-height: 1.5;
+}
+
+.treatment_center_image_container {
+  display: flex;
+  justify-content: center;
+}
+
+.treatment_center_image_container img {
+  max-height: 190px;
+  height: 100%;
+  margin-bottom: 35px;
+}
+
 .twenty_px_margin_divider {
   content: "";
   background-color: #cdcdcd;
   height: 1px;
   width: 90%;
   margin: 20px auto 25px auto;
+}
+
+.treatment_center_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.treatment_center_card_container {
+  width: 90%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.treatment_center_card_content_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .treatment_center_card_container {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .treatment_center_card_container {
+    width: 23%;
+  }
+  .treatment_center_card_content_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 85%;
+  }
+}
+
+.treatment_centers_container_two_rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.treatment_centers_container_two_rows h2,
+.treatment_centers_container_two_rows h3 {
+  text-align: center;
+  width: 100%;
+}
+
+.treatment_center_container_two_rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.treatment_center_card_container_two_rows {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.treatment_center_card_container_two_rows p {
+  text-align: center;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.treatment_center_card_learn_more {
+  margin-top: 0;
+  text-align: center;
+}
+
+.treatment_center_card_learn_more a {
+  margin-top: 25px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .treatment_center_container_two_rows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .treatment_center_container {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  .treatment_center_card_container_two_rows {
+    width: 48%;
+  }
+  .desktop_border_right {
+    border-right: 1px solid #cdcdcd;
+  }
+  .desktop_border_left {
+    border-left: 1px solid #cdcdcd;
+  }
+}
+
+.treatment_centers_section {
+  padding: 25px 0;
 }

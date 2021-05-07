@@ -1,0 +1,124 @@
+.insurance_page_container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 400px;
+}
+
+.insurance_page_video_content_section {
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+}
+
+.insurance_page_form_section {
+  padding-top: 10px;
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  background-color: var(--secondary_color);
+  border-radius: 2px;
+  color: #fff;
+}
+
+.check_insurance_headline {
+  text-align: center;
+}
+
+.insurance_page_video_headline h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #157aad;
+}
+
+.insurance_page_video_iframe {
+  text-align: center;
+}
+
+.insurance_page_video_content_container {
+  padding: 20px;
+}
+
+.insurance_page_video_content_container h3 {
+  color: #157aad;
+}
+
+@media (min-width: 1024px) {
+  .insurance_page_container {
+    flex-direction: row;
+  }
+  .insurance_page_container {
+    padding: 20px;
+  }
+  .insurance_page_video_content_section {
+    width: 50%;
+  }
+  .insurance_page_form_section {
+    width: 50%;
+  }
+}
+
+.insurance_page_hero {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.insurance_page_hero_headlines {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.insurance_page_hero h2 {
+  font-size: 24px;
+  width: 80%;
+  padding-top: 20px;
+}
+
+.insurance_page_hero h1,
+.insurance_page_hero h2 {
+  color: #fff;
+  text-shadow: 2px 2px 2px grey;
+  text-align: center;
+}
+
+.insurance_page_hero h2 {
+  width: 100%;
+}
+
+.youtube_headline {
+  color: var(--primary_color);
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .insurance_page_hero_headlines {
+    width: 70%;
+  }
+  .insurance_page_hero h2 {
+    padding-top: 36px;
+    width: 80%;
+    font-size: 32px;
+  }
+}
+
+.insurance_verification_page h2 {
+  text-align: center;
+  width: 100%;
+  margin: 25px auto 0 auto;
+}
+
+@media (min-width: 768px) {
+  .insurance_verification_page h2 {
+    width: 80%;
+  }
+}
