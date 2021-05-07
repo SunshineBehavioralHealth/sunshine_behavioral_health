@@ -5509,6 +5509,9 @@ blockquote p {
     width: 50%;
     text-align: center
   }
+}
+
+@media(min-width:768px) {
   .state_resources_lists_container ul li {
     list-style: none;
     margin: 10px;
