@@ -10,11 +10,7 @@
   flex-direction: row;
 }
 
-@media (min-width: 1024px) {
-  .footer_form_spacer {
-    display: none;
-  }
-}
+
 
 .social_media_container {
   background-color: var(--secondary_color);
@@ -567,5 +563,11 @@ footer .non_home_copyright {
     grid-column: span 2;
     z-index: 3;
     position: relative;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer_form_spacer {
+    display: none;
   }
 }

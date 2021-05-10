@@ -25,24 +25,6 @@ add_action('wp_enqueue_scripts', 'my_scripts');
 
 
 
-
-//Mega Menu
-// Remove the <div> surrounding the dynamic navigation to cleanup markup
-function my_wp_nav_menu_args($args = '')
-{
-	$args['container'] = false;
-	return $args;
-}
-// Remove Injected classes, ID's and Page ID's from Navigation <li> items
-function my_css_attributes_filter($var)
-{
-	return is_array($var) ? array() : '';
-}
-
-add_filter('wp_nav_menu_args', 'my_wp_nav_menu_args'); // Remove surrounding <div> from WP Navigation
-add_filter('page_css_class', 'my_css_attributes_filter', 100, 1); // Remove Navigation <li> Page ID's
-
-
 // Google fonts call in inc/Componenet.php in array
 
 
@@ -270,24 +252,21 @@ function get_related_author_posts()
 }
 
 
+function cloneRole()
+{
+	global $wp_roles;
+	if (!isset($wp_roles))
+		$wp_roles = new WP_Roles();
 
-/* Create Medical Review User Role */
-add_role(
-	'medical_reviewer', //  System name of the role.
-	__('Medical Reviewer'), // Display name of the role.
-	array(
-		'read'  => true,
-		'delete_posts'  => false,
-		'delete_published_posts' => false,
-		'edit_posts'   => true,
-		'publish_posts' => true,
-		'upload_files'  => false,
-		'edit_pages'  => true,
-		'edit_published_pages'  =>  true,
-		'publish_pages'  => false,
-		'delete_published_pages' => false, // This user will NOT be able to  delete published pages.
-	)
-);
+	$adm = $wp_roles->get_role('editor');
+
+	if (role_exists('Author+')) {
+		$wp_roles->add_role('add_author+', 'Author+', $adm->capabilities);
+	}
+	if (role_exists('MedicalReviewer+')) {
+		$wp_roles->add_role('add_medical_reviewer+', 'MedicalReviewer+', $adm->capabilities);
+	}
+}
 
 // Shortens string to variable number of words
 function shorten_string($sentence, $count)

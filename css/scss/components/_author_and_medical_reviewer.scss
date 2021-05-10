@@ -91,15 +91,7 @@
   max-width: 100px;
 }
 
-@media (min-width: 1024px) {
-  .editor_wrapper img,
-  .medical_review_wrapper img {
-    min-width: 10%;
-    margin: 0;
-    border-radius: 99px;
-    height: 115px;
-    max-width: 125px;
-  }
+
 }
 
 .medical_review_wrapper img {
@@ -272,79 +264,7 @@
   margin-top: 10px;
 }
 
-@media (min-width: 700px) {
-  .editor_and_review_section p,
-  .editor_meta_wrapper .editor_last_date,
-  .medical_review_meta_wrapper .medical_review_last_date,
-  .page_wrapper .editor_meta_name,
-  .page_wrapper .medical_review_meta_title {
-    font-size: 14px;
-    white-space: nowrap;
-  }
-  .editor_and_review_section .editor_wrapper img {
-    margin-right: 10px;
-  }
-  .editor_and_review_section {
-    display: flex;
-    flex-direction: row;
-  }
-  .medical_review_meta_wrapper {
-    margin-right: 50px;
-  }
-  .author_and_medical_reviwer_sidebar_section .medical_review_meta_wrapper {
-    margin-right: 0;
-  }
-  .editor_and_review_section .editor_wrapper {
-    display: flex;
-    flex-direction: row;
-  }
-  .editor_meta_wrapper,
-  .medical_review_meta_wrapper {
-    padding-top: 0;
-  }
-  .editor_meta_wrapper {
-    flex-direction: column;
-  }
-  .hero_subheadline {
-    color: #000;
-    text-shadow: none;
-    width: 100%;
-    font-weight: 500;
-    margin: 5px 0 15px 0;
-    padding: 0;
-    font-size: 16px;
-    text-align: left;
-  }
-  .editor_and_review_section .editor_last_date .editor_last_edit_date,
-  .medical_review_meta_wrapper .medical_review_last_date_content {
-    color: #585858;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .editor_container {
-    padding-bottom: 0;
-    width: 48%;
-    margin: 0;
-    align-items: center;
-  }
-  .editor_container_no_medical_user.editor_container {
-    width: 70%;
-    align-items: center;
-  }
-  .medical_review_container {
-    width: 48%;
-  }
-  .editor_and_review_section .editor_last_date .editor_last_edit_date {
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .editor_and_review_section .editor_meta_name .author_name_before_span {
-    font-size: 14px;
-  }
-  .page_wrapper .medical_review_meta_name {
-    font-size: 14px;
-  }
-}
+
 
 @media (max-width: 768px) {
   .editor_and_review_section {
@@ -557,6 +477,82 @@
   }
 }
 
+
+@media (min-width: 700px) {
+  .editor_and_review_section p,
+  .editor_meta_wrapper .editor_last_date,
+  .medical_review_meta_wrapper .medical_review_last_date,
+  .page_wrapper .editor_meta_name,
+  .page_wrapper .medical_review_meta_title {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .editor_and_review_section .editor_wrapper img {
+    margin-right: 10px;
+  }
+  .editor_and_review_section {
+    display: flex;
+    flex-direction: row;
+  }
+  .medical_review_meta_wrapper {
+    margin-right: 50px;
+  }
+  .author_and_medical_reviwer_sidebar_section .medical_review_meta_wrapper {
+    margin-right: 0;
+  }
+  .editor_and_review_section .editor_wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .editor_meta_wrapper,
+  .medical_review_meta_wrapper {
+    padding-top: 0;
+  }
+  .editor_meta_wrapper {
+    flex-direction: column;
+  }
+  .hero_subheadline {
+    color: #000;
+    text-shadow: none;
+    width: 100%;
+    font-weight: 500;
+    margin: 5px 0 15px 0;
+    padding: 0;
+    font-size: 16px;
+    text-align: left;
+  }
+  .editor_and_review_section .editor_last_date .editor_last_edit_date,
+  .medical_review_meta_wrapper .medical_review_last_date_content {
+    color: #585858;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .editor_container {
+    padding-bottom: 0;
+    width: 48%;
+    margin: 0;
+    align-items: center;
+  }
+  .editor_container_no_medical_user.editor_container {
+    width: 70%;
+    align-items: center;
+  }
+  .medical_review_container {
+    width: 48%;
+  }
+  .editor_and_review_section .editor_last_date .editor_last_edit_date {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .editor_and_review_section .editor_meta_name .author_name_before_span {
+    font-size: 14px;
+  }
+  .page_wrapper .medical_review_meta_name {
+    font-size: 14px;
+  }
+}
+
+
 @media (min-width: 1024px) {
   .medical_reviewer_container ul li .medical_reviewer_image_wrapper img,
   .author_container ul li .author_image_wrapper img {
@@ -615,3 +611,13 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: 1024px) {
+  .editor_wrapper img,
+  .medical_review_wrapper img {
+    min-width: 10%;
+    margin: 0;
+    border-radius: 99px;
+    height: 115px;
+    max-width: 125px;
+  }
