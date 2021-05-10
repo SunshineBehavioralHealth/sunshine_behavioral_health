@@ -30,7 +30,6 @@ const SASS_SOURCES = [
         cascade: false,
       })
     ]))
-    .pipe(groupmq()) // Group media queries!
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(rename('styleBuild.min.css'))
     .pipe(gulp.dest('css/')) // Output compiled files in the same dir as Sass sources
