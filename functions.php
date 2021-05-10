@@ -260,10 +260,10 @@ function cloneRole()
 
 	$adm = $wp_roles->get_role('editor');
 
-	if (role_exists('Author+')) {
+	if (!role_exists('Author+')) {
 		$wp_roles->add_role('add_author+', 'Author+', $adm->capabilities);
 	}
-	if (role_exists('MedicalReviewer+')) {
+	if (!role_exists('MedicalReviewer+')) {
 		$wp_roles->add_role('add_medical_reviewer+', 'MedicalReviewer+', $adm->capabilities);
 	}
 }
