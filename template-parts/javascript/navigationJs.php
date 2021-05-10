@@ -5,7 +5,7 @@
 
         $navIcon1 = get_template_directory_uri() . '/assets/images/icons/navbar_icon_about.png';
 
-        $navIcon2 = get_template_directory_uri() . '/assets/images/icons/navbar_icon_star.png';
+        $navIcon2 = get_template_directory_uri() . '/assets/images/icons/navbar_icon_heart.png';
 
         $navIcon3 = get_template_directory_uri() . '/assets/images/icons/navbar_icon_addiction.png';
 
