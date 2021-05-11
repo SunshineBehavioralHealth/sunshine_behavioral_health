@@ -21,7 +21,7 @@ if (is_home()) {
 
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		var sliders = document.querySelectorAll('.glide');
+		var sliders = document.querySelectorAll('.glide.testimonial_glide');
 
 		for (var i = 0; i < sliders.length; i++) {
 			var glide = new Glide(sliders[i], {
@@ -72,36 +72,9 @@ if (is_home()) {
 	<?php get_template_part('template-parts/content/covidNotice'); ?>
 
 	<!-- Treatment Centers -->
-	<section class="treatment_centers_section">
-		<div class="treatment_centers_container ">
-			<h2 class=""><?php echo get_field('treatment_center_card_headline') ?></h2>
-			<h4><?php echo get_field('treatment_center_card_subheadline') ?></h4>
-			<div class="treatment_center_container">
-				<?php
-				if (have_rows('treatment_center_cards')) :
-					while (have_rows('treatment_center_cards')) : the_row();
-				?>
-						<div class="treatment_center_card_container">
-							<a href="<?php echo get_sub_field('center_link') ?>">
-								<div class="treatment_center_image_container"><img class="" loading="lazy" src="<?php echo get_sub_field('image')['url'] ?>"></div>
-							</a>
-							<a href="<?php echo get_sub_field('center_link') ?>">
-								<h4 class="treatment_center_name"><?php echo get_sub_field('center_name') ?></h4>
-							</a>
-							<h5><?php echo get_sub_field('center_subtext') ?></h5>
-							<p><?php echo get_sub_field('center_content') ?></p>
-							<div class="treatment_center_card_learn_more">
-								<a href="<?php echo get_sub_field('center_link') ?>">Learn More</a>
-							</div>
-						</div>
-				<?php
-					endwhile;
-				endif;
-				?>
-			</div>
-		</div>
-	</section>
-	<!-- End Treatment -->
+
+	<?php get_template_part('template-parts/content/shortcodes/centers_cards_carousel'); ?>
+
 
 	<!-- Healing Interjection -->
 	<section>
@@ -150,10 +123,10 @@ if (is_home()) {
 
 	<!-- Testimonial Carousel -->
 	<section>
-		<div class=" testimonial_bg" style="background-image: url(<?php echo get_field('testimonial_carousel_background_image')['url'] ?>)">
+		<div class="testimonial_bg" style="background-image: url(<?php echo get_field('testimonial_carousel_background_image')['url'] ?>)">
 			<div class="">
 				<h4><?php echo get_field('testimonial_headline') ?></h4>
-				<div class="glide carousel<?php echo get_sub_field('increment') ?>">
+				<div class="glide testimonial_glide carousel<?php echo get_sub_field('increment') ?>">
 					<div class="glide__track" data-glide-el="track">
 						<ul class="glide__slides">
 							<?php
