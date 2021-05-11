@@ -91,9 +91,6 @@
   max-width: 100px;
 }
 
-
-}
-
 .medical_review_wrapper img {
   min-width: 10%;
   margin-right: 0.75rem;
@@ -263,8 +260,6 @@
 .author_and_medical_reviwer_sidebar_section .medical_review_container {
   margin-top: 10px;
 }
-
-
 
 @media (max-width: 768px) {
   .editor_and_review_section {
@@ -477,7 +472,6 @@
   }
 }
 
-
 @media (min-width: 700px) {
   .editor_and_review_section p,
   .editor_meta_wrapper .editor_last_date,
@@ -552,7 +546,6 @@
   }
 }
 
-
 @media (min-width: 1024px) {
   .medical_reviewer_container ul li .medical_reviewer_image_wrapper img,
   .author_container ul li .author_image_wrapper img {
@@ -621,3 +614,4 @@
     height: 115px;
     max-width: 125px;
   }
+}
