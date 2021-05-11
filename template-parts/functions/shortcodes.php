@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 // SHORTCODES
 //Contact Form CTA
@@ -625,3 +625,12 @@ function faq_sidebar()
 }
 
 add_shortcode('faq_sidebar', 'faq_sidebar');
+
+function centers_cards_carousel()
+{
+	ob_start();
+	get_template_part('template-parts/content/shortcodes/centers_cards_carousel');
+	return ob_get_clean();
+}
+
+add_shortcode('centers_cards_carousel', 'centers_cards_carousel');
