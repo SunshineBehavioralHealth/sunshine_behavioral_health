@@ -10,6 +10,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   padding: 5px;
+  align-items: center;
 }
 
 .centers_cards_carousel .centers_cards_indv_card:hover {
@@ -29,8 +30,7 @@
 }
 
 .centers_cards_carousel .centers_cards_indv_card img {
-  max-height: 190px;
-  height: 100%;
+  height: 190px;
 }
 
 .centers_cards_indv_card_state h4 {
@@ -41,7 +41,7 @@
   color: var(--secondary_color);
 }
 
-.centers_cards_indv_card_state .centers_cards_indv_card_subheadline {
+.centers_cards_indv_card .centers_cards_indv_card_subheadline {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -49,7 +49,7 @@
   color: #000;
 }
 
-.centers_cards_indv_card_state .centers_cards_indv_card_learn_more {
+.centers_cards_indv_card .centers_cards_indv_card_learn_more {
   margin: 0;
   font-size: 16px;
   display: flex;
