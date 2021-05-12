@@ -36,13 +36,12 @@
                             <div class="glide">
                                 <div class="glide__track" data-glide-el="track">
                                     <ul class="glide__slides">
-                                        <?php if (have_rows('centers_cards_repeater_images', 'option')) : ?>
+                                        <?php $glideIncrement = 0;
+                                        if (have_rows('centers_cards_repeater_images', 'option')) : ?>
                                             <?php while (have_rows('centers_cards_repeater_images', 'option')) : the_row(); ?>
-                                                <li class="glide__slide"><img src="<?php echo get_sub_field('image'); ?>"></li>
-
-                                                <?php
-                                                $image = get_sub_field('image');
-                                                print_r($image) ?>
+                                                <li class="glide__slide">
+                                                    <p>TEST<?php echo $glideIncrement++ ?></p>
+                                                </li>
                                             <?php endwhile; ?>
                                         <?php endif; ?>
                                     </ul>
