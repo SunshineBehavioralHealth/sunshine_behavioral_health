@@ -8,7 +8,7 @@
                 perView: 1,
                 hoverpause: true,
                 keyboard: true,
-                animationDuration: 2000
+                animationDuration: 1000
             });
 
             glide.mount();
@@ -44,8 +44,8 @@
                                 </ul>
                             </div>
                             <div class="glide__arrows" data-glide-el="controls">
-                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
-                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><?php echo get_template_directory_uri() . '/assets/images/icons/right_arrow.png'; ?></button>
+                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><?php echo get_template_directory_uri() . '/assets/images/icons/right_arrow.png'; ?></button>
                             </div>
                         </div>
                         <a href="<?php echo get_sub_field('link', 'option') ?>">
