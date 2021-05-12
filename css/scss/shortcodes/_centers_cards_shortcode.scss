@@ -20,6 +20,7 @@
   align-items: center;
   width: 100%;
   margin-bottom: 10px;
+  max-width: 300px;
 }
 
 .centers_cards_carousel .centers_cards_indv_card:hover {
@@ -73,6 +74,10 @@
   text-align: center;
   color: var(--primary_color);
   font-weight: 600;
+}
+
+.centers_cards_indv_card ul.glide__slides {
+  margin-left: 0;
 }
 
 .centers_cards_indv_card .glide__arrow img {
