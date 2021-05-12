@@ -29,28 +29,28 @@
             ?>
                     <div class="centers_cards_indv_card">
                         <p class="centers_cards_indv_card_state"><?php echo get_sub_field('state', 'option') ?></p>
-                        <div class="glide">
-                            <div class="glide__track" data-glide-el="track">
-                                <ul class="glide__slides">
-                                    <?php
-                                    $centers_cards_repeater_images = get_field('centers_cards_repeater_images', 'option');
-                                    $centers_cards_repeater_images_count = count($centers_cards_repeater_images);
-                                    if ($centers_cards_repeater_images_count > 1) : ?>
+                        <?php
+                        $centers_cards_repeater_images = get_field('centers_cards_repeater_images', 'option');
+                        $centers_cards_repeater_images_count = count($centers_cards_repeater_images);
+                        if ($centers_cards_repeater_images_count > 1) : ?>
+                            <div class="glide">
+                                <div class="glide__track" data-glide-el="track">
+                                    <ul class="glide__slides">
                                         <?php if (have_rows('centers_cards_repeater_images', 'option')) : ?>
                                             <?php while (have_rows('centers_cards_repeater_images', 'option')) : the_row(); ?>
-                                                <li class="glide__slide"><img src="<?php echo get_sub_field('image')['url']; ?>"></li>
+                                                <li class="glide__slide"><img src="<?php echo get_sub_field('image', 'option'); ?>"></li>
                                             <?php endwhile; ?>
                                         <?php endif; ?>
-                                    <?php else : ?>
-                                        <?php if (have_rows('centers_cards_repeater_images', 'option')) : ?>
-                                            <?php while (have_rows('centers_cards_repeater_images', 'option')) : the_row(); ?>
-                                                <img src="<?php get_sub_field('image', 'option')['url']; ?>">
-                                            <?php endwhile; ?>
-                                        <?php endif; ?>
-                                    <?php endif; ?>
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
+                        <?php else : ?>
+                            <?php if (have_rows('centers_cards_repeater_images', 'option')) : ?>
+                                <?php while (have_rows('centers_cards_repeater_images', 'option')) : the_row(); ?>
+                                    <img src="<?php get_sub_field('image', 'option')['url']; ?>">
+                                <?php endwhile; ?>
+                            <?php endif; ?>
+                        <?php endif; ?>
                         <a href="<?php echo get_sub_field('link', 'option') ?>">
                             <h4><?php echo get_sub_field('center_name', 'option') ?></h4>
                         </a>
