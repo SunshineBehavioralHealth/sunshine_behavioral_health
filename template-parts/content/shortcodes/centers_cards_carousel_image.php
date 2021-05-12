@@ -39,9 +39,10 @@
                                         <?php if (have_rows('centers_cards_repeater_images', 'option')) : ?>
                                             <?php while (have_rows('centers_cards_repeater_images', 'option')) : the_row(); ?>
                                                 <li class="glide__slide"><img src="<?php echo get_sub_field('image'); ?>"></li>
+
                                                 <?php
-                                                $imageIWant = get_sub_field('image');
-                                                print_r($imageIWant) ?>
+                                                $image = get_sub_field('image');
+                                                print_r($image) ?>
                                             <?php endwhile; ?>
                                         <?php endif; ?>
                                     </ul>
