@@ -29,31 +29,21 @@
             ?>
                     <div class="centers_cards_indv_card">
                         <p class="centers_cards_indv_card_state"><?php echo get_sub_field('state', 'option') ?></p>
-                        <?php
-                        $centers_cards_repeater_images = get_field('centers_cards_repeater_images', 'option');
-                        $centers_cards_repeater_images_count = count($centers_cards_repeater_images);
-                        if ($centers_cards_repeater_images_count > 1) : ?>
-                            <div class="glide">
-                                <div class="glide__track" data-glide-el="track">
-                                    <ul class="glide__slides">
-                                        <?php $glideIncrement = 0;
-                                        if (have_rows('centers_cards_repeater_images', 'option')) : ?>
-                                            <?php while (have_rows('centers_cards_repeater_images', 'option')) : the_row(); ?>
-                                                <li class="glide__slide">
-                                                    <p>TEST<?php echo $glideIncrement++ ?></p>
-                                                </li>
-                                            <?php endwhile; ?>
-                                        <?php endif; ?>
-                                    </ul>
-                                </div>
+                        <div class="glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <?php $glideIncrement = 0;
+                                    if (have_rows('centers_cards_repeater_images', 'option')) : ?>
+                                        <?php while (have_rows('centers_cards_repeater_images', 'option')) : the_row(); ?>
+                                            <li class="glide__slide">
+                                                <h3>Testing<?php echo $glideIncrement++ ?></h3>
+                                                <img src="<?php echo get_sub_field('image', 'option') ?>" alt="">
+                                            </li>
+                                        <?php endwhile; ?>
+                                    <?php endif; ?>
+                                </ul>
                             </div>
-                        <?php else : ?>
-                            <?php if (have_rows('centers_cards_repeater_images', 'option')) : ?>
-                                <?php while (have_rows('centers_cards_repeater_images', 'option')) : the_row(); ?>
-                                    <h2>ELSE</h2>
-                                <?php endwhile; ?>
-                            <?php endif; ?>
-                        <?php endif; ?>
+                        </div>
                         <a href="<?php echo get_sub_field('link', 'option') ?>">
                             <h4><?php echo get_sub_field('center_name', 'option') ?></h4>
                         </a>
