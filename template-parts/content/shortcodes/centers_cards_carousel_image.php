@@ -50,7 +50,7 @@
                         <?php else : ?>
                             <?php if (have_rows('centers_cards_repeater_images', 'option')) : ?>
                                 <?php while (have_rows('centers_cards_repeater_images', 'option')) : the_row(); ?>
-                                    <img src="<?php get_sub_field('image', 'option')['url']; ?>">
+                                    <h2>ELSE</h2>
                                 <?php endwhile; ?>
                             <?php endif; ?>
                         <?php endif; ?>
