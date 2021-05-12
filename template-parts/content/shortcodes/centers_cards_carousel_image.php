@@ -1,6 +1,6 @@
 <script type="text/javascript">
     jQuery(document).ready(function($) {
-        var sliders = document.querySelectorAll('.glide.centers_cards_carousel');
+        var sliders = document.querySelectorAll('.glide.centers_cards_carousel_image_glide');
 
         for (var i = 0; i < sliders.length; i++) {
             var glide = new Glide(sliders[i], {
@@ -29,7 +29,7 @@
             ?>
                     <div class="centers_cards_indv_card">
                         <p class="centers_cards_indv_card_state"><?php echo get_sub_field('state', 'option') ?></p>
-                        <div class="glide">
+                        <div class="glide centers_cards_carousel_image_glide">
                             <div class="glide__track" data-glide-el="track">
                                 <ul class="glide__slides">
                                     <?php if (have_rows('centers_cards_repeater_images', 'option')) : ?>
