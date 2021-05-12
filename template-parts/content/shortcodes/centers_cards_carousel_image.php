@@ -6,7 +6,6 @@
             var glide = new Glide(sliders[i], {
                 gap: 15,
                 perView: 1,
-                autoplay: 2000,
                 hoverpause: true,
                 keyboard: true,
                 animationDuration: 2000
@@ -43,6 +42,10 @@
                                         <?php endwhile; ?>
                                     <?php endif; ?>
                                 </ul>
+                            </div>
+                            <div class="glide__arrows" data-glide-el="controls">
+                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
                             </div>
                         </div>
                         <a href="<?php echo get_sub_field('link', 'option') ?>">
