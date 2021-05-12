@@ -18,7 +18,7 @@
   transition: 0.3s;
   padding: 5px;
   align-items: center;
-  width: 100%;
+  width: 45%;
   margin-bottom: 10px;
 }
 
@@ -73,12 +73,6 @@
   text-align: center;
   color: var(--primary_color);
   font-weight: 600;
-}
-
-@media (min-width: 768px) {
-  .centers_cards_carousel .centers_cards_indv_card {
-    width: 45%;
-  }
 }
 
 @media (min-width: 1024px) {
