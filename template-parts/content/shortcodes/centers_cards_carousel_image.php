@@ -37,15 +37,15 @@
                                     <?php if (have_rows('centers_cards_repeater_images', 'option')) : ?>
                                         <?php while (have_rows('centers_cards_repeater_images', 'option')) : the_row(); ?>
                                             <li class="glide__slide">
-                                                <img src="<?php echo get_sub_field('image', 'option')['url'] ?>" alt="">
+                                                <img src="<?php echo get_sub_field('image', 'option')['url'] ?>" loading="lazy" alt="">
                                             </li>
                                         <?php endwhile; ?>
                                     <?php endif; ?>
                                 </ul>
                             </div>
                             <div class="glide__arrows" data-glide-el="controls">
-                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><?php echo get_template_directory_uri() . '/assets/images/icons/right_arrow.png'; ?></button>
-                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><?php echo get_template_directory_uri() . '/assets/images/icons/right_arrow.png'; ?></button>
+                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="<?php echo get_template_directory_uri() . '/assets/images/icons/right_arrow.png'; ?>" loading="lazy" alt=""></button>
+                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="<?php echo get_template_directory_uri() . '/assets/images/icons/right_arrow.png'; ?>" loading="lazy" alt=""></button>
                             </div>
                         </div>
                         <a href="<?php echo get_sub_field('link', 'option') ?>">
