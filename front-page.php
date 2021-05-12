@@ -56,8 +56,8 @@ if (is_home()) {
 				$heroCTA2 = get_field('hero_cta_bottom'); ?>
 
 				<div class="cta_btn btn_mountain1 btn_mountain1_hero sbh_center_btn sbh_center_btn_hero hero_cta">
-					<a href="tel:949-276-2886" class="hpHeroPhone hide_on_mobile invocaNumber" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'hpHeroPhone'});"><?php echo $heroCTA1['title'] ?></a>
-					<a href="tel:949-276-2886" class="mobileHeroPhone hide_on_desktop invocaNumber" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'mobileHeroPhone'});"><?php echo $heroCTA1['title'] ?></a>
+					<a href="tel:949-276-2886" id="hpHeroPhone" class="hpHeroPhone hide_on_mobile invocaNumber" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'hpHeroPhone'});"><?php echo $heroCTA1['title'] ?></a>
+					<a href="tel:949-276-2886" id="mobileHeroPhone" class="mobileHeroPhone hide_on_desktop invocaNumber" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'mobileHeroPhone'});"><?php echo $heroCTA1['title'] ?></a>
 				</div>
 
 				<div class="cta_btn btn_mountain2 hero_cta">

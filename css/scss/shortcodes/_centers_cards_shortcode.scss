@@ -3,6 +3,13 @@
   flex-direction: column;
 }
 
+.centers_cards_carousel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .centers_cards_carousel .centers_cards_indv_card {
   display: flex;
   flex-direction: column;
@@ -11,6 +18,7 @@
   transition: 0.3s;
   padding: 5px;
   align-items: center;
+  width: 30%;
 }
 
 .centers_cards_carousel .centers_cards_indv_card:hover {

@@ -14,6 +14,8 @@ $AuthorUser = get_field("editor_user");
     let testVariable;
 
     var dataLayer = window.dataLayer = window.dataLayer || [];
+    console.log("data layer value we are looking for:", dataLayer);
+
     dataLayer.push({
         'event': 'trackerReady',
         'client_id': googleCID,
