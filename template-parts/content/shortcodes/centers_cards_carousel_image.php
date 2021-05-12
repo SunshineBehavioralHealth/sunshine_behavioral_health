@@ -6,9 +6,10 @@
             var glide = new Glide(sliders[i], {
                 gap: 15,
                 perView: 1,
-                autoplay: 1000,
+                autoplay: 3000,
                 hoverpause: true,
                 keyboard: true,
+                animationDuration: 1500
             });
 
             glide.mount();
