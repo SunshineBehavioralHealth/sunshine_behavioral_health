@@ -9,7 +9,7 @@
                 autoplay: 2000,
                 hoverpause: true,
                 keyboard: true,
-                animationDuration: 1500
+                animationDuration: 2000
             });
 
             glide.mount();
