@@ -33,18 +33,18 @@
                             <div class="glide__track" data-glide-el="track">
                                 <ul class="glide__slides">
                                     <?php
-                                    $centers_cards_repeater_images = get_field('centers_cards_repeater_images');
+                                    $centers_cards_repeater_images = get_field('centers_cards_repeater_images', 'option');
                                     $centers_cards_repeater_images_count = count($centers_cards_repeater_images);
                                     if ($centers_cards_repeater_images_count > 1) : ?>
-                                        <?php if (have_rows('centers_cards_repeater_images')) : ?>
-                                            <?php while (have_rows('centers_cards_repeater_images')) : the_row(); ?>
+                                        <?php if (have_rows('centers_cards_repeater_images', 'option')) : ?>
+                                            <?php while (have_rows('centers_cards_repeater_images', 'option')) : the_row(); ?>
                                                 <li class="glide__slide"><img src="<?php echo get_sub_field('image')['url']; ?>"></li>
                                             <?php endwhile; ?>
                                         <?php endif; ?>
                                     <?php else : ?>
-                                        <?php if (have_rows('centers_cards_repeater_images')) : ?>
-                                            <?php while (have_rows('centers_cards_repeater_images')) : the_row(); ?>
-                                                <img src="<?php get_sub_field('image')['url']; ?>">
+                                        <?php if (have_rows('centers_cards_repeater_images', 'option')) : ?>
+                                            <?php while (have_rows('centers_cards_repeater_images', 'option')) : the_row(); ?>
+                                                <img src="<?php get_sub_field('image', 'option')['url']; ?>">
                                             <?php endwhile; ?>
                                         <?php endif; ?>
                                     <?php endif; ?>
