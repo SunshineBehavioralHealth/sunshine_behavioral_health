@@ -73,7 +73,7 @@ if (is_home()) {
 
 	<!-- Treatment Centers -->
 
-	<?php get_template_part('template-parts/content/shortcodes/centers_cards_carousel'); ?>
+	<?php get_template_part('template-parts/content/shortcodes/centers_cards_carousel_image'); ?>
 
 
 	<!-- Healing Interjection -->
