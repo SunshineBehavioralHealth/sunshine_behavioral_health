@@ -37,18 +37,14 @@
                                     $centers_cards_repeater_images_count = count($centers_cards_repeater_images);
                                     if ($centers_cards_repeater_images_count > 1) : ?>
                                         <?php if (have_rows('centers_cards_repeater_images')) : ?>
-                                            <?php while (have_rows('centers_cards_repeater_images')) : the_row();
-                                                $image = get_sub_field('image')['url'];
-                                            ?>
-                                                <li class="glide__slide"><img src="<?php echo $image; ?>"></li>
+                                            <?php while (have_rows('centers_cards_repeater_images')) : the_row(); ?>
+                                                <li class="glide__slide"><img src="<?php echo get_sub_field('image')['url']; ?>"></li>
                                             <?php endwhile; ?>
                                         <?php endif; ?>
                                     <?php else : ?>
                                         <?php if (have_rows('centers_cards_repeater_images')) : ?>
-                                            <?php while (have_rows('centers_cards_repeater_images')) : the_row();
-                                                $image = get_sub_field('image');
-                                            ?>
-                                                <img src="<?php echo $image; ?>">
+                                            <?php while (have_rows('centers_cards_repeater_images')) : the_row(); ?>
+                                                <img src="<?php get_sub_field('image')['url']; ?>">
                                             <?php endwhile; ?>
                                         <?php endif; ?>
                                     <?php endif; ?>
