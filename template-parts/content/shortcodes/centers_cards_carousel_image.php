@@ -29,7 +29,9 @@
                 while (have_rows('centers_cards_repeater', 'option')) : the_row();
             ?>
                     <div class="centers_cards_indv_card">
-                        <p class="centers_cards_indv_card_state"><?php echo get_sub_field('state', 'option') ?></p>
+                        <a href="<?php echo get_sub_field('link', 'option') ?>">
+                            <p class="centers_cards_indv_card_state"><?php echo get_sub_field('state', 'option') ?></p>
+                        </a>
                         <div class="glide centers_cards_carousel_image_glide">
                             <div class="glide__track" data-glide-el="track">
                                 <ul class="glide__slides">
