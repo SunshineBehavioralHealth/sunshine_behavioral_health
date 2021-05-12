@@ -79,6 +79,10 @@
   border: none;
 }
 
+.centers_cards_indv_card .glide__arrow img {
+  max-height: 10px;
+}
+
 @media (min-width: 600px) {
   .centers_cards_carousel .centers_cards_indv_card {
     width: 45%;

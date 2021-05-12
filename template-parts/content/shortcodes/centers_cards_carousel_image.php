@@ -44,7 +44,7 @@
                                 </ul>
                             </div>
                             <div class="glide__arrows" data-glide-el="controls">
-                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="<?php echo get_template_directory_uri() . '/assets/images/icons/right_arrow.png'; ?>" loading="lazy" alt=""></button>
+                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="<?php echo get_template_directory_uri() . '/assets/images/icons/left_arrow.png'; ?>" loading="lazy" alt=""></button>
                                 <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="<?php echo get_template_directory_uri() . '/assets/images/icons/right_arrow.png'; ?>" loading="lazy" alt=""></button>
                             </div>
                         </div>
