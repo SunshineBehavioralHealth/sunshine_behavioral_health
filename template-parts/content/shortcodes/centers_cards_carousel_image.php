@@ -38,7 +38,7 @@
                                     if ($centers_cards_repeater_images_count > 1) : ?>
                                         <?php if (have_rows('centers_cards_repeater_images')) : ?>
                                             <?php while (have_rows('centers_cards_repeater_images')) : the_row();
-                                                $image = get_sub_field('image');
+                                                $image = get_sub_field('image')['url'];
                                             ?>
                                                 <li class="glide__slide"><img src="<?php echo $image; ?>"></li>
                                             <?php endwhile; ?>
