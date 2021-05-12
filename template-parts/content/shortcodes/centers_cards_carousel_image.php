@@ -6,7 +6,7 @@
             var glide = new Glide(sliders[i], {
                 gap: 15,
                 perView: 1,
-                autoplay: 3000,
+                autoplay: 2000,
                 hoverpause: true,
                 keyboard: true,
                 animationDuration: 1500
