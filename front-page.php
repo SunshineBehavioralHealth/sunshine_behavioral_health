@@ -278,41 +278,6 @@ if (is_home()) {
 
 	<!-- End Blog Posts -->
 
-	<!-- STAFF -->
-	<!-- <section id="home_staff_section" class="">
-		<div class="staff_container ">
-			<h2 class="staff_headline"><?php the_field('staff_headline') ?></h2>
-			<div class=" row staff_width">
-
-				<?php
-				if (have_rows('staff_cards')) :
-					while (have_rows('staff_cards')) : the_row();
-				?>
-						<div class="staff_individual_card">
-							<img src="<?php echo the_sub_field('staff_image')['url'] ?>" alt="">
-							<h3 class="staff_name_home"><?php echo the_sub_field('staff_name') ?></h3>
-							<h3><?php echo the_sub_field('staff_title') ?></h3>
-							<p><?php echo the_sub_field('staff_content') ?></p>
-						</div>
-				<?php
-					endwhile;
-				endif;
-				?>
-				<div class="rest_of_staff_link_container">
-					<a href="http://monarchshores.com/about/staff/" >
-						<h3>Meet the Rest of Our Staff</h3>
-					</a>
-				</div>
-			</div>
-
-
-
-		</div>
-	</section> -->
-
-
-	<!-- End Staff -->
-
 	<section class="downloadable_guides_section">
 		<div class="downloadable_guides_container">
 			<div class="downloadable_guides_image_headline">
@@ -393,7 +358,8 @@ if (is_home()) {
 		</div>
 	</section>
 
-	<section class="state_resources_section lazy" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/images/sunshine_bg_image_treatment_states.jpg' ?>)">
+	<section class="state_resources_section lazy">
+		<img src="<?php echo get_template_directory_uri() . '/assets/images/sunshine_state_resources_background.jpg' ?>" alt="">
 		<div class="state_resources_container">
 			<div class="state_resources_headline">
 				<img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/images/icons/address_white.png' ?>" alt="">

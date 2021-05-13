@@ -87,12 +87,20 @@
   height: auto;
 }
 
+.state_resources_section img {
+  position: relative;
+}
+
 .state_resources_container {
-  width: 75%;
+  width: 100%;
+  border: 2px solid green;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .state_resources_headline {
