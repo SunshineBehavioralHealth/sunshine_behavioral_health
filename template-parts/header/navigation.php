@@ -6,9 +6,7 @@
  * @package sunshine_behavioral_health
  */
 
-namespace WP_Rig\WP_Rig;
-
-?>
+namespace WP_Rig\WP_Rig; ?>
 
 <nav id="site-navigation" class="main-navigation nav--toggle-sub sticky_nav">
 	<div class="nav_top_container">
@@ -25,6 +23,7 @@ namespace WP_Rig\WP_Rig;
 					<?php get_search_form(); ?>
 				</div>
 			</div>
+
 			<div class="nav_notice_and_cta_wrapper hide_on_mobile">
 				<div class="covid_notice_container ">
 					<a class="corona_virus_udpate" href="<?php echo get_field('covid19_link', 'option'); ?>">Our Response To The Corona Virus Health Concern
@@ -34,13 +33,8 @@ namespace WP_Rig\WP_Rig;
 				<div class="navbar_cta_container">
 					<a id="navCtaPhone" href="tel:949-276-2886" class="invocaNumber navCtaPhone" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'navCtaPhone'});">949-276-2886</a>
 				</div>
-
-
 			</div>
 		</div>
-
-
-
 	</div>
 	<div class="nav_bottom_container">
 		<div class="navigation_wrapper">
@@ -53,21 +47,10 @@ namespace WP_Rig\WP_Rig;
 					<div class="desktop_nav_search_subnav_wrapper sub_menu_wrapper">
 						<div class="search_bar_wrapper_desktop">
 							<?php get_search_form(); ?>
-
 						</div>
 					</div>
-
 				</div>
 			</div>
-
 		</div>
 	</div>
 </nav><!-- #site-navigation -->
-
-
-
-
-<?php
-
-
-?>
