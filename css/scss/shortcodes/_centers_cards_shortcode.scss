@@ -40,10 +40,9 @@
   font-weight: 600;
 }
 
-.centers_cards_indv_card .centers_cards_card_image {
+.centers_cards_indv_card img {
   height: 150px;
   margin: 0 auto;
-  width: 260px;
 }
 
 .centers_cards_indv_card h4 {
@@ -56,14 +55,6 @@
 }
 
 .centers_cards_indv_card .centers_cards_indv_card_subheadline {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  color: #000;
-}
-
-.centers_cards_indv_card .centers_cards_indv_card_paragraph {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -89,17 +80,8 @@
   margin-left: 0;
 }
 
-.centers_cards_indv_card li.glide__slide {
-  width: 265px !important;
-}
-
 .centers_cards_indv_card .glide__arrow img {
   max-height: 10px;
-}
-
-.centers_cards_indv_card .glide__arrow {
-  border: none;
-  box-shadow: none;
 }
 
 @media (min-width: 600px) {
