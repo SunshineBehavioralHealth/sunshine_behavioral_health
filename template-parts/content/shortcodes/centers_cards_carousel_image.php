@@ -29,7 +29,7 @@
             ?>
                     <div class="centers_cards_indv_card">
                         <a href="<?php echo get_sub_field('link', 'option') ?>">
-                            <p class="centers_cards_indv_card_state"><?php echo get_sub_field('state', 'option') ?></p>
+                            <h5 class="centers_cards_indv_card_state"><?php echo get_sub_field('state', 'option') ?></h5>
                         </a>
                         <div class="glide centers_cards_carousel_image_glide">
                             <div class="glide__track" data-glide-el="track">
@@ -51,7 +51,8 @@
                         <a href="<?php echo get_sub_field('link', 'option') ?>">
                             <h4><?php echo get_sub_field('center_name', 'option') ?></h4>
                         </a>
-                        <p class="centers_cards_indv_card_subheadline"><?php echo get_sub_field('center_subheadline', 'option') ?></p>
+                        <h5 class="centers_cards_indv_card_subheadline"><?php echo get_sub_field('center_subheadline', 'option') ?></h5>
+                        <p class="centers_cards_indv_card_paragraph"><?php echo get_sub_field('center_paragraph', 'option') ?></p>
                         <a href="<?php echo get_sub_field('link', 'option') ?>" class="centers_cards_indv_card_learn_more">Learn More</a>
                     </div>
 
