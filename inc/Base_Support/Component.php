@@ -1,4 +1,5 @@
 <?php
+
 /**
  * WP_Rig\WP_Rig\Base_Support\Component class
  *
@@ -27,27 +28,30 @@ use function get_template;
  * * `sunshine_behavioral_health()->get_version()`
  * * `sunshine_behavioral_health()->get_asset_version( string $filepath )`
  */
-class Component implements Component_Interface, Templating_Component_Interface {
+class Component implements Component_Interface, Templating_Component_Interface
+{
 
 	/**
 	 * Gets the unique identifier for the theme component.
 	 *
 	 * @return string Component slug.
 	 */
-	public function get_slug() : string {
+	public function get_slug(): string
+	{
 		return 'base_support';
 	}
 
 	/**
 	 * Adds the action and filter hooks to integrate with WordPress.
 	 */
-	public function initialize() {
-		add_action( 'after_setup_theme', [ $this, 'action_essential_theme_support' ] );
-		add_action( 'wp_head', [ $this, 'action_add_pingback_header' ] );
-		add_filter( 'body_class', [ $this, 'filter_body_classes_add_hfeed' ] );
-		add_filter( 'embed_defaults', [ $this, 'filter_embed_dimensions' ] );
-		add_filter( 'theme_scandir_exclusions', [ $this, 'filter_scandir_exclusions_for_optional_templates' ] );
-		add_filter( 'script_loader_tag', [ $this, 'filter_script_loader_tag' ], 10, 2 );
+	public function initialize()
+	{
+		add_action('after_setup_theme', [$this, 'action_essential_theme_support']);
+		add_action('wp_head', [$this, 'action_add_pingback_header']);
+		add_filter('body_class', [$this, 'filter_body_classes_add_hfeed']);
+		add_filter('embed_defaults', [$this, 'filter_embed_dimensions']);
+		add_filter('theme_scandir_exclusions', [$this, 'filter_scandir_exclusions_for_optional_templates']);
+		add_filter('script_loader_tag', [$this, 'filter_script_loader_tag'], 10, 2);
 	}
 
 	/**
@@ -57,19 +61,21 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 *               a callable or an array with key 'callable'. This approach is used to reserve the possibility of
 	 *               adding support for further arguments in the future.
 	 */
-	public function template_tags() : array {
+	public function template_tags(): array
+	{
 		return [
-			'get_version'       => [ $this, 'get_version' ],
-			'get_asset_version' => [ $this, 'get_asset_version' ],
+			'get_version'       => [$this, 'get_version'],
+			'get_asset_version' => [$this, 'get_asset_version'],
 		];
 	}
 
 	/**
 	 * Adds theme support for essential features.
 	 */
-	public function action_essential_theme_support() {
+	public function action_essential_theme_support()
+	{
 		// Add default RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
+		add_theme_support('automatic-feed-links');
 
 
 		// Ensure WordPress theme features render in HTML5 markup.
@@ -85,18 +91,19 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		);
 
 		// Add support for selective refresh for widgets.
-		add_theme_support( 'customize-selective-refresh-widgets' );
+		add_theme_support('customize-selective-refresh-widgets');
 
 		// Add support for responsive embedded content.
-		add_theme_support( 'responsive-embeds' );
+		add_theme_support('responsive-embeds');
 	}
 
 	/**
 	 * Adds a pingback url auto-discovery header for singularly identifiable articles.
 	 */
-	public function action_add_pingback_header() {
-		if ( is_singular() && pings_open() ) {
-			echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
+	public function action_add_pingback_header()
+	{
+		if (is_singular() && pings_open()) {
+			echo '<link rel="pingback" href="', esc_url(get_bloginfo('pingback_url')), '">';
 		}
 	}
 
@@ -106,24 +113,15 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 * @param array $classes Classes for the body element.
 	 * @return array Filtered body classes.
 	 */
-	public function filter_body_classes_add_hfeed( array $classes ) : array {
-		if ( ! is_singular() ) {
+	public function filter_body_classes_add_hfeed(array $classes): array
+	{
+		if (!is_singular()) {
 			$classes[] = 'hfeed';
 		}
 
 		return $classes;
 	}
 
-	/**
-	 * Sets the embed width in pixels, based on the theme's design and stylesheet.
-	 *
-	 * @param array $dimensions An array of embed width and height values in pixels (in that order).
-	 * @return array Filtered dimensions array.
-	 */
-	public function filter_embed_dimensions( array $dimensions ) : array {
-		$dimensions['width'] = 720;
-		return $dimensions;
-	}
 
 	/**
 	 * Excludes any directory named 'optional' from being scanned for theme template files.
@@ -133,10 +131,11 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 * @param array $exclusions the default directories to exclude.
 	 * @return array Filtered exclusions.
 	 */
-	public function filter_scandir_exclusions_for_optional_templates( array $exclusions ) : array {
+	public function filter_scandir_exclusions_for_optional_templates(array $exclusions): array
+	{
 		return array_merge(
 			$exclusions,
-			[ 'optional' ]
+			['optional']
 		);
 	}
 
@@ -151,16 +150,17 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 * @param string $handle The script handle.
 	 * @return string Script HTML string.
 	 */
-	public function filter_script_loader_tag( string $tag, string $handle ) : string {
+	public function filter_script_loader_tag(string $tag, string $handle): string
+	{
 
-		foreach ( [ 'async', 'defer' ] as $attr ) {
-			if ( ! wp_scripts()->get_data( $handle, $attr ) ) {
+		foreach (['async', 'defer'] as $attr) {
+			if (!wp_scripts()->get_data($handle, $attr)) {
 				continue;
 			}
 
 			// Prevent adding attribute when already added in #12009.
-			if ( ! preg_match( ":\s$attr(=|>|\s):", $tag ) ) {
-				$tag = preg_replace( ':(?=></script>):', " $attr", $tag, 1 );
+			if (!preg_match(":\s$attr(=|>|\s):", $tag)) {
+				$tag = preg_replace(':(?=></script>):', " $attr", $tag, 1);
 			}
 
 			// Only allow async or defer, not both.
@@ -175,11 +175,12 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 *
 	 * @return string Theme version number.
 	 */
-	public function get_version() : string {
+	public function get_version(): string
+	{
 		static $theme_version = null;
 
-		if ( null === $theme_version ) {
-			$theme_version = wp_get_theme( get_template() )->get( 'Version' );
+		if (null === $theme_version) {
+			$theme_version = wp_get_theme(get_template())->get('Version');
 		}
 
 		return $theme_version;
@@ -193,9 +194,10 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 * @param string $filepath Asset file path.
 	 * @return string Asset version number.
 	 */
-	public function get_asset_version( string $filepath ) : string {
-		if ( WP_DEBUG ) {
-			return (string) filemtime( $filepath );
+	public function get_asset_version(string $filepath): string
+	{
+		if (WP_DEBUG) {
+			return (string) filemtime($filepath);
 		}
 
 		return $this->get_version();
