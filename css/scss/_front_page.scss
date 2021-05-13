@@ -103,6 +103,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  height: 85%;
 }
 
 .state_resources_headline {
@@ -112,8 +113,6 @@
   align-items: center;
   text-align: center;
 }
-
-
 
 .state_resources_headline h2 {
   color: #fff;
@@ -129,6 +128,7 @@
 
 .state_resources_lists_container::-webkit-scrollbar {
   width: 10px;
+  margin-right: 5px;
 }
 
 .state_resources_lists_container::-webkit-scrollbar-track {
@@ -151,7 +151,7 @@
 .state_resources_lists_container ul li {
   list-style: none;
   margin: 10px;
-  width: 45%;
+  width: 29%;
   display: flex;
   justify-content: center;
 }
@@ -179,7 +179,7 @@
   .state_resources_lists_container ul li {
     list-style: none;
     margin: 10px;
-    width: 28%;
+    width: 22%;
     display: flex;
     justify-content: center;
   }
@@ -190,10 +190,6 @@
 }
 
 @media (min-width: 1025px) {
-  .state_resources_container {
-    height: 85%;
-  }
-
   .state_resources_lists_container ul li {
     list-style: none;
     margin: 5px;
