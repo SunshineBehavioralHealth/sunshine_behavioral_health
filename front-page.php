@@ -359,7 +359,7 @@ if (is_home()) {
 	</section>
 
 	<section class="state_resources_section lazy">
-		<img class="state_resources_background_image" src="<?php echo get_template_directory_uri() . '/assets/images/sunshine_state_resources_background.jpg' ?>" alt="">
+		<img class="state_resources_background_image" src="<?php echo get_template_directory_uri() . '/assets/images/sunshine_state_resources_background.jpg' ?>" alt="" loading="lazy">
 		<div class="state_resources_container">
 			<div class="state_resources_headline">
 				<img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/images/icons/address_white.png' ?>" alt="">
