@@ -10,7 +10,7 @@
             <li>—What Your Insurance Will Cover</li>
         </ul>
         <div class="treatment_questions_sidebar_cta">
-            <a  href="tel:949-276-2886" class="invocaNumber cta_left rightSidebarStandardCtaPhone" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'rightSidebarStandardCtaPhone'});">949-276-2886</a>
+            <a id="rightSidebarStandardCtaPhone"  href="tel:949-276-2886" class="invocaNumber cta_left rightSidebarStandardCtaPhone" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'rightSidebarStandardCtaPhone'});">949-276-2886</a>
         </div>
 
     </div>

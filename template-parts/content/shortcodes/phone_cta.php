@@ -5,7 +5,7 @@
                 <h4>Now is the time to seek help. Call us today.</h4>
             </div>
 
-            <a class="invocaNumber phoneCta" href="tel:949-276-2886" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'phoneCta'});">949-276-2886</a>
+            <a id="phoneCta" class="invocaNumber phoneCta" href="tel:949-276-2886" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'phoneCta'});">949-276-2886</a>
         </div>
     </div>
 </section>

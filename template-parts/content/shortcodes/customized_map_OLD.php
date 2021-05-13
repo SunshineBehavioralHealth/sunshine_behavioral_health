@@ -37,7 +37,7 @@ $centerSelection = get_field('customized_map_center_options');
                 </ul>
                 <div class="customized_map_cta_wrapper">
                     <p></p>
-                    <a class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                    <a id="customziedMapPhoneCta" id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
                 </div>
             <?php elseif ($centerSelection == "Lincoln Recovery") :
                 $checkmarkIcon = '/assets/images/icons/checkmark_icon_lincoln.png'; ?>
@@ -64,7 +64,7 @@ $centerSelection = get_field('customized_map_center_options');
                 </ul>
                 <div class="customized_map_cta_wrapper">
                     <p></p>
-                    <a class="invocaNumber customzied_map_cta customziedMapPhoneCta" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                    <a id="customziedMapPhoneCta" id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
                 </div>
             <?php elseif ($centerSelection == "Monarch Shores") :
                 $checkmarkIcon = '/assets/images/icons/checkmark_icon_monarch.png'; ?>
@@ -91,7 +91,7 @@ $centerSelection = get_field('customized_map_center_options');
                 </ul>
                 <div class="customized_map_cta_wrapper">
                     <p></p>
-                    <a class="invocaNumber customzied_map_cta customziedMapPhoneCta" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                    <a id="customziedMapPhoneCta" id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
                 </div>
             <?php elseif ($centerSelection == "Mountain Springs Recovery") :
                 $checkmarkIcon = '/assets/images/icons/checkmark_icon_mountain.png'; ?>
@@ -118,7 +118,7 @@ $centerSelection = get_field('customized_map_center_options');
                 </ul>
                 <div class="customized_map_cta_wrapper">
                     <p></p>
-                    <a class="invocaNumber customzied_map_cta customziedMapPhoneCta" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                    <a id="customziedMapPhoneCta" id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
                 </div>
             <?php elseif ($centerSelection == "Willow Springs Recovery") :
                 $checkmarkIcon = '/assets/images/icons/checkmark_icon_willow.png'; ?>
@@ -145,7 +145,7 @@ $centerSelection = get_field('customized_map_center_options');
                 </ul>
                 <div class="customized_map_cta_wrapper">
                     <p></p>
-                    <a class="invocaNumber customzied_map_cta customziedMapPhoneCta" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                    <a id="customziedMapPhoneCta" id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
                 </div>
             <?php endif; ?>
         </div>

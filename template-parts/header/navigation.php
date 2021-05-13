@@ -32,7 +32,7 @@ namespace WP_Rig\WP_Rig;
 				</div>
 
 				<div class="navbar_cta_container">
-					<a href="tel:949-276-2886" class="invocaNumber navCtaPhone" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'navCtaPhone'});">949-276-2886</a>
+					<a id="navCtaPhone" href="tel:949-276-2886" class="invocaNumber navCtaPhone" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'navCtaPhone'});">949-276-2886</a>
 				</div>
 
 

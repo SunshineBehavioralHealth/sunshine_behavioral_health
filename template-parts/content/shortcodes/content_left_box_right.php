@@ -5,7 +5,7 @@
         </div>
         <div class="CLBR_box_right">
             <h4>Are alcohol and drugs ruining your life?</h4>
-            <a class="invocaNumber contentBoxCtaPhone" href="tel:949-276-2886" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'contentBoxCtaPhone'});">FIND HELP NOW</a>
+            <a id="contentBoxCtaPhone" class="invocaNumber contentBoxCtaPhone" href="tel:949-276-2886" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'contentBoxCtaPhone'});">FIND HELP NOW</a>
         </div>
     </div>
 </section>

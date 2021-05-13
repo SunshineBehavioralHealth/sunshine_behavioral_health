@@ -29,7 +29,7 @@ namespace WP_Rig\WP_Rig;
 
 					<div class="stanard_footer_phone">
 						<img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/images/icons/phone_white_icon.png' ?>" alt="">
-						<a class="invocaNumber footerPhone" href="tel:949-276-2886" class="invocaNumber cta_left">949-276-2886</a>
+						<a id="footerPhone" class="invocaNumber footerPhone" href="tel:949-276-2886">949-276-2886</a>
 					</div>
 
 					<div class="stanard_footer_email">

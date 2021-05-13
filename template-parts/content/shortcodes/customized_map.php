@@ -20,7 +20,7 @@ $centerSelection = get_field('customized_map_center_options');
                 </div>
                 <div class="customized_map_body_wrapper">
                     <img class="customized_map_main_image" src="<?php echo get_template_directory_uri() . '/assets/images/customized_map_body_chapters.jpg' ?>" alt="">
-                    <a class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                    <a id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
                 </div>
 
 
@@ -39,7 +39,7 @@ $centerSelection = get_field('customized_map_center_options');
                 </div>
                 <div class="customized_map_body_wrapper">
                     <img class="customized_map_main_image" src="<?php echo get_template_directory_uri() . '/assets/images/customized_map_body_lincoln.jpg' ?>" alt="">
-                    <a class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                    <a id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
                 </div>
 
             <?php elseif ($centerSelection == "Monarch Shores") :
@@ -56,7 +56,7 @@ $centerSelection = get_field('customized_map_center_options');
                 </div>
                 <div class="customized_map_body_wrapper">
                     <img class="customized_map_main_image" src="<?php echo get_template_directory_uri() . '/assets/images/customized_map_body_monarch.jpg' ?>" alt="">
-                    <a class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                    <a id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
                 </div>
 
             <?php elseif ($centerSelection == "Mountain Springs Recovery") :
@@ -73,7 +73,7 @@ $centerSelection = get_field('customized_map_center_options');
                 </div>
                 <div class="customized_map_body_wrapper">
                     <img class="customized_map_main_image" src="<?php echo get_template_directory_uri() . '/assets/images/customized_map_body_mountain.jpg' ?>" alt="">
-                    <a class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                    <a id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
                 </div>
 
             <?php elseif ($centerSelection == "Willow Springs Recovery") :
@@ -90,7 +90,7 @@ $centerSelection = get_field('customized_map_center_options');
                 </div>
                 <div class="customized_map_body_wrapper">
                     <img class="customized_map_main_image" src="<?php echo get_template_directory_uri() . '/assets/images/customized_map_body_willow.jpg' ?>" alt="">
-                    <a class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                    <a id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
                 </div>
 
             <?php endif; ?>
