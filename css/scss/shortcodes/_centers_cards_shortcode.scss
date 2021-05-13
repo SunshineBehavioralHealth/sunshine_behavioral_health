@@ -42,6 +42,7 @@
 
 .centers_cards_indv_card img {
   height: 150px;
+  width: 260px;
   margin: 0 auto;
 }
 
@@ -80,8 +81,14 @@
   margin-left: 0;
 }
 
+.centers_cards_indv_card .glide__arrow {
+  border: none;
+  box-shadow: none;
+}
+
 .centers_cards_indv_card .glide__arrow img {
   max-height: 10px;
+  width: auto;
 }
 
 @media (min-width: 600px) {
