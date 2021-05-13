@@ -46,13 +46,21 @@
   font-weight: 600;
 }
 
-.centers_cards_indv_card .centers_cards_indv_card_subheadline,
-.centers_cards_indv_card .centers_cards_indv_card_state {
+.centers_cards_indv_card .centers_cards_indv_card_subheadline {
   margin: 0;
   display: flex;
   justify-content: center;
   text-align: center;
   color: #000;
+  font-weight: 500;
+}
+
+.centers_cards_indv_card .centers_cards_indv_card_state {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--primary_color);
   font-weight: 500;
 }
 
