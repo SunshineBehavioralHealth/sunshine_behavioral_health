@@ -30,7 +30,7 @@ $centerValue = get_field('center')
         for (var i = 0; i < sliders.length; i++) {
             var glide = new Glide(sliders[i], {
                 gap: 15,
-                perView: 2,
+                perView: 4,
                 autoplay: 2500,
                 hoverpause: true,
                 keyboard: true,
@@ -234,7 +234,8 @@ $centerValue = get_field('center')
                 <div class="center_page_insurance_form_wrapper">
                     <div class="insurance_page_form_section">
                         <div class="insurance_page_form_container">
-                            <?php get_template_part('template-parts/forms/insurance_verification_form'); ?>
+                            <?php echo do_shortcode('[gravityform id="6" title="false" description="false"]') ?>
+
                         </div>
                     </div>
 
