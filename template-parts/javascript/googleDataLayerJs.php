@@ -11,6 +11,7 @@ $AuthorUser = get_field("editor_user");
 
     let googleCID = getCookie('_ga');
     let pageURL = window.location.search;
+    console.log('pageURL', pageURL)
 
     let testVariable;
 
