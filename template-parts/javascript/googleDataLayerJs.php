@@ -11,7 +11,6 @@ $AuthorUser = get_field("editor_user");
 
     let googleCID = getCookie('_ga');
     let pageURL = window.location.href;
-    console.log('pageURL', pageURL)
 
     let testVariable;
 
@@ -23,6 +22,4 @@ $AuthorUser = get_field("editor_user");
         'pagePostAuthor': "<?php echo $AuthorUser['display_name']; ?>",
         'pageURL': pageURL
     });
-
-    console.log("dataLayer array of variables:", dataLayer);
 </script>

@@ -51,20 +51,18 @@ $centerValue = get_field('center')
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/chapters_capistrano_logo.jpg' ?>" alt="">
             <?php elseif ($centerValue == "Monarch Shores") : ?>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/chapters_capistrano_logo.jpg' ?>" alt="">
-
             <?php elseif ($centerValue == "Mountain Springs") : ?>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/chapters_capistrano_logo.jpg' ?>" alt="">
-
             <?php elseif ($centerValue == "Willow Springs") : ?>
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/chapters_capistrano_logo.jpg' ?>" alt="">
-
             <?php endif; ?>
             <div class="center_page_hero_headline_wrapper">
                 <h1><?php echo get_field('center_page_hero_headline') ?></h1>
                 <?php if (get_field('page_subheadline_paragraph')) : ?>
                     <p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
                 <?php endif; ?>
-                <a href="<?php echo get_field('center_page_hero_cta_link') ?>"><?php echo get_field('center_page_hero_cta_text') ?></a>
+                <p>Talk to an Intake Specialist</p>
+                <a id="centerPageHeroPhone" class="invocaNumber customzied_map_cta centerPageHeroPhone" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'centerPageHeroPhone'});" href="tel:949-276-2886">949-276-2886</a>
             </div>
         </div>
     </div>
