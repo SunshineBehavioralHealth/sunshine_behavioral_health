@@ -1,3 +1,7 @@
+.center_page#primary {
+  width: 100%;
+}
+
 .center_page_treatment_list_container ul {
   display: flex;
   flex-direction: row;
@@ -23,7 +27,7 @@
 
 .center_page .center_page_hero_wrapper img {
   width: 100%;
-  max-height: 500px;
+  max-height: 350px;
 }
 
 .center_page .center_page_hero_wrapper .center_page_hero_content_wrapper {
