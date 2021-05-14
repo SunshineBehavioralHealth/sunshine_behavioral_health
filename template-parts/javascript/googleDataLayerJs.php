@@ -23,3 +23,13 @@ $AuthorUser = get_field("editor_user");
         'pageURL': pageURL
     });
 </script>
+
+
+<!-- 
+Data Layer values being grabbed by invoca:
+
+pageURL
+shortcode_type
+
+
+ -->

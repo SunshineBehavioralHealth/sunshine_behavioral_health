@@ -30,10 +30,11 @@ $centerValue = get_field('center')
         for (var i = 0; i < sliders.length; i++) {
             var glide = new Glide(sliders[i], {
                 gap: 15,
-                perView: 3,
+                perView: 2,
                 autoplay: 2500,
                 hoverpause: true,
                 keyboard: true,
+                duration: 2
             });
 
             glide.mount();
@@ -61,7 +62,7 @@ $centerValue = get_field('center')
                 <?php if (get_field('page_subheadline_paragraph')) : ?>
                     <p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
                 <?php endif; ?>
-                <p>Talk to an Intake Specialist</p>
+                <p class="center_page_hero_cta_top_text">Talk to an Intake Specialist</p>
                 <a id="centerPageHeroPhone" class="invocaNumber customzied_map_cta centerPageHeroPhone" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'centerPageHeroPhone'});" href="tel:949-276-2886">949-276-2886</a>
             </div>
         </div>

@@ -54,7 +54,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
 
         <section class="insurance_page_form_section">
             <div class="insurance_page_form_container">
-                <?php get_template_part('template-parts/forms/insurance_verification_form'); ?>
+                <?php echo do_shortcode('[gravityform id="6" title="false" description="false"]') ?>
             </div>
         </section>
 
