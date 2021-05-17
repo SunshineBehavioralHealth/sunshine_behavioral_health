@@ -30,7 +30,17 @@ $centerValue = get_field('center')
         for (var i = 0; i < sliders.length; i++) {
             var glide = new Glide(sliders[i], {
                 gap: 15,
-                perView: 4,
+                breakpoints: {
+                    1024: {
+                        perView: 4
+                    },
+                    768: {
+                        perView: 2
+                    },
+                    600: {
+                        perView: 1
+                    }
+                },
                 autoplay: 2500,
                 hoverpause: true,
                 keyboard: true,

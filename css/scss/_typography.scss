@@ -354,7 +354,6 @@ select {
   border: 1px solid #ccc;
 }
 
-// Supposedly this fixes the id scroll going too far
 :target:before {
   content: "";
   display: block;
