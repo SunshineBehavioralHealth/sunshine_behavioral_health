@@ -23,7 +23,7 @@ $centerValue = get_field('center')
 
 
 
-<main id="primary" class="maxWidth thank_you_page">
+<main id="primary" class="thank_you_page">
     <div class="thank_you_hero_container">
         <img class="page_desktop_image hero_image hide_on_mobile show_on_tablet" src="<?php echo get_field('thank_you_desktop_image')['url']; ?>">
         <img class="page_mobile_image hero_image hide_on_desktop hide_on_tablet" src="<?php echo get_field('thank_you_mobile_image')['url']; ?>">
