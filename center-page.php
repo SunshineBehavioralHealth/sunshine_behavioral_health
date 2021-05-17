@@ -231,7 +231,7 @@ $centerValue = get_field('center')
                 <div class="center_page_insurance_form_content_wrapper">
                     <div class="center_page_insurance_form_top_cta_container hide_on_tablet hide_on_desktop">
                         <?php $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
-                        <a href="<?php echo $actual_link; ?>/#center_insurance_form">Verify Insurance</a>
+                        <a href="<?php echo $actual_link; ?>#center_insurance_form">Verify Insurance</a>
                     </div>
                     <?php echo get_field('center_page_insurance_content') ?>
                 </div>
