@@ -227,10 +227,11 @@ $centerValue = get_field('center')
 
         <section class="center_page_insurance_form_section">
             <div class="center_page_insurance_form_container" style="background-image: url(<?php echo get_field('center_page_insurance_section_background_image')['url'] ?>)">
-                <div class="center_page_insurance_form_top_cta_container hide_on_desktop">
-                    <a href="#center_insurance_form">Verify Insurance</a>
-                </div>
+
                 <div class="center_page_insurance_form_content_wrapper">
+                    <div class="center_page_insurance_form_top_cta_container hide_on_tablet hide_on_desktop">
+                        <a href="#center_insurance_form">Verify Insurance</a>
+                    </div>
                     <?php echo get_field('center_page_insurance_content') ?>
                 </div>
 
