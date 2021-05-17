@@ -327,6 +327,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .center_page_insurance_form_container {
+    background: lightblue !important;
+  }
+}
+
 .chaptersPrimaryBorder {
   border: 2px solid #e8af52;
 }
@@ -521,7 +527,6 @@
   background-color: var(--tertiary_color);
 }
 
-
-.center_page_insurance_form_wrapper form ul li{
+.center_page_insurance_form_wrapper form ul li {
   width: 45%;
 }

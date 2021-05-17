@@ -230,14 +230,15 @@ $centerValue = get_field('center')
 
                 <div class="center_page_insurance_form_content_wrapper">
                     <div class="center_page_insurance_form_top_cta_container hide_on_tablet hide_on_desktop">
-                        <a href="#center_insurance_form">Verify Insurance</a>
+                        <?php $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
+                        <a href="<?php echo $actual_link; ?>/#center_insurance_form">Verify Insurance</a>
                     </div>
                     <?php echo get_field('center_page_insurance_content') ?>
                 </div>
 
-                <div class="center_page_insurance_form_wrapper">
+                <div id="center_insurance_form" class="center_page_insurance_form_wrapper">
                     <div class="insurance_page_form_section">
-                        <div id="center_insurance_form" class="insurance_page_form_container">
+                        <div class="insurance_page_form_container">
                             <?php echo do_shortcode('[gravityform id="6" title="false" description="false"]') ?>
                         </div>
                     </div>
