@@ -29,7 +29,9 @@ $centerValue = get_field('center')
         <img class="page_mobile_image hero_image hide_on_desktop hide_on_tablet" src="<?php echo get_field('thank_you_mobile_image')['url']; ?>">
         <div class="hero_banner_headlines_container">
             <h1><?php echo get_field('thank_you_headline') ?></h1>
-            <p class="hero_subheadline"><?php echo get_field('thank_you_subheadline') ?></p>
+            <?php if (get_field('thank_you_subheadline')) : ?>
+                <p class="hero_subheadline"><?php echo get_field('thank_you_subheadline') ?></p>
+            <?php endif; ?>
         </div>
     </div>
     <div class="thank_you_page_main_content">
