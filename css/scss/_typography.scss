@@ -353,3 +353,11 @@ textarea:focus {
 select {
   border: 1px solid #ccc;
 }
+
+// Supposedly this fixes the id scroll going too far
+:target:before {
+  content: "";
+  display: block;
+  height: 120px; /* fixed header height*/
+  margin: -120px 0 0; /* negative fixed header height */
+}
