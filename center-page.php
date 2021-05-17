@@ -63,7 +63,7 @@ $centerValue = get_field('center')
                     <p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
                 <?php endif; ?>
                 <p class="center_page_hero_cta_top_text">Talk to an Intake Specialist</p>
-                <a id="centerPageHeroPhone" class="invocaNumber customzied_map_cta centerPageHeroPhone" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'centerPageHeroPhone'});" href="tel:949-276-2886">949-276-2886</a>
+                <a id="centerPageHeroPhone" class="invocaNumber centerPageHeroPhone" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'centerPageHeroPhone'});" href="tel:949-276-2886">949-276-2886</a>
             </div>
         </div>
     </div>
