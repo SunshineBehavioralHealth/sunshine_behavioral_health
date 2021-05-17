@@ -24,7 +24,7 @@ $centerValue = get_field('center')
 
 
 <main id="primary" class="maxWidth thank_you_page">
-    <div class="hero_banner_container">
+    <div class="thank_you_hero_container">
         <img class="page_desktop_image hero_image hide_on_mobile show_on_tablet" src="<?php echo get_field('thank_you_desktop_image ')['url']; ?>">
         <img class="page_mobile_image hero_image hide_on_desktop hide_on_tablet" src="<?php echo get_field('thank_you_mobile_image')['url']; ?>">
         <div class="hero_banner_headlines_container">
@@ -38,7 +38,7 @@ $centerValue = get_field('center')
             <?php echo get_field('thank_you_top_content') ?>
         </section>
     </div>
-    
+
     <div class="page_grid">
         <div class="page_wrapper thank_you_page_wrapper">
             <section class="page_content">
