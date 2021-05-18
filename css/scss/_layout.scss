@@ -121,17 +121,3 @@ aside {
   list-style-type: disc;
 }
 
-.even_columns {
-  display: flex;
-  flex-direction: column;
-}
-
-.even_columns > * {
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  .even_columns {
-    flex-direction: row;
-  }
-}

@@ -1,7 +1,7 @@
 <section class="facebook_shortcode_section">
     <div class="facebook_shortcode_container">
         <h3><?php echo get_field('facebook_-_headline', 'option') ?></h3>
-        <div class="facebook_shortcode_repeater_container even_columns">
+        <div class="facebook_shortcode_repeater_container">
 
             <?php
             if (have_rows('facebook_-_repeater', 'option')) :
