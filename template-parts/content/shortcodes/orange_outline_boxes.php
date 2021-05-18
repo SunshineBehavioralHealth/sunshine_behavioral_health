@@ -6,7 +6,7 @@
             if (have_rows('orange_outline_boxes_-_repeater')) :
                 while (have_rows('orange_outline_boxes_-_repeater')) : the_row();
             ?>
-                    <a href="<?php echo get_sub_field('link') ?>">
+                    <a href="/<?php echo get_sub_field('link') ?>">
                         <h4><?php echo get_sub_field('text') ?></h4>
                     </a>
             <?php
