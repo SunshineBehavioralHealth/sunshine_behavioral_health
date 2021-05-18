@@ -17,3 +17,20 @@
   color: #fff;
   text-shadow: 1px 1px 1px grey;
 }
+
+.desktop_and_mobile_hero_image_wrapper {
+  position: relative;
+}
+
+.desktop_and_mobile_hero_image_wrapper .hero_banner_headlines_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
