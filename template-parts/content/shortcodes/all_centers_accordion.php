@@ -6,19 +6,19 @@
             <?php
             if (have_rows('all_centers_accordion_-_repeater', 'option')) :
                 while (have_rows('all_centers_accordion_-_repeater', 'option')) : the_row();
-                    $centerValue = get_field('center', 'option');
+                    $centerValue = get_sub_field('center', 'option');
 
             ?>
                     <div class="all_centers_accordion_element  <?php if ($centerValue == "Chapters Capistrano") echo "chapters_styles";
                                                                 elseif ($centerValue == "Monarch Shores") echo "monarch_styles";
                                                                 elseif ($centerValue == "Mountain Springs") echo "mountain_styles";
                                                                 elseif ($centerValue == "Willow Springs") echo "willow_styles"; ?>">
-                        <img src="<?php echo get_sub_field('center_image', 'option')['url'] ?>" alt="">
+                        <img class="all_centers_center_image" src="<?php echo get_sub_field('center_image', 'option')['url'] ?>" alt="">
                         <p><?php echo $centerValue; ?></p>
                         <div class="all_centers_accordion_row">
                             <div class="all_centers_accordion_headline_wrapper">
                                 <h4>Location</h4>
-                                <img src="<?php echo get_template_directory_uri() . '/images/icons/plus.png' ?>" class="all_center_accordion_plus_icon" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/images/icons/plus_icon_white.png' ?>" class="all_center_accordion_plus_icon" alt="">
                             </div>
                             <div class="all_centers_accordion_dropdown_wrapper hide">
                                 <?php if ($centerValue == "Chapters Capistrano") : ?>
@@ -51,7 +51,7 @@
                         <div class="all_centers_accordion_row">
                             <div class="all_centers_accordion_headline_wrapper">
                                 <h4><?php echo get_sub_field('content_1_headline', 'option') ?></h4>
-                                <img src="<?php echo get_template_directory_uri() . '/images/icons/plus.png' ?>" class="all_center_accordion_plus_icon" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/images/icons/plus_icon_white.png' ?>" class="all_center_accordion_plus_icon" alt="">
                             </div>
                             <div class="all_centers_accordion_dropdown_wrapper hide">
                                 <p><?php echo get_sub_field('content_1_paragarph', 'option') ?></p>
@@ -61,12 +61,12 @@
                         <div class="all_centers_accordion_row">
                             <div class="all_centers_accordion_headline_wrapper">
                                 <h4><?php echo get_sub_field('content_2_headline', 'option') ?></h4>
-                                <img src="<?php echo get_template_directory_uri() . '/images/icons/plus.png' ?>" class="all_center_accordion_plus_icon" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/images/icons/plus_icon_white.png' ?>" class="all_center_accordion_plus_icon" alt="">
                             </div>
                             <div class="all_centers_accordion_dropdown_wrapper hide">
                                 <?php if (have_rows('content_2_list', 'option')) : ?>
                                     <?php while (have_rows('content_2_list', 'option')) : the_row(); ?>
-                                        <span><img src="<?php echo get_template_directory_uri() . '/images/icons/checkmark.png' ?>" alt="">
+                                        <span><img src="<?php echo get_template_directory_uri() . '/images/icons/checkmark_icon_white.png' ?>" alt="">
                                             <p><?php echo get_sub_field('item', 'option') ?></p>
                                         </span>
                                     <?php endwhile; ?>
@@ -77,7 +77,7 @@
                         <div class="all_centers_accordion_row">
                             <div class="all_centers_accordion_headline_wrapper">
                                 <h4>Accreditations</h4>
-                                <img src="<?php echo get_template_directory_uri() . '/images/icons/plus.png' ?>" class="all_center_accordion_plus_icon" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/images/icons/plus_icon_white.png' ?>" class="all_center_accordion_plus_icon" alt="">
                             </div>
                             <div class="all_centers_accordion_dropdown_wrapper hide">
                                 <?php if ($centerValue == "Chapters Capistrano") : ?>
