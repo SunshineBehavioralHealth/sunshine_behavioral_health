@@ -1,3 +1,5 @@
+<?php get_template_part('template-parts/javascript/expandableRowsShortcodeJs'); ?>
+
 <section class="all_centers_accordion_section">
     <div class="all_centers_accordion_container">
         <div class="all_centers_accordion_wrapper">
@@ -16,9 +18,9 @@
                         <div class="all_centers_accordion_row">
                             <div class="all_centers_accordion_headline_wrapper">
                                 <h4>Location</h4>
-                                <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/plus.png' ?>" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/plus.png' ?>" class="all_center_accordion_plus_icon" alt="">
                             </div>
-                            <div class="all_centers_accordion_dropdown_wrapper">
+                            <div class="all_centers_accordion_dropdown_wrapper hide">
                                 <?php if ($centerValue == "Chapters Capistrano") : ?>
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.724328088017!2d-117.63236908449115!3d33.43043075768753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcf40f3530b4cd%3A0xe9dceac46fd44fd4!2s1525%20Buena%20Vista%2C%20San%20Clemente%2C%20CA%2092672!5e0!3m2!1sen!2sus!4v1619809011507!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                     <div class="center_page_location_address" style="background-color: var(--chapters_primary);">
@@ -49,19 +51,19 @@
                         <div class="all_centers_accordion_row">
                             <div class="all_centers_accordion_headline_wrapper">
                                 <h4><?php echo get_sub_field('content_1_headline', 'option') ?></h4>
-                                <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/plus.png' ?>" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/plus.png' ?>" class="all_center_accordion_plus_icon" alt="">
                             </div>
-                            <div class="all_centers_accordion_dropdown_wrapper">
-
+                            <div class="all_centers_accordion_dropdown_wrapper hide">
+                                <p><?php echo get_sub_field('content_1_paragarph', 'option') ?></p>
                             </div>
                         </div>
 
                         <div class="all_centers_accordion_row">
                             <div class="all_centers_accordion_headline_wrapper">
                                 <h4><?php echo get_sub_field('content_2_headline', 'option') ?></h4>
-                                <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/plus.png' ?>" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/plus.png' ?>" class="all_center_accordion_plus_icon" alt="">
                             </div>
-                            <div class="all_centers_accordion_dropdown_wrapper">
+                            <div class="all_centers_accordion_dropdown_wrapper hide">
                                 <?php if (have_rows('content_2_list', 'option')) : ?>
                                     <?php while (have_rows('content_2_list', 'option')) : the_row(); ?>
                                         <span><img src="<?php echo get_template_directory_uri() . '/assets/images/icons/checkmark.png' ?>" alt="">
@@ -75,13 +77,21 @@
                         <div class="all_centers_accordion_row">
                             <div class="all_centers_accordion_headline_wrapper">
                                 <h4>Accreditations</h4>
-                                <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/plus.png' ?>" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/plus.png' ?>" class="all_center_accordion_plus_icon" alt="">
                             </div>
-                            <div class="all_centers_accordion_dropdown_wrapper">
+                            <div class="all_centers_accordion_dropdown_wrapper hide">
                                 <?php if ($centerValue == "Chapters Capistrano") : ?>
-
+                                    <a href="https://legitscript.com/pharmacy/chapterscapistrano.com" title=" Verify LegitScript Approval" target="_blank" rel="nofollow noopener">
+                                        <img src="https://static.legitscript.com/seals/3380243.png" alt="LegitScript approved" width="140" height="100">
+                                    </a>
+                                <?php elseif ($centerValue == "Lincoln Recovery") : ?>
+                                    <a title="Verify LegitScript Approval" href="https://legitscript.com/pharmacy/sunshinebehavioralhealth.com" rel="nofollow noopener" target="_blank">
+                                        <img class="" loading="lazy" src="https://static.legitscript.com/seals/3380109.png" alt="LegitScript approved" width="140" height="100">
+                                    </a>
                                 <?php elseif ($centerValue == "Monarch Shores") : ?>
-
+                                    <a href="https://legitscript.com/pharmacy/monarchshores.com" title="Verify LegitScript Approval" target="_blank" rel="nofollow noopener">
+                                        <img src="https://static.legitscript.com/seals/3380081.png" alt="LegitScript approved" width="140" height="100">
+                                    </a>
                                 <?php elseif ($centerValue == "Mountain Springs") : ?>
                                     <a href="https://www.legitscript.com/websites/mountainspringsrecovery.com/" title="Verify LegitScript Approval" target="_blank" rel="nofollow noopener">
                                         <img src="https://static.legitscript.com/seals/4466021.png" alt="LegitScript approved" loading="lazy">
@@ -92,26 +102,20 @@
                                         <?php endwhile; ?>
                                     <?php endif; ?>
                                 <?php elseif ($centerValue == "Willow Springs") : ?>
-
+                                    <a title="Verify LegitScript Approval" href="https://legitscript.com/pharmacy/willowspringsrecovery.com/" target="_blank" rel="nofollow noopener">
+                                        <img loading="lazy" src="https://static.legitscript.com/seals/3380258.png" alt="LegitScript approved" width="140" height="100">
+                                    </a>
                                 <?php endif; ?>
 
                                 <?php if (have_rows('accreditation_badges', 'option')) : ?>
                                     <?php while (have_rows('accreditation_badges', 'option')) : the_row(); ?>
-                                        <img src="<?php echo get_sub_field('image', 'option') ?>" alt="">
+                                        <img src="<?php echo get_sub_field('image', 'option')['url'] ?>" alt="">
                                     <?php endwhile; ?>
                                 <?php endif; ?>
                             </div>
                         </div>
-
-
-                        <?php if (have_rows('all_centers_accordion_expandable_rows_repeater', 'option')) : ?>
-                            <?php while (have_rows('all_centers_accordion_expandable_rows_repeater', 'option')) : the_row(); ?>
-
-                            <?php endwhile; ?>
-                        <?php endif; ?>
                     </div>
         </div>
-
 <?php
                 endwhile;
             endif;

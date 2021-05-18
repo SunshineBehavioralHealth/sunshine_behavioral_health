@@ -1,0 +1,29 @@
+.all_centers_accordion_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.all_centers_accordion_wrapper .all_centers_accordion_element {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.all_centers_accordion_wrapper .all_centers_accordion_element img{
+   max-height: 100px;
+  }
+
+@media (min-width: 768px) {
+  .all_centers_accordion_wrapper {
+    flex-direction: row;
+  }
+
+  .all_centers_accordion_wrapper .all_centers_accordion_element {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+}
