@@ -7,6 +7,7 @@
 .orange_outline_boxes_shortcode_container h3 {
   color: var(--secondary_color);
   text-align: center;
+  margin: 0 0 20px 0;
 }
 
 .orange_outline_boxes_shortcode_container
@@ -29,6 +30,14 @@
   margin: 0 20px 20px 20px;
   border: 2px solid var(--primary_color);
   width: 100%;
+}
+
+.orange_outline_boxes_shortcode_container
+  .orange_outline_boxes_shortcode_repeater_container
+  a
+  h4 {
+  color: var(--secondary_color);
+  margin: 0;
 }
 
 @media (min-width: 768px) {
