@@ -11,9 +11,9 @@ namespace WP_Rig\WP_Rig;
 ?>
 
 <div>
-    <section class="home_footer_accredidations_section">
-        <div class="home_footer_accredidations_container">
-            <div class="home_footer_accredidations_wrapper">
+    <section class="home_footer_accreditations_section">
+        <div class="home_footer_accreditations_container">
+            <div class="home_footer_accreditations_wrapper">
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/sunshine_gold_badge.jpg' ?>" alt="">
                 <a title="Verify LegitScript Approval" href="https://legitscript.com/pharmacy/sunshinebehavioralhealth.com" rel="noopener noreferrer">
                     <img class="" src="https://static.legitscript.com/seals/3380109.png" alt="LegitScript approved" width="140" height="100" border="0" />

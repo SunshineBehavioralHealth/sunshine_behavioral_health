@@ -10,8 +10,6 @@
   flex-direction: row;
 }
 
-
-
 .social_media_container {
   background-color: var(--secondary_color);
   display: flex;
@@ -350,7 +348,7 @@ footer .non_home_copyright {
   margin: 0 12.5px;
 }
 
-.home_footer_accredidations_wrapper {
+.home_footer_accreditations_wrapper {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -361,14 +359,14 @@ footer .non_home_copyright {
 }
 
 @media (max-width: 768px) {
-  .home_footer_accredidations_wrapper a,
-  .home_footer_accredidations_wrapper img {
+  .home_footer_accreditations_wrapper a,
+  .home_footer_accreditations_wrapper img {
     margin-bottom: 25px;
   }
 }
 
 @media (max-width: 1024px) {
-  .home_footer_accredidations_wrapper {
+  .home_footer_accreditations_wrapper {
     width: 100%;
   }
 }
