@@ -2,7 +2,7 @@
 
 <section class="covid19_section">
     <div class="covid19_container">
-        <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/plus_icon_white.png' ?>" alt="">
+        <img src="<?php echo get_template_directory_uri() . '/images/icons/plus_icon_white.png' ?>" alt="">
         <h4>Get Help During COVID-19</h4>
         <div class="covid19_content hide">
             <div class="covid19_notice_body ">

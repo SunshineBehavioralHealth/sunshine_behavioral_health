@@ -3,15 +3,15 @@
         // Inserts Nav Icons
         <?php
 
-        $navIcon1 = get_template_directory_uri() . '/assets/images/icons/navbar_icon_about.png';
+        $navIcon1 = get_template_directory_uri() . '/images/icons/navbar_icon_about.png';
 
-        $navIcon2 = get_template_directory_uri() . '/assets/images/icons/navbar_icon_heart.png';
+        $navIcon2 = get_template_directory_uri() . '/images/icons/navbar_icon_heart.png';
 
-        $navIcon3 = get_template_directory_uri() . '/assets/images/icons/navbar_icon_addiction.png';
+        $navIcon3 = get_template_directory_uri() . '/images/icons/navbar_icon_addiction.png';
 
-        $navIcon4 = get_template_directory_uri() . '/assets/images/icons/navbar_icon_resources.png';
+        $navIcon4 = get_template_directory_uri() . '/images/icons/navbar_icon_resources.png';
 
-        $navIcon5 = get_template_directory_uri() . '/assets/images/icons/navbar_icon_insurance.png';
+        $navIcon5 = get_template_directory_uri() . '/images/icons/navbar_icon_insurance.png';
 
         ?>
 

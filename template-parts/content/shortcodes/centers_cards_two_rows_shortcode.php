@@ -14,7 +14,7 @@
 
             <div class=" treatment_center_card_container_two_rows desktop_border_right">
                 <a href="/our-rehab-centers/monarch-shores/">
-                    <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/assets/images/monarch-center.jpg' ?>"></div>
+                    <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/images/monarch-center.jpg' ?>"></div>
                 </a>
                 <a href="/our-rehab-centers/monarch-shores/">
                     <h4 class="treatment_center_name">Monarch Shores</h4>
@@ -33,7 +33,7 @@
 
             <div class="treatment_center_card_container_two_rows  desktop_border_left">
                 <a href="/our-rehab-centers/chapters-capistrano/">
-                    <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/assets/images/chapters-center.jpg' ?>" loading="lazy"></div>
+                    <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/images/chapters-center.jpg' ?>" loading="lazy"></div>
                 </a>
                 <a href="/our-rehab-centers/chapters-capistrano/">
                     <h4 class="treatment_center_name">Chapters Capistrano</h4>
@@ -50,7 +50,7 @@
 
             <div class="treatment_center_card_container_two_rows desktop_border_right">
                 <a href="/our-rehab-centers/willow-springs-recovery">
-                    <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/assets/images/willows-center.jpg' ?>" loading="lazy"></div>
+                    <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/images/willows-center.jpg' ?>" loading="lazy"></div>
                 </a>
                 <a href="/our-rehab-centers/willow-springs-recovery">
                     <h4 class="treatment_center_name">Willow Springs</h4>
@@ -68,7 +68,7 @@
 
             <div class="treatment_center_card_container_two_rows desktop_border_left">
                 <a href="/our-rehab-centers/mountain-springs-recovery/">
-                    <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/assets/images/mountain-center.jpg' ?>" loading="lazy"></div>
+                    <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/images/mountain-center.jpg' ?>" loading="lazy"></div>
                 </a>
                 <a href="/our-rehab-centers/mountain-springs-recovery/">
                     <h4 class="treatment_center_name">Mountain Springs</h4>

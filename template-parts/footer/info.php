@@ -18,7 +18,7 @@ namespace WP_Rig\WP_Rig;
 				<div class="standard_footer_contact_content">
 
 					<div class="stanard_footer_address">
-						<img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/images/icons/address_white_icon.png' ?>" alt="">
+						<img loading="lazy" src="<?php echo get_template_directory_uri() . '/images/icons/address_white_icon.png' ?>" alt="">
 						<div class="standard_footer_address_content">
 							<p>30950 Rancho Viejo Road</p>
 							<p>Suite 225</p>
@@ -28,12 +28,12 @@ namespace WP_Rig\WP_Rig;
 					</div>
 
 					<div class="stanard_footer_phone">
-						<img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/images/icons/phone_white_icon.png' ?>" alt="">
+						<img loading="lazy" src="<?php echo get_template_directory_uri() . '/images/icons/phone_white_icon.png' ?>" alt="">
 						<a id="footerPhone" class="invocaNumber footerPhone" href="tel:949-276-2886">949-276-2886</a>
 					</div>
 
 					<div class="stanard_footer_email">
-						<img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/images/icons/email_white_icon.png' ?>" alt="">
+						<img loading="lazy" src="<?php echo get_template_directory_uri() . '/images/icons/email_white_icon.png' ?>" alt="">
 						<p>contact@sunshinebh.com</p>
 					</div>
 				</div>
@@ -78,14 +78,14 @@ namespace WP_Rig\WP_Rig;
 		</div>
 		<div class="social_media_container">
 			<a href="https://www.facebook.com/SunshineBehavi1">
-				<img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/images/icons/facebook.png' ?>" alt="">
+				<img loading="lazy" src="<?php echo get_template_directory_uri() . '/images/icons/facebook.png' ?>" alt="">
 			</a>
 			<a href="https://twitter.com/SunshineBehavi1">
-				<img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/images/icons/twitter.png' ?>" alt="">
+				<img loading="lazy" src="<?php echo get_template_directory_uri() . '/images/icons/twitter.png' ?>" alt="">
 			</a><a href="https://www.instagram.com/sunshinebehav/">
-				<img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/images/icons/instagram.png' ?>" alt="">
+				<img loading="lazy" src="<?php echo get_template_directory_uri() . '/images/icons/instagram.png' ?>" alt="">
 			</a><a href="https://www.linkedin.com/company/sunshine-behavioral-health/">
-				<img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/images/icons/linkedin.png' ?>" alt="">
+				<img loading="lazy" src="<?php echo get_template_directory_uri() . '/images/icons/linkedin.png' ?>" alt="">
 			</a>
 		</div>
 	</section>

@@ -18,7 +18,7 @@ namespace WP_Rig\WP_Rig; ?>
 			</div>
 
 			<div class="search_bar_container hide_on_desktop">
-				<img src="<?php echo get_template_directory_uri() . '/assets/images/icons/navbar_icon_search.png' ?>" alt="" class="search_bar_magnifying_glass_icon">
+				<img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_search.png' ?>" alt="" class="search_bar_magnifying_glass_icon">
 				<div class="search_bar_wrapper">
 					<?php get_search_form(); ?>
 				</div>
@@ -42,7 +42,7 @@ namespace WP_Rig\WP_Rig; ?>
 				<?php sunshine_behavioral_health()->display_primary_nav_menu(['menu_id' => 'primary-menu']); ?>
 				<div class="search_bar_container hide_on_mobile">
 					<div class="deskop_nav_icon_wrapper">
-						<img src="<?php echo get_template_directory_uri() . '/assets/images/icons/navbar_icon_search.png' ?>" alt="" class="search_bar_magnifying_glass_icon">
+						<img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_search.png' ?>" alt="" class="search_bar_magnifying_glass_icon">
 					</div>
 					<div class="desktop_nav_search_subnav_wrapper sub_menu_wrapper">
 						<div class="search_bar_wrapper_desktop">

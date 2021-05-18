@@ -321,7 +321,7 @@ class Component implements Component_Interface
 	 */
 	protected function lazyload_get_placeholder_image(): string
 	{
-		return get_theme_file_uri('/assets/images/placeholder.svg');
+		return get_theme_file_uri('/images/placeholder.svg');
 	}
 
 	/**

@@ -252,7 +252,7 @@ if (is_home()) {
 			if (get_field('blog_background_image')) {
 				echo get_field('blog_background_image')['url'];
 			} else {
-				echo get_template_directory_uri() . '/assets/images/ocean_background.jpg';
+				echo get_template_directory_uri() . '/images/ocean_background.jpg';
 			}
 
 
@@ -344,10 +344,10 @@ if (is_home()) {
 
 
 	<section class="state_resources_section">
-		<img class="state_resources_background_image" src="<?php echo get_template_directory_uri() . '/assets/images/sunshine_state_resources_background.jpg' ?>" alt="" loading="lazy">
+		<img class="state_resources_background_image" src="<?php echo get_template_directory_uri() . '/images/sunshine_state_resources_background.jpg' ?>" alt="" loading="lazy">
 		<div class="state_resources_container">
 			<div class="state_resources_headline">
-				<img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/images/icons/address_white.png' ?>" alt="">
+				<img loading="lazy" src="<?php echo get_template_directory_uri() . '/images/icons/address_white.png' ?>" alt="">
 				<h2>FIND LOCAL ADDICTION TREATMENT RESOURCES</h2>
 			</div>
 			<div class="state_resources_lists_container">

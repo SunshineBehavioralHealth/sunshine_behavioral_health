@@ -4,7 +4,7 @@
 
 <section class="customize_experience_section">
     <div class="customize_experience_container">
-        <button class="customize_experience_reset_btn"><img src="<?php echo get_template_directory_uri() . '/assets/images/icons/reset_white.png' ?>" alt=""><span>Reset</span></button>
+        <button class="customize_experience_reset_btn"><img src="<?php echo get_template_directory_uri() . '/images/icons/reset_white.png' ?>" alt=""><span>Reset</span></button>
         <h4>Customize Your Experinece</h4>
         <form class="customize_experience_form_wrapper">
             <h5>I'm here for:</h5>

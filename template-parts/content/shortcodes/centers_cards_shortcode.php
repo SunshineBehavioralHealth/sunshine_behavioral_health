@@ -2,13 +2,15 @@
     <div class="treatment_centers_container row ">
         <?php if (get_field('treatment_centers_headline')) : ?>
             <h3 class="col-12"><?php echo get_field('treatment_centers_headline') ?></h2>
-        <?php else : ?>
-            <h3>OUR TREATMENT CENTERS</h2>
-        <?php endif; ?>
-        <?php if (get_field('treatment_centers_subheadline')) : ?>
-            <h4><?php echo get_field('treatment_centers_subheadline') ?></h3>
-        <?php else : ?>
-            <h4>All of our facilities offer their own unique experiences while supplying the highest quality of care and comfort.</h3>
+            <?php else : ?>
+                <h3>OUR TREATMENT CENTERS</h2>
+                <?php endif; ?>
+                <?php if (get_field('treatment_centers_subheadline')) : ?>
+                    <h4><?php echo get_field('treatment_centers_subheadline') ?>
+                </h3>
+            <?php else : ?>
+                <h4>All of our facilities offer their own unique experiences while supplying the highest quality of care and comfort.
+            </h3>
         <?php endif; ?>
         <div class="treatment_center_container">
 
@@ -44,7 +46,7 @@
 
                 <div class=" treatment_center_card_container">
                     <a href="/our-rehab-centers/monarch-shores/">
-                        <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/assets/images/monarch-center.jpg' ?>"></div>
+                        <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/images/monarch-center.jpg' ?>"></div>
                     </a>
 
                     <div class="treatment_center_card_content_wrapper">
@@ -63,7 +65,7 @@
 
                 <div class=" treatment_center_card_container">
                     <a href="/our-rehab-centers/chapters-capistrano/">
-                        <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/assets/images/chapters-center.jpg' ?>" loading="lazy"></div>
+                        <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/images/chapters-center.jpg' ?>" loading="lazy"></div>
                     </a>
                     <div class="treatment_center_card_content_wrapper">
                         <a href="/our-rehab-centers/chapters-capistrano/">
@@ -82,7 +84,7 @@
 
                 <div class=" treatment_center_card_container">
                     <a href="/our-rehab-centers/willow-springs-recovery/">
-                        <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/assets/images/willows-center.jpg' ?>" loading="lazy"></div>
+                        <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/images/willows-center.jpg' ?>" loading="lazy"></div>
                     </a>
                     <div class="treatment_center_card_content_wrapper">
                         <a href="/our-rehab-centers/willow-springs-recovery">
@@ -101,7 +103,7 @@
 
                 <div class="treatment_center_card_container">
                     <a href="/our-rehab-centers/mountain-springs-recovery/">
-                        <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/assets/images/mountain-center.jpg' ?>" loading="lazy"></div>
+                        <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/images/mountain-center.jpg' ?>" loading="lazy"></div>
                     </a>
 
                     <div class="treatment_center_card_content_wrapper">

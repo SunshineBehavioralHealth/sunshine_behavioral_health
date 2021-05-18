@@ -15,12 +15,12 @@ namespace WP_Rig\WP_Rig;
 		<div class="home_footer_container">
 			<div class="footer_contact_container">
 				<div class="footer_contact_image">
-					<img src="<?php echo get_template_directory_uri() . '/assets/images/sunshine_logo.png' ?>" alt="" loading="lazy">
+					<img src="<?php echo get_template_directory_uri() . '/images/sunshine_logo.png' ?>" alt="" loading="lazy">
 				</div>
 				<div class="footer_contact_information">
 					<h4>CONTACT INFORMATION</h4>
 					<ul>
-						<li><img src="<?php echo get_template_directory_uri() . '/assets/images/icons/Address.png' ?>" alt="" loading="lazy">
+						<li><img src="<?php echo get_template_directory_uri() . '/images/icons/Address.png' ?>" alt="" loading="lazy">
 							<div class="footer_contact_information_address_container">
 								<p>30950 Rancho Viejo Road</p>
 								<p>Suite 225</p>
@@ -29,11 +29,11 @@ namespace WP_Rig\WP_Rig;
 
 						</li>
 						<li>
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/icons/phone.png' ?>" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri() . '/images/icons/phone.png' ?>" alt="" loading="lazy">
 							<a class="invocaNumber" href="tel:949-276-2886">949-276-2886</a>
 						</li>
 						<li>
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/icons/email.png' ?>" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri() . '/images/icons/email.png' ?>" alt="" loading="lazy">
 							<p>contact@sunshinebh.com</p>
 						</li>
 					</ul>

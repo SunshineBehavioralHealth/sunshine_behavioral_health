@@ -12,9 +12,9 @@ $centerSelection = get_field('customized_map_center_options');
     endif; ?>">
         <div class="customized_map_wrapper">
             <?php if ($centerSelection == "Chapters Capistrano") :
-                $checkmarkIcon = '/assets/images/icons/checkmark_icon_chapters.png';
+                $checkmarkIcon = '/images/icons/checkmark_icon_chapters.png';
             ?>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/chapters_map.jpg' ?>" alt="">
+                <img src="<?php echo get_template_directory_uri() . '/images/chapters_map.jpg' ?>" alt="">
                 <ul>
                     <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
                         <p>24/7 access to a doctor</p>
@@ -40,8 +40,8 @@ $centerSelection = get_field('customized_map_center_options');
                     <a id="customziedMapPhoneCta" id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
                 </div>
             <?php elseif ($centerSelection == "Lincoln Recovery") :
-                $checkmarkIcon = '/assets/images/icons/checkmark_icon_lincoln.png'; ?>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/lincoln_map.jpg' ?>" alt="">
+                $checkmarkIcon = '/images/icons/checkmark_icon_lincoln.png'; ?>
+                <img src="<?php echo get_template_directory_uri() . '/images/lincoln_map.jpg' ?>" alt="">
                 <ul>
                     <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
                         <p>Cell phone and laptop friendly</p>
@@ -67,8 +67,8 @@ $centerSelection = get_field('customized_map_center_options');
                     <a id="customziedMapPhoneCta" id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
                 </div>
             <?php elseif ($centerSelection == "Monarch Shores") :
-                $checkmarkIcon = '/assets/images/icons/checkmark_icon_monarch.png'; ?>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/monarch_map.jpg' ?>" alt="">
+                $checkmarkIcon = '/images/icons/checkmark_icon_monarch.png'; ?>
+                <img src="<?php echo get_template_directory_uri() . '/images/monarch_map.jpg' ?>" alt="">
                 <ul>
                     <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
                         <p>Upscale, luxurious location</p>
@@ -94,8 +94,8 @@ $centerSelection = get_field('customized_map_center_options');
                     <a id="customziedMapPhoneCta" id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
                 </div>
             <?php elseif ($centerSelection == "Mountain Springs Recovery") :
-                $checkmarkIcon = '/assets/images/icons/checkmark_icon_mountain.png'; ?>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/mountain_map.jpg' ?>" alt="">
+                $checkmarkIcon = '/images/icons/checkmark_icon_mountain.png'; ?>
+                <img src="<?php echo get_template_directory_uri() . '/images/mountain_map.jpg' ?>" alt="">
                 <ul>
                     <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
                         <p>Cell phone and laptop friendly</p>
@@ -121,8 +121,8 @@ $centerSelection = get_field('customized_map_center_options');
                     <a id="customziedMapPhoneCta" id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
                 </div>
             <?php elseif ($centerSelection == "Willow Springs Recovery") :
-                $checkmarkIcon = '/assets/images/icons/checkmark_icon_willow.png'; ?>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/willow_map.jpg' ?>" alt="">
+                $checkmarkIcon = '/images/icons/checkmark_icon_willow.png'; ?>
+                <img src="<?php echo get_template_directory_uri() . '/images/willow_map.jpg' ?>" alt="">
                 <ul>
                     <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
                         <p>24/7 nursing assistance</p>

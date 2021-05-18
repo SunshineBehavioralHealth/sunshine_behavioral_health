@@ -59,13 +59,13 @@ $centerValue = get_field('center')
         <div class="center_page_hero_content_wrapper">
             <!-- Need to correct images - need transparent center logos -->
             <?php if ($centerValue == "Chapters Capistrano") : ?>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/chapters_capistrano_logo.jpg' ?>" alt="">
+                <img src="<?php echo get_template_directory_uri() . '/images/chapters_capistrano_logo.jpg' ?>" alt="">
             <?php elseif ($centerValue == "Monarch Shores") : ?>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/chapters_capistrano_logo.jpg' ?>" alt="">
+                <img src="<?php echo get_template_directory_uri() . '/images/chapters_capistrano_logo.jpg' ?>" alt="">
             <?php elseif ($centerValue == "Mountain Springs") : ?>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/chapters_capistrano_logo.jpg' ?>" alt="">
+                <img src="<?php echo get_template_directory_uri() . '/images/chapters_capistrano_logo.jpg' ?>" alt="">
             <?php elseif ($centerValue == "Willow Springs") : ?>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/chapters_capistrano_logo.jpg' ?>" alt="">
+                <img src="<?php echo get_template_directory_uri() . '/images/chapters_capistrano_logo.jpg' ?>" alt="">
             <?php endif; ?>
             <div class="center_page_hero_headline_wrapper">
                 <h1><?php echo get_field('center_page_hero_headline') ?></h1>
@@ -158,7 +158,7 @@ $centerValue = get_field('center')
                         while (have_rows('center_page_treatment_list_items')) : the_row();
                     ?>
                             <li>
-                                <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/checkmark_icon.png' ?>" alt="" loading="lazy"> <?php echo get_sub_field('text') ?>
+                                <img src="<?php echo get_template_directory_uri() . '/images/icons/checkmark_icon.png' ?>" alt="" loading="lazy"> <?php echo get_sub_field('text') ?>
                             </li>
                     <?php
                         endwhile;
@@ -180,30 +180,30 @@ $centerValue = get_field('center')
                         <a href="https://legitscript.com/pharmacy/chapterscapistrano.com" title=" Verify LegitScript Approval">
                             <img src="https://static.legitscript.com/seals/3380243.png" alt="LegitScript approved" loading="lazy" width="140" height="100" />
                         </a>
-                        <img src="<?php echo get_template_directory_uri() . '/assets/images/gold_badge.png' ?>" alt="" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri() . '/images/gold_badge.png' ?>" alt="" loading="lazy">
                     <?php elseif ($centerValue == "Monarch Shores") : ?>
                         <a href="https://legitscript.com/pharmacy/monarchshores.com" title="Verify LegitScript Approval">
                             <img src="https://static.legitscript.com/seals/3380081.png" alt="LegitScript approved" loading="lazy" width="140" height="100" />
                         </a>
-                        <img src="<?php echo get_template_directory_uri() . '/assets/images/gold_badge.png' ?>" alt="" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri() . '/images/gold_badge.png' ?>" alt="" loading="lazy">
                     <?php elseif ($centerValue == "Mountain Springs") : ?>
                         <a href="https://www.legitscript.com/websites/mountainspringsrecovery.com/" title="Verify LegitScript Approval">
                             <img src="https://static.legitscript.com/seals/4466021.png" alt="LegitScript approved" loading="lazy" />
                         </a>
-                        <img src="<?php echo get_template_directory_uri() . '/assets/images/gold_badge.png' ?>" alt="" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri() . '/images/gold_badge.png' ?>" alt="" loading="lazy">
                     <?php elseif ($centerValue == "Willow Springs") : ?>
                         <a title="Verify LegitScript Approval" href="https://legitscript.com/pharmacy/willowspringsrecovery.com/" title="Verify LegitScript Approval">
                             <img src="https://static.legitscript.com/seals/3380258.png" alt="LegitScript approved" loading="lazy" width="140" height="100" />
                         </a>
-                        <img src="<?php echo get_template_directory_uri() . '/assets/images/gold_badge.png' ?>" alt="" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri() . '/images/gold_badge.png' ?>" alt="" loading="lazy">
                     <?php endif; ?>
                 </div>
             </div>
             <div class="center_page_testimonial_container">
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/quotation_mark.png' ?>" alt="">
+                <img src="<?php echo get_template_directory_uri() . '/images/icons/quotation_mark.png' ?>" alt="">
                 <p><?php echo get_field('center_page_testimonial') ?></p>
                 <p><?php echo get_field('center_page_testimonial_name') ?></p>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/five_stars.png' ?>" alt="" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() . '/images/icons/five_stars.png' ?>" alt="" loading="lazy">
             </div>
         </section>
 
@@ -217,7 +217,7 @@ $centerValue = get_field('center')
                             <div class="expandable_row_element">
                                 <div class="expandable_row_element_headline_img_wrapper">
                                     <h5><?php echo get_sub_field('headline') ?></h5>
-                                    <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/plus_icon_blue.png' ?>" alt="">
+                                    <img src="<?php echo get_template_directory_uri() . '/images/icons/plus_icon_blue.png' ?>" alt="">
                                 </div>
 
                                 <div class="expandable_row_content hide">
@@ -231,7 +231,7 @@ $centerValue = get_field('center')
                     endif;
                     ?>
                 </div>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/chapters-min.jpg' ?>" alt="" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() . '/images/chapters-min.jpg' ?>" alt="" loading="lazy">
             </div>
         </section>
 

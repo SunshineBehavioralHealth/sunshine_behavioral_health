@@ -18,7 +18,7 @@
                         <div class="all_centers_accordion_row">
                             <div class="all_centers_accordion_headline_wrapper">
                                 <h4>Location</h4>
-                                <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/plus.png' ?>" class="all_center_accordion_plus_icon" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/images/icons/plus.png' ?>" class="all_center_accordion_plus_icon" alt="">
                             </div>
                             <div class="all_centers_accordion_dropdown_wrapper hide">
                                 <?php if ($centerValue == "Chapters Capistrano") : ?>
@@ -51,7 +51,7 @@
                         <div class="all_centers_accordion_row">
                             <div class="all_centers_accordion_headline_wrapper">
                                 <h4><?php echo get_sub_field('content_1_headline', 'option') ?></h4>
-                                <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/plus.png' ?>" class="all_center_accordion_plus_icon" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/images/icons/plus.png' ?>" class="all_center_accordion_plus_icon" alt="">
                             </div>
                             <div class="all_centers_accordion_dropdown_wrapper hide">
                                 <p><?php echo get_sub_field('content_1_paragarph', 'option') ?></p>
@@ -61,12 +61,12 @@
                         <div class="all_centers_accordion_row">
                             <div class="all_centers_accordion_headline_wrapper">
                                 <h4><?php echo get_sub_field('content_2_headline', 'option') ?></h4>
-                                <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/plus.png' ?>" class="all_center_accordion_plus_icon" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/images/icons/plus.png' ?>" class="all_center_accordion_plus_icon" alt="">
                             </div>
                             <div class="all_centers_accordion_dropdown_wrapper hide">
                                 <?php if (have_rows('content_2_list', 'option')) : ?>
                                     <?php while (have_rows('content_2_list', 'option')) : the_row(); ?>
-                                        <span><img src="<?php echo get_template_directory_uri() . '/assets/images/icons/checkmark.png' ?>" alt="">
+                                        <span><img src="<?php echo get_template_directory_uri() . '/images/icons/checkmark.png' ?>" alt="">
                                             <p><?php echo get_sub_field('item', 'option') ?></p>
                                         </span>
                                     <?php endwhile; ?>
@@ -77,7 +77,7 @@
                         <div class="all_centers_accordion_row">
                             <div class="all_centers_accordion_headline_wrapper">
                                 <h4>Accreditations</h4>
-                                <img src="<?php echo get_template_directory_uri() . '/assets/images/icons/plus.png' ?>" class="all_center_accordion_plus_icon" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/images/icons/plus.png' ?>" class="all_center_accordion_plus_icon" alt="">
                             </div>
                             <div class="all_centers_accordion_dropdown_wrapper hide">
                                 <?php if ($centerValue == "Chapters Capistrano") : ?>

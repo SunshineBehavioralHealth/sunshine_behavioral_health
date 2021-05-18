@@ -26,15 +26,15 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
             $centerValue = get_field('center');
 
             if ($centerValue == "Chapters Capistrano") : ?>
-                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/assets/images/career-chapters.jpg' ?>">
+                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/images/career-chapters.jpg' ?>">
             <?php elseif ($centerValue == "Monarch Shores") : ?>
-                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/assets/images/career-opportunities-monarch.jpg' ?>">
+                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/images/career-opportunities-monarch.jpg' ?>">
             <?php elseif ($centerValue == "Mountain Springs") : ?>
-                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/assets/images/career-mountain-springs.jpg' ?>">
+                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/images/career-mountain-springs.jpg' ?>">
             <?php elseif ($centerValue == "Willow Springs") : ?>
-                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/assets/images/career-opportunities-willow.jpg' ?>">
+                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/images/career-opportunities-willow.jpg' ?>">
             <?php elseif ($centerValue == "Sunshine Behavioral Health") : ?>
-                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/assets/images/career-sunshine.jpg' ?>">
+                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/images/career-sunshine.jpg' ?>">
             <?php endif; ?>
         <?php else : ?>
             <?php
@@ -42,15 +42,15 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
             $centerValue = get_field('center');
 
             if ($centerValue == "Chapters Capistrano") : ?>
-                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/assets/images/chapters-mobile.jpg' ?>">
+                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/images/chapters-mobile.jpg' ?>">
             <?php elseif ($centerValue == "Monarch Shores") : ?>
-                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/assets/images/monarch-moblie.jpg' ?>">
+                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/images/monarch-moblie.jpg' ?>">
             <?php elseif ($centerValue == "Mountain Springs") : ?>
-                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/assets/images/mountain-springs-mobile.jpg' ?>">
+                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/images/mountain-springs-mobile.jpg' ?>">
             <?php elseif ($centerValue == "Willow Springs") : ?>
-                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/assets/images/willow-springs-mobile.jpg' ?>">
+                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/images/willow-springs-mobile.jpg' ?>">
             <?php elseif ($centerValue == "Sunshine Behavioral Health") : ?>
-                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/assets/images/sunshine-mobile.jpg' ?>">
+                <img class="page_desktop_image" src="<?php echo get_template_directory_uri() . '/images/sunshine-mobile.jpg' ?>">
             <?php endif; ?>
         <?php endif; ?>
         <div class="page_mobile_image_text_and_cta_container">
