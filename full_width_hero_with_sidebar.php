@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Alumni
+ * Template Name: Full Width Hero with Sidebar
  * Template Post Type: Page
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
