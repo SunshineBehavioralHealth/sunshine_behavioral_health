@@ -661,3 +661,12 @@ function orange_outline_boxes()
 }
 
 add_shortcode('orange_outline_boxes', 'orange_outline_boxes');
+
+function all_centers_accordion()
+{
+	ob_start();
+	get_template_part('template-parts/content/shortcodes/all_centers_accordion');
+	return ob_get_clean();
+}
+
+add_shortcode('all_centers_accordion', 'all_centers_accordion');
