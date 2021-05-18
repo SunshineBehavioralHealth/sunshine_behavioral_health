@@ -33,7 +33,6 @@ $centerValue = get_field('center')
                 <p class="hero_subheadline"><?php echo get_field('thank_you_subheadline') ?></p>
             <?php endif; ?>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, error modi. Non rerum excepturi qui repudiandae, sunt velit harum nihil, nemo doloribus voluptas quod omnis vero architecto maiores dolorem, minus eum voluptates temporibus ex a ducimus praesentium? Qui, doloremque quisquam? Dolores blanditiis accusantium fuga expedita, voluptas quibusdam doloribus aliquid fugit soluta tempore id cum qui dolorum nisi, a quisquam, velit ipsam? Molestiae omnis nam eveniet illum excepturi nostrum debitis cum quas? Velit similique error fugiat.</p>
     </div>
     <div class="thank_you_page_main_content">
         <!-- Page Content -->
