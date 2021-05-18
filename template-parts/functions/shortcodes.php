@@ -634,3 +634,30 @@ function centers_cards_carousel_image()
 }
 
 add_shortcode('centers_cards_carousel_image', 'centers_cards_carousel_image');
+
+function news_letter()
+{
+	ob_start();
+	get_template_part('template-parts/content/shortcodes/news_letter');
+	return ob_get_clean();
+}
+
+add_shortcode('news_letter', 'news_letter');
+
+function facebook()
+{
+	ob_start();
+	get_template_part('template-parts/content/shortcodes/facebook');
+	return ob_get_clean();
+}
+
+add_shortcode('facebook', 'facebook');
+
+function orange_outline_boxes()
+{
+	ob_start();
+	get_template_part('template-parts/content/shortcodes/orange_outline_boxes');
+	return ob_get_clean();
+}
+
+add_shortcode('orange_outline_boxes', 'orange_outline_boxes');
