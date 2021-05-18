@@ -10,6 +10,7 @@
 
             ?>
                     <div class="all_centers_accordion_element  <?php if ($centerValue == "Chapters Capistrano") echo "chapters_styles";
+                                                                elseif ($centerValue == "Lincoln Recovery") echo "lincoln_styles";
                                                                 elseif ($centerValue == "Monarch Shores") echo "monarch_styles";
                                                                 elseif ($centerValue == "Mountain Springs") echo "mountain_styles";
                                                                 elseif ($centerValue == "Willow Springs") echo "willow_styles"; ?>">

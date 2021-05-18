@@ -22,7 +22,7 @@
             console.log("all center accordion clicked")
             event.stopImmediatePropagation();
 
-            (this).find('.all_centers_accordion_row img.all_center_accordion_plus_icon').toggleClass('dropdown_active');
+            $(this).find('.all_centers_accordion_row img.all_center_accordion_plus_icon').toggleClass('dropdown_active');
             $(this).find('.all_centers_accordion_dropdown_wrapper').toggleClass('hide');
         });
     });

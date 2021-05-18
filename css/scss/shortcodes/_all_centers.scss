@@ -13,9 +13,8 @@
   flex-direction: column;
 }
 
-.all_centers_accordion_wrapper
-  .all_centers_accordion_element
-  img.all_centers_center_image {
+.all_centers_accordion_element img,
+.all_centers_accordion_element picture {
   max-height: 125px;
 }
 
@@ -39,10 +38,18 @@
   background-color: var(--willow_primary);
 }
 
+.all_centers_accordion_headline_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .all_centers_accordion_row {
+  padding: 10px;
+
   h4 {
     margin: 0;
-    color: rgb(54, 36, 36);
+    color: #fff;
   }
 
   p {
