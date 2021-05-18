@@ -114,3 +114,9 @@
   color: #fff;
   text-shadow: 1px 1px 1px grey;
 }
+
+@media (min-width: 768px) {
+  .desktop_and_mobile_hero_image_wrapper .hero_banner_headlines_container {
+    width: 70%;
+  }
+}
