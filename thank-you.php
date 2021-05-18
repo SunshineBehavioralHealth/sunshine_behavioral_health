@@ -43,7 +43,7 @@ $centerValue = get_field('center')
 
     <div class="page_grid">
         <div class="page_wrapper thank_you_page_wrapper">
-            <section class="page_content thankyou_infographic_container">
+            <section class="page_content thank_you_infographic_container">
                 <?php echo get_field('thank_you_infographic_wysiwyg') ?>
             </section>
 
