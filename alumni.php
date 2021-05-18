@@ -24,7 +24,7 @@ $centerValue = get_field('center')
 
 
 <main id="primary" class="alumni_page">
-    <div class="alumni_hero_container desktop_and_mobile_hero_image_wrapper">
+    <div class="desktop_and_mobile_hero_image_wrapper">
         <img class="page_desktop_image hero_image hide_on_mobile show_on_tablet" src="<?php echo get_field('desktop_image')['url']; ?>">
         <img class="page_mobile_image hero_image hide_on_desktop hide_on_tablet" src="<?php echo get_field('mobile_image')['url']; ?>">
         <div class="hero_banner_headlines_container">
