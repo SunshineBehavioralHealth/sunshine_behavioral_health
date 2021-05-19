@@ -122,5 +122,4 @@
             endif;
 ?>
     </div>
-    </div>
 </section>
