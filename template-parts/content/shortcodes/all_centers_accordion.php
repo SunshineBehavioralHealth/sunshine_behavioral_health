@@ -116,10 +116,11 @@
                             </div>
                         </div>
                     </div>
-        </div>
-<?php
+
+            <?php
                 endwhile;
             endif;
-?>
+            ?>
+        </div>
     </div>
 </section>
