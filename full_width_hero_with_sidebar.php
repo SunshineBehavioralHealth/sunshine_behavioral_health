@@ -49,7 +49,7 @@ $centerValue = get_field('center')
 
             <?php get_template_part('template-parts/content/phoneTreatmentCta'); ?>
         </div>
-        <?php get_sidebar(); ?>
+        <?php get_sidebar('responsive'); ?>
     </div>
 </main> <?php
         get_footer();

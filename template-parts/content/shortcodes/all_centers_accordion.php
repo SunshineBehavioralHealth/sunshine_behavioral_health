@@ -116,7 +116,6 @@
                             </div>
                         </div>
                     </div>
-
             <?php
                 endwhile;
             endif;
