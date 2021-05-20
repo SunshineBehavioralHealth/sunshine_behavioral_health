@@ -24,6 +24,5 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-sidebar',
 	<?php
 	if (!is_page_template('index.php')) : get_template_part('template-parts/content/authorMedicalReviewSidebar');
 	endif; ?>
-	<?php sbh_center()->display_primary_sidebar(); ?>
 	<?php sunshine_behavioral_health()->display_primary_sidebar(); ?>
 </aside><!-- #secondary -->
