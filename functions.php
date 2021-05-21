@@ -221,7 +221,7 @@ add_filter('excerpt_length', function ($length) {
 });
 
 // Gets shortcodes from template parts
-get_template_part('template-parts/functions/shortcodes');
+get_template_part('template-parts/shortcodes');
 
 
 add_action('wp_head', 'WordPress_stairway');

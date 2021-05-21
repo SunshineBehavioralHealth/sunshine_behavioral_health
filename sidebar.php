@@ -20,6 +20,8 @@ if (!sunshine_behavioral_health()->is_primary_sidebar_active()) {
 sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-sidebar', 'sunshine_behavioral_health-widgets');
 
 ?>
+
+
 <aside id="secondary" class="primary-sidebar widget-area sidebar_margin_top">
 	<?php
 	if (!is_page_template('index.php')) : get_template_part('template-parts/content/authorMedicalReviewSidebar');
