@@ -138,6 +138,17 @@
 
 @media (min-width: 768px) {
   .desktop_and_mobile_hero_image_wrapper .hero_banner_headlines_container {
-    width: 70%;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+
+  .desktop_and_mobile_hero_image_wrapper h1,
+  .desktop_and_mobile_hero_image_wrapper p {
+    text-align: left;
+  }
+
+  .desktop_and_mobile_hero_image_wrapper .hero_banner_headlines_container{
+    align-items: baseline;
   }
 }

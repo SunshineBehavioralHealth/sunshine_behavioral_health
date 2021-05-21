@@ -111,6 +111,11 @@ aside {
   margin-bottom: 25px;
 }
 
+.content_container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
   .page_content {
     padding: 0 20px;
@@ -120,4 +125,3 @@ aside {
 .single_post_main ul {
   list-style-type: disc;
 }
-

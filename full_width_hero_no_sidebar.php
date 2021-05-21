@@ -25,7 +25,7 @@ $centerValue = get_field('center')
 <main id="primary" class="full_width_hero_no_sidebar">
     <?php get_template_part('template-parts/heros/desktop_and_mobile_hero_full_width'); ?>
 
-    <div class="full_width_hero_no_sidebar_content_container">
+    <div class="content_container">
         <div class="page_wrapper">
             <!-- Page Content -->
             <section class="page_content list_styling ipad_width_restriction">
