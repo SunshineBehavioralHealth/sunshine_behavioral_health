@@ -49,7 +49,7 @@ $centerValue = get_field('center')
 
 
         </div>
-        <?php get_sidebar('responsive'); ?>
+        <?php get_sidebar('dynamic'); ?>
     </div>
     <div class="thank_you_page_footer">
         <?php get_template_part('template-parts/content/shortcodes/centers_cards_carousel_image'); ?>

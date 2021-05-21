@@ -62,7 +62,7 @@ get_template_part('template-parts/javascript/navigationJs');
 
 			<?php get_template_part('template-parts/content/phoneTreatmentCta'); ?>
 		</div>
-		<?php get_sidebar('responsive'); ?>
+		<?php get_sidebar('dynamic'); ?>
 	</div>
 
 </main>

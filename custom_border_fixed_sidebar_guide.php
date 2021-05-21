@@ -60,7 +60,7 @@ get_template_part('template-parts/javascript/fixedSidebarJs');
 
 		<?php get_template_part('template-parts/content/phoneTreatmentCta'); ?>
 	</div>
-	<?php get_sidebar('responsive_fixed'); ?>
+	<?php get_sidebar('dynamic_fixed'); ?>
 </main>
 <?php
 get_footer();
