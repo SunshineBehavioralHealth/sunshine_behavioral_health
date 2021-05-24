@@ -139,10 +139,16 @@
 @media (min-width: 768px) {
   .desktop_and_mobile_hero_image_wrapper .hero_banner_headlines_container {
     width: 100%;
+    padding: 0 20px;
+  }
+
+  .desktop_and_mobile_hero_image_wrapper
+    .hero_banner_headlines_container
+    .hero_banner_headlines_wrapper {
+    width: 100%;
     max-width: 1250px;
     margin: 0 auto;
     align-items: baseline;
-    padding: 0 20px;
   }
 
   .desktop_and_mobile_hero_image_wrapper h1,
