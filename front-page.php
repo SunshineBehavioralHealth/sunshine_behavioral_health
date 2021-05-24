@@ -84,7 +84,7 @@ if (is_home()) {
 				<?php
 				$interjectionCTAOne = get_field('interjection_cta_button')
 				?>
-				<div class="cta_btn btn_mountain2 row interjection_cta"><a class="invocaNumber hpPhone" href="<?php echo $interjectionCTAOne['url'] ?>"><?php echo $interjectionCTAOne['title'] ?></a></div>
+				<div class="cta_btn btn_mountain2 row interjection_cta"><a id="hpPhone" class="invocaNumber hpPhone" href="<?php echo $interjectionCTAOne['url'] ?>"><?php echo $interjectionCTAOne['title'] ?></a></div>
 			</div>
 		</div>
 	</section>

@@ -11,12 +11,11 @@ jQuery(document).ready(function ($) {
             document.cookie = name + "=" + (value || "") + expires + "; path=/";
         }
 
-        $(".invocaNumber").click(function () {
-            console.log("invoca button clicked")
-            let invocaGTMCookie = $(this).id
-            console.log("cookie created:", invocaGTMCookie)
-            setCookie('shortcode_type', invocaGTMCookie, 7)
-            console.log("invoca cookie created")
+        $('.invocaNumber').click(function (event) {
+            console.log("invoca clicked")
+            var stateName = $(event.target).attr('id');
+            setCookie('shortcode_type', stateName, 7)
+            console.log('invoca cookie created successfully')
         });
     });
 });
