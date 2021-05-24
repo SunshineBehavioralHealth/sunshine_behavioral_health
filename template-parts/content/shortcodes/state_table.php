@@ -210,10 +210,10 @@
 
 <script>
     function stateTableDatLayerPush() {
-        console.log("State clicked:", this.innerText)
+        console.log("State clicked:", this.innerHTML)
         dataLayer.push({
             'event': 'state_table_click',
-            'state_clicked': this.innerText
+            'state_clicked': this.innerHTML
         });
         console.log("state table data layer push sent")
     }
