@@ -1,4 +1,4 @@
-<section class="state_table_section stateTable">
+<section id="stateTable" class="state_table_section stateTable">
     <h4>Find an Addiction Treatment Resource in Your Home State</h4>
 
     <div class="state_table_wrapper">
