@@ -1,4 +1,4 @@
-jQuery(document).ready(function (e) {
+jQuery(document).ready(function ($) {
     $(function () {
         $(".invocaNumber").click(function () {
             console.log("invoca button clicked")
