@@ -209,12 +209,14 @@
 </section>
 
 <script>
-    function stateTableDatLayerPush() {
-        console.log("State clicked:", this.innerHTML)
-        dataLayer.push({
-            'event': 'state_table_click',
-            'state_clicked': this.innerHTML
+    jQuery(document).ready(function($) {
+        $('.state_table_element a').click(function(event) {
+            var stateName = $(event.target).text();
+            dataLayer.push({
+                'event': 'state_table_click',
+                'state_clicked': stateName
+            });
         });
-        console.log("state table data layer push sent")
-    }
+
+    });
 </script>

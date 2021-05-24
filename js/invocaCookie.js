@@ -12,9 +12,9 @@ jQuery(document).ready(function ($) {
         }
 
         $('.invocaNumber').click(function (event) {
-            console.log("invoca clicked")
-            var stateName = $(event.target).attr('id');
-            setCookie('shortcode_type', stateName, 7)
+            var invocaGoogleAnalyticsClass = $(event.target).attr('id');
+            console.log("shortcode_type cookie value:", invocaGoogleAnalyticsClass)
+            setCookie('shortcode_type', invocaGoogleAnalyticsClass, 7)
             console.log('invoca cookie created successfully')
         });
     });
