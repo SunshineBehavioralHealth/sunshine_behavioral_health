@@ -1,207 +1,207 @@
-<section class="state_table_section">
+<section class="state_table_section stateTable">
     <h4>Find an Addiction Treatment Resource in Your Home State</h4>
 
     <div class="state_table_wrapper">
         <div class="state_table_container">
             <div class="state_table_states_wrapper">
                 <div class="state_table_element">
-                    <a href="/alabama">Alabama</a>
+                    <a  onclick="stateTableDatLayerPush()" href="/alabama">Alabama</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/alaska">Alaska</a>
+                    <a  href="/alaska">Alaska</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/arizona">Arizona</a>
+                    <a  href="/arizona">Arizona</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/arkansas">Arkansas</a>
+                    <a  href="/arkansas">Arkansas</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/california">California</a>
+                    <a  href="/california">California</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/colorado">Colorado</a>
+                    <a  href="/colorado">Colorado</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/connecticut">Connecticut</a>
+                    <a  href="/connecticut">Connecticut</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/delaware">Delaware</a>
+                    <a  href="/delaware">Delaware</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/florida">Florida</a>
+                    <a  href="/florida">Florida</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/georgia">Georgia</a>
+                    <a  href="/georgia">Georgia</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/hawaii">Hawaii</a>
+                    <a  href="/hawaii">Hawaii</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/idaho">Idaho</a>
+                    <a  href="/idaho">Idaho</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/illinois">Illinois</a>
+                    <a  href="/illinois">Illinois</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/indiana">Indiana</a>
+                    <a  href="/indiana">Indiana</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/iowa">Iowa</a>
+                    <a  href="/iowa">Iowa</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/kansas">Kansas</a>
+                    <a  href="/kansas">Kansas</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/kentucky">Kentucky</a>
+                    <a  href="/kentucky">Kentucky</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/louisiana">Louisiana</a>
+                    <a  href="/louisiana">Louisiana</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/maine">Maine</a>
+                    <a  href="/maine">Maine</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/maryland">Maryland</a>
+                    <a  href="/maryland">Maryland</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/massachusetts">Massachusetts</a>
+                    <a  href="/massachusetts">Massachusetts</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/michigan">Michigan</a>
+                    <a  href="/michigan">Michigan</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/minnesota">Minnesota</a>
+                    <a  href="/minnesota">Minnesota</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/mississippi">Mississippi</a>
+                    <a  href="/mississippi">Mississippi</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/missouri">Missouri</a>
+                    <a  href="/missouri">Missouri</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/montana">Montana</a>
+                    <a  href="/montana">Montana</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/nebraska">Nebraska</a>
+                    <a  href="/nebraska">Nebraska</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/nevada">Nevada</a>
+                    <a  href="/nevada">Nevada</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/new-hampshire">New Hampshire</a>
+                    <a  href="/new-hampshire">New Hampshire</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/new-jersey">New Jersey</a>
+                    <a  href="/new-jersey">New Jersey</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/new-mexico">New Mexico</a>
+                    <a  href="/new-mexico">New Mexico</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/new-york">New York</a>
+                    <a  href="/new-york">New York</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/north-carolina">North Carolina</a>
+                    <a  href="/north-carolina">North Carolina</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/north-dakota">North Dakota</a>
+                    <a  href="/north-dakota">North Dakota</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/ohio">Ohio</a>
+                    <a  href="/ohio">Ohio</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/oklahoma">Oklahoma</a>
+                    <a  href="/oklahoma">Oklahoma</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/oregon">Oregon</a>
+                    <a  href="/oregon">Oregon</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/pennsylvania">Pennsylvania</a>
+                    <a  href="/pennsylvania">Pennsylvania</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/rhode-island">Rhode Island</a>
+                    <a  href="/rhode-island">Rhode Island</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/south-carolina">South Carolina</a>
+                    <a  href="/south-carolina">South Carolina</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/south-dakota">South Dakota</a>
+                    <a  href="/south-dakota">South Dakota</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/tennessee">Tennessee</a>
+                    <a  href="/tennessee">Tennessee</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/texas">Texas</a>
+                    <a  href="/texas">Texas</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/utah">Utah</a>
+                    <a  href="/utah">Utah</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/vermont">Vermont</a>
+                    <a  href="/vermont">Vermont</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/virginia">Virginia</a>
+                    <a  href="/virginia">Virginia</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/washington">Washington</a>
+                    <a  href="/washington">Washington</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/west-virginia">West Virginia</a>
+                    <a  href="/west-virginia">West Virginia</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/wisconsin">Wisconsin</a>
+                    <a  href="/wisconsin">Wisconsin</a>
                 </div>
 
                 <div class="state_table_element">
-                    <a href="/wyoming">Wyoming</a>
+                    <a  href="/wyoming">Wyoming</a>
                 </div>
             </div>
         </div>
