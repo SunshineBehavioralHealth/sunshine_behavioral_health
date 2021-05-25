@@ -39,11 +39,3 @@
   color: var(--secondary_color);
   margin: 0;
 }
-
-@media (min-width: 768px) {
-  .orange_outline_boxes_shortcode_container
-    .orange_outline_boxes_shortcode_repeater_container
-    a {
-    width: 40%;
-  }
-}
