@@ -24,22 +24,6 @@ $centerValue = get_field('center');
 
 
 <script type="text/javascript">
-    jQuery(document).ready(function($) {
-        var sliders = document.querySelectorAll('.glide');
-
-        for (var i = 0; i < sliders.length; i++) {
-            var glide = new Glide(sliders[i], {
-                gap: 15,
-                perview: 3,
-                autoplay: 2500,
-                hoverpause: true,
-                keyboard: true,
-                duration: 2
-            });
-
-            glide.mount();
-        }
-    });
 </script>
 
 <main id="primary" class="maxWidth center_page">
