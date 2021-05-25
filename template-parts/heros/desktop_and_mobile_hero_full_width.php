@@ -8,6 +8,5 @@
                 <p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
             <?php endif; ?>
         </div>
-
     </div>
 </div>

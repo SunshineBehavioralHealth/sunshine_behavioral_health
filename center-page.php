@@ -17,7 +17,7 @@ get_template_part('template-parts/javascript/expandableRowsShortcodeJs');
 
 sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-page-nosidebar', 'sunshine_behavioral_health-content');
 
-$centerValue = get_field('center')
+$centerValue = get_field('center');
 
 ?>
 
@@ -30,17 +30,7 @@ $centerValue = get_field('center')
         for (var i = 0; i < sliders.length; i++) {
             var glide = new Glide(sliders[i], {
                 gap: 15,
-                breakpoints: {
-                    1024: {
-                        perView: 4
-                    },
-                    768: {
-                        perView: 2
-                    },
-                    600: {
-                        perView: 1
-                    }
-                },
+                perview: 3,
                 autoplay: 2500,
                 hoverpause: true,
                 keyboard: true,
@@ -53,32 +43,9 @@ $centerValue = get_field('center')
 </script>
 
 <main id="primary" class="maxWidth center_page">
-    <div class="center_page_hero_wrapper">
-        <img class="page_desktop_image hero_image hide_on_mobile show_on_tablet" src="<?php echo get_field('desktop_image')['url']; ?>">
-        <img class="page_mobile_image hero_image hide_on_desktop hide_on_tablet" src="<?php echo get_field('mobile_image')['url']; ?>">
-        <div class="center_page_hero_content_wrapper">
-            <!-- Need to correct images - need transparent center logos -->
-            <?php if ($centerValue == "Chapters Capistrano") : ?>
-                <img src="<?php echo get_template_directory_uri() . '/images/chapters_capistrano_logo.jpg' ?>" alt="">
-            <?php elseif ($centerValue == "Monarch Shores") : ?>
-                <img src="<?php echo get_template_directory_uri() . '/images/chapters_capistrano_logo.jpg' ?>" alt="">
-            <?php elseif ($centerValue == "Mountain Springs") : ?>
-                <img src="<?php echo get_template_directory_uri() . '/images/chapters_capistrano_logo.jpg' ?>" alt="">
-            <?php elseif ($centerValue == "Willow Springs") : ?>
-                <img src="<?php echo get_template_directory_uri() . '/images/chapters_capistrano_logo.jpg' ?>" alt="">
-            <?php endif; ?>
-            <div class="center_page_hero_headline_wrapper">
-                <h1><?php echo get_field('center_page_hero_headline') ?></h1>
-                <?php if (get_field('page_subheadline_paragraph')) : ?>
-                    <p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
-                <?php endif; ?>
-                <p class="center_page_hero_cta_top_text">Talk to an Intake Specialist</p>
-                <a id="centerPageHeroPhone" class="invocaNumber centerPageHeroPhone" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'centerPageHeroPhone'});" href="tel:949-276-2886">949-276-2886</a>
-            </div>
-        </div>
-    </div>
+    <?php get_template_part('template-parts/heros/desktop_and_mobile_hero_full_width_center'); ?>
 
-    <div class="center_page_content_container 
+    <div class="content_container 
     <?php if ($centerValue == "Chapters Capistrano") echo "chapters_styles";
     elseif ($centerValue == "Monarch Shores") echo "monarch_styles";
     elseif ($centerValue == "Mountain Springs") echo "mountain_styles";
@@ -140,11 +107,6 @@ $centerValue = get_field('center')
                         endif;
                         ?>
                     </ul>
-                </div>
-                <div class="glide__bullets" data-glide-el="controls[nav]">
-                    <button class="glide__bullet" data-glide-dir="=0"></button>
-                    <button class="glide__bullet" data-glide-dir="=1"></button>
-                    <button class="glide__bullet" data-glide-dir="=2"></button>
                 </div>
             </div>
         </section>
