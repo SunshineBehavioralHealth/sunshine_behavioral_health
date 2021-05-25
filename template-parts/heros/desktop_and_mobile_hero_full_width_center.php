@@ -1,4 +1,6 @@
-<div class="desktop_and_mobile_hero_image_wrapper">
+<?php $centerValue = get_field('center'); ?>
+
+<div class="desktop_and_mobile_hero_image_wrapper center_page_hero">
     <img class="page_desktop_image hero_image hide_on_mobile show_on_tablet" src="<?php echo get_field('desktop_image')['url']; ?>">
     <img class="page_mobile_image hero_image hide_on_desktop hide_on_tablet" src="<?php echo get_field('mobile_image')['url']; ?>">
     <div class="center_page_hero_content_wrapper">
@@ -8,6 +10,7 @@
             <p>Chapters</p>
         <?php elseif ($centerValue == "Monarch Shores") : ?>
             <img src="<?php echo get_template_directory_uri() . '/images/chapters_capistrano_logo.jpg' ?>" alt="">
+            <p>Monarch</p>
         <?php elseif ($centerValue == "Mountain Springs") : ?>
             <img src="<?php echo get_template_directory_uri() . '/images/chapters_capistrano_logo.jpg' ?>" alt="">
         <?php elseif ($centerValue == "Willow Springs") : ?>
