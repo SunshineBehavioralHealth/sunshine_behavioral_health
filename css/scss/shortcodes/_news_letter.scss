@@ -64,6 +64,10 @@
   }
 }
 
+.primary-sidebar .news_letter_form_and_submit_container {
+  flex-direction: column;
+}
+
 .primary-sidebar .newsletter_submit_button {
   width: auto;
   margin: 10px auto 0 auto;
