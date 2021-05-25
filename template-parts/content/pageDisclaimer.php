@@ -6,6 +6,4 @@
             <p>Licensed medical professionals review material we publish on our site. The material is not a substitute for qualified medical diagnoses, treatment, or advice. It should not be used to replace the suggestions of your personal physician or other health care professionals.</p>
         </div>
     </section>
-<?php else : ?>
-    <p>page disclaimer else</p>
 <?php endif; ?>
