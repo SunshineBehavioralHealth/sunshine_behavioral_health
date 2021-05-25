@@ -6,15 +6,15 @@
     <div class="center_page_hero_content_wrapper">
         <!-- Need to correct images - need transparent center logos -->
         <?php if ($centerValue == "Chapters Capistrano") : ?>
-            <img src="<?php echo get_template_directory_uri() . '/images/chapters_capistrano_logo.jpg' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/images/logos/chapters_capistrano_logo.jpg' ?>" alt="">
             <p>Chapters</p>
         <?php elseif ($centerValue == "Monarch Shores") : ?>
-            <img src="<?php echo get_template_directory_uri() . '/images/chapters_capistrano_logo.jpg' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/images/logos/monarch_shores_logo.jpg' ?>" alt="">
             <p>Monarch</p>
         <?php elseif ($centerValue == "Mountain Springs") : ?>
-            <img src="<?php echo get_template_directory_uri() . '/images/chapters_capistrano_logo.jpg' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/images/logos/mountain_springs_logo.jpg' ?>" alt="">
         <?php elseif ($centerValue == "Willow Springs") : ?>
-            <img src="<?php echo get_template_directory_uri() . '/images/chapters_capistrano_logo.jpg' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/images/logos/willow_springs_logo.jpg' ?>" alt="">
         <?php endif; ?>
         <div class="hero_banner_headlines_container">
             <div class="hero_banner_headlines_wrapper">
