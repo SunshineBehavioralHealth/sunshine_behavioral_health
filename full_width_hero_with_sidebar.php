@@ -33,10 +33,7 @@ $centerValue = get_field('center')
                 <?php echo get_field('content') ?>
             </section>
 
-            <!-- Disclosure -->
-            <section class="page_disclosure_section">
-                <?php get_template_part('template-parts/content/pageDisclaimer'); ?>
-            </section>
+            <?php get_template_part('template-parts/content/pageDisclaimer'); ?>
 
             <?php get_template_part('template-parts/content/phoneTreatmentCta'); ?>
         </div>

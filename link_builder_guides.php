@@ -66,9 +66,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 
 		<?php get_template_part('template-parts/content/sources'); ?>
 
-		<section class="page_disclosure_section">
-			<?php get_template_part('template-parts/content/pageDisclaimer'); ?>
-		</section>
+		<?php get_template_part('template-parts/content/pageDisclaimer'); ?>
 
 		<?php get_template_part('template-parts/content/phoneTreatmentCta'); ?>
 	</div>

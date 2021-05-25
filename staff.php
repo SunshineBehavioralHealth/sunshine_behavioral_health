@@ -69,9 +69,7 @@ get_template_part('template-parts/javascript/navigationJs');
 
 		</section>
 
-		<section class="page_disclosure_section">
-			<?php get_template_part('template-parts/content/pageDisclaimer'); ?>
-		</section>
+		<?php get_template_part('template-parts/content/pageDisclaimer'); ?>
 	</div>
 </main>
 

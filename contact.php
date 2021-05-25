@@ -65,9 +65,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
             </div>
         </section>
 
-        <section class="page_disclosure_section">
-            <?php get_template_part('template-parts/content/pageDisclaimer'); ?>
-        </section>
+        <?php get_template_part('template-parts/content/pageDisclaimer'); ?>
     </div>
 </main> <?php
         get_footer();

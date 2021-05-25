@@ -53,10 +53,9 @@ $centerValue = get_field('center')
     </div>
     <div class="thank_you_page_footer">
         <?php get_template_part('template-parts/content/shortcodes/centers_cards_carousel_image'); ?>
-        <!-- Disclosure -->
-        <section class="page_disclosure_section">
-            <?php get_template_part('template-parts/content/pageDisclaimer'); ?>
-        </section>
+
+        <?php get_template_part('template-parts/content/pageDisclaimer'); ?>
+
     </div>
 </main> <?php
         get_footer();
