@@ -3,7 +3,7 @@
 <div class="desktop_and_mobile_hero_image_wrapper center_page_hero">
     <img class="page_desktop_image hero_image hide_on_mobile show_on_tablet" src="<?php echo get_field('desktop_image')['url']; ?>">
     <img class="page_mobile_image hero_image hide_on_desktop hide_on_tablet" src="<?php echo get_field('mobile_image')['url']; ?>">
-    <div class="hero_banner_headlines_container">
+    <div class="center_page_hero_content_wrapper">
         <!-- Need to correct images - need transparent center logos -->
         <?php if ($centerValue == "Chapters Capistrano") : ?>
             <img src="<?php echo get_template_directory_uri() . '/images/logos/chapters_capistrano_logo.jpg' ?>" alt="">
