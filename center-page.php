@@ -76,7 +76,7 @@ $centerValue = get_field('center');
         </section>
 
         <section class="center_page_image_carousel_section">
-            <div class="glide carousel<?php echo get_sub_field('increment') ?>">
+            <div class="glide">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
                         <?php
@@ -91,6 +91,22 @@ $centerValue = get_field('center');
                         endif;
                         ?>
                     </ul>
+                </div>
+
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <?php
+                            if (have_rows('gallery')) :
+                                while (have_rows('gallery')) : the_row();
+                            ?>
+                                    <li class="glide__slide"><img src="<?php echo get_sub_field('gallery_image')['url'] ?>" alt="" loading="lazy"></li>
+                            <?php
+                                endwhile;
+                            endif;
+                            ?>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

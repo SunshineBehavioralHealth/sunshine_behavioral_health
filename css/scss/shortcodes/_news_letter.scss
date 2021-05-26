@@ -1,7 +1,7 @@
 .newsletter_headline {
   display: flex;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   text-align: center;
 }
 
@@ -64,6 +64,11 @@
   }
 }
 
+.primary-sidebar .newsletter_container h2 {
+  font-size: 20px;
+  color: var(--secondary_color);
+}
+
 .primary-sidebar .news_letter_form_and_submit_container {
   flex-direction: column;
 }
@@ -71,4 +76,10 @@
 .primary-sidebar .newsletter_submit_button {
   width: auto;
   margin: 10px auto 0 auto;
+}
+
+@media (min-width: 768px) {
+  .primary-sidebar .newsletter_container h2 {
+    font-size: 24px;
+  }
 }
