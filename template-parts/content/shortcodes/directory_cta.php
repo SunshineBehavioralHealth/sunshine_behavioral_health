@@ -8,8 +8,8 @@
 
             <ul>
                 <?php
-                if (have_rows('directory_cta-list_repeater')) :
-                    while (have_rows('directory_cta-list_repeater')) : the_row();
+                if (have_rows('directory_cta-list_repeater', 'option')) :
+                    while (have_rows('directory_cta-list_repeater', 'option')) : the_row();
                 ?>
                         <li class=""><?php echo get_sub_field('item', 'option') ?></li>
                 <?php
