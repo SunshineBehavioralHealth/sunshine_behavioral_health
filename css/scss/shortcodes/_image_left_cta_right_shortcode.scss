@@ -56,15 +56,22 @@
   object-fit: cover;
 }
 
-.image_left_cta_right_shortcode_right_wrapper ul {
+.directory_cta .image_left_cta_right_shortcode_right_wrapper h5 {
+  margin: 0;
+}
+
+.directory_cta .image_left_cta_right_shortcode_right_wrapper ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 0;
 }
 
-.image_left_cta_right_shortcode_right_wrapper ul li {
+.directory_cta .image_left_cta_right_shortcode_right_wrapper ul li {
   width: 45%;
-  border: 2px solid blue;
+  list-style: none;
 }
 
 @media (min-width: 1024px) {
