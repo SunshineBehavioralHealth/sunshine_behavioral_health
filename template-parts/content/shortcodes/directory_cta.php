@@ -1,7 +1,7 @@
 <section class="image_left_cta_right_shortcode_section directory_cta">
     <div class="image_left_cta_right_shortcode_container">
         <div class="image_left_cta_right_shortcode_left_wrapper hide_on_mobile">
-            <img src="<?php echo get_field('directory_cta - image')['url'] ?>" alt="">
+            <img src="<?php echo get_field('directory_cta-image')['url'] ?>" alt="">
         </div>
         <div class="image_left_cta_right_shortcode_right_wrapper">
             <h5><?php echo get_field('directory_cta-headline', 'option') ?></h5>
@@ -18,7 +18,7 @@
                 ?>
             </ul>
             <div class="image_left_cta_right_shortcode_right_cta_wrapper">
-                <a href="<?php echo get_field('directory_cta-cta_link', 'option') ?>"><?php echo get_field('image_left_cta_right-cta_text', 'option') ?></a>
+                <a href="<?php echo get_field('directory_cta-cta_link', 'option') ?>"><?php echo get_field('directory_cta-cta_text', 'option') ?></a>
             </div>
 
         </div>

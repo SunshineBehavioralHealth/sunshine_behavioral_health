@@ -56,9 +56,23 @@
   object-fit: cover;
 }
 
+.image_left_cta_right_shortcode_right_wrapper ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.image_left_cta_right_shortcode_right_wrapper ul li {
+  width: 45%;
+  border: 2px solid blue;
+}
+
 @media (min-width: 1024px) {
   .image_left_cta_right_shortcode_container {
     max-height: 200px;
+  }
+  .directory_cta .image_left_cta_right_shortcode_container {
+    max-height: 300px;
   }
   .image_left_cta_right_shortcode_container
     .image_left_cta_right_shortcode_left_wrapper {
