@@ -473,6 +473,14 @@ function image_left_cta_right_shortcode_static()
 
 add_shortcode('image_left_cta_right_shortcode_static', 'image_left_cta_right_shortcode_static');
 
+function image_left_cta_right_list_dynamic()
+{
+	ob_start();
+	get_template_part('template-parts/content/shortcodes/image_left_cta_right_list_dynamic');
+	return ob_get_clean();
+}
+
+add_shortcode('image_left_cta_right_list_dynamic', 'image_left_cta_right_list_dynamic');
 
 
 function expandable_rows_shortcode()
