@@ -27,6 +27,7 @@
 .image_left_cta_right_shortcode_right_wrapper p {
   color: #fff;
   font-size: 14px;
+  margin: 0;
 }
 
 .image_left_cta_right_shortcode_right_cta_wrapper {
@@ -73,6 +74,10 @@
 .directory_cta .image_left_cta_right_shortcode_right_wrapper ul li {
   width: 100%;
   list-style: none;
+}
+
+.directory_cta .image_left_cta_right_shortcode_left_wrapper img {
+  max-height: 400px;
 }
 
 @media (min-width: 768px) {
