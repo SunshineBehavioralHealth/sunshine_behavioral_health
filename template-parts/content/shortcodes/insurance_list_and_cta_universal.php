@@ -6,8 +6,8 @@
         <div class="list_and_cta_bottom">
             <div class="list_and_cta_list_wrapper">
                 <?php
-                if (have_rows('insurance_list_and_cta_universal-repeater')) :
-                    while (have_rows('insurance_list_and_cta_universal-repeater')) : the_row();
+                if (have_rows('insurance_list_and_cta_universal-repeater', 'option')) :
+                    while (have_rows('insurance_list_and_cta_universal-repeater', 'option')) : the_row();
                 ?>
                         <div class="list_and_cta_list_element">
                             <div class="list_and_cta_list_element_wrapper">
