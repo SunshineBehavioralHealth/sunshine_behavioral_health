@@ -5,7 +5,7 @@
         </div>
         <div class="image_left_cta_right_shortcode_right_wrapper">
             <h5><?php echo get_field('directory_cta-headline', 'option') ?></h5>
-
+            <p><?php echo get_field('directory_cta-subheadline', 'option') ?></p>
             <ul>
                 <?php
                 if (have_rows('directory_cta-list_repeater', 'option')) :

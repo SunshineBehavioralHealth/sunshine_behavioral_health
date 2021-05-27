@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 
 .image_left_cta_right_shortcode_right_wrapper h5 {
@@ -70,8 +71,15 @@
 }
 
 .directory_cta .image_left_cta_right_shortcode_right_wrapper ul li {
-  width: 45%;
+  width: 100%;
   list-style: none;
+}
+
+@media (min-width: 768px) {
+  .directory_cta .image_left_cta_right_shortcode_right_wrapper ul li {
+    width: 45%;
+    list-style: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -79,8 +87,10 @@
     max-height: 200px;
   }
   .directory_cta .image_left_cta_right_shortcode_container {
-    max-height: 300px;
+    max-height: 500px;
+    height: auto;
   }
+
   .image_left_cta_right_shortcode_container
     .image_left_cta_right_shortcode_left_wrapper {
     width: 35%;
