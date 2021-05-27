@@ -24,6 +24,7 @@
     jQuery(document).ready(function($) {
         $('.faq_sidebar_element a').click(function(event) {
             var faqString = $(event.target).text();
+            console.log('faq string clicked:', faqString);
             dataLayer.push({
                 'event': 'faq_sidebar_click  ',
                 'question_asked ': faqString
