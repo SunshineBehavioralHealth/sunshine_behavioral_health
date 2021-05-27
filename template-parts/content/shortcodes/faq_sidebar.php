@@ -1,4 +1,4 @@
-<section class="faq_sidebar_section">
+<section id="faqSidebar" class="faq_sidebar_section faqSidebar">
     <div class="faq_sidebar_container">
         <h5><?php echo get_field('faq_sidebar_headline', 'option') ?></h5>
         <div class="faq_sidebar_elements_wrapper">
@@ -19,3 +19,15 @@
         </div>
     </div>
 </section>
+
+<script>
+    jQuery(document).ready(function($) {
+        $('.faq_sidebar_element a').click(function(event) {
+            var faqString = $(event.target).text();
+            dataLayer.push({
+                'event': 'faq_sidebar_click  ',
+                'question_asked ': faqString
+            });
+        });
+    });
+</script>

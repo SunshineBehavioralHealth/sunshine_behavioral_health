@@ -11,9 +11,6 @@ $AuthorUser = get_field("editor_user");
 
     let googleCID = getCookie('_ga');
     let pageURL = window.location.href;
-
-    let testVariable;
-
     var dataLayer = window.dataLayer = window.dataLayer || [];
 
     dataLayer.push({
@@ -23,13 +20,3 @@ $AuthorUser = get_field("editor_user");
         'pageURL': pageURL
     });
 </script>
-
-
-<!-- 
-Data Layer values being grabbed by invoca:
-
-pageURL
-shortcode_type
-
-
- -->

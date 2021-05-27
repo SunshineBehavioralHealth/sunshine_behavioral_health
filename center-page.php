@@ -90,7 +90,7 @@ $centerValue = get_field('center');
                             endwhile;
                         endif;
                         ?>
-                    </ul>   
+                    </ul>
                 </div>
             </div>
         </section>

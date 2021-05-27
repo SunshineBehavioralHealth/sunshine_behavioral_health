@@ -208,3 +208,14 @@
     </div>
 </section>
 
+<script>
+    jQuery(document).ready(function($) {
+        $('.state_table_element a').click(function(event) {
+            var stateName = $(event.target).text();
+            dataLayer.push({
+                'event': 'state_table_click',
+                'state_clicked': stateName
+            });
+        });
+    });
+</script>

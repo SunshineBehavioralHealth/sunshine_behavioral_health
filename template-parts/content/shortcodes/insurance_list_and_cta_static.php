@@ -85,7 +85,7 @@
 
                 <div class="list_and_cta_list_element hide_on_mobile">
                     <div class="list_and_cta_list_element_wrapper">
-                        <a href="/insurance/anthem-health">
+                        <a href="/insurance/anthem-health/">
                             <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="">
                             <p>Anthem</p>
                         </a>
