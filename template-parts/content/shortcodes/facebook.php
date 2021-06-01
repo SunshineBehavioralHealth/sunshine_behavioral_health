@@ -1,4 +1,4 @@
-<section class="facebook_shortcode_section">
+<section id="facebookAlumCTA" class="facebook_shortcode_section">
     <div class="facebook_shortcode_container">
         <h3><?php echo get_field('facebook_-_headline', 'option') ?></h3>
         <p><?php echo get_field('facebook_-_subheadline', 'option') ?></p>
@@ -8,7 +8,7 @@
                 while (have_rows('facebook_-_repeater', 'option')) : the_row();
             ?>
                     <div class="facebook_shortcode_repeater_element">
-                        <a href="<?php echo get_sub_field('link', 'option') ?>"><img src="<?php echo get_sub_field('icon', 'option')['url'] ?>" alt=""></a>
+                        <a id="<?php echo get_sub_field('id', 'option') ?>" href="<?php echo get_sub_field('link', 'option') ?>"><img src="<?php echo get_sub_field('icon', 'option')['url'] ?>" alt=""></a>
                     </div>
             <?php
                 endwhile;
@@ -17,3 +17,15 @@
         </div>
     </div>
 </section>
+
+<script>
+    jQuery(document).ready(function($) {
+        $('.facebook_shortcode_repeater_element a').click(function(event) {
+            var facebookGroup = $(this).attr('id');
+            dataLayer.push({
+                'event': 'facebook_alum_click ',
+                'alumni_group ': facebookGroup
+            });
+        });
+    });
+</script>
