@@ -678,3 +678,13 @@ function all_centers_accordion()
 }
 
 add_shortcode('all_centers_accordion', 'all_centers_accordion');
+
+
+function alumni_calendar()
+{
+	ob_start();
+	get_template_part('template-parts/content/shortcodes/alumni_calendar');
+	return ob_get_clean();
+}
+
+add_shortcode('alumni_calendar', 'alumni_calendar');
