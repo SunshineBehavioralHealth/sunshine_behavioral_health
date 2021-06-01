@@ -37,7 +37,7 @@
 <script>
     jQuery(document).ready(function($) {
         $('.list_and_cta_list_element a').click(function(event) {
-            var insuranceName = $(this).attr();
+            var insuranceName = $(this).attr('id');
             console.log("name of insurance:", insuranceName);
             dataLayer.push({
                 'event': 'coverage_table_click ',
