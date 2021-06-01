@@ -8,7 +8,7 @@
                 while (have_rows('facebook_-_repeater', 'option')) : the_row();
             ?>
                     <div class="facebook_shortcode_repeater_element">
-                        <a href="/<?php echo get_sub_field('link', 'option') ?>"><img src="<?php echo get_sub_field('icon', 'option')['url'] ?>" alt=""></a>
+                        <a href="<?php echo get_sub_field('link', 'option') ?>"><img src="<?php echo get_sub_field('icon', 'option')['url'] ?>" alt=""></a>
                     </div>
             <?php
                 endwhile;
