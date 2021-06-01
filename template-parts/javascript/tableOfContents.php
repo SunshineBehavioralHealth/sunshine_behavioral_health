@@ -9,6 +9,6 @@
           return e("html, body").animate({
             scrollTop: e(t).offset().top
           }, 500), !1
-        }), e(".toc").prepend("<div class='toc_dropdown'><img src='<?php echo get_template_directory_uri() . '/assets/images/icons/plus_icon_blue.png' ?>'></div>"), e(".toc").prepend("<h5>Table of Contents</h5>")
+        }), e(".toc").prepend("<div class='toc_dropdown'><img src='<?php echo get_template_directory_uri() . '/images/icons/plus_icon_blue.png' ?>'></div>"), e(".toc").prepend("<h5>Table of Contents</h5>")
       });
     </script>

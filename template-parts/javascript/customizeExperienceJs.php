@@ -86,7 +86,7 @@
 
         $('#customize_experience_submit').attr("target", "");
 
-        $('.customize_expereince_reset_btn').click(function() {
+        $('.customize_experience_reset_btn').click(function() {
             $('.customize_experience_form_wrapper').trigger("reset");
             $('#customize_experience_submit').addClass("hide");
             $('#customize_experience_form_bottom_wrapper_1').addClass("hide");

@@ -4,7 +4,7 @@
             <?php if (get_field('gallery_image')) : ?>
                 <img src="<?php echo get_field('gallery_image')['url'] ?>" alt="">
             <?php else : ?>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/sidebar_gallery_default_image.jpg' ?>" alt="">
+                <img src="<?php echo get_template_directory_uri() . '/images/sidebar_gallery_default_image.jpg' ?>" alt="">
             <?php endif; ?>
         </div>
         <div class="gallery_sidebar_body">
@@ -22,7 +22,7 @@
     <?php if (get_field('gallery_image')) : ?>
             <img src="<?php echo get_field('gallery_image')['url'] ?>" alt="">
         <?php else : ?>
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/default_sidebar_shortcode_thumbnail.jpg' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/images/default_sidebar_shortcode_thumbnail.jpg' ?>" alt="">
         <?php endif; ?>
         <div class="gallery_sidebar_body">
             <h5>Look what Sunshine Behavioral Health Recovery has to Offer You</h5>

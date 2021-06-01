@@ -10,15 +10,13 @@ $AuthorUser = get_field("editor_user");
     }
 
     let googleCID = getCookie('_ga');
-
-    let testVariable;
-
+    let pageURL = window.location.href;
     var dataLayer = window.dataLayer = window.dataLayer || [];
+
     dataLayer.push({
         'event': 'trackerReady',
         'client_id': googleCID,
-        'pagePostAuthor': "<?php echo $AuthorUser['display_name']; ?>"
-
-
+        'pagePostAuthor': "<?php echo $AuthorUser['display_name']; ?>",
+        'pageURL': pageURL
     });
 </script>

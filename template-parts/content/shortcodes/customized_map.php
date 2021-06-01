@@ -3,165 +3,112 @@ $centerSelection = get_field('customized_map_center_options');
 ?>
 
 <section class="customized_map_section">
-    <div class="customized_map_container 
-    <?php if ($centerSelection == "Chapters Capistrano") : echo "chaptersPrimaryBorder";
-    elseif ($centerSelection == "Lincoln Recovery") : echo "lincolnPrimaryBorder";
-    elseif ($centerSelection == "Monarch Shores") : echo "monarchPrimaryBorder";
-    elseif ($centerSelection == "Mountain Springs Recovery") : echo "mountainPrimaryBorder";
-    elseif ($centerSelection == "Willow Springs Recovery") : echo "willowPrimaryBorder";
-    endif; ?>">
-        <div class="customized_map_left_wrapper">
+    <div class="customized_map_container">
+        <div class="customized_map_wrapper">
             <?php if ($centerSelection == "Chapters Capistrano") :
-                $checkmarkIcon = '/assets/images/icons/checkmark_icon_chapters.png';
+                $checkmarkIcon = '/images/icons/checkmark_icon_chapters.png';
             ?>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/chapters_map.jpg' ?>" alt="">
-                <ul>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>24/7 access to a doctor</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Cell phone and laptop friendly</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Smoke/vape friendly</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Six different houses</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Upscale, luxurious location</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Breathtaking seaside views</p>
-                    </li>
-                </ul>
-                <div class="customized_map_cta_wrapper">
-                    <p></p>
-                    <a class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                <img class="customized_map_banner" src="<?php echo get_template_directory_uri() . '/images/customized_map_header_chapters.jpg' ?>" alt="">
+                <div class="customized_map_iframe_wrapper hide_on_desktop hide_on_tablet">
+                    <?php echo get_field('customized_map_iframe') ?>
+                    <?php if (get_field('customized_map_legal_notice')) : ?>
+                        <p class="customized_map_legal_notice">Our closest facility is in California</p>
+                    <?php endif; ?>
                 </div>
+                <div class="customized_map_address_container" style="background-color:<?php echo "var(--chapters_primary)"; ?>">
+                    <p>Address: <span>1525 Buena Vista, San Clemente, CA 92672</span></p>
+                </div>
+                <div class="customized_map_body_wrapper">
+                    <img class="customized_map_main_image" src="<?php echo get_template_directory_uri() . '/images/customized_map_body_chapters.jpg' ?>" alt="">
+                    <a id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                </div>
+
+
             <?php elseif ($centerSelection == "Lincoln Recovery") :
-                $checkmarkIcon = '/assets/images/icons/checkmark_icon_lincoln.png'; ?>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/lincoln_map.jpg' ?>" alt="">
-                <ul>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Cell phone and laptop friendly</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Full-service detox and treatment</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Relaxing environment</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Counselors and doctors on staff</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Private Rooms Available</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Non 12-step treatment</p>
-                    </li>
-                </ul>
-                <div class="customized_map_cta_wrapper">
-                    <p></p>
-                    <a class="invocaNumber customzied_map_cta customziedMapPhoneCta" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+
+                $checkmarkIcon = '/images/icons/checkmark_icon_lincoln.png'; ?>
+                <img class="customized_map_banner" src="<?php echo get_template_directory_uri() . '/images/customized_map_header_lincoln.jpg' ?>" alt="">
+                <div class="customized_map_iframe_wrapper hide_on_desktop hide_on_tablet">
+                    <?php echo get_field('customized_map_iframe') ?>
+                    <?php if (get_field('customized_map_legal_notice')) : ?>
+                        <p class="customized_map_legal_notice">Our closest facility is in Illinois</p>
+                    <?php endif; ?>
                 </div>
+                <div class="customized_map_address_container" style="background-color:<?php echo "var(--lincoln_primary)"; ?>">
+                    <p>Address: <span>Raymond, IL</span></p>
+                </div>
+                <div class="customized_map_body_wrapper">
+                    <img class="customized_map_main_image" src="<?php echo get_template_directory_uri() . '/images/customized_map_body_lincoln.jpg' ?>" alt="">
+                    <a id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                </div>
+
             <?php elseif ($centerSelection == "Monarch Shores") :
-                $checkmarkIcon = '/assets/images/icons/checkmark_icon_monarch.png'; ?>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/monarch_map.jpg' ?>" alt="">
-                <ul>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Upscale, luxurious location</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>4.5:1 client-to-therapist ratio</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Cell phone and laptop friendly</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Off-site outpatient treatment</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Full-service detox</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Regular outings</p>
-                    </li>
-                </ul>
-                <div class="customized_map_cta_wrapper">
-                    <p></p>
-                    <a class="invocaNumber customzied_map_cta customziedMapPhoneCta" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                $checkmarkIcon = '/images/icons/checkmark_icon_monarch.png'; ?>
+                <img class="customized_map_banner" src="<?php echo get_template_directory_uri() . '/images/customized_map_header_monarch.jpg' ?>" alt="">
+                <div class="customized_map_iframe_wrapper hide_on_desktop hide_on_tablet">
+                    <?php echo get_field('customized_map_iframe') ?>
+                    <?php if (get_field('customized_map_legal_notice')) : ?>
+                        <p class="customized_map_legal_notice">Our closest facility is in California</p>
+                    <?php endif; ?>
                 </div>
+                <div class="customized_map_address_container" style="background-color:<?php echo "var(--monarch_primary)"; ?>">
+                    <p>Address: <span>27123 Calle Arroyo #2121, San Juan Capistrano, CA 92675</span></p>
+                </div>
+                <div class="customized_map_body_wrapper">
+                    <img class="customized_map_main_image" src="<?php echo get_template_directory_uri() . '/images/customized_map_body_monarch.jpg' ?>" alt="">
+                    <a id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                </div>
+
             <?php elseif ($centerSelection == "Mountain Springs Recovery") :
-                $checkmarkIcon = '/assets/images/icons/checkmark_icon_mountain.png'; ?>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/mountain_map.jpg' ?>" alt="">
-                <ul>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Cell phone and laptop friendly</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Full-service detox and treatment</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Relaxing environment</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Mountainside views</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Joint Commission accreditation</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Non 12-step treatment</p>
-                    </li>
-                </ul>
-                <div class="customized_map_cta_wrapper">
-                    <p></p>
-                    <a class="invocaNumber customzied_map_cta customziedMapPhoneCta" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                $checkmarkIcon = '/images/icons/checkmark_icon_mountain.png'; ?>
+                <img class="customized_map_banner" src="<?php echo get_template_directory_uri() . '/images/customized_map_header_mountain.jpg' ?>" alt="">
+                <div class="customized_map_iframe_wrapper hide_on_desktop hide_on_tablet">
+                    <?php echo get_field('customized_map_iframe') ?>
+                    <?php if (get_field('customized_map_legal_notice')) : ?>
+                        <p class="customized_map_legal_notice">Our closest facility is in Colorado</p>
+                    <?php endif; ?>
                 </div>
+                <div class="customized_map_address_container" style="background-color:<?php echo "var(--mountain_primary)"; ?>">
+                    <p>Address: <span>1865 Woodmor Monument, CO 80132</span></p>
+                </div>
+                <div class="customized_map_body_wrapper">
+                    <img class="customized_map_main_image" src="<?php echo get_template_directory_uri() . '/images/customized_map_body_mountain.jpg' ?>" alt="">
+                    <a id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                </div>
+
             <?php elseif ($centerSelection == "Willow Springs Recovery") :
-                $checkmarkIcon = '/assets/images/icons/checkmark_icon_willow.png'; ?>
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/willow_map.jpg' ?>" alt="">
-                <ul>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>24/7 nursing assistance</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Volleyball courts and a pool</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>All clinical services on-site</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Relapse prevention</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>Electronic-friendly</p>
-                    </li>
-                    <li><img src="<?php echo get_template_directory_uri() . $checkmarkIcon ?>" alt="">
-                        <p>On-site gym</p>
-                    </li>
-                </ul>
-                <div class="customized_map_cta_wrapper">
-                    <p></p>
-                    <a class="invocaNumber customzied_map_cta customziedMapPhoneCta" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                $checkmarkIcon = '/images/icons/checkmark_icon_willow.png'; ?>
+                <img class="customized_map_banner" src="<?php echo get_template_directory_uri() . '/images/customized_map_header_willow.jpg' ?>" alt="">
+                <div class="customized_map_iframe_wrapper hide_on_desktop hide_on_tablet">
+                    <?php echo get_field('customized_map_iframe') ?>
+                    <?php if (get_field('customized_map_legal_notice')) : ?>
+                        <p class="customized_map_legal_notice">Our closest facility is in Texas</p>
+                    <?php endif; ?>
                 </div>
+                <div class="customized_map_address_container" style="background-color:<?php echo "var(--willow_primary)"; ?>">
+                    <p>Address: <span>11128 TX-21, Bastrop, TX 78602</span></p>
+                </div>
+                <div class="customized_map_body_wrapper">
+                    <img class="customized_map_main_image" src="<?php echo get_template_directory_uri() . '/images/customized_map_body_willow.jpg' ?>" alt="">
+                    <a id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                </div>
+
             <?php endif; ?>
         </div>
-        <div class="customized_map_right_wrapper">
+        <div class="customized_map_right_wrapper hide_on_mobile show_on_tablet">
             <?php echo get_field('customized_map_iframe') ?>
+
             <?php if (get_field('customized_map_legal_notice')) : ?>
                 <?php if ($centerSelection == "Chapters Capistrano") : ?>
-                    <p>Our closest facility is in California</p>
+                    <p class="customized_map_legal_notice">Our closest facility is in California</p>
                 <?php elseif ($centerSelection == "Lincoln Recovery") : ?>
-                    <p>Our closest facility is in Illinois</p>
+                    <p class="customized_map_legal_notice">Our closest facility is in Illinois</p>
                 <?php elseif ($centerSelection == "Monarch Shores") : ?>
-                    <p>Our closest facility is in California</p>
+                    <p class="customized_map_legal_notice">Our closest facility is in California</p>
                 <?php elseif ($centerSelection == "Mountain Springs Recovery") : ?>
-                    <p>Our closest facility is in Colorado</p>
+                    <p class="customized_map_legal_notice">Our closest facility is in Colorado</p>
                 <?php elseif ($centerSelection == "Wilow Springs Recovery") : ?>
-                    <p>Our closest facility is in Texas</p>
+                    <p class="customized_map_legal_notice">Our closest facility is in Texas</p>
                 <?php endif; ?>
             <?php endif; ?>
         </div>

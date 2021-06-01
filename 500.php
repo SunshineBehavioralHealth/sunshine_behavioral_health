@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying 500 pages (internal server errors)
  *
@@ -11,11 +12,11 @@ namespace WP_Rig\WP_Rig;
 
 get_header();
 
-sunshine_behavioral_health()->print_styles( 'sunshine_behavioral_health-content' );
+sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content');
 
 ?>
-	<main id="primary" class="site-main">
-		<?php get_template_part( 'template-parts/content/error', '500' ); ?>
-	</main><!-- #primary -->
+<main id="primary" class="site-main">
+	<?php get_template_part('template-parts/content/error', '500'); ?>
+</main>
 <?php
 get_footer();

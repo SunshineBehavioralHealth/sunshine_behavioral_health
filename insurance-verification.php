@@ -18,21 +18,6 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
 
 ?>
 
-<?php if (get_field('has_google_translate')) : ?>
-    <div id="google_translate_element"></div>
-    <script>
-        function googleTranslateElementInit() {
-
-            new google.translate.TranslateElement({
-
-                pageLanguage: 'en'
-
-            }, 'google_translate_element');
-
-        }
-    </script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<?php endif; ?>
 
 <main id="primary" class="maxWidth insurance_verification_page">
     <div class="page_image">
@@ -49,9 +34,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
     </div>
 
     <!-- Covid Notice -->
-    <section class="covid_section hide_on_desktop">
-        <a href="/our-response-to-the-corona-virus-health-concern/">Our Response to COVID-19</a>
-    </section>
+    <?php get_template_part('template-parts/content/mobileCovidNotice'); ?>
 
     <div class="insurance_page_container">
 
@@ -71,13 +54,13 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
 
         <section class="insurance_page_form_section">
             <div class="insurance_page_form_container">
-                <?php get_template_part('template-parts/forms/insurance_verification_form'); ?>
+                <?php echo do_shortcode('[gravityform id="6" title="false" description="false"]') ?>
             </div>
         </section>
 
     </div>
-    <section class="page_disclosure_section">
-        <?php get_template_part('template-parts/content/pageDisclaimer'); ?>
-    </section>
+
+    <?php get_template_part('template-parts/content/pageDisclaimer'); ?>
+    
 </main> <?php
         get_footer();

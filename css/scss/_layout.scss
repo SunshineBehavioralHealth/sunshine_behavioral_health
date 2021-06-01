@@ -1,0 +1,127 @@
+@media (min-width: 768px) {
+  .aligncenter {
+    margin: 0 auto;
+  }
+  .alignright {
+    float: right;
+    margin-left: 10px;
+  }
+  .alignleft {
+    float: left;
+    margin-right: 10px;
+  }
+  .aligncenter img {
+    margin: 0 auto;
+  }
+  .alignright img {
+    float: right;
+    margin-left: 10px;
+  }
+  .alignleft img {
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+aside {
+  z-index: 2;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.fixed_sidebar {
+  background-color: #fff;
+  height: auto;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  aside .fixed_sidebar {
+    background-color: #fff;
+    height: auto;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1030px) {
+  aside .fixed_sidebar {
+    background-color: #fff;
+    height: auto;
+    margin-top: 0;
+    position: absolute;
+    max-width: 375px;
+  }
+  aside .fixedSidebarPositionFixed {
+    position: fixed;
+    top: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .has-sidebar .site {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .site-header {
+    grid-column: span 2;
+  }
+  .site-main,
+  .page_grid {
+    max-width: 1250px;
+    margin: 20px auto 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 0.5rem;
+  }
+  .maxWidth {
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+  .single_post_main {
+    max-width: 1250px;
+    margin: 25px auto 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 0.5rem;
+  }
+}
+
+.page_wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page_image,
+.page_wrapper_image,
+.post_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.page_image img {
+  width: 100%;
+}
+
+.post_image {
+  margin-bottom: 25px;
+}
+
+.content_container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .page_content {
+    padding: 0 20px;
+  }
+}
+
+.single_post_main ul {
+  list-style-type: disc;
+}

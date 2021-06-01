@@ -1,7 +1,7 @@
 <section class="career_opportunities_shortcode_section">
 		<div class="career_opportunities_shortcode_container row ">
-			<h2 class="col-12"><?php echo get_field('career_opportunities_shortcode_headline') ?></h2>
-			<h3><?php echo get_field('career_opportunities_shortcode_subheadline') ?></h3>
+			<h3 class="col-12"><?php echo get_field('career_opportunities_shortcode_headline') ?></h3>
+			<h4><?php echo get_field('career_opportunities_shortcode_subheadline') ?></h4>
 			<div class="career_opportunities_shortcode_container row">
 
 				<?php

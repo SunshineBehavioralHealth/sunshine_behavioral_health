@@ -20,7 +20,6 @@ get_template_part('template-parts/javascript/navigationJs');
 ?>
 
 
-<?php get_template_part('template-parts/content/googleTranslate'); ?>
 
 <main id="primary" class="maxWidth">
 	<div class="custom_page_noSideBar_wrapper">
@@ -37,6 +36,7 @@ get_template_part('template-parts/javascript/navigationJs');
 			<p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
 		</div>
 		<section class="page_content list_styling ipad_width_restriction">
+			<?php get_template_part('template-parts/content/googleTranslate'); ?>
 			<?php echo get_field('content') ?>
 		</section>
 		<section class="career_section">
@@ -80,7 +80,7 @@ get_template_part('template-parts/javascript/navigationJs');
 			</div>
 		</section>
 	</div>
-</main><!-- #primary -->
+</main>
 
 <?php echo get_sub_field(''); ?>
 

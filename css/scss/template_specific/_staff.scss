@@ -1,0 +1,79 @@
+.hide_bio {
+  display: none;
+}
+.staff_page_staff {
+  display: flex;
+  flex-direction: column;
+}
+
+.staff_card {
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.staff_card_wrapper {
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid var(--primary_color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  min-height: 500px;
+  height: auto;
+}
+
+.staff_card_wrapper button {
+  background-color: var(--primary_color);
+  padding: 10px 25px;
+  border: none;
+  color: #fff;
+}
+
+.staff_card_wrapper button:hover {
+  background-color: var(--secondary_color);
+}
+
+.staff_card_wrapper img {
+  width: 200px;
+  height: 300px;
+}
+
+.staff_bio p {
+  text-align: center;
+}
+
+.staff_page_content {
+  padding: 0 25px;
+  text-align: center;
+}
+
+.staff_name {
+  margin-top: 25px;
+}
+
+.bio {
+  margin-top: 25px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .staff_page_staff {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .staff_card {
+    width: 48%;
+  }
+  .staff_card_wrapper {
+    width: 80%;
+  }
+  .staff_page_content {
+    text-align: left;
+  }
+  .bio {
+    text-align: left;
+  }
+}

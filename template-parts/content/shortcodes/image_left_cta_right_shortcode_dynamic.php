@@ -7,7 +7,7 @@
             <h5><?php echo get_field('image_left_cta_right-headline') ?></h5>
             <p><?php echo get_field('image_left_cta_right-paragraph') ?></p>
             <div class="image_left_cta_right_shortcode_right_cta_wrapper">
-                <a href="<?php echo get_field('image_left_cta_right-cta_link') ?>">Verify Insurance</a>
+                <a href="<?php echo get_field('image_left_cta_right-cta_link') ?>"><?php echo get_field('image_left_cta_right-cta_text') ?></a>
             </div>
 
         </div>

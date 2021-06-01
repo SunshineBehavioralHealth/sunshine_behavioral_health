@@ -1,4 +1,4 @@
-<section class="state_table_section">
+<section id="stateTable" class="state_table_section stateTable">
     <h4>Find an Addiction Treatment Resource in Your Home State</h4>
 
     <div class="state_table_wrapper">
@@ -207,3 +207,15 @@
         </div>
     </div>
 </section>
+
+<script>
+    jQuery(document).ready(function($) {
+        $('.state_table_element a').click(function(event) {
+            var stateName = $(event.target).text();
+            dataLayer.push({
+                'event': 'state_table_click',
+                'state_clicked': stateName
+            });
+        });
+    });
+</script>

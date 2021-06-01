@@ -26,7 +26,7 @@ if (is_singular(get_post_type())) {
 ?>
 	<div class="post-thumbnail">
 		<?php the_post_thumbnail('sunshine_behavioral_health-featured', ['class' => 'skip-lazy']); ?>
-	</div><!-- .post-thumbnail -->
+	</div>
 <?php
 } else {
 ?>
@@ -47,6 +47,6 @@ if (is_singular(get_post_type())) {
 		);
 
 		?>
-	</a><!-- .post-thumbnail -->
+	</a>
 <?php
 }

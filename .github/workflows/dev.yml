@@ -11,10 +11,15 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v2.3.2
 
+      - name: 🔨 Build Project
+        run: |
+          npm install
+          gulp compile:sass
+
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ftp.dev.mountainspringsrecovery.com
           username: ${{ secrets.dev_ftp_username }}
           password: ${{ secrets.dev_ftp_password }}
-          server-dir: /dev.sunshinebehavioralhealth.com/wp-content/themes/sunshine_bh_3.1/
+          server-dir: /dev.sunshinebehavioralhealth.com/wp-content/themes/sunshine_bh_3.2.2/

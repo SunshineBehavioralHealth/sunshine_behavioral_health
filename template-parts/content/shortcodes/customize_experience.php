@@ -3,8 +3,8 @@
 
 
 <section class="customize_experience_section">
-    <div class="customize_expereince_container">
-        <button class="customize_expereince_reset_btn"><img src="<?php echo get_template_directory_uri() . '/assets/images/icons/reset_white.png' ?>" alt=""><span>Reset</span></button>
+    <div class="customize_experience_container">
+        <button class="customize_experience_reset_btn"><img src="<?php echo get_template_directory_uri() . '/images/icons/reset_white.png' ?>" alt=""><span>Reset</span></button>
         <h4>Customize Your Experinece</h4>
         <form class="customize_experience_form_wrapper">
             <h5>I'm here for:</h5>
@@ -71,7 +71,7 @@
                 </div> -->
 
 
-                <a href="/" id="customize_experience_submit" class="hide">Build YOUR Experience</a>
+                <a href="/" id="customize_experience_submit" class="hide customizeYourExperienceBtn">Build YOUR Experience</a>
 
             </div>
         </form>

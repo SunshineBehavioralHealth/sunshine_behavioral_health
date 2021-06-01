@@ -16,7 +16,7 @@ namespace WP_Rig\WP_Rig;
 
 <footer id="colophon" class="site-footer">
     <?php get_template_part('template-parts/footer/info-home_page'); ?>
-    <?php get_template_part('template-parts/footer/footer_accredidations'); ?>
+    <?php get_template_part('template-parts/footer/footer_accreditations'); ?>
     <?php get_template_part('template-parts/footer/home_socials_bar'); ?>
     <?php get_template_part('template-parts/footer/footer_mobile_buttons'); ?>
 

@@ -15,23 +15,17 @@ namespace WP_Rig\WP_Rig;
 ?>
 
 <footer id="colophon" class="site-footer">
-    <?php
-    if (!wp_is_mobile()) { ?>
+    <?php if (!is_page_template('center-page.php')) : ?>
         <div class="banner_top_image" style="background-image: url(
 		<?php echo get_field('above_footer_image_desktop', 'option')['url']; ?>);">
         </div>
-    <?php    }
-    ?>
-
-
+    <?php endif; ?>
 
     <?php get_template_part('template-parts/footer/info'); ?>
     <?php get_template_part('template-parts/footer/footer_mobile_buttons'); ?>
 
-
-
     <!-- Invoca 4021290535 -->
-    <script>
+    <script async>
         (function(i, n, v, o, c, a) {
             i.InvocaTagId = o;
             var s = n.createElement('script');
@@ -47,10 +41,8 @@ namespace WP_Rig\WP_Rig;
     <?php if (get_field('graph_tabset_1_table_headline')) : ?>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <?php endif; ?>
-    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
-
-</footer><!-- #colophon -->
-</div><!-- #page -->
+</footer>
+</div>
 
 <?php wp_footer(); ?>
 

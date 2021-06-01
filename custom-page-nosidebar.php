@@ -18,7 +18,6 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 
 ?>
 
-<?php get_template_part('template-parts/content/googleTranslate'); ?>
 
 <main id="primary" class="maxWidth">
 	<div class="custom_page_noSideBar_wrapper">
@@ -39,35 +38,27 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 		</div>
 
 		<!-- Covid Notice -->
-		<section class="covid_section hide_on_desktop">
-			<a href="/our-response-to-the-corona-virus-health-concern/">Our Response to COVID-19</a>
-		</section>
+		<?php get_template_part('template-parts/content/mobileCovidNotice'); ?>
 
 		<!-- Medical Review -->
 		<section class="editor_and_review_section hide_on_desktop">
-			<?php get_template_part('template-parts/content/medicalReview'); ?>
+			<?php get_template_part('template-parts/content/mobile_author_and_medical_review'); ?>
 		</section>
 
 		<section class="page_content list_styling ipad_width_restriction">
+			<?php get_template_part('template-parts/content/googleTranslate'); ?>
 			<?php echo get_field('content') ?>
 		</section>
 
 		<!-- Sources -->
 		<?php get_template_part('template-parts/content/sources'); ?>
 
-		<section class="page_disclosure_section">
-			<?php get_template_part('template-parts/content/pageDisclaimer'); ?>
-		</section>
+		<?php get_template_part('template-parts/content/pageDisclaimer'); ?>
 
-		<?php if (!is_page('Our Response to The Corona Virus Health Concern')) : ?>
-			<section class="page_treatment_cta ">
-				<h4>Talk with one of our Treatment Specialists!</h4>
-				<p>Call 24/7: <a class="invocaNumber bottomPagePhone" href="tel:949-276-2886"> 949-276-2886</a></p>
-			</section>
-		<?php endif; ?>
+		<?php get_template_part('template-parts/content/phoneTreatmentCta'); ?>
 
 	</div>
-</main><!-- #primary -->
+</main>
 
 
 <?php

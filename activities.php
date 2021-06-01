@@ -152,10 +152,10 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 			</div>
 		</section>
 
-		<section class="page_disclosure_section">
+		
 			<?php get_template_part('template-parts/content/pageDisclaimer'); ?>
 		</section>
 	</div>
-</main><!-- #primary -->
+</main>
 <?php
 get_footer('home');

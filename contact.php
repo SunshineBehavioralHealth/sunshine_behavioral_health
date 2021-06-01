@@ -49,9 +49,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
     </div>
 
     <!-- Covid Notice -->
-    <section class="covid_section hide_on_desktop">
-        <a href="/our-response-to-the-corona-virus-health-concern/">Our Response to COVID-19</a>
-    </section>
+    <?php get_template_part('template-parts/content/mobileCovidNotice'); ?>
 
     <div class="contact_container">
 
@@ -67,9 +65,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
             </div>
         </section>
 
-        <section class="page_disclosure_section">
-            <?php get_template_part('template-parts/content/pageDisclaimer'); ?>
-        </section>
+        <?php get_template_part('template-parts/content/pageDisclaimer'); ?>
     </div>
 </main> <?php
         get_footer();

@@ -1,0 +1,168 @@
+.guide_cards_container,
+.other_guides_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.guide_cards_container h5,
+.other_guides_container h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 2px solid var(--primary_color);
+  padding: 10px 20px;
+  margin: 0 20px 20px 20px;
+}
+
+.guide_cards_container h5 a,
+.other_guides_container h5 a {
+  color: var(--secondary_color);
+  text-align: center;
+}
+
+.guide_cards_container h5 a:hover,
+.other_guides_container h5 a:hover {
+  color: var(--tertiary_color);
+}
+
+@media (min-width: 768px) {
+  .guide_cards_container h5,
+  .other_guides_container h5 {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .guide_cards_container h5,
+  .other_guides_container h5 {
+    width: 30%;
+  }
+}
+
+.download_page_content_btn {
+  display: flex;
+  justify-content: center;
+  max-width: 200px;
+  color: var(--secondary_color);
+  font-size: 14px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+.download_page_content_btn:hover {
+  color: var(--primary_color);
+}
+
+.downloadable_guides_section {
+  margin-bottom: 50px;
+}
+
+.downloadable_guides_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.downloadable_guides_section .downloadable_guides_container h2 {
+  text-align: center;
+  font-weight: 700;
+  color: var(--secondary_color);
+}
+
+.downloadable_guides_image_headline {
+  margin: 25px 0;
+}
+
+.downloadable_guides_container img {
+  margin: 0 auto;
+  max-width: 150px;
+}
+
+.downloadable_guides_content_container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 25px 0;
+}
+
+.guide_image_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.guide_image_container a {
+  margin: auto auto;
+}
+
+.guide_image_container img {
+  height: 300px;
+  width: 300px;
+  max-width: 100%;
+}
+
+.downloadable_guides_content_container_left,
+.downloadable_guides_content_container_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+.guide_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.guide_content h3 {
+  color: var(--secondary_color);
+  font-weight: 700;
+}
+
+.guide_content p {
+  line-height: 1.5;
+}
+
+.guide_content a {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .guide_content {
+    margin: 12.5px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .downloadable_guides_content_container {
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .downloadable_guides_content_container_left,
+  .downloadable_guides_content_container_right {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+  }
+  .downloadable_guides_content_container_left {
+    border-right: 2px solid var(--primary_color);
+  }
+  .guide_image_container {
+    width: 45%;
+  }
+  .guide_content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: baseline;
+  }
+}

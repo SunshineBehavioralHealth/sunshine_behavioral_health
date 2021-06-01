@@ -1,0 +1,32 @@
+.three_column_gallery_shortcode_container,
+.two_column_gallery_shortcode_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.three_column_gallery_image,
+.two_column_gallery_image {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.three_column_gallery_image img,
+.two_column_gallery_image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .three_column_gallery_shortcode_container,
+  .two_column_gallery_shortcode_container {
+    flex-direction: row;
+  }
+  .two_column_gallery_image {
+    width: 48%;
+  }
+  .three_column_gallery_image {
+    width: 30%;
+  }
+}

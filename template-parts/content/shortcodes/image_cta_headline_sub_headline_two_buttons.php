@@ -8,7 +8,7 @@
                     <p><?php echo get_field('image_cta_subheadline') ?></p>
                 </div>
                 <div class="image_cta_container_ctas">
-                    <a href=" tel:949-276-2886" class="invocaNumber image_cta_container_cta_1 imageCtaPhone" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'imageCtaPhone'});">949-276-2886</a>
+                    <a href="tel:949-276-2886" id="imageCtaPhone" class="invocaNumber image_cta_container_cta_1 imageCtaPhone" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'imageCtaPhone'});">949-276-2886</a>
 
                     <a class="image_cta_container_cta_2 imageCtaInsurance" onclick="dataLayer.push({'event': 'insurance_click', 'shortcode_type' : 'imageCtaInsurance'});" href="https://www.sunshinebehavioralhealth.com/insurance/">Verify Insurance</a>
                 </div>

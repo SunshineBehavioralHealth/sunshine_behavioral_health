@@ -21,7 +21,7 @@ if (is_home()) {
 
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		var sliders = document.querySelectorAll('.glide');
+		var sliders = document.querySelectorAll('.glide.testimonial_glide');
 
 		for (var i = 0; i < sliders.length; i++) {
 			var glide = new Glide(sliders[i], {
@@ -52,25 +52,18 @@ if (is_home()) {
 			<!-- Headline -->
 
 			<div class="hero_cta_container">
-				<?php
-				$heroCTA1 = get_field('hero_cta_top');
-				$heroCTA2 = get_field('hero_cta_bottom');
-				?>
+				<?php $heroCTA1 = get_field('hero_cta_top');
+				$heroCTA2 = get_field('hero_cta_bottom'); ?>
 
-				<div class="cta_btn btn_mountain1 btn_mountain1_hero hero_cta"><a href="tel:949-276-2886" class="invocaNumber 
-				<?php if (wp_is_mobile()) {
-					echo "mobileHeroPhone";
-				} else {
-					echo "hpHeroPhone";
-				} ?>
-			"><?php echo $heroCTA1['title'] ?></a></div>
+				<div class="cta_btn btn_mountain1 btn_mountain1_hero sbh_center_btn sbh_center_btn_hero hero_cta">
+					<a href="tel:949-276-2886" id="hpHeroPhone" class="hpHeroPhone hide_on_mobile invocaNumber" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'hpHeroPhone'});"><?php echo $heroCTA1['title'] ?></a>
+					<a href="tel:949-276-2886" id="mobileHeroPhone" class="mobileHeroPhone hide_on_desktop invocaNumber" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'mobileHeroPhone'});"><?php echo $heroCTA1['title'] ?></a>
+				</div>
 
-				<div class="cta_btn btn_mountain2 hero_cta"><a href="<?php echo $heroCTA2['url'] ?>" class="
-				<?php if (wp_is_mobile()) {
-					echo "mobileHeroInsurance";
-				} else {
-					echo "hpHeroInsurance";
-				} ?>"><?php echo $heroCTA2['title'] ?></a></div>
+				<div class="cta_btn btn_mountain2 hero_cta">
+					<a href="<?php echo $heroCTA2['url'] ?>" class="hpHeroInsurance hide_on_mobile" onclick="dataLayer.push({'event': 'insurance_click', 'shortcode_type' : 'hpHeroInsurance'});"><?php echo $heroCTA2['title'] ?></a>
+					<a href="<?php echo $heroCTA2['url'] ?>" class="mobileHeroInsurance hide_on_desktop" onclick="dataLayer.push({'event': 'insurance_click', 'shortcode_type' : 'mobileHeroInsurance'});"><?php echo $heroCTA2['title'] ?></a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -79,36 +72,9 @@ if (is_home()) {
 	<?php get_template_part('template-parts/content/covidNotice'); ?>
 
 	<!-- Treatment Centers -->
-	<section class="treatment_centers_section">
-		<div class="treatment_centers_container ">
-			<h2 class=""><?php echo get_field('treatment_center_card_headline') ?></h2>
-			<h4><?php echo get_field('treatment_center_card_subheadline') ?></h4>
-			<div class="treatment_center_container">
-				<?php
-				if (have_rows('treatment_center_cards')) :
-					while (have_rows('treatment_center_cards')) : the_row();
-				?>
-						<div class="treatment_center_card_container">
-							<a href="<?php echo get_sub_field('center_link') ?>">
-								<div class="treatment_center_image_container"><img class="" loading="lazy" src="<?php echo get_sub_field('image')['url'] ?>"></div>
-							</a>
-							<a href="<?php echo get_sub_field('center_link') ?>">
-								<h4 class="treatment_center_name"><?php echo get_sub_field('center_name') ?></h4>
-							</a>
-							<h5><?php echo get_sub_field('center_subtext') ?></h5>
-							<p><?php echo get_sub_field('center_content') ?></p>
-							<div class="treatment_center_card_learn_more">
-								<a href="<?php echo get_sub_field('center_link') ?>">Learn More</a>
-							</div>
-						</div>
-				<?php
-					endwhile;
-				endif;
-				?>
-			</div>
-		</div>
-	</section>
-	<!-- End Treatment -->
+
+	<?php get_template_part('template-parts/content/shortcodes/centers_cards_carousel_image'); ?>
+
 
 	<!-- Healing Interjection -->
 	<section>
@@ -118,7 +84,7 @@ if (is_home()) {
 				<?php
 				$interjectionCTAOne = get_field('interjection_cta_button')
 				?>
-				<div class="cta_btn btn_mountain2 row interjection_cta"><a class="invocaNumber hpPhone" href="<?php echo $interjectionCTAOne['url'] ?>"><?php echo $interjectionCTAOne['title'] ?></a></div>
+				<div class="cta_btn btn_mountain2 row interjection_cta"><a id="hpPhone" class="invocaNumber hpPhone" href="<?php echo $interjectionCTAOne['url'] ?>"><?php echo $interjectionCTAOne['title'] ?></a></div>
 			</div>
 		</div>
 	</section>
@@ -157,10 +123,10 @@ if (is_home()) {
 
 	<!-- Testimonial Carousel -->
 	<section>
-		<div class=" testimonial_bg" style="background-image: url(<?php echo get_field('testimonial_carousel_background_image')['url'] ?>)">
+		<div class="testimonial_bg" style="background-image: url(<?php echo get_field('testimonial_carousel_background_image')['url'] ?>)">
 			<div class="">
 				<h4><?php echo get_field('testimonial_headline') ?></h4>
-				<div class="glide carousel<?php echo get_sub_field('increment') ?>">
+				<div class="glide testimonial_glide carousel<?php echo get_sub_field('increment') ?>">
 					<div class="glide__track" data-glide-el="track">
 						<ul class="glide__slides">
 							<?php
@@ -286,7 +252,7 @@ if (is_home()) {
 			if (get_field('blog_background_image')) {
 				echo get_field('blog_background_image')['url'];
 			} else {
-				echo get_template_directory_uri() . '/assets/images/ocean_background.jpg';
+				echo get_template_directory_uri() . '/images/ocean_background.jpg';
 			}
 
 
@@ -311,41 +277,6 @@ if (is_home()) {
 	</section>
 
 	<!-- End Blog Posts -->
-
-	<!-- STAFF -->
-	<!-- <section id="home_staff_section" class="">
-		<div class="staff_container ">
-			<h2 class="staff_headline"><?php the_field('staff_headline') ?></h2>
-			<div class=" row staff_width">
-
-				<?php
-				if (have_rows('staff_cards')) :
-					while (have_rows('staff_cards')) : the_row();
-				?>
-						<div class="staff_individual_card">
-							<img src="<?php echo the_sub_field('staff_image')['url'] ?>" alt="">
-							<h3 class="staff_name_home"><?php echo the_sub_field('staff_name') ?></h3>
-							<h3><?php echo the_sub_field('staff_title') ?></h3>
-							<p><?php echo the_sub_field('staff_content') ?></p>
-						</div>
-				<?php
-					endwhile;
-				endif;
-				?>
-				<div class="rest_of_staff_link_container">
-					<a href="http://monarchshores.com/about/staff/" >
-						<h3>Meet the Rest of Our Staff</h3>
-					</a>
-				</div>
-			</div>
-
-
-
-		</div>
-	</section> -->
-
-
-	<!-- End Staff -->
 
 	<section class="downloadable_guides_section">
 		<div class="downloadable_guides_container">
@@ -408,58 +339,22 @@ if (is_home()) {
 		</div>
 	</section>
 
-	<section class="newsletter_section">
-		<div class="newsletter_container">
-			<div class="newsletter_headline">
-				<h2>SIGN UP FOR OUR NEWSLETTER</h2>
-			</div>
-			<div id="mc_embed_signup" class="newsletter_form_container">
-				<form action="https://sunshinebh.us20.list-manage.com/subscribe/post?u=50abd3256ce6e9b74c656baf5&amp;id=59b1c25b91" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
-					<div id="mc_embed_signup_scroll" class="news_letter_form_and_submit_container">
-						<input type="email" value="" name="EMAIL" class="email newsletter_email_input" id="mce-EMAIL" placeholder="email address" required>
-						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_50abd3256ce6e9b74c656baf5_59b1c25b91" tabindex="-1" value=""></div>
-						<input type="submit" value="SUBMIT" name="subscribe" id="mc-embedded-subscribe" class="newsletter_submit_button">
-					</div>
-				</form>
-			</div>
+	<?php get_template_part('template-parts/content/shortcodes/news_letter'); ?>
 
-		</div>
-	</section>
 
-	<section class="state_resources_section lazy" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/images/sunshine_bg_image_treatment_states.jpg' ?>)">
+
+	<section class="state_resources_section">
+		<img class="state_resources_background_image" src="<?php echo get_template_directory_uri() . '/images/sunshine_state_resources_background.jpg' ?>" alt="" loading="lazy">
 		<div class="state_resources_container">
 			<div class="state_resources_headline">
-				<img loading="lazy" src="<?php echo get_template_directory_uri() . '/assets/images/icons/address_white.png' ?>" alt="">
+				<img loading="lazy" src="<?php echo get_template_directory_uri() . '/images/icons/address_white.png' ?>" alt="">
 				<h2>FIND LOCAL ADDICTION TREATMENT RESOURCES</h2>
 			</div>
 			<div class="state_resources_lists_container">
 				<ul>
 					<?php
-					if (have_rows('states_column_one')) :
-						while (have_rows('states_column_one')) : the_row();
-					?>
-							<li><a href="<?php echo get_sub_field('state_link') ?>"><?php echo get_sub_field('state') ?></a></li>
-					<?php
-						endwhile;
-					endif;
-					?>
-				</ul>
-				<ul>
-					<?php
-					if (have_rows('states_column_two')) :
-						while (have_rows('states_column_two')) : the_row();
-					?>
-							<li><a href="<?php echo get_sub_field('state_link') ?>"><?php echo get_sub_field('state') ?></a></li>
-					<?php
-						endwhile;
-					endif;
-					?>
-				</ul>
-				<ul>
-					<?php
-					if (have_rows('states_column_three')) :
-						while (have_rows('states_column_three')) : the_row();
+					if (have_rows('states_columns')) :
+						while (have_rows('states_columns')) : the_row();
 					?>
 							<li><a href="<?php echo get_sub_field('state_link') ?>"><?php echo get_sub_field('state') ?></a></li>
 					<?php
@@ -475,6 +370,6 @@ if (is_home()) {
 	<!-- End Substance Information -->
 
 
-</main><!-- #primary -->
+</main>
 <?php
 get_footer('home');

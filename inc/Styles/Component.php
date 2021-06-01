@@ -110,8 +110,8 @@ class Component implements Component_Interface, Templating_Component_Interface
 			wp_enqueue_style('sunshine_behavioral_health-fonts', $google_fonts_url, [], null); // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion
 		}
 
-		$css_uri = get_theme_file_uri('/assets/css/');
-		$css_dir = get_theme_file_path('/assets/css/');
+		$css_uri = get_theme_file_uri('/css/');
+		$css_dir = get_theme_file_path('/css/');
 
 		$preloading_styles_enabled = $this->preloading_styles_enabled();
 
@@ -289,12 +289,11 @@ class Component implements Component_Interface, Templating_Component_Interface
 		}
 
 		$css_files = [
-			'sunshine_behavioral_health-global'     => [
-				'file'   => 'global.min.css',
+			'sbh_center-global'     => [
+				'file'   => 'styleBuild.min.css',
 				'global' => true,
-			],
+			]
 		];
-
 
 		/**
 		 * Filters default CSS files.

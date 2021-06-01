@@ -22,7 +22,6 @@ get_template_part('template-parts/javascript/tableOfContents');
 ?>
 
 
-<?php get_template_part('template-parts/content/googleTranslate'); ?>
 
 <main id="primary" class="site-main single_post_main">
 
@@ -42,11 +41,12 @@ get_template_part('template-parts/javascript/tableOfContents');
 
 			<!-- Medical Review -->
 			<section class="editor_and_review_section hide_on_desktop">
-				<?php get_template_part('template-parts/content/medicalReview'); ?>
+				<?php get_template_part('template-parts/content/mobile_author_and_medical_review'); ?>
 			</section>
 
 
 			<section class="page_content list_styling ipad_width_restriction">
+				<?php get_template_part('template-parts/content/googleTranslate'); ?>
 				<?php the_content(); ?>
 			</section>
 
@@ -56,13 +56,10 @@ get_template_part('template-parts/javascript/tableOfContents');
 
 		<?php }
 		?>
-		<section class="page_treatment_cta ">
-			<h4>Talk with one of our Treatment Specialists!</h4>
-			<p>Call 24/7: <a class="invocaNumber bottomPagePhone" href="tel:949-276-2886"> 949-276-2886</a></p>
-		</section>
+		<?php get_template_part('template-parts/content/phoneTreatmentCta'); ?>
 	</div>
 	<?php get_sidebar('fixed'); ?>
-</main><!-- #primary -->
+</main>
 <?php
 
 get_footer();

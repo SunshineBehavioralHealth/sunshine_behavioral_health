@@ -16,7 +16,7 @@
                                 <?php if (get_sub_field('headline', 'option')) : ?>
                                     <h6><?php echo get_sub_field('text', 'option') ?></h6>
                                 <?php else : ?>
-                                    <a href="/<?php echo get_sub_field('link', 'option') ?>">
+                                    <a href="<?php echo get_sub_field('link', 'option') ?>">
                                         <p>—<?php echo get_sub_field('text', 'option') ?></p>
                                     </a>
                                 <?php endif; ?>
