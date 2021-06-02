@@ -20,7 +20,7 @@
   width: 100%;
 }
 
-.alumni_calendar_form_wrapper input[type="select"] {
+.alumni_calendar_form_wrapper select {
   width: 100%;
 }
 
@@ -32,9 +32,17 @@
   color: black;
 }
 
-.alumni_calendar_section .gform_body ul{
-    padding: 0;
-    margin: 0;
+.alumni_calendar_section .gform_body ul {
+  padding: 0;
+  margin: 0;
+}
+
+.alumni_calendar_section .gform_body ul li {
+  margin: 0;
+}
+
+.alumni_calendar_calendar_wrapper iframe {
+  min-width: 100%;
 }
 
 @media (min-width: 768px) {
