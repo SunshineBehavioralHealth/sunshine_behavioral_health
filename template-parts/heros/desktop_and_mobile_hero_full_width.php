@@ -19,7 +19,9 @@
             endif; ?>
             <h1><?php echo get_field('page_headline') ?></h1>
             <?php if (get_field('page_subheadline_paragraph')) : ?>
-                <p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
+                <?php if (get_field('page_subheadline_paragraph')) : ?>
+                    <p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
+                <?php endif; ?>
             <?php endif; ?>
         </div>
     </div>

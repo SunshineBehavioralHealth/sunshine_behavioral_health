@@ -55,7 +55,9 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
         <?php endif; ?>
         <div class="page_mobile_image_text_and_cta_container">
             <h1><?php echo get_field('page_headline') ?></h1>
-            <p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
+            <?php if (get_field('page_subheadline_paragraph')) : ?>
+                <p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
+            <?php endif; ?>
         </div>
     </div>
 

@@ -28,12 +28,16 @@ get_template_part('template-parts/javascript/fixedSidebarJs');
 			<img class="page_mobile_image hero_image hide_on_desktop hide_on_tablet" src="<?php echo get_field('mobile_image')['url']; ?>">
 			<div class="page_mobile_image_text_and_cta_container">
 				<h1><?php echo get_field('page_headline') ?></h1>
-				<p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
+				<?php if (get_field('page_subheadline_paragraph')) : ?>
+					<p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
+				<?php endif; ?>
 			</div>
 		</div>
 		<div class="hide_on_mobile show_on_tablet page_headlines_desktop">
 			<h1><?php echo get_field('page_headline') ?></h1>
-			<p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
+			<?php if (get_field('page_subheadline_paragraph')) : ?>
+				<p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
+			<?php endif; ?>
 		</div>
 
 		<!-- Covid Notice -->
