@@ -1,7 +1,6 @@
 <section id="facebookAlumCTA" class="facebook_shortcode_section">
     <div class="facebook_shortcode_container">
-        <h3><img src="<?php echo get_template_directory_uri() . '/assets/images/icons/facebook_f_icon.png' ?>" alt=""><?php echo get_field('facebook_-_headline', 'option') ?></h3>
-
+        <h3><img src="<?php echo get_template_directory_uri() . '/images/icons/facebook_f_icon.png' ?>" alt=""><?php echo get_field('facebook_-_headline', 'option') ?></h3>
         <p><?php echo get_field('facebook_-_subheadline', 'option') ?></p>
         <div class="facebook_shortcode_repeater_container">
             <?php

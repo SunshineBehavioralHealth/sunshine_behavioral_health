@@ -10,6 +10,13 @@
   color: var(--secondary_color);
   text-align: center;
   margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.facebook_shortcode_container h3 img {
+  margin-right: 10px;
+  max-width: 50px;
 }
 
 .facebook_shortcode_container p {
