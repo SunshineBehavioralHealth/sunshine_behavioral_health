@@ -17,7 +17,3 @@
         </div>
     </div>
 </section>
-
-<!-- orange border
-image on top
-gravity form left calendar right -->
