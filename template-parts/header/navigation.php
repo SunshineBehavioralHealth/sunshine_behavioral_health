@@ -20,7 +20,7 @@ namespace WP_Rig\WP_Rig; ?>
 			<div class="search_bar_container hide_on_desktop">
 				<img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_search.png' ?>" alt="" class="search_bar_magnifying_glass_icon">
 				<div class="search_bar_wrapper">
-					<?php get_search_form(); ?>
+					<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
 				</div>
 			</div>
 
@@ -46,7 +46,7 @@ namespace WP_Rig\WP_Rig; ?>
 					</div>
 					<div class="desktop_nav_search_subnav_wrapper sub_menu_wrapper">
 						<div class="search_bar_wrapper_desktop">
-							<?php get_search_form(); ?>
+							<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
 						</div>
 					</div>
 				</div>

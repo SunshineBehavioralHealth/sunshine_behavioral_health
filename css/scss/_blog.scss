@@ -82,6 +82,9 @@
   color: var(--secondary_color);
 }
 
+.blog_collection .author_and_medical_reviewer_section {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .blog_page_article_body {
