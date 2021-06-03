@@ -19,7 +19,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
 ?>
 
 
-<main id="primary" class="maxWidth insurance_verification_page">
+<main id="primary" class="insurance_verification_page">
     <?php get_template_part('template-parts/heros/desktop_and_mobile_hero_full_width'); ?>
 
     <div class="content_container">
