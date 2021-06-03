@@ -132,3 +132,21 @@ blockquote p {
 .healing_section {
   margin: 0 !important;
 }
+
+// Search style overwrites
+
+.navigation_wrapper #ajaxsearchlite1 .probox,
+.navigation_wrapper div.asl_w .probox {
+  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+  box-shadow: 0 0 0 0 #b5b5b5 inset;
+}
+
+@media (max-width: 768px) {
+  .promagnifier {
+    display: none !important;
+  }
+
+  div.asl_r.vertical {
+    left: 20% !important;
+  }
+}
