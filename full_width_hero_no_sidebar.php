@@ -39,5 +39,5 @@ $centerValue = get_field('center')
             <?php get_template_part('template-parts/content/phoneTreatmentCta'); ?>
         </div>
     </div>
-</main> <?php
-        get_footer();
+</main> 
+<?php get_footer();
