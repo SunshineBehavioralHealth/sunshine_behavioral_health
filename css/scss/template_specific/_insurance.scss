@@ -7,12 +7,14 @@
 
 .insurance_verification_page .page_content {
   width: 100%;
-  border: 2px solid red;
 }
 
 .insurance_verification_page .insurance_form_section {
   width: 100%;
-  border: 2px solid blue;
+}
+
+.insurance_verification_page .page_content h2 {
+  margin: 0;
 }
 
 .insurance_form_wrapper {
@@ -59,6 +61,12 @@
   width: 100% !important;
 }
 
+@media (min-width: 400px) {
+  .insurance_form_wrapper form .gform_body ul li {
+    width: 48%;
+  }
+}
+
 @media (min-width: 768px) {
   .insurance_verification_page .page_wrapper {
     display: flex;
@@ -70,10 +78,6 @@
   }
 
   .insurance_verification_page .insurance_form_section {
-    width: 48%;
-  }
-
-  .insurance_form_wrapper form .gform_body ul li {
     width: 48%;
   }
 }
