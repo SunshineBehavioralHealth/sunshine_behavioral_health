@@ -25,13 +25,16 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
     <div class="content_container">
         <div class="page_wrapper">
             <!-- Page Content -->
-            <section class="page_content list_styling ipad_width_restriction">
+            <section class="page_content">
                 <?php get_template_part('template-parts/content/googleTranslate'); ?>
                 <?php echo get_field('content') ?>
             </section>
 
             <section class="insurance_form_section">
-                <?php echo do_shortcode('[gravityform id="6" title="false" description="false"]') ?>
+                <div class="insurance_form_wrapper">
+                    <?php echo do_shortcode('[gravityform id="6" title="false" description="false"]') ?>
+
+                </div>
             </section>
 
             <?php get_template_part('template-parts/content/pageDisclaimer'); ?>
