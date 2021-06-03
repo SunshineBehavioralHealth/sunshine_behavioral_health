@@ -3,8 +3,8 @@ jQuery(document).ready(function ($) {
     $('.list_and_cta_list_element a').click(function (event) {
         var insuranceName = $(this).attr('id');
         dataLayer.push({
-            'event': 'coverage_table_click ',
-            'coverage_type ': insuranceName
+            'event': 'coverage_table_click',
+            'coverage_type': insuranceName
         });
     });
 
@@ -12,18 +12,17 @@ jQuery(document).ready(function ($) {
     $('.facebook_shortcode_repeater_element a').click(function (event) {
         var facebookGroup = $(this).attr('id');
         dataLayer.push({
-            'event': 'facebook_alum_click ',
-            'alumni_group ': facebookGroup
+            'event': 'facebook_alum_click',
+            'alumni_group': facebookGroup
         });
     });
 
     // FAQ
     $('.faq_sidebar_element a').click(function (event) {
         var faqString = $(event.target).text();
-        console.log('faq string clicked:', faqString);
         dataLayer.push({
-            'event': 'faq_sidebar_click  ',
-            'question_asked ': faqString
+            'event': 'faq_sidebar_click',
+            'question_asked': faqString
         });
     });
 
