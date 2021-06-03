@@ -12,7 +12,7 @@
                         <div class="list_and_cta_list_element">
                             <div class="list_and_cta_list_element_wrapper">
                                 <a id="<?php echo get_sub_field('google_analytics_class', 'option') ?>" class="<?php echo get_field('google_analytics_class', 'option') ?>" href="<?php echo get_sub_field('link') ?>">
-                                    <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="">
+                                    <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="" loading="lazy">
                                     <p><?php echo get_sub_field('insurance', 'option') ?></p>
                                 </a>
                             </div>

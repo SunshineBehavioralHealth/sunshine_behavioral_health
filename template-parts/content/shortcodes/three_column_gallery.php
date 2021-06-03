@@ -5,7 +5,7 @@
             while (have_rows('three_column_gallery')) : the_row();
         ?>
                 <div class="three_column_gallery_image">
-                    <a href="<?php echo get_sub_field('image_link') ?>"><img src="<?php echo get_sub_field('image')['url'] ?>" alt="<?php echo get_sub_field('alt_attribute') ?>"></a>
+                    <a href="<?php echo get_sub_field('image_link') ?>"><img src="<?php echo get_sub_field('image')['url'] ?>" alt="<?php echo get_sub_field('alt_attribute') ?>" loading="lazy"></a>
                 </div>
 
         <?php

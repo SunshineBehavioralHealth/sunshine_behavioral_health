@@ -19,9 +19,9 @@
                 if (have_rows('treatment_centers')) :
                     while (have_rows('treatment_centers')) : the_row();
             ?>
-                        <div class=" treatment_center_card_container">
+                        <div class="treatment_center_card_container">
                             <a href="<?php echo get_sub_field('link') ?>">
-                                <div class="treatment_center_image_container"><img class="" src="<?php echo get_sub_field('image')['url'] ?>"></div>
+                                <div class="treatment_center_image_container"><img loading="lazy" class="" src="<?php echo get_sub_field('image')['url'] ?>"></div>
                             </a>
 
                             <div class="treatment_center_card_content_wrapper">
@@ -46,7 +46,7 @@
 
                 <div class=" treatment_center_card_container">
                     <a href="/our-rehab-centers/monarch-shores/">
-                        <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/images/monarch-center.jpg' ?>"></div>
+                        <div class="treatment_center_image_container"><img loading="lazy" class="" src="<?php echo get_template_directory_uri() . '/images/monarch-center.jpg' ?>"></div>
                     </a>
 
                     <div class="treatment_center_card_content_wrapper">
