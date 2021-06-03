@@ -24,25 +24,16 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
 
     <div class="content_container">
         <div class="page_wrapper">
-            <section class="insurance_page_video_content_section">
-                <div class="insurance_page_video_content_container">
-                    <div class="insurance_page_video_headline">
-                        <h3><?php echo get_field('video_headline') ?></h3>
-                    </div>
-                    <div class="insurance_page_video_iframe">
-                        <?php echo get_field('youtube_iframe') ?>
-                    </div>
-                    <div class="insurance_page_video_content_container">
-                        <?php echo get_field('video_paragraph') ?>
-                    </div>
-                </div>
+            <!-- Page Content -->
+            <section class="page_content list_styling ipad_width_restriction">
+                <?php get_template_part('template-parts/content/googleTranslate'); ?>
+                <?php echo get_field('content') ?>
             </section>
 
-            <section class="insurance_page_form_section">
-                <div class="insurance_page_form_container">
-                    <?php echo do_shortcode('[gravityform id="6" title="false" description="false"]') ?>
-                </div>
+            <section class="insurance_form_section">
+                <?php echo do_shortcode('[gravityform id="6" title="false" description="false"]') ?>
             </section>
+
             <?php get_template_part('template-parts/content/pageDisclaimer'); ?>
 
             <?php get_template_part('template-parts/content/phoneTreatmentCta'); ?>
