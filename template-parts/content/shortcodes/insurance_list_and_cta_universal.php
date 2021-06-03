@@ -32,17 +32,3 @@
         </div>
     </div>
 </section>
-
-
-<script>
-    jQuery(document).ready(function($) {
-        $('.list_and_cta_list_element a').click(function(event) {
-            event.stopImmediatePropagation();
-            var insuranceName = $(this).attr('id');
-            dataLayer.push({
-                'event': 'coverage_table_click ',
-                'coverage_type ': insuranceName
-            });
-        });
-    });
-</script>

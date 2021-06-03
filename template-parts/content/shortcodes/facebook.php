@@ -17,15 +17,3 @@
         </div>
     </div>
 </section>
-
-<script>
-    jQuery(document).ready(function($) {
-        $('.facebook_shortcode_repeater_element a').click(function(event) {
-            var facebookGroup = $(this).attr('id');
-            dataLayer.push({
-                'event': 'facebook_alum_click ',
-                'alumni_group ': facebookGroup
-            });
-        });
-    });
-</script>
