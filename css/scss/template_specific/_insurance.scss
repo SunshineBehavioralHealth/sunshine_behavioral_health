@@ -1,5 +1,6 @@
 .insurance_verification_page .page_wrapper {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -26,8 +27,14 @@
   padding: 10px;
 }
 
-.insurance_form_wrapper form {
-  padding: 10px;
+.insurance_form_wrapper form .gform_body ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.insurance_form_wrapper form .gform_body ul li {
+  width: 100%;
 }
 
 .insurance_form_wrapper form h3 {
@@ -59,10 +66,14 @@
   }
 
   .insurance_verification_page .page_content {
-    width: 45%;
+    width: 48%;
   }
 
   .insurance_verification_page .insurance_form_section {
-    width: 45%;
+    width: 48%;
+  }
+
+  .insurance_form_wrapper form .gform_body ul li {
+    width: 48%;
   }
 }

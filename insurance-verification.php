@@ -33,13 +33,10 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
             <section class="insurance_form_section">
                 <div class="insurance_form_wrapper">
                     <?php echo do_shortcode('[gravityform id="6" title="false" description="false"]') ?>
-
                 </div>
             </section>
 
             <?php get_template_part('template-parts/content/pageDisclaimer'); ?>
-
-            <?php get_template_part('template-parts/content/phoneTreatmentCta'); ?>
         </div>
     </div>
 </main> <?php

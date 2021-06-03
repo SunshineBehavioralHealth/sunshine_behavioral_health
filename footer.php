@@ -36,11 +36,6 @@ namespace WP_Rig\WP_Rig;
             fs.parentNode.insertBefore(s, fs);
         })(window, document, 'solutions.invocacdn.com/js/pnapi_integration-latest.min.js', '1282/4021290535');
     </script>
-
-
-    <?php if (get_field('graph_tabset_1_table_headline')) : ?>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <?php endif; ?>
 </footer>
 </div>
 
