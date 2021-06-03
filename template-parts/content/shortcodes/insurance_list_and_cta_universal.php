@@ -37,13 +37,15 @@
 <script>
     jQuery(document).ready(function($) {
         $('.list_and_cta_list_element a').click(function(event) {
+            event.stopImmediatePropagation();
             var insuranceName = $(this).attr('id');
             console.log("insurance item clicked")
             dataLayer.push({
                 'event': 'coverage_table_click ',
                 'coverage_type ': insuranceName
             });
-            console.log("success for insurance data push. Only once?")
+            console.log("success for insurance data push. Only once?");
+            alert("insurance list data send success")
         });
     });
 </script>
