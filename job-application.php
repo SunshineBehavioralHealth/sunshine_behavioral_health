@@ -17,25 +17,7 @@ get_template_part('template-parts/javascript/navigationJs');
 sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-page-nosidebar', 'sunshine_behavioral_health-content');
 
 ?>
-<main id="primary" class="job_application_page maxWidth">
-
-    <div class="page_image">
-        <div class="page_mobile_image_text_and_cta_container">
-            <h1><?php echo get_field('page_headline') ?></h1>
-            <?php if (get_field('page_subheadline_paragraph')) : ?>
-                <p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
-            <?php endif; ?>
-        </div>
-    </div>
-
-    <div class="job_application_page_content_container">
-        <div>
-
-        </div>
-    </div>
-</main>
-
-<main id="primary" class="full_width_hero_no_sidebar">
+<main id="primary" class="job_application_page">
     <?php get_template_part('template-parts/heros/desktop_and_mobile_hero_full_width_job_app'); ?>
 
     <div class="content_container">
