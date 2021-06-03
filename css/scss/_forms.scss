@@ -372,6 +372,27 @@
   background-color: var(--tertiary_color);
 }
 
+form#gform_2 ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form#gform_2 ul li {
+  width: 100%;
+}
+
+form#gform_2 ul li label {
+  color: #000;
+}
+
+@media (min-width: 400px) {
+  form#gform_2 ul li {
+    width: 48%;
+  }
+}
+
 @media (min-width: 1025px) {
   .insurance_form_section_1_inputs,
   .insurance_form_section_2_inputs,
