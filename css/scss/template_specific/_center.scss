@@ -278,6 +278,13 @@
   width: 100%;
 }
 
+.center_page_insurance_form_wrapper form ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 @media (min-width: 768px) {
   .center_page_expandable_row_container {
     flex-direction: row;
@@ -298,7 +305,7 @@
   .center_page_insurance_form_wrapper {
     width: 40%;
   }
-  .center_page_insurance_form_wrapper .insurance_page_form_section {
+  .center_page_insurance_form_wrapper .center_page_insurance_form_wrapper {
     width: 100%;
   }
   .center_page_testimonial_container {

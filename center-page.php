@@ -193,7 +193,7 @@ $centerValue = get_field('center');
                 </div>
 
                 <div id="center_insurance_form" class="center_page_insurance_form_wrapper">
-                    <div class="insurance_page_form_section">
+                    <div class="center_page_insurance_form_wrapper">
                         <div class="insurance_page_form_container">
                             <?php echo do_shortcode('[gravityform id="6" title="false" description="false"]') ?>
                         </div>
