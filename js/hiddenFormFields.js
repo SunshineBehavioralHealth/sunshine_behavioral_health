@@ -8,6 +8,11 @@ jQuery(document).ready(function ($) {
     let googleAnalyticsUserID = getCookie('_ga');
     console.log('User ID:', googleAnalyticsUserID);
 
-    $('.google_analytics_id_field  input').value = googleAnalyticsUserID;
-    console.log('Value for google analytics hidden field is:', $('.google_analytics_id_field  input').value)
+    let googleAnalyticsUserIdInput = $('.google_analytics_id_field  input');
+
+    console.log("value of field before changing the value:", googleAnalyticsUserIdInput.val());
+
+    googleAnalyticsUserIdInput.val(googleAnalyticsUserID);
+
+    console.log('value of field after changing the value:', googleAnalyticsUserIdInput.val());
 });
