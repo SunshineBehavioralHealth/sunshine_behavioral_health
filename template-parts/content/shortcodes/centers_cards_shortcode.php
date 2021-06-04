@@ -31,7 +31,7 @@
                                 <h5><?php echo get_sub_field('center_subtext') ?></h5>
                                 <div><?php echo get_sub_field('content') ?></div>
 
-                                <a href="<?php echo get_sub_field('link') ?>">Learn More</a>
+                                <a class="centers_cards_cta" href="<?php echo get_sub_field('link') ?>">Learn More</a>
                             </div>
                         </div>
                         <div class="twenty_px_margin_divider hide_on_desktop"></div>

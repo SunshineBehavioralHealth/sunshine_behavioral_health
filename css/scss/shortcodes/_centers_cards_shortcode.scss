@@ -13,12 +13,18 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .treatment_center_container .treatment_center_card_container {
   width: 100%;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 5px;
+  width: 100%;
+  max-width: 300px;
 }
 
 .treatment_center_card_container .treatment_center_card_content_wrapper {
@@ -27,7 +33,7 @@
   align-items: center;
 }
 
-.treatment_center_card_learn_more a {
+.centers_cards_cta {
   color: var(--primary_color);
 }
 
