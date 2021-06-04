@@ -1001,49 +1001,7 @@ section input {
   margin-top: 0 !important;
 }
 
-.treatment_center_image_container,
-.treatment_centers_container h2,
-.treatment_centers_container h3,
-.treatment_centers_container h4,
-.treatment_centers_container h5,
-.treatment_centers_container p {
-  text-align: center;
-  color: var(--secondary_color);
-}
 
-.treatment_centers_container h5 {
-  font-weight: 500;
-  margin-top: 0;
-}
-
-.treatment_centers_container h2 {
-  font-weight: 700;
-  margin: 0 auto;
-}
-
-.treatment_centers_container h4 {
-  width: 100%;
-  margin: 10px 0;
-}
-
-.treatment_center_container h4 {
-  font-weight: 600;
-}
-
-.treatment_centers_container p {
-  color: #000;
-  line-height: 1.5;
-}
-
-.treatment_center_image_container {
-  display: flex;
-  justify-content: center;
-}
-
-.treatment_center_image_container img {
-  max-height: 190px;
-  height: 100%;
-}
 
 .treatment_program_container {
   text-align: center;
