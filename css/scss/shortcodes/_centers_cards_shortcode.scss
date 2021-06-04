@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .treatment_center_container .treatment_center_card_container {
@@ -25,6 +25,7 @@
   padding: 5px;
   width: 100%;
   max-width: 300px;
+  margin: 0 10px 10px 10px;
 }
 
 .treatment_center_card_container .treatment_center_card_content_wrapper {
@@ -33,8 +34,14 @@
   align-items: center;
 }
 
-.centers_cards_cta {
+.treatment_center_card_content_wrapper .centers_cards_cta {
   color: var(--primary_color);
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.treatment_center_card_content_wrapper .centers_cards_cta:hover {
+  color: var(--tertiary_color);
 }
 
 .treatment_centers_container h5 {
@@ -50,6 +57,7 @@
 .treatment_centers_container h4 {
   width: 100%;
   font-weight: 600;
+  margin: 10px 0;
 }
 
 .treatment_centers_container p {
@@ -70,6 +78,7 @@
 @media (min-width: 600px) {
   .treatment_center_container .treatment_center_card_container {
     width: 45%;
+    justify-content: space-evenly;
   }
 }
 
