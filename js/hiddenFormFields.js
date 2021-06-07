@@ -8,10 +8,6 @@ jQuery(document).ready(function ($) {
     let googleAnalyticsUserID = getCookie('_ga');
     let googleAnalyticsUserIdInput = $('.google_analytics_id_field  input');
 
-    console.log("value of field before changing the value:", googleAnalyticsUserIdInput.val());
     googleAnalyticsUserIdInput.val(googleAnalyticsUserID);
-
-    console.log('value of field after changing the value:', googleAnalyticsUserIdInput.val());
-
     // To work with Gravity forms add the class 'google_analytics_id_field' to the form input. See selector above.
 });

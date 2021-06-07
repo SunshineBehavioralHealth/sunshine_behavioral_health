@@ -13,9 +13,7 @@ jQuery(document).ready(function ($) {
 
         $('.invocaNumber').click(function (event) {
             var invocaGoogleAnalyticsClass = $(event.target).attr('id');
-            console.log("shortcode_type cookie value:", invocaGoogleAnalyticsClass)
             setCookie('shortcode_type', invocaGoogleAnalyticsClass, 7)
-            console.log('invoca cookie created successfully')
         });
     });
 });
