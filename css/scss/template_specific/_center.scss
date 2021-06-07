@@ -3,6 +3,10 @@
   max-width: 100%;
 }
 
+.center_page .content_container {
+  max-width: 100%;
+}
+
 .center_page_treatment_list_container ul {
   display: flex;
   flex-direction: row;
@@ -70,6 +74,13 @@
   .center_page_hero_content_wrapper
   a:hover {
   background-color: var(--tertiary_color);
+}
+
+.center_page_location_section,
+.center_page_treatment_list_section,
+.center_page_expandable_row_section {
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 .center_page_location_container {
@@ -519,4 +530,17 @@
 
 .center_page_insurance_form_wrapper form ul li {
   width: 45%;
+}
+
+.center_page_insurance_form_wrapper form::-webkit-scrollbar {
+  width: 10px;
+  margin-right: 5px;
+}
+
+.center_page_insurance_form_wrapper form::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.center_page_insurance_form_wrapper form::-webkit-scrollbar-thumb {
+  background: var(--primary_color);
 }
