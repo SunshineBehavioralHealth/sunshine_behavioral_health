@@ -18,21 +18,11 @@
                                                                 elseif ($centerValue == "Willow Springs") echo "willow_styles"; ?>">
                         <img src="<?php echo get_sub_field('center_image', 'option')['url'] ?>" alt="" class="all_centers_center_image">
                         <div class="all_centers_accordion_row">
-                            <div class="all_centers_accordion_headline_wrapper <?php
-                                                                                if ($centerValue == "Chapters Capistrano") echo "chapters_styles";
-                                                                                elseif ($centerValue == "Lincoln Recovery") echo "lincoln_styles";
-                                                                                elseif ($centerValue == "Monarch Shores") echo "monarch_styles";
-                                                                                elseif ($centerValue == "Mountain Springs") echo "mountain_styles";
-                                                                                elseif ($centerValue == "Willow Springs") echo "willow_styles"; ?>">
+                            <div class="all_centers_accordion_headline_wrapper">
                                 <h4>Location</h4>
                                 <img src="<?php echo get_template_directory_uri() . '/images/icons/plus_icon_white.png' ?>" class="all_center_accordion_plus_icon" alt="">
                             </div>
-                            <div class="all_centers_accordion_dropdown_wrapper hide <?php
-                                                                                    if ($centerValue == "Chapters Capistrano") echo "chapters_styles";
-                                                                                    elseif ($centerValue == "Lincoln Recovery") echo "lincoln_styles";
-                                                                                    elseif ($centerValue == "Monarch Shores") echo "monarch_styles";
-                                                                                    elseif ($centerValue == "Mountain Springs") echo "mountain_styles";
-                                                                                    elseif ($centerValue == "Willow Springs") echo "willow_styles"; ?>">
+                            <div class="all_centers_accordion_dropdown_wrapper hide">
                                 <?php if ($centerValue == "Chapters Capistrano") : ?>
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.724328088017!2d-117.63236908449115!3d33.43043075768753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcf40f3530b4cd%3A0xe9dceac46fd44fd4!2s1525%20Buena%20Vista%2C%20San%20Clemente%2C%20CA%2092672!5e0!3m2!1sen!2sus!4v1619809011507!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                     <div class="center_page_location_address">
