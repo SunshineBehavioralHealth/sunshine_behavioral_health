@@ -93,6 +93,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   font-size: 14px;
+  padding: 5px;
 
   span {
     margin-right: 5px;
@@ -107,12 +108,12 @@
   padding: 10px;
 
   p {
-    font-size: 10px;
+    font-size: 14px;
   }
 
-  img {
+  .all_center_accordion_plus_icon {
     max-width: 15px;
-    margin-right: 5px;
+    margin: auto 5px auto 0;
   }
 
   iframe {
