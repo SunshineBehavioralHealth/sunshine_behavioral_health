@@ -8,6 +8,7 @@
 
 .all_centers_accordion_wrapper .all_centers_accordion_element {
   width: 90%;
+  max-width: 450px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -20,7 +21,7 @@
 
 .all_centers_center_image {
   max-height: 150px;
-  border: 2px solid purple;
+  width: 100%;
 }
 
 .chapters_styles .all_centers_accordion_row {
@@ -49,6 +50,33 @@
   justify-content: space-between;
 }
 
+.all_centers_accordion_dropdown_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  span {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+
+    p {
+      font-size: 10px;
+    }
+
+    img {
+      max-width: 15px;
+    }
+  }
+}
+
+.all_centers_accordion_headline_wrapper
+  .all_centers_accordion_dropdown_wrapper
+  iframe {
+  width: 100% !important;
+}
+
 .all_centers_accordion_row {
   padding: 10px;
 
@@ -69,6 +97,12 @@
   li {
     margin: 0;
     color: #fff;
+  }
+
+  .all_centers_accordion_row_accreditations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 

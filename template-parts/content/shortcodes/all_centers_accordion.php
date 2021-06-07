@@ -15,7 +15,6 @@
                                                                 elseif ($centerValue == "Mountain Springs") echo "mountain_styles";
                                                                 elseif ($centerValue == "Willow Springs") echo "willow_styles"; ?>">
                         <img src="<?php echo get_sub_field('center_image', 'option')['url'] ?>" alt="" class="all_centers_center_image">
-                        <p><?php echo $centerValue; ?></p>
                         <div class="all_centers_accordion_row">
                             <div class="all_centers_accordion_headline_wrapper">
                                 <h4>Location</h4>
@@ -75,7 +74,7 @@
                             </div>
                         </div>
 
-                        <div class="all_centers_accordion_row">
+                        <div class="all_centers_accordion_row all_centers_accordion_row_accreditations">
                             <div class="all_centers_accordion_headline_wrapper">
                                 <h4>Accreditations</h4>
                                 <img src="<?php echo get_template_directory_uri() . '/images/icons/plus_icon_white.png' ?>" class="all_center_accordion_plus_icon" alt="">
