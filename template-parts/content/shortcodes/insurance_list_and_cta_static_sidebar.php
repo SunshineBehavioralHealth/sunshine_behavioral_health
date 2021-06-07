@@ -81,7 +81,7 @@
             <div class="list_and_cta_bottom_container">
                 <p>Don't see your Insurance Provider?</p>
                 <div class="list_and_cta_bottom_cta_wrapper">
-                    <a class="coverageTableInsurance" href="/insurance" onclick="dataLayer.push({'event': 'insurance_click', 'shortcode_type' : 'coverageTableInsurance'});">Verify Your Insurance</a>
+                    <a id="coverageTableInsurance" class="coverageTableInsurance" href="/insurance" onclick="dataLayer.push({'event': 'insurance_click', 'shortcode_type' : 'coverageTableInsurance'});">Verify Your Insurance</a>
                 </div>
             </div>
         </div>
