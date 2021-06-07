@@ -9,7 +9,7 @@
 .all_centers_accordion_wrapper .all_centers_accordion_element {
   width: 90%;
   max-width: 450px;
-  margin: 0 auto;
+  margin: 0 auto 25px auto;
   display: flex;
   flex-direction: column;
 }
@@ -19,7 +19,8 @@
   max-height: 125px;
 }
 
-.all_centers_center_image {
+.all_centers_center_image,
+.all_centers_center_image img {
   max-height: 150px;
   width: 100%;
 }
