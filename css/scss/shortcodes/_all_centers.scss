@@ -1,7 +1,7 @@
 .all_centers_accordion_wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px;
   flex-wrap: wrap;
 }
@@ -9,7 +9,7 @@
 .all_centers_accordion_wrapper .all_centers_accordion_element {
   width: 90%;
   max-width: 450px;
-  margin: 0 auto 25px auto;
+  margin: 0 auto 50px auto;
   display: flex;
   flex-direction: column;
 }
@@ -126,6 +126,10 @@
   }
 }
 
+.all_centers_accordion_row_list img {
+  max-height: 20px;
+}
+
 .all_centers_accordion_row_list .all_centers_accordion_dropdown_wrapper span {
   display: flex;
   flex-direction: row;
@@ -173,4 +177,7 @@
 }
 
 @media (min-width: 1024px) {
+  .all_centers_accordion_wrapper .all_centers_accordion_element {
+    width: 30%;
+  }
 }
