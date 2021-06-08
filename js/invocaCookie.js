@@ -1,6 +1,5 @@
 jQuery(document).ready(function ($) {
     $(function () {
-
         function setCookie(name, value, days) {
             var expires = "";
             if (days) {
