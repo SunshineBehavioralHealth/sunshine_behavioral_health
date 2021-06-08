@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Center Page
+ * Template Name: Center Page +
  * Template Post Type: Page
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
@@ -29,7 +29,7 @@ $centerValue = get_field('center');
             var glide = new Glide(sliders[i], {
                 hoverpause: true,
                 autoplay: 2000,
-                gap: 5,
+                gap: 2,
                 perView: 4,
                 breakpoints: {
                     1024: {
