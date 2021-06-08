@@ -21,16 +21,20 @@ $centerValue = get_field('center');
 
 ?>
 
-
-
 <script type="text/javascript">
-    var glide = new Glide('#options-hoverpause', {
-        hoverpause: true,
-        autoplay: 2000,
-        perView: 3
-    });
+    jQuery(document).ready(function($) {
+        var sliders = document.querySelectorAll('.glide');
 
-    glide.mount();
+        for (var i = 0; i < sliders.length; i++) {
+            var glide = new Glide(sliders[i], {
+                hoverpause: true,
+                autoplay: 2000,
+                perView: 3
+            });
+
+            glide.mount();
+        }
+    });
 </script>
 
 <main id="primary" class="maxWidth center_page">
