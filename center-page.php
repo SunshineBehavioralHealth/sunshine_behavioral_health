@@ -25,10 +25,12 @@ $centerValue = get_field('center');
 
 <script type="text/javascript">
     var glide = new Glide('#options-hoverpause', {
-        hoverpause: checkbox.checked,
+        hoverpause: true,
         autoplay: 2000,
         perView: 3
-    })
+    });
+
+    glide.mount();
 </script>
 
 <main id="primary" class="maxWidth center_page">
