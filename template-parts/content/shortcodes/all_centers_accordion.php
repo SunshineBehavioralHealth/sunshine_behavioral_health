@@ -68,7 +68,7 @@
                             <div class="all_centers_accordion_dropdown_wrapper hide">
                                 <?php if (have_rows('content_2_list', 'option')) : ?>
                                     <?php while (have_rows('content_2_list', 'option')) : the_row(); ?>
-                                        <span><img src="<?php echo get_template_directory_uri() . '/images/icons/checkmark_icon_white.png' ?>" alt="">
+                                        <span><img src="<?php echo get_template_directory_uri() . '/images/icons/checkmark_icon.png' ?>" alt="">
                                             <p><?php echo get_sub_field('item', 'option') ?></p>
                                         </span>
                                     <?php endwhile; ?>

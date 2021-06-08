@@ -21,7 +21,7 @@
 
 .all_centers_center_image,
 .all_centers_center_image img {
-  max-height: 150px;
+  max-height: 250px;
   width: 100%;
 }
 
@@ -30,6 +30,10 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
+
+  img {
+    max-height: 25px;
+  }
 }
 
 .chapters_styles .all_centers_accordion_headline_wrapper {
@@ -38,13 +42,13 @@
 
 .chapters_styles .all_centers_accordion_dropdown_wrapper,
 .monarch_styles .all_centers_accordion_dropdown_wrapper {
-  background-color: lightblue;
+  background-color: var(--sunshine_nav);
 }
 
 .lincoln_styles .all_centers_accordion_dropdown_wrapper,
 .mountain_styles .all_centers_accordion_dropdown_wrapper,
 .willow_styles .all_centers_accordion_dropdown_wrapper {
-  background-color: #2e8b57;
+  background-color: var(--mountain_nav);
 }
 
 .center_page_location_address {
@@ -104,11 +108,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px;
 
   p {
     font-size: 14px;
+    color: #000;
   }
 
   .all_center_accordion_plus_icon {
@@ -128,14 +133,11 @@
 }
 
 .all_centers_accordion_row {
-  margin: 2.5px 0;
-
-  :first-of-type {
-    margin-top: 0;
-  }
+  margin: 0;
 
   h4 {
     margin: 0;
+    text-shadow: 1px 1px grey;
     color: #fff;
   }
 
