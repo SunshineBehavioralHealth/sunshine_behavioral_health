@@ -7,21 +7,27 @@
   max-width: 100%;
 }
 
-.center_page_treatment_list_container ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+.center_page_treatment_list_container {
+  h3 {
+    text-align: center;
+  }
 
-.center_page_treatment_list_container ul li {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 5px 0;
-}
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-.center_page_treatment_list_container ul li img {
-  margin-right: 10px;
+    li {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 5px 0;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
 }
 
 .center_page .center_page_hero_wrapper {
@@ -208,7 +214,7 @@
 .center_page_badge_container {
   border: 2px solid var(--secondary_color);
   background-color: #fff;
-  width: 60%;
+  width: 90%;
   margin: -50px auto 0 auto;
 }
 
@@ -326,6 +332,10 @@
     align-items: center;
     width: 75%;
     margin: 0 auto;
+  }
+
+  .center_page_badge_container {
+    width: 60%;
   }
 }
 

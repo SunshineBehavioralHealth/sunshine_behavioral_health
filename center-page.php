@@ -29,7 +29,19 @@ $centerValue = get_field('center');
             var glide = new Glide(sliders[i], {
                 hoverpause: true,
                 autoplay: 2000,
-                perView: 3
+                gap: 0,
+                perView: 4,
+                breakpoints: {
+                    1024: {
+                        perView: 4
+                    },
+                    768: {
+                        perView: 2
+                    },
+                    400: {
+                        perView: 1
+                    }
+                }
             });
 
             glide.mount();
