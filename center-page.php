@@ -31,6 +31,7 @@ $centerValue = get_field('center');
                 autoplay: 2000,
                 gap: 0,
                 perView: 4,
+                animationDuration: 2000,
                 breakpoints: {
                     1024: {
                         perView: 3
@@ -116,11 +117,19 @@ $centerValue = get_field('center');
                     </ul>
                 </div>
             </div>
+
+            <div class="center_page_insurance_form_top_cta_container hide_on_tablet hide_on_desktop">
+                <?php $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
+                <a href="<?php echo $actual_link; ?>#center_insurance_form">Verify Insurance for <?php if ($centerValue == "Chapters Capistrano") echo "Chapters Capistrano";
+                                                                                                    elseif ($centerValue == "Monarch Shores") echo "Monarch Shores";
+                                                                                                    elseif ($centerValue == "Mountain Springs") echo "Mountain Springs";
+                                                                                                    elseif ($centerValue == "Willow Springs") echo "Willow Springs"; ?></a>
+            </div>
         </section>
 
         <section class="center_page_treatment_list_section">
             <div class="center_page_treatment_list_container">
-                <h3><?php echo get_field('center_page_treatment_list_items_headline') ?></h3>
+                <h2><?php echo get_field('center_page_treatment_list_items_headline') ?></h2>
                 <ul>
                     <?php
                     if (have_rows('center_page_treatment_list_items')) :
@@ -206,22 +215,22 @@ $centerValue = get_field('center');
 
         <section class="center_page_insurance_form_section">
             <div class="center_page_insurance_form_container" style="background-image: url(<?php echo get_field('center_page_insurance_section_background_image')['url'] ?>)">
-
                 <div class="center_page_insurance_form_content_wrapper">
                     <div class="center_page_insurance_form_top_cta_container hide_on_tablet hide_on_desktop">
                         <?php $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
-                        <a href="<?php echo $actual_link; ?>#center_insurance_form">Verify Insurance</a>
+                        <a href="<?php echo $actual_link; ?>#center_insurance_form">Verify Insurance for <?php if ($centerValue == "Chapters Capistrano") echo "Chapters Capistrano";
+                                                                                                            elseif ($centerValue == "Monarch Shores") echo "Monarch Shores";
+                                                                                                            elseif ($centerValue == "Mountain Springs") echo "Mountain Springs";
+                                                                                                            elseif ($centerValue == "Willow Springs") echo "Willow Springs"; ?></a>
                     </div>
                     <?php echo get_field('center_page_insurance_content') ?>
                 </div>
-
                 <div id="center_insurance_form" class="center_page_insurance_form_wrapper">
                     <div class="center_page_insurance_form_wrapper">
                         <div class="insurance_page_form_container">
                             <?php echo do_shortcode('[gravityform id="6" title="false" description="false"]') ?>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>

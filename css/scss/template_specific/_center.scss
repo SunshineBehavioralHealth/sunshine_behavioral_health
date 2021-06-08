@@ -8,7 +8,7 @@
 }
 
 .center_page_treatment_list_container {
-  h3 {
+  h2 {
     text-align: center;
   }
 
@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 
     li {
       width: 100%;
@@ -197,9 +198,9 @@
   width: 225px !important;
 }
 
-.center_page_content_container .glide__slide img {
-  width: 225px;
-  height: 150px;
+.center_page_content_container .glide__slide img,
+.center_page_content_container .glide__slide picture {
+  width: 100% !important;
 }
 
 .center_page_testimonial_container img {
@@ -237,7 +238,7 @@
 }
 
 .center_page_treatment_list_section {
-  margin-bottom: 50px;
+  margin: 30px auto 50px auto;
 }
 
 .center_page_expandable_row_container {
@@ -293,6 +294,10 @@
 
 .center_page_insurance_form_wrapper {
   width: 100%;
+
+  form label {
+    color: #000;
+  }
 }
 
 .center_page_insurance_form_wrapper form ul {
