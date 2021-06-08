@@ -5,9 +5,6 @@
         <?php else : ?>
             <h2>OUR TREATMENT CENTERS</h2>
         <?php endif; ?>
-        <?php if (get_field('treatment_centers_subheadline')) : ?>
-            <h3><?php echo get_field('treatment_centers_subheadline') ?></h3>
-        <?php endif; ?>
         <div class="treatment_center_container">
             <?php
             if (get_field('treatment_centers')) :
