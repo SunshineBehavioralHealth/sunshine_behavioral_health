@@ -24,6 +24,11 @@ $centerValue = get_field('center');
 
 
 <script type="text/javascript">
+    var glide = new Glide('#options-hoverpause', {
+        hoverpause: checkbox.checked,
+        autoplay: 2000,
+        perView: 3
+    })
 </script>
 
 <main id="primary" class="maxWidth center_page">
@@ -84,7 +89,7 @@ $centerValue = get_field('center');
                             while (have_rows('center_page_carousel')) : the_row();
                         ?>
                                 <li class="glide__slide">
-                                    <img src="<?php echo get_sub_field('image')['url'] ?>" alt="" loading="lazy">
+                                    <img src="<?php echo get_sub_field('image')['url'] ?>" alt="">
                                 </li>
                         <?php
                             endwhile;
