@@ -321,7 +321,7 @@
     width: 40%;
   }
   .center_page_insurance_form_wrapper {
-    width: 40%;
+    width: 50%;
   }
   .center_page_insurance_form_wrapper .center_page_insurance_form_wrapper {
     width: 100%;
@@ -540,7 +540,7 @@
 }
 
 .center_page_insurance_form_wrapper form ul li {
-  width: 45%;
+  width: 100%;
 }
 
 .center_page_insurance_form_wrapper form {
@@ -559,4 +559,10 @@
 
 .center_page_insurance_form_wrapper form::-webkit-scrollbar-thumb {
   background: var(--primary_color);
+}
+
+@media (min-width: 600px) {
+  .center_page_insurance_form_wrapper form ul li {
+    width: 45%;
+  }
 }
