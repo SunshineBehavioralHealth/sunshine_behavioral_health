@@ -87,15 +87,15 @@
                                         <img src="https://static.legitscript.com/seals/3380243.png" alt="LegitScript approved" width="140" height="100">
                                     </a>
                                 <?php elseif ($centerValue == "Lincoln Recovery") : ?>
-                                    <a title="Verify LegitScript Approval" href="https://legitscript.com/pharmacy/sunshinebehavioralhealth.com" rel="nofollow noopener" target="_blank">
+                                    <a title="Verify LegitScript Approval" class="legit_script_wrapper" href="https://legitscript.com/pharmacy/sunshinebehavioralhealth.com" rel="nofollow noopener" target="_blank">
                                         <img class="" loading="lazy" src="https://static.legitscript.com/seals/3380109.png" alt="LegitScript approved" width="140" height="100">
                                     </a>
                                 <?php elseif ($centerValue == "Monarch Shores") : ?>
-                                    <a href="https://legitscript.com/pharmacy/monarchshores.com" title="Verify LegitScript Approval" target="_blank" rel="nofollow noopener">
+                                    <a href="https://legitscript.com/pharmacy/monarchshores.com" title="Verify LegitScript Approval" class="legit_script_wrapper" target="_blank" rel="nofollow noopener">
                                         <img src="https://static.legitscript.com/seals/3380081.png" alt="LegitScript approved" width="140" height="100">
                                     </a>
                                 <?php elseif ($centerValue == "Mountain Springs") : ?>
-                                    <a href="https://www.legitscript.com/websites/mountainspringsrecovery.com/" title="Verify LegitScript Approval" target="_blank" rel="nofollow noopener">
+                                    <a href="https://www.legitscript.com/websites/mountainspringsrecovery.com/" title="Verify LegitScript Approval" class="legit_script_wrapper" target="_blank" rel="nofollow noopener">
                                         <img src="https://static.legitscript.com/seals/4466021.png" alt="LegitScript approved" loading="lazy">
                                     </a>
                                     <?php if (have_rows('all_centers_accordion_expandable_rows_repeater', 'option')) : ?>
@@ -104,7 +104,7 @@
                                         <?php endwhile; ?>
                                     <?php endif; ?>
                                 <?php elseif ($centerValue == "Willow Springs") : ?>
-                                    <a title="Verify LegitScript Approval" href="https://legitscript.com/pharmacy/willowspringsrecovery.com/" target="_blank" rel="nofollow noopener">
+                                    <a title="Verify LegitScript Approval" class="legit_script_wrapper" href="https://legitscript.com/pharmacy/willowspringsrecovery.com/" target="_blank" rel="nofollow noopener">
                                         <img loading="lazy" src="https://static.legitscript.com/seals/3380258.png" alt="LegitScript approved" width="140" height="100">
                                     </a>
                                 <?php endif; ?>

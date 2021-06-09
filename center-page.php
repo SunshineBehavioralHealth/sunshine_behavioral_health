@@ -161,17 +161,17 @@ $centerValue = get_field('center');
                         </a>
                         <img src="<?php echo get_template_directory_uri() . '/images/gold_badge.png' ?>" alt="" loading="lazy">
                     <?php elseif ($centerValue == "Monarch Shores") : ?>
-                        <a href="https://legitscript.com/pharmacy/monarchshores.com" title="Verify LegitScript Approval">
+                        <a href="https://legitscript.com/pharmacy/monarchshores.com" title="Verify LegitScript Approval" class="legit_script_wrapper">
                             <img src="https://static.legitscript.com/seals/3380081.png" alt="LegitScript approved" loading="lazy" width="140" height="100" />
                         </a>
                         <img src="<?php echo get_template_directory_uri() . '/images/gold_badge.png' ?>" alt="" loading="lazy">
                     <?php elseif ($centerValue == "Mountain Springs") : ?>
-                        <a href="https://www.legitscript.com/websites/mountainspringsrecovery.com/" title="Verify LegitScript Approval">
+                        <a href="https://www.legitscript.com/websites/mountainspringsrecovery.com/" title="Verify LegitScript Approval" class="legit_script_wrapper">
                             <img src="https://static.legitscript.com/seals/4466021.png" alt="LegitScript approved" loading="lazy" />
                         </a>
                         <img src="<?php echo get_template_directory_uri() . '/images/gold_badge.png' ?>" alt="" loading="lazy">
                     <?php elseif ($centerValue == "Willow Springs") : ?>
-                        <a title="Verify LegitScript Approval" href="https://legitscript.com/pharmacy/willowspringsrecovery.com/" title="Verify LegitScript Approval">
+                        <a title="Verify LegitScript Approval" class="legit_script_wrapper" href="https://legitscript.com/pharmacy/willowspringsrecovery.com/" title="Verify LegitScript Approval" class="legit_script_wrapper">
                             <img src="https://static.legitscript.com/seals/3380258.png" alt="LegitScript approved" loading="lazy" width="140" height="100" />
                         </a>
                         <img src="<?php echo get_template_directory_uri() . '/images/gold_badge.png' ?>" alt="" loading="lazy">

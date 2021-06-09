@@ -5,9 +5,14 @@
 
 .center_page .content_container {
   max-width: 100%;
-  
-  section{
+
+  section {
     margin-bottom: 45px;
+    padding: 0 10px;
+  }
+
+  section:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -83,7 +88,6 @@
   background-color: var(--primary_color);
   min-width: 185px;
   max-width: 250px;
-  margin: 0 auto;
 }
 
 .center_page
@@ -167,6 +171,10 @@
   .center_page_hero .center_page_hero_cta_top_text {
     text-align: left;
   }
+
+  .center_page_hero a {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -227,7 +235,7 @@
 }
 
 .center_page_badge_container {
-  border: 2px solid var(--secondary_color);
+  border: 2px solid var(--primary_color);
   background-color: #fff;
   width: 90%;
   margin: -50px auto 0 auto;
@@ -354,7 +362,7 @@
   }
 
   .center_page_badge_container {
-    width: 60%;
+    width: 50%;
   }
 }
 

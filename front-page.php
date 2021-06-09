@@ -94,7 +94,7 @@ if (is_home()) {
 		<div class="">
 			<div class="row  badge_container">
 				<div class="badge_image">
-					<a title="Verify LegitScript Approval" href="https://legitscript.com/pharmacy/sunshinebehavioralhealth.com" rel="noopener noreferrer">
+					<a title="Verify LegitScript Approval" class="legit_script_wrapper" href="https://legitscript.com/pharmacy/sunshinebehavioralhealth.com" rel="noopener noreferrer">
 						<img class="" loading="lazy" src="https://static.legitscript.com/seals/3380109.png" alt="LegitScript approved" width="140" height="100" border="0" />
 					</a>
 

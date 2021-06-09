@@ -133,6 +133,12 @@ blockquote p {
   margin: 0 !important;
 }
 
+.legit_script_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // Search style overwrites
 
 .navigation_wrapper #ajaxsearchlite1 .probox,
