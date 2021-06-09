@@ -83,7 +83,7 @@
                             </div>
                             <div class="all_centers_accordion_dropdown_wrapper hide">
                                 <?php if ($centerValue == "Chapters Capistrano") : ?>
-                                    <a href="https://legitscript.com/pharmacy/chapterscapistrano.com" title=" Verify LegitScript Approval" target="_blank" rel="nofollow noopener">
+                                    <a href="https://legitscript.com/pharmacy/chapterscapistrano.com" class="legit_script_wrapper" title="Verify LegitScript Approval" target="_blank" rel="nofollow noopener">
                                         <img src="https://static.legitscript.com/seals/3380243.png" alt="LegitScript approved" width="140" height="100">
                                     </a>
                                 <?php elseif ($centerValue == "Lincoln Recovery") : ?>
@@ -91,11 +91,11 @@
                                         <img class="" loading="lazy" src="https://static.legitscript.com/seals/3380109.png" alt="LegitScript approved" width="140" height="100">
                                     </a>
                                 <?php elseif ($centerValue == "Monarch Shores") : ?>
-                                    <a href="https://legitscript.com/pharmacy/monarchshores.com" title="Verify LegitScript Approval" class="legit_script_wrapper" target="_blank" rel="nofollow noopener">
+                                    <a href="https://legitscript.com/pharmacy/monarchshores.com" class="legit_script_wrapper" title="Verify LegitScript Approval" target="_blank" rel="nofollow noopener">
                                         <img src="https://static.legitscript.com/seals/3380081.png" alt="LegitScript approved" width="140" height="100">
                                     </a>
                                 <?php elseif ($centerValue == "Mountain Springs") : ?>
-                                    <a href="https://www.legitscript.com/websites/mountainspringsrecovery.com/" title="Verify LegitScript Approval" class="legit_script_wrapper" target="_blank" rel="nofollow noopener">
+                                    <a href="https://www.legitscript.com/websites/mountainspringsrecovery.com/" class="legit_script_wrapper" title="Verify LegitScript Approval" target="_blank" rel="nofollow noopener">
                                         <img src="https://static.legitscript.com/seals/4466021.png" alt="LegitScript approved" loading="lazy">
                                     </a>
                                     <?php if (have_rows('all_centers_accordion_expandable_rows_repeater', 'option')) : ?>
