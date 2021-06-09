@@ -150,10 +150,7 @@ $centerValue = get_field('center');
 
         <section class="center_page_testimonial_section">
             <div class="center_page_badge_container">
-                <h3>Treatment at <?php if ($centerValue == "Chapters Capistrano") echo "Chapters Capistrano";
-                                    elseif ($centerValue == "Monarch Shores") echo "Monarch Shores";
-                                    elseif ($centerValue == "Mountain Springs") echo "Mountain Springs";
-                                    elseif ($centerValue == "Willow Springs") echo "Willow Springs"; ?></h3>
+                <h3>Our Accreditation></h3>
                 <div class="ceneter_page_badges_wrapper">
                     <?php if ($centerValue == "Chapters Capistrano") : ?>
                         <a href="https://legitscript.com/pharmacy/chapterscapistrano.com" class="legit_script_wrapper" title="Verify LegitScript Approval">
@@ -181,7 +178,7 @@ $centerValue = get_field('center');
                 </div>
             </div>
             <div class="center_page_testimonial_container">
-                <img src="<?php echo get_template_directory_uri() . '/images/icons/quotation_mark.png' ?>" alt="">
+                <!-- <img src="<?php echo get_template_directory_uri() . '/images/icons/quotation_mark.png' ?>" alt=""> -->
                 <p><?php echo get_field('center_page_testimonial') ?></p>
                 <p><?php echo get_field('center_page_testimonial_name') ?></p>
                 <img src="<?php echo get_template_directory_uri() . '/images/icons/five_stars.png' ?>" alt="" loading="lazy">
