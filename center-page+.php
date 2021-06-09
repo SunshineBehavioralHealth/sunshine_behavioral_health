@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Center Page
+ * Template Name: Center Page+
  * Template Post Type: Page
  *
  * @link https://codex.wordpress.org/Template_Hierarchy

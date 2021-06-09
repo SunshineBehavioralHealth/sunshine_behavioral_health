@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Insurance Verification +
+ * Template Name: Insurance Verification+
  * Template Post Type: Page
  *
  * @link https://codex.wordpress.org/Template_Hierarchy

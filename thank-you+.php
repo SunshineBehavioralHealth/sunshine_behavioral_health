@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Thank You +
+ * Template Name: Thank You+
  * Template Post Type: Page
  *
  * @link https://codex.wordpress.org/Template_Hierarchy

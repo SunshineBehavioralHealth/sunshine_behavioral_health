@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Careers +
+ * Template Name: Careers+
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
