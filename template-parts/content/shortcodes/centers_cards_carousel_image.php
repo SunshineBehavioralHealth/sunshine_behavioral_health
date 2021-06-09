@@ -18,10 +18,8 @@
 
 <section class="centers_cards_carousel_section">
     <div class="centers_cards_carousel_container">
-        <?php if (is_page_template('front-page.php')) : ?>
-            <h2 class=""><?php echo get_field('treatment_center_card_headline') ?></h2>
-            <h4><?php echo get_field('treatment_center_card_subheadline') ?></h4>
-        <?php endif; ?>
+        <h2 class=""><?php echo get_field('treatment_center_card_headline') ?></h2>
+        <h4><?php echo get_field('treatment_center_card_subheadline') ?></h4>
         <div class="centers_cards_carousel">
             <?php
             if (have_rows('centers_cards_repeater', 'option')) :

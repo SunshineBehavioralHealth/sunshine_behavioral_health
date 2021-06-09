@@ -127,7 +127,7 @@
 .desktop_and_mobile_hero_image_wrapper h1 {
   position: relative;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   color: #fff;
   text-shadow: 1px 1px 1px grey;
 }
@@ -143,6 +143,7 @@
 .desktop_and_mobile_hero_image_wrapper .hero_center_logo {
   width: auto;
   height: auto;
+  margin-bottom: 10px;
 }
 
 .desktop_and_mobile_hero_image_wrapper

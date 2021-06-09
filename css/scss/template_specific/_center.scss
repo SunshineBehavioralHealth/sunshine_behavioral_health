@@ -5,6 +5,10 @@
 
 .center_page .content_container {
   max-width: 100%;
+  
+  section{
+    margin-bottom: 45px;
+  }
 }
 
 .center_page_treatment_list_container {
@@ -59,21 +63,27 @@
 .center_page_hero .center_page_hero_cta_top_text {
   color: #fff;
   padding: 0 0 -5px 0;
-  margin: 0;
+  margin: 0 0 10px 0;
   text-align: center;
-  font-size: 12px;
+  font-size: 20px;
   font-style: italic;
 }
 
 .center_page_hero a {
   display: flex;
   color: #fff;
-  padding: 5px 10px;
+  padding: 10px;
   margin: 0;
-  background-color: var(--primary_color);
   justify-content: center;
-  border-radius: 3px;
+  box-shadow: 0 0 8px #aeaeae;
+  border-radius: 2px;
+  text-align: center;
   font-size: 20px;
+  font-weight: 900;
+  background-color: var(--primary_color);
+  min-width: 185px;
+  max-width: 250px;
+  margin: 0 auto;
 }
 
 .center_page
@@ -152,6 +162,10 @@
   }
   .center_page .center_page_hero_wrapper {
     justify-content: flex-start;
+  }
+
+  .center_page_hero .center_page_hero_cta_top_text {
+    text-align: left;
   }
 }
 
