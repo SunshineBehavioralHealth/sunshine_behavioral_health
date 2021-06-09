@@ -88,6 +88,7 @@
   background-color: var(--primary_color);
   min-width: 185px;
   max-width: 250px;
+  margin: 0 auto;
 }
 
 .center_page
@@ -173,7 +174,7 @@
   }
 
   .center_page_hero a {
-    margin: 0 auto;
+    margin: 0;
   }
 }
 
@@ -248,7 +249,7 @@
 .ceneter_page_badges_wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .center_page_testimonial_container {
