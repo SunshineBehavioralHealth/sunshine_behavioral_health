@@ -37,7 +37,7 @@ class Component implements Component_Interface
 	public function initialize()
 	{
 		add_action('after_setup_theme', [$this, 'action_add_post_thumbnail_support']);
-		add_action('after_setup_theme', [$this, 'action_add_image_sizes']);
+		//add_action('after_setup_theme', [$this, 'action_add_image_sizes']);
 	}
 
 	/**
@@ -51,8 +51,8 @@ class Component implements Component_Interface
 	/**
 	 * Adds custom image sizes.
 	 */
-	public function action_add_image_sizes()
-	{
-		add_image_size('sunshine_behavioral_health-featured', 720, 480, true);
-	}
+	// public function action_add_image_sizes()
+	// {
+	// 	add_image_size('sunshine_behavioral_health-featured', 720, 480, true);
+	// }
 }
