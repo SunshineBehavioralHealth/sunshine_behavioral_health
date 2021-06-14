@@ -13,7 +13,7 @@
 
 function my_scripts()
 {
-	wp_enqueue_script('compiledJs', get_template_directory_uri() . '/js/build/main-min.js', array('jquery'), '', true);
+	wp_enqueue_script('compiledJs', get_template_directory_uri() . '/js/main-min.js', array('jquery'), '', true);
 }
 
 add_action('wp_enqueue_scripts', 'my_scripts');

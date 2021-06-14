@@ -13,7 +13,8 @@ const minify = require('gulp-minify');
 
 const SASS_SOURCES = [
   './*.scss', // This picks up our style.scss file at the root of the theme
-  'css/**/*.scss', // All other Sass files in the /css directory
+  'css/**/*.scss', // All other Sass files in the /css directory,
+
 ];
 
 /**
@@ -34,7 +35,7 @@ const SASS_SOURCES = [
     ]))
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(rename('styleBuild.min.css'))
-    .pipe(gulp.dest('css/')) // Output compiled files in the same dir as Sass sources
+    .pipe(gulp.dest('../css/')) // Output compiled files in the same dir as Sass sources
     .pipe(bs.stream())); // Stream to browserSync
 
 
@@ -43,5 +44,6 @@ gulp.task('js', function () {
   return gulp.src(['js/*.js'])
     .pipe(concat('main.js'))
     .pipe(minify())
-    .pipe(gulp.dest('js/build'));
+    .pipe(gulp.dest('../js/'));
 });
+
