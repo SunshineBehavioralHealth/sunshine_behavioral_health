@@ -13,7 +13,6 @@ jobs:
 
       - name: 🔨 Build Project
         run: |
-          npm install
           gulp css
           gulp js
 
