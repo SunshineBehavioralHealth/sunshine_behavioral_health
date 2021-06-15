@@ -150,7 +150,7 @@ $centerValue = get_field('center');
 
         <section class="center_page_testimonial_section">
             <div class="center_page_badge_container">
-                <h3>Our Accreditation</h3>
+                <h2>Our Accreditation</h2>
                 <div class="ceneter_page_badges_wrapper">
                     <?php if ($centerValue == "Chapters Capistrano") : ?>
                         <a href="https://legitscript.com/pharmacy/chapterscapistrano.com" class="legit_script_wrapper" title="Verify LegitScript Approval">

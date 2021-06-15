@@ -117,7 +117,17 @@
                             </div>
                         </div>
                         <div class="all_centers_accordion_row all_centers_accordion_row_cta">
-                            <a class="invocaNumber" href="tel:949-276-2886">Call Today!</a>
+
+                            <?php
+                            $centerURL;
+                            if ($centerValue == "Chapters Capistrano") $centerURL = "/our-rehab-centers/chapters-capistrano/";
+                            elseif ($centerValue == "Lincoln Recovery") $centerURL = "/our-rehab-centers/lincoln-recovery/";
+                            elseif ($centerValue == "Monarch Shores") $centerURL = "/our-rehab-centers/monarch-shores/";
+                            elseif ($centerValue == "Mountain Springs") $centerURL = "/our-rehab-centers/mountain-springs-recovery/";
+                            elseif ($centerValue == "Willow Springs") $centerURL = "/our-rehab-centers/willow-springs-recovery/"; ?>
+
+                            <a href="<?php echo $centerURL ?>">Learn More</a>
+
                         </div>
                     </div>
             <?php

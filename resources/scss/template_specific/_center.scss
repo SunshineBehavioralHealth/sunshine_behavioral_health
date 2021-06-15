@@ -240,10 +240,10 @@
   border: 2px solid var(--primary_color);
   background-color: #fff;
   width: 90%;
-  margin: 0 auto 0 auto;
+  margin: -50px auto 0 auto;
   border-radius: 5px;
   padding: 10px;
-  h3 {
+  h2 {
     text-align: center;
     margin: 0;
   }
@@ -370,7 +370,7 @@
   }
 
   .center_page_badge_container {
-    width: 50%;
+    width: 40%;
   }
 }
 
