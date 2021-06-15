@@ -117,13 +117,12 @@
                             </div>
                         </div>
                         <div class="all_centers_accordion_row all_centers_accordion_row_cta">
-                            <a href="">CTA Button</a>
+                            <a id="allCentersAccordionCTA" class="invocaNumber allCentersAccordionCTA" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'allCentersAccordionCTA'});" href="tel:949-276-2886">Call Today!</a>
                         </div>
-                    </div>
-            <?php
+                <?php
                 endwhile;
             endif;
-            ?>
+                ?>
+                    </div>
         </div>
-    </div>
 </section>

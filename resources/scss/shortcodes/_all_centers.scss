@@ -56,7 +56,7 @@
 }
 
 .center_page_location_address a {
-  color: #fff;
+  color: #000;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -72,7 +72,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 10px;
 
   p {
@@ -177,7 +177,7 @@
   }
   .all_centers_accordion_row_cta {
     a {
-      background-color: var(--lincoln_primary);
+      background-color: var(--lincoln_secondary);
     }
   }
 }
@@ -233,7 +233,7 @@
   }
   .all_centers_accordion_row_cta {
     a {
-      background-color: var(--willow_primary);
+      background-color: var(--willow_secondary);
     }
   }
 }
