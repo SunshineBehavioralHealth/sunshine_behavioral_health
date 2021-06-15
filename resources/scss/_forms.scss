@@ -1,0 +1,430 @@
+.gfield_visibility_hidden,
+.gform_validation_container {
+  display: none;
+}
+
+.gform_footer input[type="submit"] {
+  background-color: var(--primary_color);
+  color: #fff;
+  max-width: 300px;
+  padding: 10px 70px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.gform_footer input[type="submit"]:hover {
+  background-color: var(--tertiary_color);
+  text-decoration: underline;
+}
+
+.gform_footer.top_label {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_home_form_container form label {
+  color: #000;
+}
+
+.contact_form_shortcode_cta_form_container form ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.contact_form_shortcode_cta_form_container form ul li {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .contact_form_shortcode_cta_form_container form ul li {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+}
+
+.hidden_label label {
+  display: none;
+}
+
+.homepage_footer_form_fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage_footer_form_fieldset .standard_form_input input,
+.homepage_footer_form_fieldset .standard_form_input label,
+.homepage_footer_form_fieldset .standard_form_submit_btn_container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.insurance_form_section_1_buttons,
+.insurance_form_section_2_buttons,
+.insurance_form_section_3_buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.insurance_form_section_1 .insurance_form_section_1_buttons button,
+.insurance_form_section_2 .insurance_form_section_2_buttons button,
+.insurance_form_section_3 .insurance_form_section_3_buttons button {
+  width: 40%;
+  max-width: 200px;
+  color: var(--primary_color);
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+@media (min-width: 1025px) {
+  .insurance_form_section_1 .insurance_form_section_1_buttons button,
+  .insurance_form_section_2 .insurance_form_section_2_buttons button,
+  .insurance_form_section_3 .insurance_form_section_3_buttons button {
+    width: 40%;
+    max-width: 200px;
+    font-size: 25px;
+  }
+}
+
+.insurance_form_section_1 .insurance_form_section_1_buttons button:hover,
+.insurance_form_section_2 .insurance_form_section_2_buttons button:hover,
+.insurance_form_section_3 .insurance_form_section_3_buttons button:hover {
+  color: var(--secondary_color);
+  text-decoration: underline;
+}
+
+.contact_us_section {
+  margin-bottom: 25px;
+}
+
+.contact_us_section form label {
+  color: #000;
+}
+
+.contact_container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.contact_headline_and_ctas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact_headline_and_ctas a {
+  color: #fff;
+  padding: 15px 50px 15px 50px;
+  border-radius: 2px;
+  font-size: 25px;
+  width: 275px;
+  margin: 0 12.5px;
+}
+
+.contact_paragraph_section {
+  margin-bottom: 75px;
+}
+
+.contact_cta_left {
+  background-color: var(--secondary_color);
+}
+
+.contact_cta_right {
+  background-color: var(--primary_color);
+}
+
+.contact_headline_and_ctas a:hover {
+  background-color: var(--tertiary_color);
+}
+
+.contact_us_form_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contact_us_field_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .contact_us_field_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    width: 50%;
+  }
+}
+
+.contact_us_field_wrapper input {
+  height: 50px;
+  font-size: 25px;
+  width: 75%;
+}
+
+.contact_text_area_span_label,
+.contact_us_field_wrapper label {
+  font-weight: 700;
+  text-align: left;
+}
+
+.contact_text_area_span_label {
+  width: 100%;
+}
+
+.contact_text_area {
+  height: 150px;
+}
+
+.contact_form_submit {
+  color: #fff;
+  background-color: var(--secondary_color);
+  padding: 10px 40px;
+  font-size: 25px;
+  margin-top: 25px;
+}
+
+.contact_form_submit:hover {
+  color: #fff;
+  background-color: var(--primary_color);
+}
+
+.contact_submit_container {
+  width: 100%;
+}
+
+.form_required {
+  color: red;
+}
+
+.contact_form_container {
+  width: 80%;
+}
+
+.contact_form_container,
+.standard_form_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.standard_form_email_phone_column,
+.standard_form_email_phone_row,
+.standard_form_first_last_column,
+.standard_form_first_last_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .standard_form_input {
+    width: 100%;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 300px;
+  }
+  .standard_form_submit_btn_container {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .standard_form_input {
+    width: 100%;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 300px;
+  }
+}
+
+.standard_form_input input {
+  border: 1px solid;
+  width: 80%;
+  height: 50px;
+  padding: 5px;
+}
+
+.standard_form_submit_btn_container input {
+  background-color: #f5b335;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  .standard_form_input {
+    width: 45%;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .standard_form_email_phone_row,
+  .standard_form_first_last_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .standard_form_input input {
+    height: 36px;
+  }
+  .standard_form_input label {
+    min-width: 90px;
+  }
+  .form_input_white input {
+    background-color: #fff;
+  }
+  .standard_form_submit_btn_container input:hover {
+    background-color: var(--primary_color);
+    color: #fff;
+  }
+}
+
+.insurance_form_section_1,
+.insurance_form_section_2,
+.insurance_form_section_3 {
+  padding: 20px;
+  border: 2px solid #7ecfda;
+  border-radius: 2px;
+  margin-bottom: 26px;
+}
+
+.insurance_form_section_1_inputs,
+.insurance_form_section_2_inputs,
+.insurance_form_section_3_inputs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.insurance_form_section_1_inputs input,
+.insurance_form_section_2_inputs input,
+.insurance_form_section_3_inputs input {
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 2px;
+}
+
+.insurance_form_textarea_button_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.insurance_form_textarea {
+  width: 100%;
+}
+
+.insurance_form_textarea_submit:hover {
+  background-color: var(--tertiary_color);
+}
+
+form#gform_2 ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form#gform_2 ul li {
+  width: 100%;
+}
+
+form#gform_2 ul li label {
+  color: #000;
+}
+
+@media (min-width: 400px) {
+  form#gform_2 ul li {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .insurance_form_section_1_inputs,
+  .insurance_form_section_2_inputs,
+  .insurance_form_section_3_inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .insurance_form_section_1_inputs input,
+  .insurance_form_section_2_inputs input,
+  .insurance_form_section_3_inputs input {
+    width: 48%;
+  }
+}
+
+.insurance_form_textarea_submit {
+  width: 40% !important;
+  margin: 36px auto 0 auto;
+  align-items: center;
+  background-color: var(--primary_color);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .shortcode_standard_form_input {
+    align-items: center;
+  }
+}
+
+.insuranceVerification_form {
+  width: 100%;
+}

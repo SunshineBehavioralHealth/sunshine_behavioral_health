@@ -1,7 +1,7 @@
 <section class="newsletter_section">
     <div class="newsletter_container">
         <div class="newsletter_headline">
-            <h2>SIGN UP FOR OUR NEWSLETTER</h2>
+            <h3>SIGN UP FOR OUR NEWSLETTER</h3>
         </div>
         <div id="mc_embed_signup" class="newsletter_form_container">
             <form action="https://sunshinebh.us20.list-manage.com/subscribe/post?u=50abd3256ce6e9b74c656baf5&amp;id=59b1c25b91" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>

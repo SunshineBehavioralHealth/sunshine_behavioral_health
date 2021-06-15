@@ -1,7 +1,7 @@
 <section class="image_left_cta_right_shortcode_section">
     <div class="image_left_cta_right_shortcode_container">
         <div class="image_left_cta_right_shortcode_left_wrapper hide_on_mobile">
-            <img src="<?php echo get_field('image_left_cta_right-image')['url'] ?>" alt="">
+            <img loading="lazy" src="<?php echo get_field('image_left_cta_right-image')['url'] ?>" alt="" loading="lazy">
         </div>
         <div class="image_left_cta_right_shortcode_right_wrapper">
             <h5><?php echo get_field('image_left_cta_right-headline') ?></h5>

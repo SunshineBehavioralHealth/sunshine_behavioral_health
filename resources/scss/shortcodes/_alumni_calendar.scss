@@ -1,0 +1,60 @@
+.alumni_calendar_container {
+  padding: 15px;
+  border: 2px solid var(--primary_color);
+}
+
+.alumni_calendar_form_and_calendar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.alumni_calendar_form_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.alumni_calendar_form_wrapper input[type="input"] {
+  width: 100%;
+}
+
+.alumni_calendar_form_wrapper select {
+  width: 100%;
+}
+
+.alumni_calendar_form_wrapper input[type="submit"] {
+  width: 100%;
+}
+
+.alumni_calendar_section label.gfield_label {
+  color: black;
+}
+
+.alumni_calendar_section .gform_body ul {
+  padding: 0;
+  margin: 0;
+}
+
+.alumni_calendar_section .gform_body ul li {
+  margin: 0;
+}
+
+.alumni_calendar_calendar_wrapper iframe {
+  min-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .alumni_calendar_form_wrapper input[type="input"] {
+    width: 100%;
+  }
+
+  .alumni_calendar_form_wrapper input[type="select"] {
+    width: 45%;
+  }
+
+  .alumni_calendar_form_wrapper input[type="submit"] {
+    width: 45%;
+  }
+}

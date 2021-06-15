@@ -29,7 +29,7 @@ $centerValue = get_field('center')
         <div class="page_wrapper">
             <!-- Page Content -->
             <section class="page_content list_styling ipad_width_restriction">
-                <?php get_template_part('template-partsz/content/googleTranslate'); ?>
+                <?php get_template_part('template-parts/content/googleTranslate'); ?>
                 <?php echo get_field('content') ?>
             </section>
 
@@ -39,5 +39,5 @@ $centerValue = get_field('center')
             <?php get_template_part('template-parts/content/phoneTreatmentCta'); ?>
         </div>
     </div>
-</main> <?php
-        get_footer();
+</main> 
+<?php get_footer();

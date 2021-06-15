@@ -8,7 +8,7 @@
             ?>
                     <div class="faq_sidebar_element">
                         <a href="/<?php echo get_sub_field('link', 'option') ?>/" class="<?php echo get_sub_field('class', 'option') ?>">
-                            <img src="<?php echo get_sub_field('icon', 'option')['url'] ?>" alt="">
+                            <img src="<?php echo get_sub_field('icon', 'option')['url'] ?>" alt="" loading="lazy">
                             <h6><?php echo get_sub_field('text', 'option') ?></h6>
                         </a>
                     </div>
@@ -19,16 +19,3 @@
         </div>
     </div>
 </section>
-
-<script>
-    jQuery(document).ready(function($) {
-        $('.faq_sidebar_element a').click(function(event) {
-            var faqString = $(event.target).text();
-            console.log('faq string clicked:', faqString);
-            dataLayer.push({
-                'event': 'faq_sidebar_click  ',
-                'question_asked ': faqString
-            });
-        });
-    });
-</script>

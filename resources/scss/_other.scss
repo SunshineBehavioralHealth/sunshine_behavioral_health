@@ -1,0 +1,158 @@
+.comments-area,
+.entry-content > *,
+.entry-footer,
+.entry-header,
+.entry-summary > *,
+.page-content > *,
+.page-header,
+.page-navigation,
+.post-navigation,
+.site-info {
+  max-width: 100%;
+}
+
+.entry-header a {
+  color: var(--secondary_color);
+}
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: '"';
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+.page_404 {
+  text-align: center;
+}
+
+.page_404 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-logo-link {
+  display: inline-block;
+  margin: 0 auto 1em;
+}
+
+.site-branding {
+  text-align: center;
+  padding: 60px 0 1.75em;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-description {
+  margin: 0.4375em 0 0;
+  font-size: 17px;
+  font-weight: inherit;
+  line-height: 1.4;
+  word-wrap: break-word;
+  color: #757575;
+}
+
+.banner_top_image {
+  min-height: 350px;
+  width: 100%;
+  background-position: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media screen and (min-width: 48em) {
+  .site-main .comment-navigation,
+  .site-main .pagination,
+  .site-main .post-navigation,
+  .site-main .posts-navigation {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .banner_top_image {
+    min-height: 350px;
+  }
+}
+
+.banner_top_image label {
+  color: #000;
+}
+
+.site-info {
+  text-align: center;
+}
+
+.section_padding_top {
+  padding-top: 35px;
+}
+
+.width_restriction {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.short_code_video_cta {
+  display: flex;
+  justify-content: center;
+}
+
+.shortcode_spacer {
+  margin: 50px 0;
+}
+
+.widget {
+  margin-bottom: 15px;
+}
+
+.shortcode_section {
+  margin: 25px 0;
+}
+
+.blog_collection h1 {
+  text-align: center;
+  color: var(--secondary_color);
+}
+
+.healing_section {
+  margin: 0 !important;
+}
+
+.legit_script_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Search style overwrites
+
+.navigation_wrapper #ajaxsearchlite1 .probox,
+.navigation_wrapper div.asl_w .probox {
+  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+  box-shadow: 0 0 0 0 #b5b5b5 inset;
+}
+
+@media (max-width: 768px) {
+  .promagnifier {
+    display: none !important;
+  }
+
+  div.asl_r.vertical {
+    left: 20% !important;
+  }
+}

@@ -1,27 +1,19 @@
 <section class="treatment_centers_section">
     <div class="treatment_centers_container row ">
         <?php if (get_field('treatment_centers_headline')) : ?>
-            <h3 class="col-12"><?php echo get_field('treatment_centers_headline') ?></h2>
-            <?php else : ?>
-                <h3>OUR TREATMENT CENTERS</h2>
-                <?php endif; ?>
-                <?php if (get_field('treatment_centers_subheadline')) : ?>
-                    <h4><?php echo get_field('treatment_centers_subheadline') ?>
-                </h3>
-            <?php else : ?>
-                <h4>All of our facilities offer their own unique experiences while supplying the highest quality of care and comfort.
-            </h3>
+            <h2 class=""><?php echo get_field('treatment_centers_headline') ?></h2>
+        <?php else : ?>
+            <h2>OUR TREATMENT CENTERS</h2>
         <?php endif; ?>
         <div class="treatment_center_container">
-
             <?php
             if (get_field('treatment_centers')) :
                 if (have_rows('treatment_centers')) :
                     while (have_rows('treatment_centers')) : the_row();
             ?>
-                        <div class=" treatment_center_card_container">
+                        <div class="treatment_center_card_container">
                             <a href="<?php echo get_sub_field('link') ?>">
-                                <div class="treatment_center_image_container"><img class="" src="<?php echo get_sub_field('image')['url'] ?>"></div>
+                                <div class="treatment_center_image_container"><img loading="lazy" class="" src="<?php echo get_sub_field('image')['url'] ?>"></div>
                             </a>
 
                             <div class="treatment_center_card_content_wrapper">
@@ -31,9 +23,7 @@
                                 <h5><?php echo get_sub_field('center_subtext') ?></h5>
                                 <div><?php echo get_sub_field('content') ?></div>
 
-                                <div class="treatment_center_card_learn_more">
-                                    <a href="<?php echo get_sub_field('link') ?>">Learn More</a>
-                                </div>
+                                <a class="centers_cards_cta" href="<?php echo get_sub_field('link') ?>">Learn More</a>
                             </div>
                         </div>
                         <div class="twenty_px_margin_divider hide_on_desktop"></div>
@@ -46,7 +36,7 @@
 
                 <div class=" treatment_center_card_container">
                     <a href="/our-rehab-centers/monarch-shores/">
-                        <div class="treatment_center_image_container"><img class="" src="<?php echo get_template_directory_uri() . '/images/monarch-center.jpg' ?>"></div>
+                        <div class="treatment_center_image_container"><img loading="lazy" class="" src="<?php echo get_template_directory_uri() . '/images/monarch-center.jpg' ?>"></div>
                     </a>
 
                     <div class="treatment_center_card_content_wrapper">

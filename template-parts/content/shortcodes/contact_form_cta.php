@@ -6,6 +6,5 @@
         <div class="contact_form_cta_form_container contact_form_shortcode_cta_form_container">
             <?php echo do_shortcode('[gravityform id="5" title="false" description="false"]') ?>
         </div>
-
     </div>
 </section>

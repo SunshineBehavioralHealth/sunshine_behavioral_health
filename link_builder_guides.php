@@ -23,7 +23,9 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-content')
 <main id="primary" class="maxWidth">
 	<div class="">
 		<h1><?php echo get_field('page_headline') ?></h1>
-		<p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
+		<?php if (get_field('page_subheadline_paragraph')) : ?>
+			<p class="hero_subheadline"><?php echo get_field('page_subheadline_paragraph') ?></p>
+		<?php endif; ?>
 		<section class="guide_cards_section">
 			<h2>Guide Pages</h2>
 			<div class="guide_cards_container">

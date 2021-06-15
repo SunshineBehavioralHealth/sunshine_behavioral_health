@@ -4,6 +4,3 @@
         <p>Call 24/7: <a id="bottomPagePhone" class="invocaNumber bottomPagePhone" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'bottomPagePhone'});" href="tel:949-276-2886"> 949-276-2886</a></p>
     </section>
 <?php endif; ?>
-
-https://dev.sunshinebehavioralhealth.com/alumni/
-https://dev.sunshinebehavioralhealth.com/alumni-full-width/

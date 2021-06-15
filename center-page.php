@@ -21,9 +21,34 @@ $centerValue = get_field('center');
 
 ?>
 
-
-
 <script type="text/javascript">
+    jQuery(document).ready(function($) {
+        var sliders = document.querySelectorAll('.glide');
+
+        for (var i = 0; i < sliders.length; i++) {
+            var glide = new Glide(sliders[i], {
+                hoverpause: true,
+                gap: 2,
+                autoplay: 2500,
+                perView: 4,
+                animationDuration: 2000,
+                rewind: true,
+                breakpoints: {
+                    1024: {
+                        perView: 3
+                    },
+                    768: {
+                        perView: 2
+                    },
+                    420: {
+                        perView: 1
+                    }
+                }
+            });
+
+            glide.mount();
+        }
+    });
 </script>
 
 <main id="primary" class="maxWidth center_page">
@@ -84,7 +109,7 @@ $centerValue = get_field('center');
                             while (have_rows('center_page_carousel')) : the_row();
                         ?>
                                 <li class="glide__slide">
-                                    <img src="<?php echo get_sub_field('image')['url'] ?>" alt="" loading="lazy">
+                                    <img src="<?php echo get_sub_field('image')['url'] ?>" alt="">
                                 </li>
                         <?php
                             endwhile;
@@ -93,11 +118,19 @@ $centerValue = get_field('center');
                     </ul>
                 </div>
             </div>
+
+            <div class="center_page_insurance_form_top_cta_container hide_on_tablet hide_on_desktop">
+                <?php $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
+                <a href="<?php echo $actual_link; ?>#center_insurance_form">Verify Insurance for <?php if ($centerValue == "Chapters Capistrano") echo "Chapters Capistrano";
+                                                                                                    elseif ($centerValue == "Monarch Shores") echo "Monarch Shores";
+                                                                                                    elseif ($centerValue == "Mountain Springs") echo "Mountain Springs";
+                                                                                                    elseif ($centerValue == "Willow Springs") echo "Willow Springs"; ?></a>
+            </div>
         </section>
 
         <section class="center_page_treatment_list_section">
             <div class="center_page_treatment_list_container">
-                <h3><?php echo get_field('center_page_treatment_list_items_headline') ?></h3>
+                <h2><?php echo get_field('center_page_treatment_list_items_headline') ?></h2>
                 <ul>
                     <?php
                     if (have_rows('center_page_treatment_list_items')) :
@@ -117,31 +150,31 @@ $centerValue = get_field('center');
 
         <section class="center_page_testimonial_section">
             <div class="center_page_badge_container">
-                <h3>Treatment at <?php if ($centerValue == "Chapters Capistrano") echo "Chapters Capistrano";
-                                    elseif ($centerValue == "Monarch Shores") echo "Monarch Shores";
-                                    elseif ($centerValue == "Mountain Springs") echo "Mountain Springs";
-                                    elseif ($centerValue == "Willow Springs") echo "Willow Springs"; ?></h3>
+                <h3>Our Accreditation</h3>
                 <div class="ceneter_page_badges_wrapper">
                     <?php if ($centerValue == "Chapters Capistrano") : ?>
-                        <a href="https://legitscript.com/pharmacy/chapterscapistrano.com" title=" Verify LegitScript Approval">
+                        <a href="https://legitscript.com/pharmacy/chapterscapistrano.com" class="legit_script_wrapper" title="Verify LegitScript Approval">
                             <img src="https://static.legitscript.com/seals/3380243.png" alt="LegitScript approved" loading="lazy" width="140" height="100" />
                         </a>
                         <img src="<?php echo get_template_directory_uri() . '/images/gold_badge.png' ?>" alt="" loading="lazy">
                     <?php elseif ($centerValue == "Monarch Shores") : ?>
-                        <a href="https://legitscript.com/pharmacy/monarchshores.com" title="Verify LegitScript Approval">
+                        <a href="https://legitscript.com/pharmacy/monarchshores.com" class="legit_script_wrapper" title="Verify LegitScript Approval">
                             <img src="https://static.legitscript.com/seals/3380081.png" alt="LegitScript approved" loading="lazy" width="140" height="100" />
                         </a>
                         <img src="<?php echo get_template_directory_uri() . '/images/gold_badge.png' ?>" alt="" loading="lazy">
                     <?php elseif ($centerValue == "Mountain Springs") : ?>
-                        <a href="https://www.legitscript.com/websites/mountainspringsrecovery.com/" title="Verify LegitScript Approval">
+                        <a href="https://www.legitscript.com/websites/mountainspringsrecovery.com/" class="legit_script_wrapper" title="Verify LegitScript Approval">
                             <img src="https://static.legitscript.com/seals/4466021.png" alt="LegitScript approved" loading="lazy" />
                         </a>
                         <img src="<?php echo get_template_directory_uri() . '/images/gold_badge.png' ?>" alt="" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri() . '/images/colorado_springs_badge.png' ?>" alt="" loading="lazy">
+
                     <?php elseif ($centerValue == "Willow Springs") : ?>
-                        <a title="Verify LegitScript Approval" href="https://legitscript.com/pharmacy/willowspringsrecovery.com/" title="Verify LegitScript Approval">
+                        <a href="https://legitscript.com/pharmacy/willowspringsrecovery.com/" class="legit_script_wrapper" title="Verify LegitScript Approval">
                             <img src="https://static.legitscript.com/seals/3380258.png" alt="LegitScript approved" loading="lazy" width="140" height="100" />
                         </a>
                         <img src="<?php echo get_template_directory_uri() . '/images/gold_badge.png' ?>" alt="" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri() . '/images/austin_texas_badge.jpg' ?>" alt="" loading="lazy">
                     <?php endif; ?>
                 </div>
             </div>
@@ -183,22 +216,22 @@ $centerValue = get_field('center');
 
         <section class="center_page_insurance_form_section">
             <div class="center_page_insurance_form_container" style="background-image: url(<?php echo get_field('center_page_insurance_section_background_image')['url'] ?>)">
-
                 <div class="center_page_insurance_form_content_wrapper">
                     <div class="center_page_insurance_form_top_cta_container hide_on_tablet hide_on_desktop">
                         <?php $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
-                        <a href="<?php echo $actual_link; ?>#center_insurance_form">Verify Insurance</a>
+                        <a href="<?php echo $actual_link; ?>#center_insurance_form">Verify Insurance for <?php if ($centerValue == "Chapters Capistrano") echo "Chapters Capistrano";
+                                                                                                            elseif ($centerValue == "Monarch Shores") echo "Monarch Shores";
+                                                                                                            elseif ($centerValue == "Mountain Springs") echo "Mountain Springs";
+                                                                                                            elseif ($centerValue == "Willow Springs") echo "Willow Springs"; ?></a>
                     </div>
                     <?php echo get_field('center_page_insurance_content') ?>
                 </div>
-
                 <div id="center_insurance_form" class="center_page_insurance_form_wrapper">
-                    <div class="insurance_page_form_section">
+                    <div class="center_page_insurance_form_wrapper">
                         <div class="insurance_page_form_container">
                             <?php echo do_shortcode('[gravityform id="6" title="false" description="false"]') ?>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>

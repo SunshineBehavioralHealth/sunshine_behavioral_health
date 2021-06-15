@@ -1,7 +1,7 @@
 <section class="image_left_cta_right_shortcode_section directory_cta">
     <div class="image_left_cta_right_shortcode_container">
         <div class="image_left_cta_right_shortcode_left_wrapper hide_on_mobile">
-            <img src="<?php echo get_field('directory_cta-image', 'option')['url'] ?>" alt="">
+            <img loading="lazy" src="<?php echo get_field('directory_cta-image', 'option')['url'] ?>" alt="">
         </div>
         <div class="image_left_cta_right_shortcode_right_wrapper">
             <h5><?php echo get_field('directory_cta-headline', 'option') ?></h5>

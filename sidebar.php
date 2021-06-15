@@ -24,7 +24,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-sidebar',
 
 <aside id="secondary" class="primary-sidebar widget-area sidebar_margin_top">
 	<?php
-	if (!is_page_template('index.php')) : get_template_part('template-parts/content/authorMedicalReviewSidebar');
-	endif; ?>
-	<?php sunshine_behavioral_health()->display_primary_sidebar(); ?>
+	get_template_part('template-parts/content/authorMedicalReviewSidebar');
+	sunshine_behavioral_health()->display_primary_sidebar();
+	?>
 </aside><!-- #secondary -->

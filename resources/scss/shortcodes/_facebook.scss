@@ -1,0 +1,57 @@
+.facebook_shortcode_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  background-color: #e4eff7;
+}
+
+.facebook_shortcode_container h3 {
+  color: var(--secondary_color);
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.facebook_shortcode_container h3 img {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.facebook_shortcode_container p {
+  text-align: center;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.facebook_shortcode_repeater_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.facebook_shortcode_repeater_container img {
+  max-width: 100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.facebook_shortcode_repeater_container .facebook_shortcode_repeater_element {
+  width: 30%;
+  margin: 5px;
+}
+
+@media (min-width: 768px) {
+  .facebook_shortcode_repeater_container .facebook_shortcode_repeater_element {
+    width: 18%;
+  }
+}
+
+.primary-sidebar
+  .facebook_shortcode_repeater_container
+  .facebook_shortcode_repeater_element {
+  width: 45%;
+}

@@ -11,7 +11,7 @@
                     while (have_rows('list_and_cta-list')) : the_row();
                 ?>
                         <div class="list_and_cta_list_element">
-                            <img src="<?php echo get_sub_field('image')['url'] ?>" alt="">
+                            <img src="<?php echo get_sub_field('image')['url'] ?>" alt="" loading="lazy">
                             <p><?php echo get_sub_field('text') ?></p>
                         </div>
                 <?php

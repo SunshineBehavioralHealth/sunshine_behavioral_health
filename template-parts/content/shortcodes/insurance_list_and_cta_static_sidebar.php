@@ -9,7 +9,7 @@
                 <div class="list_and_cta_list_element">
                     <div class="list_and_cta_list_element_wrapper">
                         <a href="/insurance/cigna/">
-                            <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="" loading="lazy">
                             <p>Cigna</p>
                         </a>
                     </div>
@@ -18,7 +18,7 @@
                 <div class="list_and_cta_list_element">
                     <div class="list_and_cta_list_element_wrapper">
                         <a href="/insurance/aetna/">
-                            <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="" loading="lazy">
                             <p>Aetna</p>
                         </a>
                     </div>
@@ -27,7 +27,7 @@
                 <div class="list_and_cta_list_element">
                     <div class="list_and_cta_list_element_wrapper">
                         <a href="/insurance/blue-cross-blue-shield/">
-                            <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="" loading="lazy">
                             <p>BCBS</p>
                         </a>
                     </div>
@@ -36,7 +36,7 @@
                 <div class="list_and_cta_list_element">
                     <div class="list_and_cta_list_element_wrapper">
                         <a href="/insurance/umr-insurance/">
-                            <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="" loading="lazy">
                             <p>UMR</p>
                         </a>
                     </div>
@@ -45,7 +45,7 @@
                 <div class="list_and_cta_list_element">
                     <div class="list_and_cta_list_element_wrapper">
                         <a href="/insurance/oxford-health-plans-health-insurance/">
-                            <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="" loading="lazy">
                             <p>Oxford Health</p>
                         </a>
                     </div>
@@ -54,7 +54,7 @@
                 <div class="list_and_cta_list_element">
                     <div class="list_and_cta_list_element_wrapper">
                         <a href="/insurance/beacon-health-rehab-coverage/">
-                            <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="" loading="lazy">
                             <p>Beacon</p>
                         </a>
                     </div>
@@ -63,7 +63,7 @@
                 <div class="list_and_cta_list_element">
                     <div class="list_and_cta_list_element_wrapper">
                         <a id="harvard_pilgrim" href="/insurance/harvard-pilgrim-rehab-coverage/">
-                            <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="" loading="lazy">
                             <p>Harvard Pilgrim</p>
                         </a>
                     </div>
@@ -72,7 +72,7 @@
                 <div class="list_and_cta_list_element">
                     <div class="list_and_cta_list_element_wrapper">
                         <a id="humana" href="/insurance/humana-health">
-                            <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/images/icons/navbar_icon_treatment.png' ?>" alt="" loading="lazy">
                             <p>Humana</p>
                         </a>
                     </div>
@@ -81,21 +81,9 @@
             <div class="list_and_cta_bottom_container">
                 <p>Don't see your Insurance Provider?</p>
                 <div class="list_and_cta_bottom_cta_wrapper">
-                    <a class="coverageTableInsurance" href="/insurance" onclick="dataLayer.push({'event': 'insurance_click', 'shortcode_type' : 'coverageTableInsurance'});">Verify Your Insurance</a>
+                    <a id="coverageTableInsurance" class="coverageTableInsurance" href="/insurance" onclick="dataLayer.push({'event': 'insurance_click', 'shortcode_type' : 'coverageTableInsurance'});">Verify Your Insurance</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<script>
-    jQuery(document).ready(function($) {
-        $('.list_and_cta_list_element a').click(function(event) {
-            var insuranceName = $(event.target).id();
-            dataLayer.push({
-                'event': 'coverage_table_click ',
-                'coverage_type ': insuranceName
-            });
-        });
-    });
-</script>
