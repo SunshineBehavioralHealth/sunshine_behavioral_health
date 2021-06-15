@@ -90,8 +90,14 @@
   }
 }
 
-.all_centers_accordion_row_list img {
-  max-height: 25px;
+.all_centers_accordion_row_list {
+  img {
+    max-height: 25px;
+  }
+
+  .all_centers_accordion_dropdown_wrapper {
+    justify-content: space-between;
+  }
 }
 
 .all_centers_accordion_row_list .all_centers_accordion_dropdown_wrapper span {
