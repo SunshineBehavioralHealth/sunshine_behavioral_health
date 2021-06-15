@@ -117,7 +117,7 @@
                             </div>
                         </div>
                         <div class="all_centers_accordion_row all_centers_accordion_row_cta">
-                            <a href="">CTA Button</a>
+                            <a class="invocaNumber" href="tel:949-276-2886">Call Today!</a>
                         </div>
                     </div>
             <?php
