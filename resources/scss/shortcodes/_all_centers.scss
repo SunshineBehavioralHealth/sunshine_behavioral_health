@@ -157,8 +157,10 @@
   .all_centers_accordion_row_cta {
     background-color: var(--chapters_secondary);
   }
-  a {
-    background-color: var(--chapters_secondary);
+  .all_centers_accordion_row_cta {
+    a {
+      background-color: var(--chapters_secondary);
+    }
   }
 }
 
@@ -173,8 +175,10 @@
   .all_centers_accordion_row_cta {
     background-color: var(--lincoln_primary);
   }
-  a {
-    background-color: var(--lincoln_primary);
+  .all_centers_accordion_row_cta {
+    a {
+      background-color: var(--lincoln_primary);
+    }
   }
 }
 
@@ -188,8 +192,11 @@
   .all_centers_accordion_row_cta {
     background-color: var(--monarch_primary);
   }
-  a {
-    background-color: var(--monarch_primary);
+
+  .all_centers_accordion_row_cta {
+    a {
+      background-color: var(--monarch_secondary);
+    }
   }
 }
 
@@ -206,6 +213,12 @@
   a {
     background-color: var(--mountain_primary);
   }
+
+  .all_centers_accordion_row_cta {
+    a {
+      background-color: var(--mountain_secondary);
+    }
+  }
 }
 
 .willow_styles {
@@ -218,8 +231,10 @@
   .all_centers_accordion_row_cta {
     background-color: var(--willow_secondary);
   }
-  a {
-    background-color: var(--willow_secondary);
+  .all_centers_accordion_row_cta {
+    a {
+      background-color: var(--willow_primary);
+    }
   }
 }
 
