@@ -141,12 +141,14 @@
   text-shadow: 1px 1px 1px grey;
 }
 
-.desktop_and_mobile_hero_image_wrapper .hero_center_logo {
-  width: auto;
-  height: auto;
-  max-height: 150px;
-  max-width: 350px;
-  margin-bottom: 10px;
+.desktop_and_mobile_hero_image_wrapper {
+  .hero_center_logo {
+    width: auto;
+    height: auto;
+    max-height: 150px;
+    max-width: 350px;
+    margin: 0 auto 10px auto;
+  }
 }
 
 .desktop_and_mobile_hero_image_wrapper
@@ -155,10 +157,22 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  img {
+    height: auto;
+  }
 }
 
 @media (min-width: 768px) {
-  .desktop_and_mobile_hero_image_wrapper .hero_banner_headlines_container {
+  .desktop_and_mobile_hero_image_wrapper {
+    .hero_center_logo {
+      width: auto;
+      height: auto;
+      max-height: 150px;
+      max-width: 350px;
+      margin: 0 0 10px 0;
+    }
+  }
+  .hero_banner_headlines_container {
     width: 100%;
     margin: 0 0 20px 0;
   }

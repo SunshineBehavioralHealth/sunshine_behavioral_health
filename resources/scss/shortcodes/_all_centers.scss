@@ -91,8 +91,11 @@
 }
 
 .all_centers_accordion_row_list {
-  img {
-    max-height: 25px;
+  span {
+    img {
+      max-height: 15px;
+      margin-top: 5px;
+    }
   }
 
   .all_centers_accordion_dropdown_wrapper {
@@ -103,7 +106,7 @@
 .all_centers_accordion_row_list .all_centers_accordion_dropdown_wrapper span {
   display: flex;
   flex-direction: row;
-  width: 45%;
+  width: 100%;
 }
 
 .all_centers_accordion_row {
