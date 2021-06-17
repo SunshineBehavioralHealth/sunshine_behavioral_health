@@ -31,7 +31,7 @@
     justify-content: space-between;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    padding: 320px;
+    padding: 18px;
     align-items: center;
     width: 100%;
     margin: 0 7.5px 15px 7.5px;
@@ -95,16 +95,17 @@
       font-weight: 900;
       min-width: 185px;
     }
-    ul.glide__slides {
-      margin-left: 0;
-    }
-    .glide__arrow {
-      border: none;
-      box-shadow: none;
-      img {
-        max-height: 10px;
-        width: auto;
-      }
+  }
+
+  ul.glide__slides {
+    margin-left: 0;
+  }
+  .glide__arrow {
+    border: none;
+    box-shadow: none;
+    img {
+      max-height: 10px;
+      width: auto;
     }
   }
 }
