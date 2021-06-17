@@ -6,14 +6,17 @@
     <div class="hero_banner_headlines_container">
         <div class="hero_banner_headlines_wrapper">
             <?php if ($centerValue == "Chapters Capistrano") : ?>
-                <img class="hero_center_logo" src="<?php echo get_template_directory_uri() . '/images/logos/chapters_capistrano_logo.jpg' ?>" alt="">
+                <img class="hero_center_logo" src="<?php echo get_field('chapters_capistrano_logo', 'option')['url']; ?>" alt="">
+            <?php elseif ($centerValue == "Lincoln Recovery") : ?>
+                <img class="hero_center_logo" src="<?php echo get_field('lincoln_recovery_logo', 'option')['url']; ?>" alt="">
             <?php elseif ($centerValue == "Monarch Shores") : ?>
-                <img class="hero_center_logo" src="<?php echo get_template_directory_uri() . '/images/logos/monarch_shores_logo.jpg' ?>" alt="">
+                <img class="hero_center_logo" src="<?php echo get_field('monarch_shores_logo', 'option')['url']; ?>" alt="">
             <?php elseif ($centerValue == "Mountain Springs") : ?>
-                <img class="hero_center_logo" src="<?php echo get_template_directory_uri() . '/images/logos/mountain_springs_logo.jpg' ?>" alt="">
+                <img class="hero_center_logo" src="<?php echo get_field('mountain_springs_logo', 'option')['url']; ?>" alt="">
             <?php elseif ($centerValue == "Willow Springs") : ?>
-                <img class="hero_center_logo" src="<?php echo get_template_directory_uri() . '/images/logos/willow_springs_logo.jpg' ?>" alt="">
+                <img class="hero_center_logo" src="<?php echo get_field('willow_springs_logo', 'option')['url']; ?>" alt="">
             <?php endif; ?>
+
             <h1><?php echo get_field('center_page_hero_headline') ?></h1>
             <?php if (get_field('page_subheadline_paragraph')) : ?>
                 <?php if (get_field('page_subheadline_paragraph')) : ?>

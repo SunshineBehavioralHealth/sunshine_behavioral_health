@@ -32,7 +32,7 @@ sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-pa
 
             <section class="insurance_form_section">
                 <div class="insurance_form_wrapper">
-                    <?php echo do_shortcode('[gravityform id="6" title="false" description="false"]') ?>
+                    <?php echo do_shortcode('[gravityform id="7" title="false" description="false"]') ?>
                 </div>
             </section>
 

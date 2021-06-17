@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Center Page
+ * Template Name: Center Page+
  * Template Post Type: Page
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
@@ -150,7 +150,7 @@ $centerValue = get_field('center');
 
         <section class="center_page_testimonial_section">
             <div class="center_page_badge_container">
-                <h3>Our Accreditation</h3>
+                <h2>Our Accreditation</h2>
                 <div class="ceneter_page_badges_wrapper">
                     <?php if ($centerValue == "Chapters Capistrano") : ?>
                         <a href="https://legitscript.com/pharmacy/chapterscapistrano.com" class="legit_script_wrapper" title="Verify LegitScript Approval">
@@ -168,7 +168,6 @@ $centerValue = get_field('center');
                         </a>
                         <img src="<?php echo get_template_directory_uri() . '/images/gold_badge.png' ?>" alt="" loading="lazy">
                         <img src="<?php echo get_template_directory_uri() . '/images/colorado_springs_badge.png' ?>" alt="" loading="lazy">
-
                     <?php elseif ($centerValue == "Willow Springs") : ?>
                         <a href="https://legitscript.com/pharmacy/willowspringsrecovery.com/" class="legit_script_wrapper" title="Verify LegitScript Approval">
                             <img src="https://static.legitscript.com/seals/3380258.png" alt="LegitScript approved" loading="lazy" width="140" height="100" />
@@ -179,7 +178,7 @@ $centerValue = get_field('center');
                 </div>
             </div>
             <div class="center_page_testimonial_container">
-                <img src="<?php echo get_template_directory_uri() . '/images/icons/quotation_mark.png' ?>" alt="">
+                <!-- <img src="<?php echo get_template_directory_uri() . '/images/icons/quotation_mark.png' ?>" alt=""> -->
                 <p><?php echo get_field('center_page_testimonial') ?></p>
                 <p><?php echo get_field('center_page_testimonial_name') ?></p>
                 <img src="<?php echo get_template_directory_uri() . '/images/icons/five_stars.png' ?>" alt="" loading="lazy">
