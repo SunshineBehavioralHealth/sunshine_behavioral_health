@@ -95,6 +95,11 @@
       font-weight: 900;
       min-width: 185px;
       text-shadow: 1px 1px 1px grey;
+      background-color: var(--primary_color);
+
+      &:hover {
+        background-color: var(--tertiary_color);
+      }
     }
   }
 
