@@ -35,9 +35,19 @@
 }
 
 .treatment_center_card_content_wrapper .centers_cards_cta {
-  color: var(--primary_color);
   font-weight: 600;
   margin: 10px 0;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 2px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  min-width: 185px;
+  text-shadow: 1px 1px 1px grey;
 }
 
 .treatment_center_card_content_wrapper .centers_cards_cta:hover {
