@@ -27,9 +27,9 @@
             ?>
                     <div class="centers_cards_indv_card_wrapper">
                         <div class="centers_cards_indv_card">
-                            <a href="<?php echo get_sub_field('link', 'option') ?>">
+                            <!-- <a href="<?php echo get_sub_field('link', 'option') ?>">
                                 <h5 class="centers_cards_indv_card_state"><?php echo get_sub_field('state', 'option') ?></h5>
-                            </a>
+                            </a> -->
                             <div class="glide centers_cards_carousel_image_glide">
                                 <div class="glide__track" data-glide-el="track">
                                     <ul class="glide__slides">
