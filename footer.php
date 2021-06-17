@@ -15,12 +15,9 @@ namespace WP_Rig\WP_Rig;
 ?>
 
 <footer id="colophon" class="site-footer">
-    <?php if (!is_page_template('center-page.php') || !is_page_template('center-page+.php')) : ?>
-        <div class="banner_top_image" style="background-image: url(
+    <div class="banner_top_image" style="background-image: url(
 		<?php echo get_field('above_footer_image_desktop', 'option')['url']; ?>);">
-        </div>
-    <?php endif; ?>
-
+    </div>
     <?php get_template_part('template-parts/footer/info'); ?>
     <?php get_template_part('template-parts/footer/footer_mobile_buttons'); ?>
 

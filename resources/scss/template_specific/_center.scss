@@ -3,6 +3,12 @@
   max-width: 100%;
 }
 
+.center_page#primary + footer {
+  .banner_top_image {
+    display: none;
+  }
+}
+
 .center_page .content_container {
   max-width: 100%;
 
