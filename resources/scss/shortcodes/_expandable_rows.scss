@@ -25,7 +25,11 @@
     }
 
     h3 {
+      font-size: 18px;
+      color: var(--secondary_color);
       margin: 0;
+      max-width: 90%;
+      font-weight: 600;
     }
   }
 }

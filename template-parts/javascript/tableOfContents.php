@@ -7,7 +7,7 @@
         }), document.querySelectorAll("h2").length > 0 && e(".page_content").prepend(o), o.find("a").on("click", function() {
           var t = e(this).attr("href");
           return e("html, body").animate({
-            scrollTop: e(t).offset().top
+            scrollTop: e(t).offset().top + -200
           }, 500), !1
         }), e(".toc").prepend("<div class='toc_dropdown'><img src='<?php echo get_template_directory_uri() . '/images/icons/plus_icon_blue.png' ?>'></div>"), e(".toc").prepend("<h5>Table of Contents</h5>")
       });
