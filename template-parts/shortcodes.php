@@ -688,3 +688,12 @@ function alumni_calendar()
 }
 
 add_shortcode('alumni_calendar', 'alumni_calendar');
+
+function accordions_with_toc()
+{
+	ob_start();
+	get_template_part('template-parts/content/shortcodes/accordions_with_toc');
+	return ob_get_clean();
+}
+
+add_shortcode('accordions_with_toc', 'accordions_with_toc');
