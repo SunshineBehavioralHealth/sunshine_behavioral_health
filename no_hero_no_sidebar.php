@@ -22,7 +22,7 @@ $centerValue = get_field('center')
 
 
 
-<main id="primary" class="full_width_hero_no_sidebar">
+<main id="primary" class="no_hero_no_sidebar_main">
     <div class="content_container">
         <div class="page_wrapper">
             <!-- Page Content -->
