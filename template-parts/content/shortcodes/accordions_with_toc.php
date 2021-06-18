@@ -3,10 +3,8 @@
 
 <div class="accordion_with_toc_container">
     <section class="accordion_with_toc_toc_section">
-        <h1>Accordion with TOC goes here</h1>
+        <!-- Table of Contents for Accordions with TOC inserted here-->
     </section>
-
-
     <?php
     if (have_rows('accordions_with_toc-repeater')) :
         while (have_rows('accordions_with_toc-repeater')) : the_row(); ?>
@@ -21,7 +19,7 @@
                             <?php else : ?>
                                 <div class="expandable_row_element">
                                     <div class="expandable_row_element_headline_img_wrapper">
-                                        <h2><?php echo get_sub_field('headline_text') ?></h2>
+                                        <h3><?php echo get_sub_field('headline_text') ?></h3>
                                         <img src="<?php echo get_template_directory_uri() . '/images/icons/plus_icon_blue.png' ?>" alt="" loading="lazy">
                                     </div>
                                     <div class="expandable_row_content hide">

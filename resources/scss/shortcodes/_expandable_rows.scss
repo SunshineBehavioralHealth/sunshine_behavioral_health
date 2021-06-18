@@ -18,6 +18,18 @@
   border-right: 2px solid var(--secondary_color);
 }
 
+.accordion_with_toc_container {
+  .expandable_row_element {
+    &:first-of-type {
+      border-top: 2px solid var(--secondary_color);
+    }
+
+    h3 {
+      margin: 0;
+    }
+  }
+}
+
 .expandable_row_element_headline_img_wrapper {
   display: flex;
   flex-direction: row;
