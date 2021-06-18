@@ -27,8 +27,8 @@ $centerValue = get_field('center')
         <div class="page_wrapper">
             <!-- Headlines -->
             <section class="no_hero_no_sidebar_headlines_section">
-                <?php if get_field('page_headline') : ?>
-                <h1><?php echo get_field('page_headline') ?></h1>
+                <?php if (get_field('page_headline')) : ?>
+                    <h1><?php echo get_field('page_headline') ?></h1>
                 <?php endif; ?>
 
                 <?php if (get_field('page_subheadline_paragraph')) : ?>
