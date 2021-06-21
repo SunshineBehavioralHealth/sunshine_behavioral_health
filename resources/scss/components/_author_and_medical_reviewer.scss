@@ -13,8 +13,21 @@
 }
 
 @media (max-width: 700px) {
-  .no_medical_reviewer #editor_avatar_reference img {
-    display: none;
+  .medical_reviewer_present {
+    #editor_avatar_reference img {
+      display: none;
+    }
+    .editor_container {
+      width: 100%;
+    }
+    .editor_wrapper {
+      width: 100%;
+
+      .editor_meta_wrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+    }
   }
 }
 

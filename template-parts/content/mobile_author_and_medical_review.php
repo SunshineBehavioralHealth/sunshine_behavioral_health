@@ -17,7 +17,7 @@ $medicalReviewAvatar = get_field('profile_thumbnail', 'user_' . $medicalReviewUs
 $medicalReviewMetaBio =  $medicalReviewerMetaData['description'][0];
 ?>
 
-<div class="mobile_author_and_medical_review_wrapper <?php if (!get_field("medical_review_user")) : echo "no_medical_reviewer";
+<div class="mobile_author_and_medical_review_wrapper <?php if (get_field("medical_review_user")) : echo "medical_reviewer_present";
                                                         endif; ?>">
     <?php if (get_field("editor_user")) : ?>
         <div class="medical_review_spacer"></div>
