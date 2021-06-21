@@ -13,7 +13,7 @@
 }
 
 @media (max-width: 700px) {
-  #editor_avatar_reference img {
+  .no_medical_reviewer #editor_avatar_reference img {
     display: none;
   }
 }
@@ -472,7 +472,7 @@
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .editor_and_review_section p,
   .editor_meta_wrapper .editor_last_date,
   .medical_review_meta_wrapper .medical_review_last_date,

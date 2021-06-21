@@ -23,6 +23,15 @@
   }
 }
 
+@media (max-width: 768px) {
+  .aligncenter,
+  .alignleft,
+  .alignright {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 aside {
   z-index: 2;
   padding: 0;
@@ -90,6 +99,7 @@ aside {
 .page_wrapper {
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .page_image,
