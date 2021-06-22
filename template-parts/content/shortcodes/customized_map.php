@@ -2,7 +2,7 @@
 $centerSelection = get_field('customized_map_center_options');
 ?>
 
-<section class="customized_map_section">
+<section class="customized_map_section customMap" id="customMap">
     <div class="customized_map_container">
         <div class="customized_map_wrapper">
             <?php if ($centerSelection == "Chapters Capistrano") :

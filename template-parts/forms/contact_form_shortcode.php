@@ -39,7 +39,7 @@
                 <br /> -->
 
                 <div class="standard_form_submit_btn_container shortcode_standard_form_submit_btn_container">
-                    <input class="sunshine_form_submit_btn abovefoldformsubmission standard_form_submit_btn contactFormCta submit_button" value="Request More Info" type="submit" name="submitBtn">
+                    <input id="contactFormCta" class="sunshine_form_submit_btn abovefoldformsubmission standard_form_submit_btn contactFormCta submit_button" value="Request More Info" type="submit" name="submitBtn">
                 </div>
             </fieldset>
         </div>

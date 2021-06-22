@@ -34,6 +34,30 @@ jQuery(document).ready(function ($) {
             'state_clicked': stateName
         });
     });
+
+    // Learn Centers Sidebar
+    $('.learn_centers_center_container a').click(function (event) {
+        let rehabCenterURL = $(event.target).url();
+        let rehabCenterValue;
+        if (rehabCenterURL.contains("chapters")) {
+            rehabCenterValue = "Chapters Capistrano"
+        } else if (rehabCenterURL.contains("lincoln")) {
+            rehabCenterURL = "Lincoln Recovery"
+        } else if (rehabCenterURL.contains("monarch")) {
+            rehabCenterURL = "Monarch Shores"
+        } else if (rehabCenterURL.contains("mountain")) {
+            rehabCenterURL = "Mountain Springs Recovery"
+        } else if (rehabCenterURL.contains("willow")) {
+            rehabCenterURL = "Willow Springs Recovery"
+        }
+        console.log("Rehab Center URL:", rehabCenterURL)
+        console.log("Rehab Center Value:", rehabCenterValue)
+
+        dataLayer.push({
+            'event': 'rehab_center_table',
+            'rehab_center': rehabCenterValue
+        });
+    });
 });
 
 

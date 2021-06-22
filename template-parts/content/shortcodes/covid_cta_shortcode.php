@@ -1,4 +1,4 @@
-<section class="image_left_cta_right_shortcode_section">
+<section class="image_left_cta_right_shortcode_section covidCta" id="covidCta">
     <div class="image_left_cta_right_shortcode_container">
         <div class="image_left_cta_right_shortcode_left_wrapper hide_on_mobile">
             <img loading="lazy" src="<?php echo get_template_directory_uri() . '/images/covid_cta_image.jpg' ?>" alt="">
