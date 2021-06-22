@@ -37,22 +37,23 @@ jQuery(document).ready(function ($) {
 
     // Learn Centers Sidebar
     $('.learn_centers_center_container a').click(function (event) {
-        let rehabCenterURL = $(event.target).url();
+        let rehabCenterURL = $(this).attr("href");
         let rehabCenterValue;
-        if (rehabCenterURL.contains("chapters")) {
+
+        if (rehabCenterURL.indexOf("chapters") > -1) {
             rehabCenterValue = "Chapters Capistrano"
-        } else if (rehabCenterURL.contains("lincoln")) {
+        } else if (rehabCenterURL.indexOf("lincoln") > -1) {
             rehabCenterURL = "Lincoln Recovery"
-        } else if (rehabCenterURL.contains("monarch")) {
+        } else if (rehabCenterURL.indexOf("monarch") > -1) {
             rehabCenterURL = "Monarch Shores"
-        } else if (rehabCenterURL.contains("mountain")) {
+        } else if (rehabCenterURL.indexOf("mountain") > -1) {
             rehabCenterURL = "Mountain Springs Recovery"
-        } else if (rehabCenterURL.contains("willow")) {
+        } else if (rehabCenterURL.indexOf("willow") > -1) {
             rehabCenterURL = "Willow Springs Recovery"
         }
+
         console.log("Rehab Center URL:", rehabCenterURL)
         console.log("Rehab Center Value:", rehabCenterValue)
-
         dataLayer.push({
             'event': 'rehab_center_table',
             'rehab_center': rehabCenterValue
