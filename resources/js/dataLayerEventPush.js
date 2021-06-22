@@ -37,7 +37,7 @@ jQuery(document).ready(function ($) {
 
     // Learn Centers Sidebar
     $('.learn_centers_center_container a').click(function (event) {
-        let rehabCenterURL = $(event.target).url();
+        let rehabCenterURL = $(event.target).attr("href");
         let rehabCenterValue;
         if (rehabCenterURL.contains("chapters")) {
             rehabCenterValue = "Chapters Capistrano"
