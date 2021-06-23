@@ -1,4 +1,4 @@
-<section class="image_left_cta_right_shortcode_section covidCta" id="covidCta">
+<section class="image_left_cta_right_shortcode_section">
     <div class="image_left_cta_right_shortcode_container">
         <div class="image_left_cta_right_shortcode_left_wrapper hide_on_mobile">
             <img loading="lazy" src="<?php echo get_template_directory_uri() . '/images/covid_cta_image.jpg' ?>" alt="">
@@ -7,9 +7,8 @@
             <h5>Get Help During COVID-19</h5>
             <p>We have taken the necessary precautions to minimize the risk of exposure and transmission of the Coronavirus to those in our treatment programs, allowing them to focus on their recovery.</p>
             <div class="image_left_cta_right_shortcode_right_cta_wrapper">
-                <a href="/our-response-to-the-corona-virus-health-concern/">Learn More</a>
+                <a href="/our-response-to-the-corona-virus-health-concern/" class="covidCta" id="covidCta">Learn More</a>
             </div>
-
         </div>
     </div>
 </section>

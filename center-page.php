@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Center Page+
+ * Template Name: Center Page
  * Template Post Type: Page
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
@@ -54,11 +54,10 @@ $centerValue = get_field('center');
 <main id="primary" class="maxWidth center_page">
     <?php get_template_part('template-parts/heros/desktop_and_mobile_hero_full_width_center'); ?>
 
-    <div class="content_container 
-    <?php if ($centerValue == "Chapters Capistrano") echo "chapters_styles";
-    elseif ($centerValue == "Monarch Shores") echo "monarch_styles";
-    elseif ($centerValue == "Mountain Springs") echo "mountain_styles";
-    elseif ($centerValue == "Willow Springs") echo "willow_styles"; ?>">
+    <div class="content_container <?php if ($centerValue == "Chapters Capistrano") echo "chapters_styles";
+                                    elseif ($centerValue == "Monarch Shores") echo "monarch_styles";
+                                    elseif ($centerValue == "Mountain Springs") echo "mountain_styles";
+                                    elseif ($centerValue == "Willow Springs") echo "willow_styles"; ?>">
         <section class="center_page_location_section">
             <div class="center_page_location_container">
                 <h2 style="color: var(--<?php if ($centerValue == "Chapters Capistrano") echo "chapters";
@@ -209,7 +208,19 @@ $centerValue = get_field('center');
                     endif;
                     ?>
                 </div>
-                <img src="<?php echo get_template_directory_uri() . '/images/chapters-min.jpg' ?>" alt="" loading="lazy">
+                <?php if ($centerValue == "Chapters Capistrano") : ?>
+                    <img src="<?php echo get_template_directory_uri() . '/images/chapters-min.jpg' ?>" alt="" loading="lazy">
+
+                <?php elseif ($centerValue == "Monarch Shores") : ?>
+                    <img src="<?php echo get_template_directory_uri() . '/images/monarch-min.jpg' ?>" alt="" loading="lazy">
+
+                <?php elseif ($centerValue == "Mountain Springs") : ?>
+                    <img src="<?php echo get_template_directory_uri() . '/images/mountain-min.jpg' ?>" alt="" loading="lazy">
+                <?php
+                elseif ($centerValue == "Willow Springs") : ?>
+                    <img src="<?php echo get_template_directory_uri() . '/images/willow-min.jpg' ?>" alt="" loading="lazy">
+                <?php endif; ?>
+
             </div>
         </section>
 
@@ -228,7 +239,7 @@ $centerValue = get_field('center');
                 <div id="center_insurance_form" class="center_page_insurance_form_wrapper">
                     <div class="center_page_insurance_form_wrapper">
                         <div class="insurance_page_form_container">
-                            <?php echo do_shortcode('[gravityform id="6" title="false" description="false"]') ?>
+                            <?php echo do_shortcode('[gravityform id="7" title="false" description="false"]') ?>
                         </div>
                     </div>
                 </div>

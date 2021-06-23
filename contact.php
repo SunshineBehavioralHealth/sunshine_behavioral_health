@@ -3,19 +3,6 @@
 /**
  * Template Name: Contact
  * Template Post Type: Page
- * 
- * 
- * 
- * 
- * 
- * 
- * TO BE DELETED ONCE PAGE MOVED OVER
- * 
- * 
- *  
- * 
- * 
- * 
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -30,22 +17,6 @@ get_template_part('template-parts/javascript/navigationJs');
 sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-page-nosidebar', 'sunshine_behavioral_health-content');
 
 ?>
-
-<?php if (get_field('has_google_translate')) : ?>
-    <div id="google_translate_element"></div>
-    <script>
-        function googleTranslateElementInit() {
-
-            new google.translate.TranslateElement({
-
-                pageLanguage: 'en'
-
-            }, 'google_translate_element');
-
-        }
-    </script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<?php endif; ?>
 
 <main id="primary" class="insurance_verification_page maxWidth">
     <div class="page_image">
