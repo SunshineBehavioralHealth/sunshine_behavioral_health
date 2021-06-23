@@ -2,7 +2,7 @@
 $centerSelection = get_field('customized_map_center_options');
 ?>
 
-<section class="customized_map_section customMap" id="customMap">
+<section class="customized_map_section">
     <div class="customized_map_container">
         <div class="customized_map_wrapper">
             <?php if ($centerSelection == "Chapters Capistrano") :
@@ -20,7 +20,7 @@ $centerSelection = get_field('customized_map_center_options');
                 </div>
                 <div class="customized_map_body_wrapper">
                     <img class="customized_map_main_image" src="<?php echo get_template_directory_uri() . '/images/customized_map_body_chapters.jpg' ?>" alt="">
-                    <a id="customziedMapPhoneCta" class="invocaNumber customzied_map_cta customziedMapPhoneCta" onclick="dataLayer.push({'event': 'phone_click', 'shortcode_type' : 'customziedMapPhoneCta'});" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
+                    <a id="customMap" class="invocaNumber customzied_map_cta customMap" href="tel:949-276-2886">Talk to Our Intake Coordinators</a>
                 </div>
 
 
