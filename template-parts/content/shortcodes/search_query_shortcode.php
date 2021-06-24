@@ -28,7 +28,6 @@
                             <a href="<?php the_permalink(); ?>">
                                 <h6><?php echo mb_strimwidth(get_the_title(), 0, 75, '...');  ?></h6>
                             </a>
-
                         </li>
                         <div class="search_query_shortcode_spacer"></div>
                     <?php endwhile; ?>

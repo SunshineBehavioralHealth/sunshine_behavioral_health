@@ -43,13 +43,13 @@ jQuery(document).ready(function ($) {
         if (rehabCenterURL.indexOf("chapters") > -1) {
             rehabCenterValue = "Chapters Capistrano"
         } else if (rehabCenterURL.indexOf("lincoln") > -1) {
-            rehabCenterURL = "Lincoln Recovery"
+            rehabCenterValue = "Lincoln Recovery"
         } else if (rehabCenterURL.indexOf("monarch") > -1) {
-            rehabCenterURL = "Monarch Shores"
+            rehabCenterValue = "Monarch Shores"
         } else if (rehabCenterURL.indexOf("mountain") > -1) {
-            rehabCenterURL = "Mountain Springs Recovery"
+            rehabCenterValue = "Mountain Springs Recovery"
         } else if (rehabCenterURL.indexOf("willow") > -1) {
-            rehabCenterURL = "Willow Springs Recovery"
+            rehabCenterValue = "Willow Springs Recovery"
         }
 
         console.log("Rehab Center URL:", rehabCenterURL)

@@ -15,12 +15,9 @@ get_header();
 get_template_part('template-parts/javascript/navigationJs');
 
 sunshine_behavioral_health()->print_styles('sunshine_behavioral_health-custom-page-nosidebar', 'sunshine_behavioral_health-content');
-
 $centerValue = get_field('center')
 
 ?>
-
-
 
 <main id="primary" class="no_hero_no_sidebar_main">
     <div class="content_container">
