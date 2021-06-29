@@ -52,11 +52,20 @@ jQuery(document).ready(function ($) {
             rehabCenterValue = "Willow Springs Recovery"
         }
 
-        console.log("Rehab Center URL:", rehabCenterURL)
-        console.log("Rehab Center Value:", rehabCenterValue)
         dataLayer.push({
             'event': 'rehab_center_table',
             'rehab_center': rehabCenterValue
+        });
+    });
+
+    // Treatment Options
+    $('.treatmentOptions a p').click(function (event) {
+        let treatmentOptionsValue = $(this).text();
+
+        console.log("treatment options text clicked:", treatmentOptionsValue)
+        dataLayer.push({
+            'event': 'your_treatment_options_click',
+            'treatment_option': treatmentOptionsValue
         });
     });
 });

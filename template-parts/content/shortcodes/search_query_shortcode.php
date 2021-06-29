@@ -20,7 +20,6 @@
         if ($related->have_posts()) :
         ?>
             <div class="search_query_shortcode_content_container">
-
                 <ul>
                     <?php while ($related->have_posts()) : $related->the_post(); ?>
 

@@ -1,5 +1,5 @@
 <?php if (get_field('treatment_options_element', 'option')) : ?>
-    <section class="related_pages_section related_pages_series_section">
+    <section id="treatmentOptions" class="related_pages_section related_pages_series_section treatmentOptions">
         <div class="related_pages_headline">
             <h4><?php echo get_field('treatment_options_headline', 'option') ?></h4>
         </div>
